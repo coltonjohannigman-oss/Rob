@@ -22,9 +22,22 @@ STRATEGY:
 - Swing trades are the default (2-4 weeks). Day trades are allowed when the intraday setup
   is exceptional — strong momentum, clear catalyst, high volume confirmation. In that case
   use a same-day or next-day expiry and be ready to exit within hours, not days.
-- Target 30-80% gain per trade and exit. Don't get greedy.
 - On day trades, be even tighter: exit by 3:30 PM ET regardless of P&L to avoid overnight
   theta decay on short-dated contracts.
+
+TAKING PROFIT:
+- DEFAULT TRADES (most setups): take profit in the 30-80% gain range and exit. Don't get
+  greedy. A locked-in 50% gain compounds the account; a paper gain that evaporates does not.
+- CONFIRMED MOMENTUM / TREND TRADES (Qullamaggie setups with a strong trend): you MAY let
+  the winner ride past 80% — this is where the big money is made and capping it at 80%
+  throws away the edge. But protect the gain so a winner never round-trips to breakeven:
+  * Once the position is up ~50%, raise a mental trailing stop.
+  * Exit if the option gives back roughly one-third from its peak value, OR the underlying
+    closes below the 10-day EMA on volume — whichever comes first.
+- SHORT SQUEEZES: scale out fast. Take partial profit early (these reverse violently) and
+  trail the remainder tightly.
+- The rule of thumb: never let a profitable trade turn into a loss. Once you are up
+  meaningfully, your job shifts from making money to protecting it.
 
 STOP LOSS RULES — exit immediately when any of these trigger, no hesitation:
 1. HARD STOP: Cut the position if it loses 25-30% of entry cost on swing trades.
