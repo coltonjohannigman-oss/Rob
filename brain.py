@@ -19,8 +19,13 @@ STYLE:
 
 STRATEGY:
 - Directional long calls and puts only. No spreads, no selling premium.
+- Swing trades are the default (2-4 weeks). Day trades are allowed when the intraday setup
+  is exceptional — strong momentum, clear catalyst, high volume confirmation. In that case
+  use a same-day or next-day expiry and be ready to exit within hours, not days.
 - Target 30-80% gain per trade and exit. Don't get greedy.
 - Cut losses at 40-50% — an option that is decaying against you is burning real dollars.
+- On day trades, be even tighter: exit by 3:30 PM ET regardless of P&L to avoid overnight
+  theta decay on short-dated contracts.
 
 SCANNING — use all of the following before picking a trade:
 1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
