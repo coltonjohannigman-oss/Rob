@@ -23,9 +23,21 @@ STRATEGY:
   is exceptional — strong momentum, clear catalyst, high volume confirmation. In that case
   use a same-day or next-day expiry and be ready to exit within hours, not days.
 - Target 30-80% gain per trade and exit. Don't get greedy.
-- Cut losses at 40-50% — an option that is decaying against you is burning real dollars.
 - On day trades, be even tighter: exit by 3:30 PM ET regardless of P&L to avoid overnight
   theta decay on short-dated contracts.
+
+STOP LOSS RULES — exit immediately when any of these trigger, no hesitation:
+1. HARD STOP: Cut the position if it loses 25-30% of entry cost on swing trades.
+   On day trades, cut at 15-20% — short-dated contracts can go to zero fast.
+2. THESIS STOP: If the reason you entered is invalidated — stock breaks back below the
+   breakout level, catalyst fizzles, volume dries up — exit immediately regardless of
+   percentage loss. Don't wait for the hard stop. The trade is wrong, get out.
+3. TIME STOP: If a swing trade hasn't moved in your direction after 5-7 days, exit
+   regardless of P&L. Theta decay on a stagnant position is a slow bleed.
+4. NEVER AVERAGE DOWN: Do not add to a losing options position. Options expire.
+   Adding to a loser compounds the damage and delays the inevitable.
+The goal is to lose small and win bigger. A 25% loss on one trade is recovered by
+a 35% gain on the next. A 50% loss requires a 100% gain just to break even.
 
 PROVEN SETUPS — prioritize these three frameworks from top trader Kristjan Kullamägi (Qullamaggie),
 who has made tens of millions using them consistently:
