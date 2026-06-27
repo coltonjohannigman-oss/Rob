@@ -59,59 +59,8 @@ def cmd_history(args):
         sys.exit(1)
 
 
-def cmd_rh_cash(args):
-    try:
-        from dotenv import load_dotenv
-        load_dotenv()
-        import robinhood as rh_api
-        rh_api.login()
-        cash = rh_api.get_cash_balance()
-        print(f"Robinhood cash balance: ${cash:.2f}")
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-
-def cmd_rh_fund(args):
-    """Allocate cash from Robinhood account into an agent's budget."""
-    try:
-        from dotenv import load_dotenv
-        load_dotenv()
-        import robinhood as rh_api
-        rh_api.login()
-        cash = rh_api.get_cash_balance()
-        if args.amount > cash:
-            print(f"Error: Robinhood cash balance (${cash:.2f}) is less than requested ${args.amount:.2f}", file=sys.stderr)
-            sys.exit(1)
-        agent = add_funds(args.id, args.amount, note=f"funded from Robinhood cash (available: ${cash:.2f})")
-        print(f"Allocated ${args.amount:.2f} from Robinhood to agent '{agent['name']}' — new budget: ${agent['balance']:.2f}")
-        print(f"Remaining Robinhood cash: ${cash - args.amount:.2f} (note: transfer must be done manually in Robinhood app)")
-    except (KeyError, ValueError) as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-
-def cmd_positions(args):
-    try:
-        from dotenv import load_dotenv
-        load_dotenv()
-        import robinhood as rh_api
-        rh_api.login()
-        positions = rh_api.get_open_option_positions()
-        if not positions:
-            print("No open option positions.")
-            return
-        for p in positions:
-            print(f"  {p['symbol']}  {p['type']}  qty={p['qty']}  avg=${p['avg_price']:.2f}  id={p['option_id']}")
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-
-
 def cmd_trade(args):
     try:
-        from dotenv import load_dotenv
-        load_dotenv()
         from brain import run_trading_session
         summary = run_trading_session(
             agent_id=args.id,
@@ -149,18 +98,7 @@ def main():
     p_history.add_argument("id", help="Agent ID")
     p_history.set_defaults(func=cmd_history)
 
-    p_rh_cash = sub.add_parser("rh-cash", help="Show Robinhood investing account cash balance")
-    p_rh_cash.set_defaults(func=cmd_rh_cash)
-
-    p_rh_fund = sub.add_parser("rh-fund", help="Allocate cash from Robinhood to an agent")
-    p_rh_fund.add_argument("id", help="Agent ID")
-    p_rh_fund.add_argument("amount", type=float, help="Amount to allocate (USD)")
-    p_rh_fund.set_defaults(func=cmd_rh_fund)
-
-    p_positions = sub.add_parser("positions", help="Show open Robinhood option positions")
-    p_positions.set_defaults(func=cmd_positions)
-
-    p_trade = sub.add_parser("trade", help="Run an AI trading session for an agent")
+    p_trade = sub.add_parser("trade", help="Generate a trading session prompt for an agent")
     p_trade.add_argument("id", help="Agent ID")
     p_trade.add_argument("--idea", help="A trade idea or thesis to give the AI")
     p_trade.add_argument("--auto-approve", action="store_true", help="Skip confirmation prompts before placing orders")

@@ -1,211 +1,145 @@
-"""AI trading brain — Claude-powered agentic options trader."""
+"""Trading brain — agent persona and session prompt generator."""
 
-import json
-from typing import Any
+from agent import get_agent
 
-import anthropic
+ACCOUNT_NUMBER = "452369101"
 
-import robinhood as rh_api
-from agent import add_funds, get_agent, spend_budget
+PERSONA = """\
+You are a disciplined options trader managing a small $100 account. Your mandate is consistent
+compounding — small, reliable gains that build the account over time. Never blow up the account
+chasing a big score. Every dollar lost is harder to recover at this size.
 
-MODEL = "claude-opus-4-8"
+STYLE:
+- Default to conservative: buy options with 2-4 weeks to expiry, reasonable delta (0.35-0.55),
+  liquid underlyings with tight bid/ask spreads, and size positions so a total loss doesn't
+  exceed 20% of the remaining budget.
+- Go aggressive only when the setup is exceptional — multiple confluent signals all pointing
+  the same direction. In that case you may size up to 40% of budget and use higher delta or
+  shorter expiry. Be honest with yourself about whether the setup truly earns that.
 
-SYSTEM_PROMPT = """\
-You are an autonomous options trading agent operating within a strict budget.
-You have access to real Robinhood market data and can place real option orders.
+STRATEGY:
+- Directional long calls and puts only. No spreads, no selling premium.
+- Swing trades are the default (2-4 weeks). Day trades are allowed when the intraday setup
+  is exceptional — strong momentum, clear catalyst, high volume confirmation. In that case
+  use a same-day or next-day expiry and be ready to exit within hours, not days.
+- On day trades, be even tighter: exit by 3:30 PM ET regardless of P&L to avoid overnight
+  theta decay on short-dated contracts.
 
-Rules:
-- Never spend more than the allocated agent budget.
-- Each contract controls 100 shares; cost = ask_price * 100 * quantity.
-- Always check current positions and market data before trading.
-- Use limit orders priced at or slightly above the ask for buys, at or slightly below bid for sells.
-- Think carefully before placing any order — trades are real and cannot be undone instantly.
-- When done, summarize what you did (or decided not to do) and why.
+TAKING PROFIT:
+- DEFAULT TRADES (most setups): take profit in the 30-80% gain range and exit. Don't get
+  greedy. A locked-in 50% gain compounds the account; a paper gain that evaporates does not.
+- CONFIRMED MOMENTUM / TREND TRADES (Qullamaggie setups with a strong trend): you MAY let
+  the winner ride past 80% — this is where the big money is made and capping it at 80%
+  throws away the edge. But protect the gain so a winner never round-trips to breakeven:
+  * Once the position is up ~50%, raise a mental trailing stop.
+  * Exit if the option gives back roughly one-third from its peak value, OR the underlying
+    closes below the 10-day EMA on volume — whichever comes first.
+- SHORT SQUEEZES: scale out fast. Take partial profit early (these reverse violently) and
+  trail the remainder tightly.
+- The rule of thumb: never let a profitable trade turn into a loss. Once you are up
+  meaningfully, your job shifts from making money to protecting it.
+
+STOP LOSS RULES — exit immediately when any of these trigger, no hesitation:
+1. HARD STOP: Cut the position if it loses 25-30% of entry cost on swing trades.
+   On day trades, cut at 15-20% — short-dated contracts can go to zero fast.
+2. THESIS STOP: If the reason you entered is invalidated — stock breaks back below the
+   breakout level, catalyst fizzles, volume dries up — exit immediately regardless of
+   percentage loss. Don't wait for the hard stop. The trade is wrong, get out.
+3. TIME STOP: If a swing trade hasn't moved in your direction after 5-7 days, exit
+   regardless of P&L. Theta decay on a stagnant position is a slow bleed.
+4. NEVER AVERAGE DOWN: Do not add to a losing options position. Options expire.
+   Adding to a loser compounds the damage and delays the inevitable.
+The goal is to lose small and win bigger. A 25% loss on one trade is recovered by
+a 35% gain on the next. A 50% loss requires a 100% gain just to break even.
+
+PROVEN SETUPS — prioritize these three frameworks from top trader Kristjan Kullamägi (Qullamaggie),
+who has made tens of millions using them consistently:
+
+1. EPISODIC PIVOT: A stock with a major fundamental catalyst (earnings beat, FDA approval,
+   big contract, spin-off) that breaks out of a base or consolidation on massive volume (2-5x
+   average). The catalyst must be genuinely significant — not noise. Buy the breakout candle
+   or the first pullback to the 10-day EMA after the move. This is the highest conviction setup.
+
+2. MOMENTUM / TREND TRADE: Stocks in a powerful uptrend making new 52-week highs on strong
+   volume. Look for tight consolidations or flag patterns along the 10 or 20-day EMA. Buy the
+   break of the flag/consolidation with volume confirmation. Ride the trend — do not sell too
+   early. Exit when the stock closes below the 10-day EMA on volume.
+
+3. SHORT SQUEEZE: Stocks with high short interest (>15% float) that are breaking out on a
+   catalyst or unusual volume. Short sellers are forced to cover, accelerating the move. Enter
+   early on the breakout — these moves are fast and violent. Size appropriately and take
+   partial profits quickly as these can reverse just as fast.
+
+For all three setups: volume is confirmation. No volume = no conviction = no trade.
+Tight bases before breakouts are better than extended ones. The best trades feel obvious
+in hindsight — if the setup requires too much explaining, skip it.
+
+SCANNING — use all of the following before picking a trade:
+1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
+   Look for clean setups — breakouts, breakdowns, bounces off key levels.
+2. FUNDAMENTALS: earnings trajectory, revenue growth, debt load, sector tailwinds/headwinds.
+   Avoid companies with deteriorating fundamentals unless it is a pure technical play.
+3. NEWS & CATALYSTS: upcoming earnings, FDA decisions, product launches, macro data (CPI,
+   jobs, Fed). Trade into catalysts when IV is not already elevated; avoid buying options
+   when IV is spiking (you are buying expensive premium).
+4. SMART MONEY & INSTITUTIONAL SIGNALS:
+   - Monitor what elite investors are doing. If Warren Buffett is holding elevated cash levels,
+     treat that as a bearish macro signal and lean toward puts or sit out. If institutions are
+     heavily buying a sector via 13F filings or options flow, that is a tailwind.
+   - Unusual options activity (large block buys, sweeps) is a signal worth investigating.
+5. POLITICAL & INFLUENTIAL COMMENTARY:
+   - If a major political figure (e.g. the President) publicly praises or attacks a specific
+     company or sector, take note — these comments move markets. Do not blindly follow them,
+     but cross-reference with technicals and fundamentals. If the setup also looks good
+     technically, it strengthens the case. If it looks overextended on the commentary alone,
+     skip it or wait for a pullback entry.
+
+PRICING & ORDER EXECUTION:
+- Don't just hit the ask. Place limit orders at or below the midpoint (mark price) and give
+  them time to fill. Market makers will often come down to meet you.
+- On liquid options with tight spreads, try a penny or two below the mid first. On wider
+  spreads (bid/ask gap > 15% of mark), be aggressive — place the limit closer to the bid
+  than the ask. If the spread is very wide, start just above the bid and work up slowly
+  only if needed. Never overpay just because the ask is posted there.
+- For exits, don't panic-sell at the bid. Post at the mid or slightly above and let it work.
+  If the position is moving in your favor, be patient — let the profit run to target before
+  lifting your offer.
+- Exception: if a catalyst is imminent (earnings in 30 min, major news breaking) and you
+  need to get in or out fast, paying the ask or hitting the bid is acceptable.
+
+RISK RULES:
+- Never spend more than the remaining budget.
+- At $100 total, every trade matters. One bad position can set the account back weeks.
+- Prefer underlyings under $300/share so premium is more accessible.
+- Always check liquidity: open interest > 500, volume > 100, bid/ask spread < 15% of mark.
+- When in doubt, do nothing. Cash is a position.
 """
-
-TOOLS = [
-    {
-        "name": "get_stock_quote",
-        "description": "Get current price and bid/ask for a stock symbol.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "symbol": {"type": "string", "description": "Ticker symbol, e.g. AAPL"}
-            },
-            "required": ["symbol"],
-        },
-    },
-    {
-        "name": "get_nearby_expirations",
-        "description": "List available option expiration dates within N weeks.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "symbol": {"type": "string"},
-                "weeks_out": {"type": "integer", "description": "How many weeks to look ahead (default 4)"},
-            },
-            "required": ["symbol"],
-        },
-    },
-    {
-        "name": "get_options_chain",
-        "description": "Get the options chain for a symbol on a given expiration date.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "symbol": {"type": "string"},
-                "expiration_date": {"type": "string", "description": "YYYY-MM-DD"},
-                "option_type": {"type": "string", "enum": ["call", "put"]},
-            },
-            "required": ["symbol", "expiration_date", "option_type"],
-        },
-    },
-    {
-        "name": "get_open_positions",
-        "description": "Get all currently open option positions.",
-        "input_schema": {"type": "object", "properties": {}, "required": []},
-    },
-    {
-        "name": "get_agent_budget",
-        "description": "Get the agent's current allocated budget and amount already spent.",
-        "input_schema": {"type": "object", "properties": {}, "required": []},
-    },
-    {
-        "name": "buy_option",
-        "description": "Place a limit buy order for an option contract. Cost = limit_price * 100 * quantity.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "option_id": {"type": "string", "description": "The option contract ID from the chain"},
-                "quantity": {"type": "integer", "description": "Number of contracts"},
-                "limit_price": {"type": "number", "description": "Per-share limit price (e.g. 1.50 = $150/contract)"},
-                "rationale": {"type": "string", "description": "Why you are making this trade"},
-            },
-            "required": ["option_id", "quantity", "limit_price", "rationale"],
-        },
-    },
-    {
-        "name": "close_position",
-        "description": "Place a limit sell order to close an existing long option position.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "option_id": {"type": "string", "description": "The option contract ID"},
-                "quantity": {"type": "integer", "description": "Number of contracts to close"},
-                "limit_price": {"type": "number", "description": "Per-share limit price to sell at"},
-                "rationale": {"type": "string", "description": "Why you are closing this position"},
-            },
-            "required": ["option_id", "quantity", "limit_price", "rationale"],
-        },
-    },
-]
-
-
-def _execute_tool(name: str, inputs: dict, agent_id: str, confirm: bool) -> Any:
-    if name == "get_stock_quote":
-        return rh_api.get_stock_quote(inputs["symbol"])
-
-    if name == "get_nearby_expirations":
-        return rh_api.get_nearby_expirations(inputs["symbol"], inputs.get("weeks_out", 4))
-
-    if name == "get_options_chain":
-        return rh_api.get_options_chain(inputs["symbol"], inputs["expiration_date"], inputs["option_type"])
-
-    if name == "get_open_positions":
-        return rh_api.get_open_option_positions()
-
-    if name == "get_agent_budget":
-        agent = get_agent(agent_id)
-        return {
-            "allocated": agent["balance"],
-            "spent": agent.get("spent", 0.0),
-            "remaining": agent["balance"] - agent.get("spent", 0.0),
-        }
-
-    if name == "buy_option":
-        cost = inputs["limit_price"] * 100 * inputs["quantity"]
-        agent = get_agent(agent_id)
-        remaining = agent["balance"] - agent.get("spent", 0.0)
-        if cost > remaining:
-            return {"error": f"Insufficient budget. Cost ${cost:.2f} exceeds remaining ${remaining:.2f}"}
-
-        print(f"\n[TRADE REQUEST] BUY {inputs['quantity']} contract(s) @ ${inputs['limit_price']:.2f}/share (${cost:.2f} total)")
-        print(f"  Rationale: {inputs['rationale']}")
-
-        if confirm:
-            answer = input("Approve this trade? [y/N] ").strip().lower()
-            if answer != "y":
-                return {"status": "rejected", "reason": "User declined"}
-
-        order = rh_api.buy_option(inputs["option_id"], inputs["quantity"], inputs["limit_price"])
-        spend_budget(agent_id, cost, note=f"buy {inputs['quantity']}x @ {inputs['limit_price']}: {inputs['rationale']}")
-        print(f"  Order placed: {order.get('id', 'unknown')}")
-        return {"status": "placed", "order_id": order.get("id"), "cost": cost}
-
-    if name == "close_position":
-        print(f"\n[TRADE REQUEST] CLOSE {inputs['quantity']} contract(s) @ ${inputs['limit_price']:.2f}/share")
-        print(f"  Rationale: {inputs['rationale']}")
-
-        if confirm:
-            answer = input("Approve this trade? [y/N] ").strip().lower()
-            if answer != "y":
-                return {"status": "rejected", "reason": "User declined"}
-
-        order = rh_api.close_option_position(inputs["option_id"], inputs["quantity"], inputs["limit_price"])
-        print(f"  Order placed: {order.get('id', 'unknown')}")
-        return {"status": "placed", "order_id": order.get("id")}
-
-    return {"error": f"Unknown tool: {name}"}
 
 
 def run_trading_session(agent_id: str, trade_idea: str = "", confirm: bool = True) -> str:
-    """Run an AI trading session. Returns the final summary."""
-    rh_api.login()
+    """Print the Claude Code prompt to kick off a trading session."""
+    agent = get_agent(agent_id)
+    spent = agent.get("spent", 0.0)
+    remaining = agent["balance"] - spent
 
-    client = anthropic.Anthropic()
-
-    user_content = "Review my portfolio and budget, then look for good options trading opportunities."
+    lines = [
+        f"Run an options trading session for the Agentic account ({ACCOUNT_NUMBER}).",
+        f"Agent: '{agent['name']}' (id: {agent_id})",
+        f"Budget: ${agent['balance']:.2f} allocated, ${spent:.2f} spent, ${remaining:.2f} remaining.",
+        "",
+        "Use the following persona and rules for this session:",
+        PERSONA,
+    ]
     if trade_idea:
-        user_content += f"\n\nI have an idea for you to consider: {trade_idea}"
+        lines.append(f"The user has a specific idea to consider: {trade_idea}")
+    if confirm:
+        lines.append("Present the trade details and ask for confirmation before placing any order.")
+    else:
+        lines.append("Auto-approve: place the order without asking for confirmation.")
 
-    messages = [{"role": "user", "content": user_content}]
-
-    print(f"\n[AI] Starting trading session for agent {agent_id}...")
-    if trade_idea:
-        print(f"[AI] Trade idea: {trade_idea}")
-
-    while True:
-        response = client.messages.create(
-            model=MODEL,
-            max_tokens=8096,
-            thinking={"type": "adaptive"},
-            system=SYSTEM_PROMPT,
-            tools=TOOLS,
-            messages=messages,
-        )
-
-        tool_calls = [b for b in response.content if b.type == "tool_use"]
-        text_blocks = [b for b in response.content if b.type == "text"]
-
-        for block in text_blocks:
-            if block.text.strip():
-                print(f"\n[AI] {block.text.strip()}")
-
-        if response.stop_reason == "end_turn" or not tool_calls:
-            final_text = next((b.text for b in text_blocks if b.text.strip()), "Session complete.")
-            return final_text
-
-        messages.append({"role": "assistant", "content": response.content})
-
-        tool_results = []
-        for call in tool_calls:
-            print(f"\n[TOOL] {call.name}({json.dumps(call.input, separators=(',', ':'))})")
-            result = _execute_tool(call.name, call.input, agent_id, confirm)
-            print(f"  → {json.dumps(result, separators=(',', ':'))[:200]}")
-            tool_results.append({
-                "type": "tool_result",
-                "tool_use_id": call.id,
-                "content": json.dumps(result),
-            })
-
-        messages.append({"role": "user", "content": tool_results})
+    prompt = "\n".join(lines)
+    print("\nPaste the following into Claude Code to start your trading session:\n")
+    print("─" * 60)
+    print(prompt)
+    print("─" * 60)
+    return prompt

@@ -55,32 +55,6 @@ def get_agent(agent_id: str) -> dict:
     return data["agents"][agent_id]
 
 
-def spend_budget(agent_id: str, amount: float, note: str = "") -> dict:
-    """Record that the agent spent money on a trade (reduces remaining budget)."""
-    if amount <= 0:
-        raise ValueError("Amount must be positive")
-    data = _load()
-    if agent_id not in data["agents"]:
-        raise KeyError(f"Agent '{agent_id}' not found")
-    agent = data["agents"][agent_id]
-    if amount > agent["balance"] - agent.get("spent", 0.0):
-        raise ValueError("Insufficient budget")
-    agent.setdefault("spent", 0.0)
-    agent["spent"] += amount
-    data["transactions"].append(
-        {
-            "id": str(uuid.uuid4())[:8],
-            "agent_id": agent_id,
-            "amount": -amount,
-            "type": "debit",
-            "note": note,
-            "timestamp": _now(),
-        }
-    )
-    _save(data)
-    return agent
-
-
 def list_agents() -> list[dict]:
     return list(_load()["agents"].values())
 
