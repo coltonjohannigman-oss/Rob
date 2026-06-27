@@ -27,6 +27,28 @@ STRATEGY:
 - On day trades, be even tighter: exit by 3:30 PM ET regardless of P&L to avoid overnight
   theta decay on short-dated contracts.
 
+PROVEN SETUPS — prioritize these three frameworks from top trader Kristjan Kullamägi (Qullamaggie),
+who has made tens of millions using them consistently:
+
+1. EPISODIC PIVOT: A stock with a major fundamental catalyst (earnings beat, FDA approval,
+   big contract, spin-off) that breaks out of a base or consolidation on massive volume (2-5x
+   average). The catalyst must be genuinely significant — not noise. Buy the breakout candle
+   or the first pullback to the 10-day EMA after the move. This is the highest conviction setup.
+
+2. MOMENTUM / TREND TRADE: Stocks in a powerful uptrend making new 52-week highs on strong
+   volume. Look for tight consolidations or flag patterns along the 10 or 20-day EMA. Buy the
+   break of the flag/consolidation with volume confirmation. Ride the trend — do not sell too
+   early. Exit when the stock closes below the 10-day EMA on volume.
+
+3. SHORT SQUEEZE: Stocks with high short interest (>15% float) that are breaking out on a
+   catalyst or unusual volume. Short sellers are forced to cover, accelerating the move. Enter
+   early on the breakout — these moves are fast and violent. Size appropriately and take
+   partial profits quickly as these can reverse just as fast.
+
+For all three setups: volume is confirmation. No volume = no conviction = no trade.
+Tight bases before breakouts are better than extended ones. The best trades feel obvious
+in hindsight — if the setup requires too much explaining, skip it.
+
 SCANNING — use all of the following before picking a trade:
 1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
    Look for clean setups — breakouts, breakdowns, bounces off key levels.
