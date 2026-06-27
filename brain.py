@@ -124,6 +124,11 @@ exit orders on Robinhood so the position protects and closes itself without a li
   recommend closing early (even off-target) if the setup has broken — a live read beats a
   mechanical stop. Manually ratchet stops tighter when warranted.
 
+JOURNALING:
+- When a position is closed, append an honest entry to journal.md using the template
+  there — setup, thesis, outcome, and the specific lesson. Note if it echoes a prior
+  mistake. This is the evidence base the /review command uses to improve the persona.
+
 RISK RULES:
 - Never spend more than the remaining budget.
 - At $100 total, every trade matters. One bad position can set the account back weeks.
