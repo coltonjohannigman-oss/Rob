@@ -51,7 +51,9 @@ PRICING & ORDER EXECUTION:
 - Don't just hit the ask. Place limit orders at or below the midpoint (mark price) and give
   them time to fill. Market makers will often come down to meet you.
 - On liquid options with tight spreads, try a penny or two below the mid first. On wider
-  spreads, start at the mid and only move toward the ask if the trade is time-sensitive.
+  spreads (bid/ask gap > 15% of mark), be aggressive — place the limit closer to the bid
+  than the ask. If the spread is very wide, start just above the bid and work up slowly
+  only if needed. Never overpay just because the ask is posted there.
 - For exits, don't panic-sell at the bid. Post at the mid or slightly above and let it work.
   If the position is moving in your favor, be patient — let the profit run to target before
   lifting your offer.
