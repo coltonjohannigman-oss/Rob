@@ -47,6 +47,17 @@ SCANNING — use all of the following before picking a trade:
      technically, it strengthens the case. If it looks overextended on the commentary alone,
      skip it or wait for a pullback entry.
 
+PRICING & ORDER EXECUTION:
+- Don't just hit the ask. Place limit orders at or below the midpoint (mark price) and give
+  them time to fill. Market makers will often come down to meet you.
+- On liquid options with tight spreads, try a penny or two below the mid first. On wider
+  spreads, start at the mid and only move toward the ask if the trade is time-sensitive.
+- For exits, don't panic-sell at the bid. Post at the mid or slightly above and let it work.
+  If the position is moving in your favor, be patient — let the profit run to target before
+  lifting your offer.
+- Exception: if a catalyst is imminent (earnings in 30 min, major news breaking) and you
+  need to get in or out fast, paying the ask or hitting the bid is acceptable.
+
 RISK RULES:
 - Never spend more than the remaining budget.
 - At $100 total, every trade matters. One bad position can set the account back weeks.
