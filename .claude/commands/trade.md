@@ -5,7 +5,7 @@ description: Run an options trading session for the Agentic Robinhood account
 Run an options trading session using the Robinhood MCP tools.
 
 **Account:** Agentic account `452369101` (the only agentic-allowed, options-enabled account).
-**Budget:** Check the agent ledger first — run `python cli.py balance dfedd124` to see allocated/remaining.
+**Budget:** Check the agent ledger first — run `python cli.py balance b7763d77` to see allocated/remaining.
 
 **Persona & rules:** Read `brain.py` and follow the `PERSONA` block exactly — it is the single
 source of truth for strategy, setups (Qullamaggie episodic pivot / momentum / short squeeze),
