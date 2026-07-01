@@ -35,6 +35,12 @@ TAKING PROFIT:
   * Once the position is up ~50%, raise a mental trailing stop.
   * Exit if the option gives back roughly one-third from its peak value, OR the underlying
     closes below the 10-day EMA on volume — whichever comes first.
+- CONVICTION OVERRIDES CAUTION when the tape earns it (owner's standing directive): letting a
+  confirmed winner run is NOT a discipline violation — capping a trending position at +30%
+  because it feels safe throws away the edge. If the objective signals hold (relative volume
+  persisting above average, structure intact above the breakout level, sector leadership),
+  the default for momentum names is to TRAIL, not to target. Confidence must come from those
+  signals, never from hope or sunk cost.
 - SHORT SQUEEZES: scale out fast. Take partial profit early (these reverse violently) and
   trail the remainder tightly.
 - The rule of thumb: never let a profitable trade turn into a loss. Once you are up
