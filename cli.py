@@ -4,7 +4,15 @@
 import argparse
 import sys
 
-from agent import add_funds, create_agent, get_agent, get_transactions, list_agents
+from agent import (
+    add_funds,
+    create_agent,
+    get_agent,
+    get_transactions,
+    list_agents,
+    record_buy,
+    record_sell,
+)
 
 
 def cmd_create(args):
@@ -25,9 +33,12 @@ def cmd_balance(args):
     try:
         agent = get_agent(args.id)
         spent = agent.get("spent", 0.0)
+        pnl = agent.get("realized_pnl", 0.0)
         remaining = agent["balance"] - spent
+        sign = "+" if pnl >= 0 else ""
         print(f"Agent '{agent['name']}' (id: {agent['id']})")
-        print(f"  Allocated: ${agent['balance']:.2f}  |  Spent: ${spent:.2f}  |  Remaining: ${remaining:.2f}")
+        print(f"  Allocated: ${agent['balance']:.2f}  |  Open positions: ${spent:.2f}  |  Remaining: ${remaining:.2f}")
+        print(f"  Realized P&L: {sign}${pnl:.2f}")
     except KeyError as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
@@ -55,6 +66,28 @@ def cmd_history(args):
             note = f"  ({t['note']})" if t["note"] else ""
             print(f"  {t['timestamp']}  {sign}${t['amount']:.2f}{note}")
     except KeyError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def cmd_buy(args):
+    try:
+        agent = record_buy(args.id, args.cost, note=args.note or "")
+        remaining = agent["balance"] - agent["spent"]
+        print(f"Recorded buy of ${args.cost:.2f} — open positions: ${agent['spent']:.2f}, remaining: ${remaining:.2f}")
+    except (KeyError, ValueError) as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def cmd_sell(args):
+    try:
+        agent = record_sell(args.id, args.proceeds, args.cost_basis, note=args.note or "")
+        pnl = args.proceeds - args.cost_basis
+        sign = "+" if pnl >= 0 else ""
+        remaining = agent["balance"] - agent["spent"]
+        print(f"Recorded sell for ${args.proceeds:.2f} (basis ${args.cost_basis:.2f}) — P&L {sign}${pnl:.2f}, remaining: ${remaining:.2f}")
+    except (KeyError, ValueError) as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
 
@@ -97,6 +130,19 @@ def main():
     p_history = sub.add_parser("history", help="Show transaction history for an agent")
     p_history.add_argument("id", help="Agent ID")
     p_history.set_defaults(func=cmd_history)
+
+    p_buy = sub.add_parser("buy", help="Record an opening trade (moves cost into open positions)")
+    p_buy.add_argument("id", help="Agent ID")
+    p_buy.add_argument("cost", type=float, help="Total cost of the position (USD)")
+    p_buy.add_argument("--note", help="Trade description, e.g. 'GRND $15C Jul17 x1 @ $1.05 (order 6a45274e)'")
+    p_buy.set_defaults(func=cmd_buy)
+
+    p_sell = sub.add_parser("sell", help="Record a closing trade (books realized P&L)")
+    p_sell.add_argument("id", help="Agent ID")
+    p_sell.add_argument("proceeds", type=float, help="Sale proceeds (USD, 0 if expired worthless)")
+    p_sell.add_argument("cost_basis", type=float, help="Original cost of the position being closed (USD)")
+    p_sell.add_argument("--note", help="Trade description, e.g. 'IRDM $55C Jul17 x1 sold @ $1.30 TP'")
+    p_sell.set_defaults(func=cmd_sell)
 
     p_trade = sub.add_parser("trade", help="Generate a trading session prompt for an agent")
     p_trade.add_argument("id", help="Agent ID")

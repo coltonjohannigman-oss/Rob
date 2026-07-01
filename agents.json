@@ -1,0 +1,86 @@
+{
+  "agents": {
+    "b7763d77": {
+      "id": "b7763d77",
+      "name": "Robbin",
+      "balance": 544.86,
+      "created_at": "2026-06-29T13:45:01.387963+00:00",
+      "spent": 179.0,
+      "realized_pnl": 45.0
+    }
+  },
+  "transactions": [
+    {
+      "id": "init0001",
+      "agent_id": "b7763d77",
+      "amount": 100.0,
+      "type": "credit",
+      "note": "Initial funding",
+      "timestamp": "2026-06-29T13:45:01.387963+00:00"
+    },
+    {
+      "id": "add00002",
+      "agent_id": "b7763d77",
+      "amount": 150.0,
+      "type": "credit",
+      "note": "User added funds",
+      "timestamp": "2026-06-29T13:45:01.387963+00:00"
+    },
+    {
+      "id": "6a427819",
+      "agent_id": "b7763d77",
+      "amount": -74.0,
+      "type": "debit",
+      "note": "SOFI $18.5C Jul17 x1 @ $0.74 limit (order 6a427819 \u2014 pending fill)",
+      "timestamp": "2026-06-29T13:50:32.376285+00:00"
+    },
+    {
+      "id": "alloc0003",
+      "agent_id": "b7763d77",
+      "amount": 75.96,
+      "type": "credit",
+      "note": "Allocated all available account funds ($325.96 buying power)",
+      "timestamp": "2026-06-29T16:22:54.775028+00:00"
+    },
+    {
+      "id": "irdm0001",
+      "agent_id": "b7763d77",
+      "amount": -85.0,
+      "type": "debit",
+      "note": "IRDM $55C Jul17 x1 @ $0.85 limit (filled 2026-06-29)",
+      "timestamp": "2026-06-29T16:34:20.899405Z"
+    },
+    {
+      "id": "irdm0002",
+      "agent_id": "b7763d77",
+      "amount": 130.0,
+      "type": "credit",
+      "note": "IRDM $55C Jul17 x1 sold @ $1.30 TP (profit +$45)",
+      "timestamp": "2026-06-29T17:45:00.000000Z"
+    },
+    {
+      "id": "rebal001",
+      "agent_id": "b7763d77",
+      "amount": 73.9,
+      "type": "credit",
+      "note": "Reconcile ledger to broker buying power — $370.86 free to trade (excl. open SOFI $74)",
+      "timestamp": "2026-06-30T14:22:00.000000Z"
+    },
+    {
+      "id": "add00100",
+      "agent_id": "b7763d77",
+      "amount": 100.0,
+      "type": "credit",
+      "note": "User added funds",
+      "timestamp": "2026-06-30T18:00:00.000000Z"
+    },
+    {
+      "id": "grnd0001",
+      "agent_id": "b7763d77",
+      "amount": -105.0,
+      "type": "debit",
+      "note": "GRND $15C Jul17 x1 @ $1.05 FILLED (order 6a45274e — base breakout, RVol 1.89; initial $0.95 order 6a4526ad cancelled/re-priced)",
+      "timestamp": "2026-07-01T14:42:22.476000Z"
+    }
+  ]
+}
