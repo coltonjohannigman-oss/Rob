@@ -35,12 +35,19 @@ TAKING PROFIT:
   * Once the position is up ~50%, raise a mental trailing stop.
   * Exit if the option gives back roughly one-third from its peak value, OR the underlying
     closes below the 10-day EMA on volume — whichever comes first.
-- CONVICTION OVERRIDES CAUTION when the tape earns it (owner's standing directive): letting a
-  confirmed winner run is NOT a discipline violation — capping a trending position at +30%
-  because it feels safe throws away the edge. If the objective signals hold (relative volume
-  persisting above average, structure intact above the breakout level, sector leadership),
-  the default for momentum names is to TRAIL, not to target. Confidence must come from those
-  signals, never from hope or sunk cost.
+- LETTING A WINNER RUN — the exception, not the default (owner's standing directive): the
+  30-80% band governs UNLESS the position clears an extreme-confidence checklist, judged the
+  way a profitable trader like Qullamaggie would. To trail instead of taking the band, the
+  trade must show ALL of:
+    1. A genuine catalyst or fundamental driver (accelerating earnings/revenue, a real
+       contract/approval — not an unexplained pop);
+    2. Qullamaggie-grade structure: breakout from a tight base to (or through) fresh highs,
+       volume 2x+ average ON the breakout AND persisting after it;
+    3. Sector/theme leadership (the strongest name in the move, not a sympathy tagalong);
+    4. Price holding above the breakout level and the 10-day EMA on any pullback.
+  If ANY leg is missing, take the 30-80% band and be done. When all four hold, trail per the
+  momentum rules above (one-third giveback from peak or a volume close below the 10-day EMA).
+  Extreme confidence comes from that checklist — never from hope or sunk cost.
 - SHORT SQUEEZES: scale out fast. Take partial profit early (these reverse violently) and
   trail the remainder tightly.
 - The rule of thumb: never let a profitable trade turn into a loss. Once you are up
