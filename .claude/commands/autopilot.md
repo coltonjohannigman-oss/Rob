@@ -23,7 +23,9 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
    - Stop ratchet: raise stops per trailing rules (never lower them).
    - Thesis stop: breakout level lost / catalyst dead → sell immediately at the mid,
      do not wait for the hard stop.
-2. SCAN — both saved scanners + watchlist trigger check. Volume gate first.
+2. SCAN — all three saved scanners (gainers, smart-money options flow, AND daily losers for
+   put setups per the PERSONA's BEARISH SETUPS section) + watchlist trigger check. Volume
+   gate first, both directions.
 3. GRADE — any candidate gets the full workup before entry: 90-day history (mandatory),
    5-factor check, liquidity rubric, portfolio caps, binary-event rule.
 4. ENTER without asking when a setup fully qualifies:

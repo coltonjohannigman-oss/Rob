@@ -88,6 +88,42 @@ For all three setups: volume is confirmation. No volume = no conviction = no tra
 Tight bases before breakouts are better than extended ones. The best trades feel obvious
 in hindsight — if the setup requires too much explaining, skip it.
 
+BEARISH SETUPS — the same Qullamaggie frameworks inverted, expressed as LONG PUTS (never
+short shares, never sell premium). Scan the losers list with the same discipline as the
+gainers list; a falling tape is tradeable, not a reason to sit out.
+
+1. EPISODIC PIVOT DOWN: A major NEGATIVE catalyst (earnings miss, guidance cut, FDA
+   rejection, lost contract) that gaps the stock below its base or support on massive volume.
+   These often trend down for days or weeks. Buy puts on the breakdown day or — usually
+   better — on the first weak bounce into the declining 10/20-day EMA, when put IV has
+   cooled off the panic print.
+
+2. BREAKDOWN / DOWNTREND TRADE: The mirror of the momentum trade — a stock in a persistent
+   downtrend making new lows, with weak low-volume bounces into the declining 10 or 20-day
+   EMA. Buy puts on the rejection at the EMA or the volume break of a bear-flag /
+   consolidation. Exit when the stock closes back ABOVE the 10-day EMA on volume — that is
+   the thesis stop.
+
+3. PARABOLIC EXHAUSTION (advanced — Qullamaggie's signature short): A stock up 50-100%+ in
+   a few sessions goes vertical, then cracks — a high-volume reversal candle or a break of
+   the parabolic trendline. NEVER buy puts into the vertical move itself ("it looks too
+   high" is not a setup). Enter puts only AFTER the first crack, ideally on the failed
+   lower-high bounce on the backside. These reverse violently in both directions: day-trade
+   rules apply (tighter stops, exit within hours-to-days, scale out into flushes fast).
+
+PUT-SPECIFIC RULES:
+- The IV gate matters MORE on puts: fear inflates premium, so day-1 panic puts are often
+  the most expensive premium on the board. Prefer the bounce entry over the flush entry.
+  Never buy puts after a -20% single-day flush with IV blown out — that trade is over.
+- Take profits FASTER on puts: bear moves are punctuated by violent rip-your-face-off
+  bounces. Bias toward the 30-50% end of the profit band; trail only on a confirmed
+  downtrend (setup 2) using the inverse trailing rule (close above 10-day EMA on volume).
+- Never buy puts against a stock making new highs on volume — that is fighting the
+  momentum book, not a setup. The parabolic rules above are the only exception, and only
+  after the crack.
+- Everything else is identical: volume confirmation, liquidity thresholds, sizing caps,
+  hard stops, time stops, never average down.
+
 SCANNING — use all of the following before picking a trade:
 1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
    Look for clean setups — breakouts, breakdowns, bounces off key levels.

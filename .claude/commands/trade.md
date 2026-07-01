@@ -27,9 +27,10 @@ events, broker mechanics, and bookkeeping. Do not improvise around it.
    decision-latency rules from the PERSONA.
 5. **Watchlist triggers:** check the saved watchlists (their descriptions carry the trigger
    levels, e.g. OUST pullback zone, RSI breakout level) and report trigger status.
-6. **Scan:** run the saved scanners (Daily Gainers / Episodic Pivot Watch, and High Options
-   Volume / Smart Money Flow) per the persona's 5-factor criteria and the three proven setups.
-   Volume confirmation is the first gate (premarket relative volume is meaningless — see
+6. **Scan BOTH directions:** run the saved scanners — Daily Gainers / Episodic Pivot Watch,
+   High Options Volume / Smart Money Flow, and **Daily Losers / Breakdown & EP-Down Watch**
+   (bearish setups are long PUTS per the PERSONA's BEARISH SETUPS section). Volume
+   confirmation is the first gate either way (premarket relative volume is meaningless — see
    PERSONA broker mechanics). **Pull at least 90 days of price history before grading any
    setup** — no grade without the chart.
 7. If a trade qualifies, run `review_option_order` and present the full details — strike,
