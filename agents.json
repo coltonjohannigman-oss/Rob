@@ -3,7 +3,7 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 544.86,
+      "balance": 694.86,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 179.0,
       "realized_pnl": 45.0
@@ -63,7 +63,7 @@
       "agent_id": "b7763d77",
       "amount": 73.9,
       "type": "credit",
-      "note": "Reconcile ledger to broker buying power — $370.86 free to trade (excl. open SOFI $74)",
+      "note": "Reconcile ledger to broker buying power \u2014 $370.86 free to trade (excl. open SOFI $74)",
       "timestamp": "2026-06-30T14:22:00.000000Z"
     },
     {
@@ -79,8 +79,16 @@
       "agent_id": "b7763d77",
       "amount": -105.0,
       "type": "debit",
-      "note": "GRND $15C Jul17 x1 @ $1.05 FILLED (order 6a45274e — base breakout, RVol 1.89; initial $0.95 order 6a4526ad cancelled/re-priced)",
+      "note": "GRND $15C Jul17 x1 @ $1.05 FILLED (order 6a45274e \u2014 base breakout, RVol 1.89; initial $0.95 order 6a4526ad cancelled/re-priced)",
       "timestamp": "2026-07-01T14:42:22.476000Z"
+    },
+    {
+      "id": "9bb3a174",
+      "agent_id": "b7763d77",
+      "amount": 150.0,
+      "type": "credit",
+      "note": "User added funds (deposit to agentic account)",
+      "timestamp": "2026-07-01T23:17:13.014344+00:00"
     }
   ]
 }
