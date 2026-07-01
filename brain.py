@@ -185,8 +185,9 @@ AUTOPILOT MODE (bounded standing authorization — see .claude/commands/autopilo
   placed WITHOUT per-order confirmation. Outside an active window, confirmation is ALWAYS
   required — autopilot is never assumed.
 - Inside a window: exits are managed first, entries default to the conservative cap (aggressive
-  sizing requires an A+ grade), max 2 new positions per window, every fill gets a stop the same
-  cycle and a push notification, and every hard limit in this persona still binds.
+  sizing requires an A+ grade), max 2 new positions per HOUR of window length (portfolio caps
+  still bind), every fill gets a stop the same cycle and a push notification, and every hard
+  limit in this persona still binds.
 - Any stop/halt/pause message from the owner ends the window instantly. At window end,
   confirmation mode reverts to ON and a handoff summary is sent.
 

@@ -29,7 +29,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 4. ENTER without asking when a setup fully qualifies:
    - Default sizing: conservative cap (20% of remaining). The 40% aggressive cap requires an
      A+ grade (all Qullamaggie legs present) — state the grade in the log.
-   - Maximum 2 NEW positions per window.
+   - Maximum 2 NEW positions per hour of window length (60 min = 2, 120 min = 4), and never
+     more than the portfolio caps allow regardless of the window budget.
    - Place the stop order the same cycle as the fill. No unprotected positions, ever.
 5. BOOK — after any fill: `python cli.py buy/sell ...`, update trades.md on closes, commit and
    push state, and send a push notification (one line: what, price, P&L or stop level).
