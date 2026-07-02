@@ -16,7 +16,11 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 3. Send a push notification: autopilot engaged, window end time, current positions.
 
 **The cycle — repeat every ~10 minutes (ScheduleWakeup, ~600s), until the window ends:**
-1. EXITS FIRST — for each open position, against live marks:
+1. EXITS FIRST — start by re-checking get_option_positions (nonzero) and working-order states,
+   NOT just quotes: a broker-side stop can fire between cycles and quotes alone will not show
+   it (learned 2026-07-02 — a stop filled at 9:03 and went unnoticed for two cycles). If a
+   stop filled since the last cycle: book it in the ledger, journal it, push notify, and free
+   the slot. Then, for each still-open position, against live marks:
    - Take-profit: if inside its profit band and momentum is NOT confirming higher (volume
      fading, structure stalling), SELL at the mid. If the extreme-confidence checklist holds,
      trail instead per PERSONA.
