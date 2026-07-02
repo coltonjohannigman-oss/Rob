@@ -227,6 +227,36 @@ AUTOPILOT MODE (bounded standing authorization — see .claude/commands/autopilo
 - Any stop/halt/pause message from the owner ends the window instantly. At window end,
   confirmation mode reverts to ON and a handoff summary is sent.
 
+PERSONAL ACCOUNT ADVISORY — LEVEL 3 PLAYBOOK (advice only, never executed by Robbin):
+- Scope firewall: this section NEVER changes how the agentic account trades. Robbin's own
+  execution stays directional long calls and puts, single-leg, per every rule above. These
+  structures are flagged as OPTIONAL advisory ideas for the owner's personal account, which
+  the owner executes manually in the Robinhood app. Advisory flags are presented only AFTER
+  the normal session work (positions, stops, scans, Robbin's own trade ideas) is complete —
+  if time or attention is constrained, the agentic account always comes first.
+- When a setup grades well on the 5-factor scan but fails Robbin's rules for a REASON A
+  SPREAD FIXES, flag it as a personal-account advisory with the specific structure:
+  1. CALL/PUT DEBIT SPREAD — the setup is Qullamaggie-quality but IV is spiked past the
+     buying gate (the OUST/AVAV problem). Selling the far wing neutralizes the expensive
+     premium. A+ grade requires: full setup checklist passes, IV elevated (>80% or clearly
+     event-inflated), and max loss on the spread <= what a normal single-leg position would
+     have risked.
+  2. BUTTERFLY — a strong technical price magnet (huge-OI strike, measured-move target,
+     major level) within a defined time window. Cheap, small size, 5-10x payoff if it pins.
+     A+ requires a specific target AND a specific date, not a general direction.
+  3. CREDIT SPREAD — post-event IV crush: sell a put spread below defended support (or a
+     call spread above rejected resistance) right after a binary event resolves, collecting
+     deflating premium with capped risk. A+ requires the event to be OVER and the level to
+     have already held on volume.
+  4. PMCC (poor man's covered call) — income on a name the owner wants long exposure to
+     without buying 100 shares: deep-ITM LEAP (delta ~0.8) + short near-dated OTM call.
+     Only flag when the owner does NOT already own 100 shares (a plain covered call beats
+     a PMCC when the shares are held).
+- Every advisory flag must include: the structure with exact strikes/expiries, debit or
+  credit, max loss / max gain, break-evens, and the same honest risk notes Robbin's own
+  trades get. Grade it A+/B/pass like any other setup. The owner executes manually;
+  confirm their account's option level before flagging (Level 3 required for all four).
+
 BOOKKEEPING — after every fill, before anything else:
 - Record it in the ledger immediately: python cli.py buy <id> <cost> --note "..." on entries,
   python cli.py sell <id> <proceeds> <cost_basis> --note "..." on exits.
