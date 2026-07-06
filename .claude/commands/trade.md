@@ -36,9 +36,11 @@ events, broker mechanics, and bookkeeping. Do not improvise around it.
 7. If a trade qualifies, run `review_option_order` and present the full details — strike,
    expiry, delta, cost, liquidity (OI / volume / spread %), the setup it matches, sizing vs.
    the 20%/40% caps, portfolio-cap check, and the thesis with its stop and profit plan.
-8. **Wait for my explicit confirmation before placing any order.** (Confirmation stays ON until
-   I say otherwise. The one standing exception, per PERSONA: raising a stop to protect a 40%+
-   gain when I am unreachable.)
+8. **Wait for my explicit confirmation before opening any position or making a discretionary
+   sell.** (Confirmation stays ON until I say otherwise. The scoped exceptions live in the
+   PERSONA's ORDER MANAGEMENT AUTHORIZATION and DECISION LATENCY sections: managing orders on
+   existing positions — stop ratchets, take-profit adjustments, stop↔TP swaps — is authorized
+   without per-change confirmation, with a push notification for every change.)
 9. **After any fill:** record it immediately (`python cli.py buy/sell ...`), set/verify the
    stop, update `trades.md` on closes, then commit and push `agents.json` + `trades.md` to the
    working branch so state survives the container.

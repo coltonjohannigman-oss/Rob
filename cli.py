@@ -100,7 +100,7 @@ def cmd_trade(args):
             trade_idea=args.idea or "",
             confirm=not args.auto_approve,
         )
-        print(f"\n[SESSION SUMMARY]\n{summary}")
+        print(f"\n[SESSION PROMPT]\n{summary}")
     except (KeyError, ValueError) as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)

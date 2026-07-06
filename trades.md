@@ -34,7 +34,8 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ### GRND $15C Jul 17 — Episodic pivot base breakout — OPENED 2026-07-01
 - **Entry:** $1.05 x1 (order 6a45274e; original $0.95 limit missed, re-priced once to mid)
-- **Stop:** $0.75 stop-market GTC (order 6a4527e4)
-- **Take-profit target:** $1.37–1.89 (+30–80%); trail if squeeze extends
+- **Working order:** take-profit sell limit $1.50 GTC (order 6a4bac91, placed 2026-07-06 —
+  replaced the original $0.75 stop 6a4527e4 at the owner's direction; TP-only structure,
+  thesis line $15 managed manually)
 - **Thesis:** 2-week base $13–15, broke out on 1.7–1.9x relative volume; 25.5M low float. Thesis-exit if closes below $15.
 - **Rule note:** entered with ~20% spread (rule says <15%) and 0.69 delta (rule 0.35–0.55) — justified by OI 1,560 when all OTM strikes were illiquid; formalized as exception rubric in PERSONA 2026-07-01.
