@@ -30,12 +30,20 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   because of this trade. Also: autopilot cycles 2-3 read quotes only and missed that the stop
   had already fired — fixed by checking positions/order states every cycle.
 
+### 3. GRND $15C Jul 17 — Episodic pivot base breakout — CLOSED 2026-07-06 ✅ +$35 (+33.3%)
+- **Entry:** $1.05 x1, 2026-07-01 (order 6a45274e; original $0.95 limit missed, re-priced once to mid)
+- **Exit:** $1.40 — owner sold in-app at 1:02 PM CT (order 6a4bbd46), after cancelling the
+  agent's $1.50 TP to free the contract (two of the owner's sell attempts failed first against
+  the one-order-per-contract lock).
+- **Thesis:** 2-week base $13–15 breakout on 1.7–1.9x volume, 25.5M low float. Held 3 sessions;
+  stock never closed below $15.
+- **Right:** Volume-confirmed entry worked; +33% lands inside the 30–80% band; the owner's $1.40
+  exit filled while the agent's $1.50 never did — a bird in hand.
+- **Wrong:** Nothing major. Entry used the liquidity exception (20% spread, 0.69 delta) and paid
+  for it in mark-to-market noise all week. The stop→TP swap left 5 hours of unprotected drift
+  (accepted tradeoff, owner's call).
+- **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
+
 ## Open positions
 
-### GRND $15C Jul 17 — Episodic pivot base breakout — OPENED 2026-07-01
-- **Entry:** $1.05 x1 (order 6a45274e; original $0.95 limit missed, re-priced once to mid)
-- **Working order:** take-profit sell limit $1.50 GTC (order 6a4bac91, placed 2026-07-06 —
-  replaced the original $0.75 stop 6a4527e4 at the owner's direction; TP-only structure,
-  thesis line $15 managed manually)
-- **Thesis:** 2-week base $13–15, broke out on 1.7–1.9x relative volume; 25.5M low float. Thesis-exit if closes below $15.
-- **Rule note:** entered with ~20% spread (rule says <15%) and 0.69 delta (rule 0.35–0.55) — justified by OI 1,560 when all OTM strikes were illiquid; formalized as exception rubric in PERSONA 2026-07-01.
+(none — 100% cash)

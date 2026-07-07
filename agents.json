@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 704.86,
+      "balance": 739.86,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 105.0,
-      "realized_pnl": 55.0
+      "spent": 0.0,
+      "realized_pnl": 90.0
     }
   },
   "transactions": [
@@ -97,6 +97,14 @@
       "type": "credit",
       "note": "SOFI $18.5C Jul17 x1 \u2014 stop-market $0.85 fired @ $0.84 (order 6a456baf, 9:03 AM CT post-NFP whipsaw)",
       "timestamp": "2026-07-02T14:35:46.621657+00:00"
+    },
+    {
+      "id": "62cad7cd",
+      "agent_id": "b7763d77",
+      "amount": 140.0,
+      "type": "credit",
+      "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
+      "timestamp": "2026-07-07T03:09:53.659172+00:00"
     }
   ]
 }
