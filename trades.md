@@ -46,4 +46,15 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ## Open positions
 
-(none — 100% cash)
+### MRNA $65P Jul 17 — Parabolic exhaustion / EP-down — OPEN
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4). Recovered 7/13: the 7/10 session died before
+  bookkeeping — ledger entry backfilled from broker records ($155.20 incl. fees).
+- **Thesis:** MRNA parabola $46→$85.60 (+85% in 3 wks) cracked 7/7-7/8; entry on the 7/10
+  breakdown (-11% on 2x vol). Thesis stop: MRNA closes back above the 10-day EMA on volume.
+- **Status 7/13 ~8:45 AM CT:** MRNA $65.70 (-3.8% follow-through), put marks $2.255 = +45.5%
+  (+$70 paper). Owner elected to ride today over banking (puts-band recommendation was sell).
+- **Protection:** stop-limit $1.95 trigger / $1.80 limit GTC (order 6a54ea36, ratcheted from
+  $1.25/$1.10) — locks ~+$25-40 floor. This order holds the contract.
+- **Binary event:** CPI Tue 7/14 8:30 ET. Stops do NOT protect through gaps, and a stop-LIMIT
+  can be gapped past entirely — holding overnight means accepting the gap. Decision due before
+  today's close: bank it or explicitly accept CPI gap risk. 4 DTE, theta ~-$0.30/day.
