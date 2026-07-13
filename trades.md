@@ -44,17 +44,23 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — Parabolic exhaustion / EP-down — CLOSED 2026-07-13 ✅ +$28.74 (+18.5%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4). Session died before bookkeeping; backfilled 7/13.
+- **Exit:** $1.84 — ratcheted stop-limit $1.95/$1.80 fired 8:43 AM CT 7/13 (order 6a54ea36),
+  five minutes after placement, on the first bounce off the $65.70 morning low.
+- **Thesis:** Parabola $46→$85.60 (+85%/3wk) cracked 7/7-7/8; entered the 7/10 breakdown
+  (-11% on 2x vol). Peaked +45.5% ($2.255 mark) at 8:35 AM CT 7/13.
+- **Right:** The setup itself (A-grade EP-down); the stop ratchet reflex — MRNA V-bounced to
+  $69+ within the hour and the 65P would have bled toward worthless. +18.5% beat every price
+  available after 8:43. The never-round-trip rule worked exactly as written.
+- **Wrong:** At the +45% decision point the persona said bank it (puts bias 30-50%, exhaustion
+  = day-trade rules); ride-with-stop was chosen instead and cost ~$41 vs the $2.25 mid exit.
+  Also: on a 27%-wide spread, a stop trigger at the bid ($1.95 vs $2.255 mark) is effectively
+  a market order on the first flicker — either accept that or bank at the mid; there is no
+  free "let it ride" on wide-spread contracts.
+- **Rule note:** "take profits FASTER on puts" validated — violent bear-market bounces are the
+  persona's stated reason, and this one arrived in minutes.
+
 ## Open positions
 
-### MRNA $65P Jul 17 — Parabolic exhaustion / EP-down — OPEN
-- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4). Recovered 7/13: the 7/10 session died before
-  bookkeeping — ledger entry backfilled from broker records ($155.20 incl. fees).
-- **Thesis:** MRNA parabola $46→$85.60 (+85% in 3 wks) cracked 7/7-7/8; entry on the 7/10
-  breakdown (-11% on 2x vol). Thesis stop: MRNA closes back above the 10-day EMA on volume.
-- **Status 7/13 ~8:45 AM CT:** MRNA $65.70 (-3.8% follow-through), put marks $2.255 = +45.5%
-  (+$70 paper). Owner elected to ride today over banking (puts-band recommendation was sell).
-- **Protection:** stop-limit $1.95 trigger / $1.80 limit GTC (order 6a54ea36, ratcheted from
-  $1.25/$1.10) — locks ~+$25-40 floor. This order holds the contract.
-- **Binary event:** CPI Tue 7/14 8:30 ET. Stops do NOT protect through gaps, and a stop-LIMIT
-  can be gapped past entirely — holding overnight means accepting the gap. Decision due before
-  today's close: bank it or explicitly accept CPI gap risk. 4 DTE, theta ~-$0.30/day.
+(none — 100% cash)

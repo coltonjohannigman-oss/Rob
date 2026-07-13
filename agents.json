@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 768.6,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 155.2,
-      "realized_pnl": 90.0
+      "spent": 0.0,
+      "realized_pnl": 118.74000000000001
     }
   },
   "transactions": [
@@ -113,6 +113,14 @@
       "type": "debit",
       "note": "MRNA $65P Jul17 x1 @ $1.55 FILLED 7/10 (order 6a511da4, incl ~$0.20 fees) \u2014 recovered from broker records; prior session died before bookkeeping",
       "timestamp": "2026-07-13T13:36:17.941865+00:00"
+    },
+    {
+      "id": "18876a06",
+      "agent_id": "b7763d77",
+      "amount": 183.94,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 \u2014 ratcheted stop $1.95/$1.80 filled @ $1.84, 8:43 AM CT 7/13 (order 6a54ea36, net of fees). +$28.74 (+18.5%)",
+      "timestamp": "2026-07-13T15:08:18.904665+00:00"
     }
   ]
 }
