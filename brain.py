@@ -225,6 +225,10 @@ BROKER MECHANICS (Robinhood, learned the hard way — do not relearn these live)
   require the market to have been open at least ~15 minutes.
 - Modifying an order = cancel then re-place: verify the cancel actually completed (it is async,
   and a fill can race it) before placing the replacement.
+- Stop-MARKET orders are blocked until 9:45 AM ET (15 min after the open). Cancelling an
+  existing stop before 9:45 leaves the position naked with no way to re-place it — during that
+  window use a stop-LIMIT (trigger with a ~$0.10 limit band) as the guard, or wait until 9:45
+  to touch the stop at all.
 - Missed limit re-price policy: if a confirmed entry misses because the market moved, re-price
   ONCE, up to no higher than the current mid — with user confirmation (inside an /autopilot
   window, the window authorization covers the re-price). If it misses again, the trade is
