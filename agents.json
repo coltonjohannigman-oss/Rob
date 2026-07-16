@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 786.86,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 110.0,
-      "realized_pnl": 90.0
+      "spent": 0.0,
+      "realized_pnl": 137.0
     }
   },
   "transactions": [
@@ -113,6 +113,14 @@
       "type": "debit",
       "note": "WULF $18P Jul31 x1 @ $1.10 owner in-app buy (order 6a569290; agent $1.05 order 6a5682a9 cancelled unfilled \u2014 breakdown setup, 3-mo shelf break ~1.7x vol)",
       "timestamp": "2026-07-14T19:56:37.671721+00:00"
+    },
+    {
+      "id": "27c76666",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 TP limit (order 6a591131, filled 12:55 PM CT 7/16, +$47/+42.7%)",
+      "timestamp": "2026-07-16T22:29:42.274334+00:00"
     }
   ]
 }

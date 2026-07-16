@@ -44,6 +44,26 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. WULF $18P Jul 31 — Breakdown/Downtrend (bearish #2) — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 (owner in-app fill, order 6a569290; agent's $1.05 limit
+  cancelled unfilled — the nickel for certainty was worth it, echoing GRND).
+- **Exit:** $1.57 — user-confirmed TP limit a hair above mid (order 6a591131), filled 12:55 PM
+  CT on day 3 of downside follow-through. Inside the puts-specific 30-50% band bias.
+- **Thesis:** Broken momentum leader: −26% over 7 sessions, $427.6M Q1 net loss, sold off even
+  on the good-news Anthropic-lease headlines, weak bounce rejected at declining 10d EMA 7/9,
+  then a ~1.7x-volume break of the 3-month $19-20 shelf on 7/14 — with CLSK/BMNR ripping the
+  same day (relative weakness, not sector drag). WULF fell $19.59 → $17.9 by exit.
+- **Right:** First put trade under the BEARISH SETUPS section and it played to script. Volume
+  gate + chart gate did their jobs; day-1 entry on the shelf break was correct even though the
+  breakdown took 2 days to confirm. Stop ratchets $0.80 → $1.05 → $1.30 meant the winner could
+  never round-trip. Sold into strength, not into the bounce.
+- **Wrong / lessons:** (1) Cancelling the stop at 8:36 AM CT before Robinhood's 9:45 AM ET
+  stop-market window left the position naked to a rejection — saved by a stop-LIMIT guard;
+  mechanic now in PERSONA. (2) The TP limit occupied the single order slot for ~40 minutes
+  unprotected (accepted single-contract tradeoff). (3) Entry day stall (7/14-7/15 flat) burned
+  2 days of theta before the move — the time-stop discipline was 6 days from firing; puts need
+  the move to start fast.
+
 ## Open positions
 
 (none — 100% cash)
