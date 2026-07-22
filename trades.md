@@ -44,6 +44,26 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — Breakdown / EP-down (bearish) — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4)
+- **Exit:** $1.84 — stop-limit ($1.95 trigger / $1.80 limit) filled at $1.84 (order 6a54ea36, 2026-07-13)
+- **Thesis:** Biotech downtrend, put play on weakness into the declining EMA per BEARISH SETUPS.
+- **Right:** Took the profit near the 30-50% put band as the persona prescribes (bank puts faster);
+  ratcheted stop-limit captured +18.7% rather than round-tripping.
+- **Wrong:** Sub-20% exit is at the low end — the giveback trigger fired before the fuller move.
+  Acceptable: put trades bounce violently, and the rule says bias to the front of the band.
+- **Ledger note:** backfilled 2026-07-22 (session had not recorded it live).
+
+### 5. WULF $18P Jul 31 — Breakdown put (bearish) — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 — opened by owner in-app (order 6a569290, placed_agent=user)
+- **Exit:** $1.57 take-profit, agentic (order 6a591131, 2026-07-16)
+- **Thesis:** Crypto-miner breakdown; long puts on the downtrend.
+- **Right:** +42.7% lands squarely in the 30-50% put band; clean TP fill. Stop was ratcheted up
+  ($0.80 → $1.05 → $1.30 stops seen in order history) before the TP swap took the contract.
+- **Wrong:** Nothing major — owner opened, agent managed the exit cleanly. The one-order-per-contract
+  dance (three cancelled stops) is just Robinhood mechanics, not an error.
+- **Ledger note:** backfilled 2026-07-22 (session had not recorded it live).
+
 ## Open positions
 
 (none — 100% cash)
