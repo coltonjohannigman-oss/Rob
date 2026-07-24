@@ -46,4 +46,13 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ## Open positions
 
-(none — 100% cash)
+### SLB $53C Aug 21 — Episodic pivot (earnings) — OPENED 2026-07-24
+- **Entry:** $1.20 x1, 2026-07-24 8:56 AM CT (order 6a636dda). Held a $1.20 limit through a +9% run; a
+  pullback filled us at the limit rather than chasing to mid.
+- **Thesis:** Q2 earnings beat ($0.55 vs $0.52) gapped SLB +8-9% out of a month-long $45-48 base,
+  reclaiming the 10/20-day EMAs. B-grade: modest catalyst, downtrend-reversal (not new highs),
+  running into 50-day SMA resistance at $51.5.
+- **Stop:** stop-market $0.85 (−30%), order 6a6374d2 (GFD — re-arm each session). Thesis stop:
+  SLB loses the $50 breakout level / today's low ~$49.75.
+- **Profit plan:** B-grade → take the 30-50% band (~$1.55-1.80, roughly SLB $53-54). Overhead at
+  $54-56 (May) then $58.82 (52wk high). Not a runner unless it clears $54-56 on volume.
