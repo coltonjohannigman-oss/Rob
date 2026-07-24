@@ -44,15 +44,24 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. SLB $53C Aug 21 — Episodic pivot (earnings) — CLOSED 2026-07-24 ✅ +$24 (+20%)
+- **Entry:** $1.20 x1, 2026-07-24 8:56 AM CT (order 6a636dda)
+- **Exit:** $1.44 — take-profit at 11:02 AM CT (order 6a638ca9), ~2 hours held
+- **Thesis:** Q2 beat ($0.55 vs $0.52) gapped SLB +8-9% out of a month-long $45-48 base, reclaiming
+  the 10/20-day EMAs. Graded B: modest catalyst, downtrend-reversal (not new highs), running into
+  50-day SMA resistance at $51.5.
+- **Right:** Pricing discipline paid — held a $1.20 limit through a +9% opening run instead of chasing
+  to mid, and a pullback filled us at the limit. Read the stall correctly: SLB flattened under $52/50d
+  exactly as flagged, so banked +20% rather than hoping for the 30-50% band. Tight spread at exit let
+  the sell fill instantly near mid.
+- **Wrong:** Took profit at +20%, just shy of the 30% band floor — a hair early by the letter of the
+  rule, though justified by B-grade + resistance + selling into the bid. Bigger question: was a B-grade
+  worth entering at all? It was the only liquid, real setup on the board (RNG's chart was better but its
+  options were dead; THC priced out) and the owner wanted deployment. Net: a clean, fast, disciplined
+  scalp on a mediocre setup — exactly what a B should be.
+- **Rule note:** RNG (A-grade EP, +27% to new highs) was untradeable on option liquidity — OI 0-232,
+  spreads 33-58%. Good chart ≠ tradeable trade. Same lesson as the size-out on THC.
+
 ## Open positions
 
-### SLB $53C Aug 21 — Episodic pivot (earnings) — OPENED 2026-07-24
-- **Entry:** $1.20 x1, 2026-07-24 8:56 AM CT (order 6a636dda). Held a $1.20 limit through a +9% run; a
-  pullback filled us at the limit rather than chasing to mid.
-- **Thesis:** Q2 earnings beat ($0.55 vs $0.52) gapped SLB +8-9% out of a month-long $45-48 base,
-  reclaiming the 10/20-day EMAs. B-grade: modest catalyst, downtrend-reversal (not new highs),
-  running into 50-day SMA resistance at $51.5.
-- **Stop:** stop-market $0.85 (−30%), order 6a6374d2 (GFD — re-arm each session). Thesis stop:
-  SLB loses the $50 breakout level / today's low ~$49.75.
-- **Profit plan:** B-grade → take the 30-50% band (~$1.55-1.80, roughly SLB $53-54). Overhead at
-  $54-56 (May) then $58.82 (52wk high). Not a runner unless it clears $54-56 on volume.
+(none — 100% cash)

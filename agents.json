@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 815.5,
+      "balance": 839.5,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 120.0,
-      "realized_pnl": 90.0
+      "spent": 0.0,
+      "realized_pnl": 114.0
     }
   },
   "transactions": [
@@ -121,6 +121,14 @@
       "type": "debit",
       "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, EP earnings breakout, filled 2026-07-24)",
       "timestamp": "2026-07-24T14:20:40.001265+00:00"
+    },
+    {
+      "id": "f14eeb3c",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 (order 6a638ca9, +20% take-profit, EP earnings breakout)",
+      "timestamp": "2026-07-24T16:03:01.862030+00:00"
     }
   ]
 }
