@@ -3,7 +3,7 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 839.4,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
       "realized_pnl": 90.0
@@ -105,6 +105,14 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "113b3542",
+      "agent_id": "b7763d77",
+      "amount": 99.54,
+      "type": "credit",
+      "note": "Reconcile ledger to broker buying power \u2014 account 100% cash, broker cash $839.40 vs ledger $739.86 (gap $99.54)",
+      "timestamp": "2026-07-28T17:07:10.891652+00:00"
     }
   ]
 }
