@@ -46,4 +46,49 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ## Open positions
 
-(none — 100% cash)
+### Robbin — agentic account (452369101)
+
+(none — 100% cash. Ledger $739.86 vs broker buying power $839.40; $99.54 unreconciled as of 2026-07-30.)
+
+### Owner's personal account (439441866) — advisory positions, logged retroactively 2026-07-30
+
+Both entries below were RECOMMENDED BY A PRIOR AGENT SESSION on 2026-07-29 and executed by the
+owner in-app. Neither was logged at the time. The next session opened blind and had to
+reverse-engineer them from raw contract IDs, then wrongly told the owner they were self-directed.
+Logging advisory flags is now a PERSONA requirement because of this.
+
+#### PSN $35P/$30P Aug 21 x3 — bear put debit spread (EP-down) — OPEN, −83%
+- **Entry:** $0.88 net debit x3 = **$264**, 2026-07-29 11:13 AM ET (order 6a6a189a)
+- **As advised:** "Level-3 idea — grade B+", net debit ~$1.00, max risk $100/spread, 4:1 payoff,
+  break-even $34.00. Owner filled better ($0.88) but sized 3 spreads vs the 1 implied.
+- **Thesis as given:** PSN $38.14 (−38%) after Q2 miss + guidance cut — "textbook Qullamaggie
+  episodic-pivot-down, continued downside is the base case." Debit spread chosen to neutralize
+  IV blown out to 74–83%.
+- **Current:** PSN $42.20 (bounced off the $36.26 low), spread ~$0.25 → $75. **−$219.**
+- **Why it was wrong — two hard gates skipped, not weighed:**
+  1. **LIQUIDITY (fatal):** persona requires OI > 500. $35P OI 450, $30P OI 151 — *every* strike
+     in the chain fails. This is an automatic reject before any thesis. It is also why the
+     position is now near-unexitable: the $30P has printed a $0.00 bid.
+  2. **TIMING:** bought ON the −38% panic day. Persona bars puts after a −20% flush with IV
+     blown out and prefers the first weak bounce into the declining 10/20-day EMA. A debit
+     spread fixes expensive premium; it does not fix buying the flush.
+- **Grade: D.** B+ was far too generous. Correct action was a pass on liquidity alone.
+
+#### F $16C Aug 21 x3 — post-earnings continuation — OPEN, −71%
+- **Entry:** $0.45 x3 = **$135**, 2026-07-29 11:07 AM ET (order 6a6a1721)
+- **As advised:** "a real, qualifying trade... clears every hard gate — grade B", sized 1
+  contract (~$69) at ~$0.69. Owner took 3 at a better price.
+- **Thesis as given:** Q2 beat +24% w/ raised FY guidance, elite liquidity (OI ~9,900, 2.9%
+  spread), cheap IV 37%, no pending binary event.
+- **Current:** F $14.72, mark $0.13 → $39. **−$91.50.** The earnings gap has fully round-tripped
+  ($14.96 pre-print close → $14.72), so the thesis is objectively invalidated — a thesis-stop exit.
+- **Why it was wrong:** the write-up named the disqualifier itself — "a slow mega-cap recovering
+  INTO resistance, not an explosive breakout to new highs" — and recommended it anyway as "the
+  only knock." Setup quality is not one gate among many; it IS the trade. Liquidity and IV are
+  necessary, not sufficient.
+- **Grade: D+.** The analysis was honest; the conclusion ignored it.
+
+#### SOFI — 100 shares @ $18.10 + short $20C Aug 14 — covered call — OPEN
+- Shares $1,588.50 (−$221.50). Short call collected $90, now $3.50 → **+$86.50 (96% captured)**.
+- Roll to the $18C Sep 18 for ~$0.51–0.56 net credit was advised 2026-07-30; owner working it.
+- The covered call absorbed 39% of the share drawdown — this leg did its job.

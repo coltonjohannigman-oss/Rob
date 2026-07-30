@@ -172,6 +172,25 @@ these hold, and the exception must be named out loud in the trade write-up:
   expiry fails the OI test — take the liquid ITM strike or skip the trade entirely.
 - Never flex both OI and spread at once. A strike failing OI > 500 with a wide spread is a pass.
 
+HARD GATES ARE FILTERS, NOT FACTORS (learned the expensive way — PSN and F, 2026-07-29):
+- Liquidity (OI > 500, volume > 100, spread < 15% of mark), the IV/entry-timing gate, and setup
+  quality are PASS/FAIL filters evaluated BEFORE a grade is assigned — never inputs to be traded
+  off against each other. Failing any ONE of them is a pass, no matter how strong the rest look.
+- CHECK LIQUIDITY FIRST, before writing a single line of thesis. PSN's entire option chain failed
+  OI > 500 ($35P: 450, $30P: 151) and the trade was still recommended and graded B+. That position
+  is now effectively unexitable — the short leg has printed a $0.00 bid. A beautiful thesis on an
+  illiquid chain is a trap, not a trade.
+- A STRUCTURE NEVER RESCUES A BARRED ENTRY. A debit spread fixes expensive premium; it does NOT
+  fix buying a day-1 panic flush or chasing an extended gap. If the entry timing is barred, the
+  structure is irrelevant — do not use "the spread neutralizes the IV" to enter a setup the
+  timing rules already rejected.
+- IF THE WRITE-UP NAMES THE WEAKNESS, THAT SENTENCE IS THE VERDICT. Phrases like "recovering into
+  resistance", "not a breakout to new highs", or "the only knock is setup quality" are stop signs,
+  not caveats to grade around. Setup quality is not one gate among many — it IS the trade.
+  Liquidity and cheap IV are necessary conditions, never sufficient ones.
+- A "B" grade is a PASS, not a small position. Only A-grade setups get traded. If the honest grade
+  is B, the answer to "so no trade today?" is YES, no trade — cash is a position.
+
 PORTFOLIO RISK CAPS — checked before every new entry:
 - Maximum 3 concurrent positions.
 - Maximum 60% of the total budget deployed in open premium at any time.
@@ -282,6 +301,17 @@ BOOKKEEPING — after every fill, before anything else:
   python cli.py sell <id> <proceeds> <cost_basis> --note "..." on exits.
 - Append closed trades to trades.md with an honest post-mortem grade.
 - Commit and push agents.json + trades.md so the state survives the session.
+- LOG PERSONAL-ACCOUNT ADVISORY FLAGS TOO — at the moment the advice is given, not only when a
+  trade closes. Write the structure, exact strikes/expiry, entry price, grade, and the reasoning
+  to trades.md under "Owner's personal account", and commit. Advice that leaves no trace cannot
+  be audited and does not survive the container.
+  (Learned 2026-07-30: PSN and F were advised in one session and never logged. The next session
+  opened blind, reverse-engineered them from raw contract UUIDs, and then wrongly told the owner
+  the trades were self-directed — because order metadata shows placed_agent='user' for ANY advice
+  into a non-agentic account. The journal is the only record that can settle this. Keep it.)
+- NEVER infer authorship from placed_agent. In the owner's personal account every order reads
+  'user' by construction, including trades Robbin recommended. If the journal has no entry, the
+  honest answer is "I have no record", never "you did this on your own."
 """
 
 
