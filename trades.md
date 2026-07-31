@@ -44,6 +44,35 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — EP-Down / Breakdown (PUT) — CLOSED 2026-07-13 ✅ +$29 (+18.7%) — BACKFILLED
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4, agentic)
+- **Exit:** $1.84 — stop-triggered exit, stop $1.95 → filled $1.84 (order 6a54ea36, 7/13)
+- **Note:** Reconstructed 2026-07-31 from broker order history — this round-trip was never
+  recorded in the ledger at the time. Trailing stop on a put worked: converted the move into a
+  locked +18.7% rather than round-tripping. Modest gainer; disciplined exit.
+- **Grade:** B. Right side of a downtrend, protected the gain. Not a home run but clean.
+
+### 5. WULF $18P Jul 31 — Bearish swing (PUT) — CLOSED 2026-07-16 ✅ +$47 (+42.7%) — BACKFILLED
+- **Entry:** $1.10 x1, 2026-07-14 (order 6a569290, **owner-opened in-app**)
+- **Exit:** $1.57 (order 6a591131, agentic, 7/16)
+- **Note:** Reconstructed 2026-07-31 from broker history — untracked at the time. Owner opened
+  the put manually; agent closed it two days later at +42.7%, squarely in the 30-80% band.
+- **Grade:** A-. Textbook band exit on a put; +42.7% banked in 2 sessions.
+
+### 6. SLB $53C Aug 21 — Momentum (CALL) — CLOSED 2026-07-24 ✅ +$24 gross / +$23.54 net (+19.6%) — BACKFILLED
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda, agentic)
+- **Exit:** $1.44 same day (order 6a638ca9, agentic) — day-trade round-trip
+- **Note:** Reconstructed 2026-07-31 from broker history — untracked at the time. The $0.46 of
+  net regulatory/exchange fees across all three backfilled trades was absorbed into this entry
+  to true the ledger to broker cash exactly ($839.40).
+- **Grade:** B. Quick +20% same-day scalp; fine, but small relative to the risk of a day trade.
+
+**Bookkeeping note (2026-07-31):** Trades 4-6 were discovered during the session-start
+reconciliation — the ledger had stalled at trade 3 (GRND, 7/6) while three more round-trips
+filled on the broker. All three were winners (+$29, +$47, +$24 = +$100 gross). Ledger backfilled
+via cli.py buy/sell pairs; realized P&L corrected from +$90 to +$189.54; remaining budget now
+matches broker buying power at $839.40.
+
 ## Open positions
 
 (none — 100% cash)

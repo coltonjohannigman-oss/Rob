@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 839.4,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 189.54
     }
   },
   "transactions": [
@@ -105,6 +105,54 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "eff75104",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4, 7/10 \u2014 BACKFILL, untracked)",
+      "timestamp": "2026-07-31T14:07:22.013465+00:00"
+    },
+    {
+      "id": "f0b40edc",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 sold @ $1.84 stop (order 6a54ea36, 7/13 \u2014 BACKFILL, +$29)",
+      "timestamp": "2026-07-31T14:07:22.068186+00:00"
+    },
+    {
+      "id": "13d63efc",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, owner-opened 7/14 \u2014 BACKFILL, untracked)",
+      "timestamp": "2026-07-31T14:07:22.139861+00:00"
+    },
+    {
+      "id": "7513a36a",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 (order 6a591131, 7/16 \u2014 BACKFILL, +$47)",
+      "timestamp": "2026-07-31T14:07:22.190241+00:00"
+    },
+    {
+      "id": "8ffd45c8",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, 7/24 \u2014 BACKFILL, untracked)",
+      "timestamp": "2026-07-31T14:07:22.254404+00:00"
+    },
+    {
+      "id": "ddb84d00",
+      "agent_id": "b7763d77",
+      "amount": 143.54,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 (order 6a638ca9, 7/24 \u2014 BACKFILL, +$24 gross; $0.46 absorbed here = net regulatory/exchange fees across all 3 backfilled round-trips, trues ledger to broker $839.40)",
+      "timestamp": "2026-07-31T14:07:22.313513+00:00"
     }
   ]
 }
