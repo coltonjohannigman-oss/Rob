@@ -44,11 +44,14 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. GDX $85C Aug 21 — Momentum/EP breakout (gold miners) — CLOSED 2026-08-07 ✅ +$325 (+130%)
+- **Entry:** $2.50 x1, 2026-08-05 ~11:56 AM CT (order 6a736b32).
+- **Exit:** $5.75, 2026-08-07 8:36 AM CT (order 6a75df48) — take-profit.
+- **Thesis:** GDX broke out 8/5 (gapped $77.92→$83.68 on 40.7M vol ≈2x avg). Gold kept surging: 8/7 GDX gapped +7.2% to ~$90, driving the $85C from $2.29 (8/6) to a $6.38 peak (+155%).
+- **Right:** Banked +130% — far beyond the 30-80% band — on a single 2-week contract after a vertical gap, exactly when the job shifts from making to protecting. Called the reversal: mark faded $6.38→$5.83 in the 4 min between the recommendation and the fill; re-pricing the limit $6.40→$5.75 secured the exit instead of chasing it down. A "letting-a-winner-run" hold would have started giving it back immediately.
+- **Wrong:** The winner rode unprotected overnight on a $1.75 stop (protecting nothing) — the +155% open gap was luck cutting our way, not risk management. A stop ratcheted on 8/6 would have been the disciplined bridge; the first-15-min stop-market block then forced the clean-exit path anyway.
+- **Rule note:** ETF momentum gap = letting-a-winner-run leg 1 (fundamental catalyst) not cleanly met → take the band. Confirmed the "gold gaps reverse fast" read in real time.
+
 ## Open positions
 
-### GDX $85C Aug 21 — Momentum/EP breakout (gold miners) — OPEN
-- **Entry:** $2.50 x1, 2026-08-05 ~11:56 AM CT (order 6a736b32, filled below the $2.52 limit).
-- **Cost basis:** $250. **Stop:** working stop-market $1.75 GTC (order 6a736b57 — 30% hard stop, loose end of the band; assume ~$0.10 slippage on a stop-market → ~$1.65 fill).
-- **Thesis:** GDX broke out 8/5 — gapped $77.92 → open $82.20, closed $83.68 on 40.7M vol (~2x avg), clearing the July range. Holding above the breakout and well above the 10-day EMA (~$77.5). Thesis stop: a volume close back below ~$82 (breakout) / ~$78 (10-day EMA).
-- **Status (8/6 ~8:40 AM CT):** GDX $83.20 (-0.6%), normal day-2 consolidation. Option mark $2.295 (bid 2.19/ask 2.40), delta 0.43, IV 44.7%, OI ~24.9k. P&L -$20.50 (-8.2%). Not in profit band — hold, no TP action.
-- **Bookkeeping note:** this position was opened in the prior session but never logged; recorded to the ledger 8/6 (cli buy $250) with a +$99.50 reconciling credit to align ledger free cash to broker buying power ($589.36).
+(none — 100% cash)
