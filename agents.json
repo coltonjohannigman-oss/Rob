@@ -5,7 +5,7 @@
       "name": "Robbin",
       "balance": 1164.29,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 160.0,
+      "spent": 260.0,
       "realized_pnl": 514.43
     }
   },
@@ -177,6 +177,14 @@
       "type": "debit",
       "note": "OCUL $11C Sep18 x2 @ $0.80 FILLED (order 6a83210d) \u2014 base breakout $8-10.50 range to new highs, RVol 2.7x, AXPAXLI SOL-1/NDA driver; entry 9:56 AM CT 8/17",
       "timestamp": "2026-08-17T14:57:22.915654+00:00"
+    },
+    {
+      "id": "21c26f70",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 FILLED (order 6a8322f1) \u2014 uranium range breakout to 2mo high, RVol 3.2x; entry 10:09 AM CT 8/17",
+      "timestamp": "2026-08-17T15:20:10.305996+00:00"
     }
   ]
 }
