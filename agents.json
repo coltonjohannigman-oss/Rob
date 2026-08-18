@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 1034.8600000000001,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 385.0
     }
   },
   "transactions": [
@@ -105,6 +105,102 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "a69c439a",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4, filled 2026-07-10) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.063963+00:00"
+    },
+    {
+      "id": "c6b03187",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 sold @ $1.84 stop-limit trg $1.95 (order 6a54ea36, 2026-07-13) +18.7% \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.115585+00:00"
+    },
+    {
+      "id": "94d18ad1",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, owner-placed, filled 2026-07-14) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.166285+00:00"
+    },
+    {
+      "id": "d9cb9eb3",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 limit (order 6a591131, 2026-07-16) +42.7% \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.221989+00:00"
+    },
+    {
+      "id": "819d3dea",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, filled 2026-07-24) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.272449+00:00"
+    },
+    {
+      "id": "edc8013b",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 limit (order 6a638ca9, 2026-07-24 same-day) +20.0% \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.337641+00:00"
+    },
+    {
+      "id": "e401f662",
+      "agent_id": "b7763d77",
+      "amount": -250.0,
+      "type": "debit",
+      "note": "GDX $85C Aug21 x1 @ $2.50 (order 6a736b32, filled 2026-08-05) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.404773+00:00"
+    },
+    {
+      "id": "6b392601",
+      "agent_id": "b7763d77",
+      "amount": 575.0,
+      "type": "credit",
+      "note": "GDX $85C Aug21 x1 sold @ $5.75 limit (order 6a75df48, 2026-08-07) +130.0% \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.460705+00:00"
+    },
+    {
+      "id": "f72b328a",
+      "agent_id": "b7763d77",
+      "amount": -160.0,
+      "type": "debit",
+      "note": "OCUL $11C Sep18 x2 @ $0.80 (order 6a83210d, filled 2026-08-17) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.510509+00:00"
+    },
+    {
+      "id": "5cdd95cd",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 (order 6a8322f1, filled 2026-08-17) \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.563950+00:00"
+    },
+    {
+      "id": "ad9504aa",
+      "agent_id": "b7763d77",
+      "amount": 70.0,
+      "type": "credit",
+      "note": "NXE $12C Sep18 x2 stop-market $0.40 fired @ $0.35 (order 6a8326c3, 2026-08-17 1:28 PM CT) -30.0% \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.626676+00:00"
+    },
+    {
+      "id": "88239cf0",
+      "agent_id": "b7763d77",
+      "amount": 60.0,
+      "type": "credit",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 fired @ $0.30 (order 6a832155, 2026-08-18 8:31 AM CT) -62.5% \u2014 stock only -1.6%; loss was post-event IV crush on an OTM strike plus stop-market slippage into the wide opening spread \u2014 backfilled",
+      "timestamp": "2026-08-18T13:39:19.682944+00:00"
     }
   ]
 }
