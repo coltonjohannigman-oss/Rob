@@ -66,6 +66,34 @@ STOP LOSS RULES — exit immediately when any of these trigger, no hesitation:
 The goal is to lose small and win bigger. A 25% loss on one trade is recovered by
 a 35% gain on the next. A 50% loss requires a 100% gain just to break even.
 
+STOP ORDER MECHANICS — how the stop is placed matters as much as where (learned the expensive way
+on OCUL, 2026-08-18: an intended -25% stop delivered -62.5%, and ~$56 of a $100 loss was pure
+execution damage that had nothing to do with the thesis, the stock, or IV):
+1. Use stop-LIMIT, never stop-MARKET, on an option. Set the limit one full spread-width below the
+   trigger. A stop-market says "sweep whatever is resting at any price"; on options that can fill
+   at half the contract's own traded low. Accept the risk of no fill over the certainty of a
+   terrible one — a stop that misses can be re-placed, a bad fill is permanent.
+2. NEVER leave a stop working through the opening auction. The first ~10 minutes have the thinnest
+   book and the widest spreads of the day, and an option stop triggers off the bid/mark — so it can
+   fire on a phantom bid no trade confirms. This is NOT an illiquidity problem and cannot be
+   screened away by the liquidity gates: OCUL had open interest of 14,744 and a 15%-of-mark spread
+   — textbook liquid — and still filled at $0.30 in the second minute of the session when that
+   minute's low was $0.55 and the contract printed $0.70 thirteen minutes later.
+   Practice: on a position held overnight, either cancel the stop before the close and re-place it
+   after the first 15 minutes, or treat the resting stop as gap protection only and be ready to
+   re-buy if it fires on an opening print.
+3. Minimum stop distance = max(25% of entry, 2.5x the current bid/ask spread). A 25% stop on a
+   $0.80 contract is only $0.20 of room; against a $0.10-0.15 spread that is barely one
+   spread-width and ordinary noise takes it out. If the percentage stop sits closer than ~2.5
+   spreads, the contract is too cheap or too wide to hold a resting stop — size down and manage it
+   as a thesis stop instead of pretending the order protects anything.
+4. Attribute every stop-out honestly. After a fill, compare it to the contract's traded range in
+   that minute. A fill materially below the minute's low is EXECUTION DAMAGE, not a thesis loss —
+   log it as such. Misattributing it (blaming "IV crush" or "the setup") teaches the wrong lesson
+   and leaves the actual defect in place.
+5. A stop that fires and is immediately vindicated by further decline was RIGHT — do not "fix" it.
+   NXE's stop took -30% and the contract is worth -45% today; that order did its job.
+
 PROVEN SETUPS — prioritize these three frameworks from top trader Kristjan Kullamägi (Qullamaggie),
 who has made tens of millions using them consistently:
 
@@ -87,6 +115,22 @@ who has made tens of millions using them consistently:
 For all three setups: volume is confirmation. No volume = no conviction = no trade.
 Tight bases before breakouts are better than extended ones. The best trades feel obvious
 in hindsight — if the setup requires too much explaining, skip it.
+
+ENTRY TIMING — the day-1 gap trap (both losses on 2026-08-17 came from this, 8 minutes apart):
+- Volume confirmation belongs to the MOMENT OF ENTRY, not to a move that happened an hour earlier.
+  A 5x-volume opening drive does not license a 10:00 AM entry after the tape has rolled over.
+- Never buy within ~10% of a contract's high of day once that contract has doubled intraday. A
+  30-minute, +175% option move IS the vertical move the parabolic rules forbid buying into. (NXE:
+  filled $0.50 twenty minutes after the contract topped at $0.55; it never traded there again.)
+- Never buy an OTM call while the underlying is BELOW the strike and printing lower highs on the
+  day. That is paying for a breakout that is actively failing. (OCUL: bought the $11 strike with
+  the stock at $10.62, an hour into a fade from $11.16.)
+- On an event-volume gap day, if the underlying has given back more than ~40% of its opening range
+  from the session high, the day-1 entry is OFF. Wait for the pullback-and-reclaim that the
+  EPISODIC PIVOT rule already prescribes — that is the entry, not the opening drive.
+- Do not open two new positions in one session on two different day-1 gap movers. If two names
+  both look urgent on the same morning, that is a signal the tape is seducing you, not that two
+  independent edges appeared at once.
 
 BEARISH SETUPS — the same Qullamaggie frameworks inverted, expressed as LONG PUTS (never
 short shares, never sell premium). Scan the losers list with the same discipline as the
@@ -219,8 +263,10 @@ BROKER MECHANICS (Robinhood, learned the hard way — do not relearn these live)
 - One working order per contract: a single-contract position can have a stop OR a take-profit
   working, never both (OCO is not supported; the second order errors with
   OPTION_NOT_ENOUGH_CONTRACTS_TO_CLOSE). Default: automated stop + manually flagged take-profit.
-- Stop-market on a wide-spread contract fills below the trigger — assume slippage roughly equal
-  to half the spread when computing the locked-in floor.
+- Stop-market on an option can fill FAR below the trigger — the old "half the spread" assumption
+  is wrong and cost real money (see STOP ORDER MECHANICS). Robinhood triggers option stops off the
+  bid/mark, not the last trade, so a thin or momentarily-wide book fires and fills the order at a
+  price no trade ever confirms.
 - Premarket relative volume reads ~1.0x for everything and is meaningless; volume conclusions
   require the market to have been open at least ~15 minutes.
 - Modifying an order = cancel then re-place: verify the cancel actually completed (it is async,

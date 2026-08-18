@@ -86,38 +86,62 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   undocumented process. If it had reversed there would have been no rule to point at.
 
 ### 8. NXE $12C Sep 18 x2 — Momentum breakout attempt — CLOSED 2026-08-17 ❌ -$30 (-30.0%)
-- **Entry:** $0.50 x2 = $100, 2026-08-17 9:04 AM CT (order 6a8322f1)
+- **Entry:** $0.50 x2 = $100, 2026-08-17 10:09:47 AM CT (order 6a8322f1)
 - **Exit:** $0.35 x2 = $70 — stop-market $0.40 fired 1:28 PM CT the **same day** (order 6a8326c3)
-- **Thesis:** NXE gapped up and ran to $11.26 on 14.8M shares (~4x average).
-- **Wrong:** Bought a spike, not a base. NXE opened $10.44, spiked to $11.258, and faded to close
-  $10.75 — the entry was near the high of a gap-up day, ~35 minutes after the open. The $12 strike
-  was never in the money at any point. Hard stop did its job at exactly -30%, the top of the
-  allowed band.
-- **Right:** The stop was in place and it fired without hesitation. Loss capped at the rule.
+- **What actually happened (intraday tape):** NXE sat dead flat at $10.28-10.38 on ~15-35k per
+  10min until 9:20 AM CT, when it exploded — 940k shares in ten minutes — and ran $10.365 → $11.258
+  by 9:50 AM CT (+8.6% in 30 minutes on ~2.5M shares). The $12 call went **$0.20 → $0.55 (+175%)**
+  over those same 30 minutes. **The fill came at $0.50 at 10:09 AM — 20 minutes after the contract
+  set its high of day at $0.55, i.e. within 9% of the top of a vertical move.**
+  It never traded above $0.50 again. Faded all afternoon to $0.38.
+- **Wrong — this is a pure entry error.** Bought the top of a parabolic 30-minute spike. The
+  PERSONA already says "tight bases before breakouts are better than extended ones" and the
+  parabolic rules say never buy into the vertical move itself. A 30-minute, +175% option move IS
+  the vertical move. There was no base, no consolidation, no pullback — just a chase.
+- **Right — the stop was correct and is vindicated.** Fired at -30%, the top of the allowed band,
+  with only $0.05 of slippage on the $0.40 trigger (a normal half-spread). The contract marks
+  **$0.275 today — the stop beat holding by $15.** Do not "fix" this stop.
+- **Grade: F on entry, A on exit.**
 
 ### 9. OCUL $11C Sep 18 x2 — Episodic pivot attempt — CLOSED 2026-08-18 ❌ -$100 (-62.5%)
-- **Entry:** $0.80 x2 = $160, 2026-08-17 8:56 AM CT (order 6a83210d)
-- **Exit:** $0.30 x2 = $60 — stop-market $0.60 fired 8:31 AM CT next morning, one minute after the
-  open, filling at HALF the trigger (order 6a832155)
-- **Thesis:** OCUL gapped to $10.80 and ran to $11.195 on 11.15M shares (~5.6x average).
-- **Wrong — the worst trade in the book, and worth reading twice:**
-  1. **Bought day-1 event IV.** Entry was 26 minutes into a 5.6x-volume event day. Overnight IV
-     crush alone did most of the damage.
-  2. **The stock never confirmed.** OCUL faded from $11.195 to close $10.65 — a reversal candle on
-     huge volume — and the $11 strike closed OUT of the money. That was a thesis break on the
-     entry day and should have triggered a discretionary exit, not a wait for the stop.
-  3. **The stop was not the protection it looked like.** Stop-market $0.60 was set for a -25% loss.
-     It filled at $0.30 for -62.5%. The stock was only -1.6% that morning — this was NOT a stock
-     gap. The option collapsed on IV crush while OTM, and the stop-market then filled deep into the
-     wide opening spread. **A stop-market on a sub-$1 wide-spread contract is not a -25% stop; it
-     is an uncapped stop.**
-  4. **Sizing.** 2 contracts / $160 was the largest position taken since GRND, on the least
-     confirmed setup.
-- **Right:** Nothing to defend on this one.
-- **Rule notes generated:** (a) never open on day 1 of an event-volume gap — wait for the pullback
-  entry the EP rule already prescribes; (b) an OTM strike closing out-of-the-money on entry day is
-  a thesis stop; (c) prefer stop-LIMIT over stop-market on contracts under ~$1.50 or with spreads
-  over ~20%, accepting the risk of no fill over the certainty of a terrible one.
+- **Entry:** $0.80 x2 = $160, 2026-08-17 9:56 AM CT (order 6a83210d)
+- **Exit:** $0.30 x2 = $60 — stop-market $0.60 fired 8:31:26 AM CT next morning, **96 seconds after
+  the opening bell** (order 6a832155)
+- **The entry was NOT a spike chase** (an earlier version of this post-mortem said it was; the
+  intraday tape says otherwise). OCUL gapped to $10.81, ran to $11.16 by 8:50 AM CT, then faded for
+  an hour. The fill at 9:56 AM came with the stock at ~$10.62 — near the session low at that
+  moment, an hour into a downtrend of lower highs. The real entry error is subtler and worse:
+  **bought an OTM ($11) strike while the underlying was below it and making lower highs.** Volume
+  confirmation existed for the 8:30 AM move, not for the 9:56 AM entry. The post-entry peak was
+  $1.03 (+28.75%) — it never even reached the 30% profit band.
+- **The stop is what destroyed this trade, and the numbers are unambiguous.** Minute bars for
+  8/18, the minute the stop fired:
+  | Time (CT) | Contract |
+  |---|---|
+  | 8:30 | $0.68 |
+  | **8:31** | open 0.68, high 0.68, **low 0.55**, close 0.58 ← **filled here at $0.30** |
+  | 8:32-8:34 | $0.60 |
+  | 8:41-8:43 | $0.68 |
+  | 8:44 | $0.73 / $0.70 |
+  **The fill was $0.30 when the lowest price the contract traded that minute was $0.55, and it was
+  back at $0.70 thirteen minutes later.** 45% below the minute's own low.
+- **It was NOT illiquidity and NOT IV crush.** This contract has **open interest of 14,744** and a
+  current spread of $0.60/$0.70 (15% of mark) — it comfortably passes every liquidity gate in the
+  PERSONA. And the option only drifted $0.80 → $0.73 (close) → $0.68 (open) overnight: about -15%,
+  ordinary theta plus a 1.6% down move in the stock. IV today is 69%, not a crush artifact.
+- **The single cause: a GTC stop-market order was live during the opening auction.** Robinhood
+  triggers option stops off the bid/mark, not the last trade. In the first 90 seconds the book is
+  thin and the spread is at its widest, the bid momentarily printed at-or-below $0.60, the stop
+  converted to a market order, and it swept whatever was resting — $0.30.
+- **Counterfactuals, entry $160:**
+  | Exit | Value | P&L |
+  |---|---|---|
+  | Actual stop-market fill $0.30 | $60 | **-$100 (-62.5%)** |
+  | Fair value at trigger ($0.58) | $116 | -$44 (-27.5%) |
+  | Mark now ($0.65) | $130 | -$30 (-18.8%) |
+  **~$56 of the $100 loss was pure execution damage — not thesis, not IV, not the stock.** The
+  intended -25% stop delivered -62.5%.
+- **Grade: C- on entry, F on exit mechanics.**
 
 ### Bookkeeping note — 2026-08-18
 Trades 4-9 were **backfilled in this session**. They were executed live between 2026-07-10 and

@@ -199,7 +199,7 @@
       "agent_id": "b7763d77",
       "amount": 60.0,
       "type": "credit",
-      "note": "OCUL $11C Sep18 x2 stop-market $0.60 fired @ $0.30 (order 6a832155, 2026-08-18 8:31 AM CT) -62.5% \u2014 stock only -1.6%; loss was post-event IV crush on an OTM strike plus stop-market slippage into the wide opening spread \u2014 backfilled",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 fired @ $0.30 (order 6a832155, 2026-08-18 8:31 AM CT) -62.5% \u2014 stop-market fired 96s after the open and filled at $0.30 when the contract's own low that minute was $0.55 and it printed $0.70 thirteen minutes later; OI 14,744 so NOT illiquidity, and only -15% overnight drift so NOT IV crush \u2014 ~$56 of the $100 loss was opening-auction execution damage \u2014 backfilled",
       "timestamp": "2026-08-18T13:39:19.682944+00:00"
     }
   ]
