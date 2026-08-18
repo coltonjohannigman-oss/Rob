@@ -44,6 +44,44 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — Bearish swing (long put) — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4) | **Exit:** stop-limit $1.95/$1.80 filled @ $1.84 (order 6a54ea36)
+- **Right:** Ratcheted stop did its job — locked a gain instead of round-tripping.
+- **Wrong:** Exited via stop, not a chosen target; +18.7% is below the 30-80% band. The stop was doing the deciding.
+
+### 5. WULF $18P Jul 31 — Bearish swing (long put) — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 — **owner-placed** (order 6a569290, placed_agent=user) | **Exit:** $1.57 (order 6a591131)
+- **Right:** +42.7% lands squarely in the 30-80% band. Clean two-day put trade.
+- **Note:** Owner opened, agent closed. Worth flagging that mixed authorship happened without a ledger entry.
+
+### 6. SLB $53C Aug 21 — Momentum — CLOSED 2026-07-24 ✅ +$24 (+20.0%)
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda) | **Exit:** $1.44 same day, ~2h later (order 6a638ca9)
+- **Right:** Quick, clean, no damage.
+- **Wrong:** +20% is UNDER the 30-80% band — sold early on a swing thesis with no stop-out or thesis break. Took a scalp on a position sized as a swing.
+
+### 7. GDX $85C Aug 21 — Momentum/Trend runner — CLOSED 2026-08-07 ✅ +$325 (+130.0%)
+- **Entry:** $2.50 x1, 2026-08-05 (order 6a736b32) | **Exit:** $5.75, 2026-08-07 (order 6a75df48)
+- **Thesis:** Gold-miner trend leg. Stop $1.75 (order 6a736b57) was cancelled 8/7 immediately before the sell.
+- **Right:** Best trade in the book by a distance. Rode past the 80% band on a real trend — the LETTING A WINNER RUN exception used correctly.
+- **Wrong:** Nothing on execution. But it was never written down, so the account's biggest win was invisible to the ledger for 11 days.
+
+### 8. NXE $12C Sep 18 x2 — Momentum — CLOSED 2026-08-17 ❌ −$30 (−30.0%)
+- **Entry:** $0.50 x2, 2026-08-17 (order 6a8322f1) | **Exit:** stop-market $0.40 filled @ $0.35 same day (order 6a8326c3)
+- **Wrong:** Entered and stopped out inside three hours. A setup that dies same-day was not a setup — the entry was premature, not the stop too tight. Hard stop hit its −30% ceiling exactly.
+
+### 9. OCUL $11C Sep 18 x2 — Momentum — CLOSED 2026-08-18 ❌ −$100 (−62.5%)
+- **Entry:** $0.80 x2, 2026-08-17 (order 6a83210d) | **Exit:** stop-market $0.60 filled @ **$0.30**, 8:31 AM CT 8/18 (order 6a832155)
+- **Wrong:** The worst trade in the book, and the damage was mechanical, not directional. Stop triggered at $0.60 and filled at **$0.30 — 50% slippage**, blowing straight through the −25/30% hard-stop ceiling to −62.5%.
+- **RULE LESSON:** The persona assumes stop-market slippage ≈ half the spread. That is far too optimistic on a thin sub-$1 contract at the open. On low-OI contracts under ~$1, a stop-market is not a stop — it is a market order that fires at the worst moment. Use a stop-LIMIT, or size assuming the stop does not hold.
+
+## Bookkeeping incident — 2026-08-18
+
+Trades 4-9 were executed at the broker between 2026-07-10 and 2026-08-18 but **never recorded**. The
+ledger sat at $739.86 / +$90 realized while the broker held $1,033.93. Backfilled this session from
+broker order history; reconciled to $1,034.86 vs broker $1,033.93 (Δ $0.93 = regulatory fees).
+Six round-trips, net +$295. The BOOKKEEPING rule exists to prevent exactly this — it was not followed
+for five weeks, including on the account's largest winner (GDX, +$325) and largest loser (OCUL, −$100).
+
 ## Open positions
 
-(none — 100% cash)
+(none — 100% cash, $1,034.86 available)
