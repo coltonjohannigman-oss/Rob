@@ -3,7 +3,7 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 1033.93,
+      "balance": 1033.89,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 195.0,
       "realized_pnl": 385.0
@@ -217,6 +217,14 @@
       "type": "debit",
       "note": "AMLX $40C Sep18 x1 @ $1.95 FILLED (order 6a85b7b1, 9:03 AM CT) - episodic pivot day 2, Ph3 LUCIDITY avexitide win 8/18, delta 0.42, OI 5712, spread 10%",
       "timestamp": "2026-08-19T14:03:54.660124+00:00"
+    },
+    {
+      "id": "270df902",
+      "agent_id": "b7763d77",
+      "amount": -0.04,
+      "type": "debit",
+      "note": "Order fee on AMLX $40C entry (order 6a85b7b1)",
+      "timestamp": "2026-08-19T14:04:50.536404+00:00"
     }
   ]
 }
