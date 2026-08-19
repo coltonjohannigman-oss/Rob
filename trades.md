@@ -44,6 +44,64 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — Bearish swing (put) — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4)
+- **Exit:** $1.84 — stop-limit $1.95/$1.80 fired 2026-07-13 (order 6a54ea36)
+- **Right:** A ratcheted stop ($1.25 → $1.95) converted an open put gain into a booked one. MRNA
+  fell $76.56 → $67.01 over the window; the trailing stop banked it instead of round-tripping.
+- **Wrong:** Nothing structural. Exit was mechanical, which is the point.
+- *(Reconstructed from broker order history — this trade was never written to the ledger live.)*
+
+### 5. WULF $18P Jul 31 — Bearish swing (put) — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 (order 6a569290, placed_agent=**user** — owner's entry)
+- **Exit:** $1.57 limit, 2026-07-16 (order 6a591131)
+- **Right:** +42.7% lands squarely in the 30-80% band and the put was taken FAST, exactly as the
+  PUT-SPECIFIC rule demands ("bias toward the 30-50% end; bear moves get ripped back").
+- **Wrong:** Nothing. Two-day hold, clean exit. The stop was cancelled to free the contract for
+  the sell (one-order-per-contract lock) — the correct sequencing.
+- *(Reconstructed from broker order history.)*
+
+### 6. SLB $53C Aug 21 — Day trade — CLOSED 2026-07-24 ✅ +$24 (+20.0%)
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda)
+- **Exit:** $1.44, same day ~11:02 AM CT (order 6a638ca9)
+- **Right:** Same-session in-and-out at +20%; no overnight theta on a 4-week contract.
+- **Wrong:** +20% is below the 30-80% band. Defensible on a day trade, but the stop at $0.85 was
+  cancelled ~90 seconds before the sell — a brief unprotected window that keeps recurring.
+- *(Reconstructed from broker order history.)*
+
+### 7. GDX $85C Aug 21 — Momentum/Trend — CLOSED 2026-08-07 ✅ +$325 (+130.0%)
+- **Entry:** $2.50 x1, 2026-08-05 (order 6a736b32)
+- **Exit:** $5.75 limit, 2026-08-07 (order 6a75df48)
+- **Thesis:** Gold-miner ETF momentum. Two-day hold, more than doubled.
+- **Right:** The single best trade in the book. Letting this one run past the 80% band was correct
+  — GDX was a confirmed trend with sector leadership, which is exactly the LETTING A WINNER RUN
+  exception rather than a violation of the band.
+- **Wrong:** The $1.75 stop was cancelled ~2.5 min before the exit; the position rode unprotected
+  briefly. Also, at $250 entry this was ~24% of budget — above the 20% conservative cap.
+- *(Reconstructed from broker order history.)*
+
+### 8. NXE $12C Sep 18 x2 — CLOSED 2026-08-17 ❌ -$30 (-30.0%)
+- **Entry:** $0.50 x2 ($100), 2026-08-17 (order 6a8322f1)
+- **Exit:** stop-market $0.40 fired @ $0.35, SAME DAY (order 6a8326c3)
+- **Right:** The stop existed and it worked. -30% is the hard-stop band, not a catastrophe.
+- **Wrong:** Entered and stopped out within ~3.5 hours — the entry was not a real setup, or the
+  stop was far too tight for the contract's spread. A stop placed 20% below entry on a sub-$1
+  option is inside the noise band; it was always going to fire on a wiggle.
+- *(Reconstructed from broker order history.)*
+
+### 9. OCUL $11C Sep 18 x2 — CLOSED 2026-08-18 ❌ -$100 (-62.5%)
+- **Entry:** $0.80 x2 ($160), 2026-08-17 (order 6a83210d)
+- **Exit:** stop-market $0.60 fired @ **$0.30** on 2026-08-18 (order 6a832155)
+- **Wrong — the expensive lesson:** the stop TRIGGER was $0.60 (a planned -25%) but the FILL was
+  $0.30 — a **50% slippage gap**, turning a -25% stop into a -62.5% loss. The stock gapped down
+  overnight and the stop-market filled into the post-gap book, exactly as the PERSONA's broker-
+  mechanics note warns ("stops do NOT protect through gaps; stop-market on a wide-spread contract
+  fills below the trigger"). Two contracts doubled the damage.
+- **Rule note:** this is the worst trade in the book and the only one where the loss materially
+  exceeded the planned stop. On sub-$1 contracts held overnight, a stop-market is close to
+  worthless as protection — size is the only real risk control.
+- *(Reconstructed from broker order history.)*
+
 ## Open positions
 
 (none — 100% cash)

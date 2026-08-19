@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 1033.93,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 385.0
     }
   },
   "transactions": [
@@ -105,6 +105,110 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "d80ce4ed",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4, filled 2026-07-10) [backfill]",
+      "timestamp": "2026-08-19T13:43:03.881143+00:00"
+    },
+    {
+      "id": "7d047577",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 stop-limit $1.95/$1.80 fired @ $1.84 (order 6a54ea36, 2026-07-13) [backfill]",
+      "timestamp": "2026-08-19T13:43:03.927057+00:00"
+    },
+    {
+      "id": "2efc41dc",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, placed_agent=user, filled 2026-07-14) [backfill]",
+      "timestamp": "2026-08-19T13:43:03.973022+00:00"
+    },
+    {
+      "id": "3eca61bd",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 limit (order 6a591131, 2026-07-16) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.016746+00:00"
+    },
+    {
+      "id": "9e183d53",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, filled 2026-07-24) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.060718+00:00"
+    },
+    {
+      "id": "cf62924d",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 limit (order 6a638ca9, same-day 2026-07-24) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.107214+00:00"
+    },
+    {
+      "id": "05e09bfc",
+      "agent_id": "b7763d77",
+      "amount": -250.0,
+      "type": "debit",
+      "note": "GDX $85C Aug21 x1 @ $2.50 (order 6a736b32, filled 2026-08-05) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.153858+00:00"
+    },
+    {
+      "id": "c88ab6e9",
+      "agent_id": "b7763d77",
+      "amount": 575.0,
+      "type": "credit",
+      "note": "GDX $85C Aug21 x1 sold @ $5.75 limit (order 6a75df48, 2026-08-07) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.198272+00:00"
+    },
+    {
+      "id": "d75d71da",
+      "agent_id": "b7763d77",
+      "amount": -160.0,
+      "type": "debit",
+      "note": "OCUL $11C Sep18 x2 @ $0.80 (order 6a83210d, filled 2026-08-17) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.239655+00:00"
+    },
+    {
+      "id": "e24b3a9c",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 (order 6a8322f1, filled 2026-08-17) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.282666+00:00"
+    },
+    {
+      "id": "e98672ad",
+      "agent_id": "b7763d77",
+      "amount": 70.0,
+      "type": "credit",
+      "note": "NXE $12C Sep18 x2 stop-market $0.40 fired @ $0.35 (order 6a8326c3, 2026-08-17) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.326681+00:00"
+    },
+    {
+      "id": "60c1b7c8",
+      "agent_id": "b7763d77",
+      "amount": 60.0,
+      "type": "credit",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 fired @ $0.30 (order 6a832155, 2026-08-18 gap-down slippage) [backfill]",
+      "timestamp": "2026-08-19T13:43:04.369992+00:00"
+    },
+    {
+      "id": "7b15c0b1",
+      "agent_id": "b7763d77",
+      "amount": -0.93,
+      "type": "debit",
+      "note": "Regulatory/exchange fees on 8 closing contracts (Jul 10 - Aug 18) - reconciles ledger to broker buying power $1033.93",
+      "timestamp": "2026-08-19T13:43:16.010712+00:00"
     }
   ]
 }
