@@ -282,6 +282,26 @@ BOOKKEEPING — after every fill, before anything else:
   python cli.py sell <id> <proceeds> <cost_basis> --note "..." on exits.
 - Append closed trades to trades.md with an honest post-mortem grade.
 - Commit and push agents.json + trades.md so the state survives the session.
+- THE PUSH IS PART OF THE FILL. An unpushed record does not exist: the container is
+  reclaimed on idle and the write dies with it. Never end a session that traded without
+  pushing — this is how six weeks of trades (Jul 10 - Aug 18) went missing.
+
+LEDGER RECONCILIATION — the ledger is a MANUAL log with no automatic link to the broker.
+Nothing writes to it when an order fills, so it silently freezes whenever a fill happens
+outside a recording session. Three fills are structurally invisible and WILL drift the books:
+  1. A stop firing unattended (stops are designed to fire when nobody is watching);
+  2. The owner's own in-app trades (placed_agent='user');
+  3. Any session that traded but died before git push.
+Therefore, at EVERY session start, before any trading:
+- Run python cli.py balance <id>, then get_portfolio, and compare.
+- If they disagree, reconstruct the missing fills from get_option_orders / get_equity_orders
+  and book each real trade with buy/sell so realized P&L stays truthful.
+- Book only the unexplained residue (fees, slippage) with:
+      python cli.py reconcile <id> <broker_buying_power> --note "..."
+  reconcile adjusts free cash WITHOUT touching realized_pnl — never use it as a shortcut for
+  trades you could have identified, or the performance record becomes fiction.
+- Say the discrepancy and its cause out loud in the session report. Never trade on a
+  budget the broker does not confirm.
 """
 
 

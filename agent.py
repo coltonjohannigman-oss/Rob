@@ -116,6 +116,47 @@ def record_sell(agent_id: str, proceeds: float, cost_basis: float, note: str = "
     return agent
 
 
+def reconcile(agent_id: str, broker_buying_power: float, note: str = "") -> dict:
+    """Force the ledger's free cash to match the broker's authoritative buying power.
+
+    The ledger is a manual write-ahead log: nothing writes to it automatically, so
+    it silently freezes whenever a fill happens outside a recording session (a stop
+    firing unattended, an owner's in-app trade, or a session that died before
+    `git push`). This books the whole unexplained difference as ONE adjustment so
+    the books match the broker again.
+
+    `spent` (open cost basis) is deliberately left alone — broker buying power
+    already excludes open positions, so remaining (balance - spent) is the figure
+    that must match. `realized_pnl` is also left alone: an unexplained adjustment
+    is not trading profit, and folding it into P&L would corrupt the performance
+    record. Reconstruct and record real trades with record_buy/record_sell when
+    you can identify them; use this only for the residue.
+    """
+    if broker_buying_power < 0:
+        raise ValueError("Broker buying power cannot be negative")
+    data = _load()
+    if agent_id not in data["agents"]:
+        raise KeyError(f"Agent '{agent_id}' not found")
+    agent = data["agents"][agent_id]
+    remaining = agent["balance"] - agent.get("spent", 0.0)
+    delta = round(broker_buying_power - remaining, 2)
+    if delta == 0:
+        return agent
+    agent["balance"] = round(agent["balance"] + delta, 2)
+    data["transactions"].append(
+        {
+            "id": str(uuid.uuid4())[:8],
+            "agent_id": agent_id,
+            "amount": delta,
+            "type": "credit" if delta > 0 else "debit",
+            "note": note or f"Reconcile to broker buying power ${broker_buying_power:.2f}",
+            "timestamp": _now(),
+        }
+    )
+    _save(data)
+    return agent
+
+
 def get_agent(agent_id: str) -> dict:
     data = _load()
     if agent_id not in data["agents"]:

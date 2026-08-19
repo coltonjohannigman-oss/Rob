@@ -12,6 +12,7 @@ from agent import (
     list_agents,
     record_buy,
     record_sell,
+    reconcile,
 )
 
 
@@ -92,6 +93,27 @@ def cmd_sell(args):
         sys.exit(1)
 
 
+def cmd_reconcile(args):
+    try:
+        before = get_agent(args.id)
+        before_remaining = before["balance"] - before.get("spent", 0.0)
+        agent = reconcile(args.id, args.broker_buying_power, note=args.note or "")
+        remaining = agent["balance"] - agent.get("spent", 0.0)
+        delta = remaining - before_remaining
+        if abs(delta) < 0.005:
+            print(f"Already reconciled — ledger and broker both show ${remaining:.2f}. No change.")
+            return
+        sign = "+" if delta >= 0 else ""
+        print(f"Ledger was ${before_remaining:.2f}, broker says ${args.broker_buying_power:.2f}")
+        print(f"Booked adjustment of {sign}${delta:.2f} — remaining is now ${remaining:.2f}")
+        print("NOTE: this is an unexplained adjustment, not trading P&L. Realized P&L unchanged")
+        print(f"      at ${agent.get('realized_pnl', 0.0):+.2f}. Identify and record real fills")
+        print("      with 'buy'/'sell' where you can; reconcile only covers the residue.")
+    except (KeyError, ValueError) as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
 def cmd_trade(args):
     try:
         from brain import run_trading_session
@@ -143,6 +165,19 @@ def main():
     p_sell.add_argument("cost_basis", type=float, help="Original cost of the position being closed (USD)")
     p_sell.add_argument("--note", help="Trade description, e.g. 'IRDM $55C Jul17 x1 sold @ $1.30 TP'")
     p_sell.set_defaults(func=cmd_sell)
+
+    p_reconcile = sub.add_parser(
+        "reconcile",
+        help="Sync the ledger to the broker's authoritative buying power (run at session start)",
+    )
+    p_reconcile.add_argument("id", help="Agent ID")
+    p_reconcile.add_argument(
+        "broker_buying_power",
+        type=float,
+        help="Live buying power from the broker (get_portfolio -> buying_power)",
+    )
+    p_reconcile.add_argument("--note", help="Why the books drifted, if known")
+    p_reconcile.set_defaults(func=cmd_reconcile)
 
     p_trade = sub.add_parser("trade", help="Generate a trading session prompt for an agent")
     p_trade.add_argument("id", help="Agent ID")
