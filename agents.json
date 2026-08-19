@@ -231,7 +231,7 @@
       "agent_id": "b7763d77",
       "amount": -300.0,
       "type": "debit",
-      "note": "UNEXPLAINED -$300: no equity orders, no option orders beyond AMLX, unsettled_funds=0. Most likely an owner transfer out of the agentic account on 2026-08-19. Flagged to owner for confirmation.",
+      "note": "Owner transfer out of the agentic account, -$300 (CONFIRMED by owner 2026-08-19). No trade involved: no equity orders, no option orders beyond the AMLX entry and its stop, unsettled_funds=0. Budget reduced to $733.89 allocated / $538.89 free.",
       "timestamp": "2026-08-19T17:56:58.491977+00:00"
     }
   ]
