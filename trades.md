@@ -104,4 +104,21 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ## Open positions
 
-(none — 100% cash)
+### AMLX $40C Sep 18 2026 x1 — Episodic Pivot (day 2) — OPENED 2026-08-19
+- **Entry:** $1.95 x1 = $195 (order 6a85b7b1, filled 9:03:29 AM CT)
+- **Stop:** stop-market $1.40 GTC (order 6a85b7d4, state=confirmed) — approx -28% of entry.
+  This working order HOLDS THE CONTRACT and blocks manual sells until cancelled.
+- **Thesis:** Phase 3 LUCIDITY hit 8/18 — avexitide in post-bariatric hypoglycemia met the
+  FDA-agreed primary endpoint (55% reduction in Level 2/3 hypoglycemic events) and ALL
+  secondaries. NDA planned by end of 2026. Gap 8/18 from a tight 6-session base ($21.28-$23.73)
+  through the prior $24.60 swing high on ~16x average volume, closing at the top of the range.
+  Day 2 held and extended above the gap-day high.
+- **Sizing:** $195 = 18.9% of the $1,033.93 budget — under the 20% conservative cap.
+  Delta 0.42, OI 5,712, spread 10% at entry. No liquidity exception needed.
+- **Profit plan:** 30-80% band = $2.54 (+$59) to $3.51 (+$156). Single contract, so ONE exit
+  in the band — no scaling out. Trailing past 80% only if the LETTING A WINNER RUN checklist
+  passes on all four legs.
+- **Known risks:** entry was day-2 extension, not the breakout candle or a 10-day EMA pullback
+  (the EMA sits near $25, weeks away) — the weakest valid form of the EP entry. Stop-market on
+  a wide-spread contract will slip; assume roughly half the spread. Stops do NOT protect
+  through an overnight gap (see the OCUL post-mortem above).
