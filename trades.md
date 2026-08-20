@@ -106,8 +106,16 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 
 ### AMLX $40C Sep 18 2026 x1 — Episodic Pivot (day 2) — OPENED 2026-08-19
 - **Entry:** $1.95 x1 = $195 (order 6a85b7b1, filled 9:03:29 AM CT)
-- **Stop:** stop-market $1.40 GTC (order 6a85b7d4, state=confirmed) — approx -28% of entry.
-  This working order HOLDS THE CONTRACT and blocks manual sells until cancelled.
+- **Working order (CHANGED 2026-08-20 8:47 AM CT):** take-profit LIMIT SELL $2.55 GTC
+  (order 6a87055e, confirmed) = +$60 / +30.8%. The stop-market $1.40 (order 6a85b7d4) was
+  CANCELLED to free the contract for it — one order per contract.
+- **NO STOP IS WORKING.** This is a take-profit-only structure; the downside is managed
+  manually against the thesis line below. Rationale for the swap: the $1.40 stop sat ~40%
+  below the mark and, on a 30-43% spread, would have filled near $1.15 — it protected
+  almost none of the gain. A limit TP is the only reliable way to capture the band on a
+  contract this wide. Honest caveat: the mark hit $2.55 (in band) at 8:45, but by the time
+  the cancel completed it had fallen to $2.175, so the swap did not land at the moment
+  intended. Revert to a stop on request.
 - **Thesis:** Phase 3 LUCIDITY hit 8/18 — avexitide in post-bariatric hypoglycemia met the
   FDA-agreed primary endpoint (55% reduction in Level 2/3 hypoglycemic events) and ALL
   secondaries. NDA planned by end of 2026. Gap 8/18 from a tight 6-session base ($21.28-$23.73)
