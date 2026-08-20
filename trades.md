@@ -102,31 +102,31 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   worthless as protection — size is the only real risk control.
 - *(Reconstructed from broker order history.)*
 
+### 4. AMLX $40C Sep 18 2026 — Episodic Pivot (day 2) — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
+- **Entry:** $1.95 x1 = $195 (order 6a85b7b1, 2026-08-19 9:03:29 AM CT)
+- **Exit:** $2.55 take-profit limit (order 6a87055e, 2026-08-20 9:34:40 AM CT). 1-day hold.
+- **Thesis:** Ph3 LUCIDITY hit 8/18 — avexitide in post-bariatric hypoglycemia met the FDA-agreed
+  primary endpoint (55% reduction in Level 2/3 hypoglycemic events) and ALL secondaries; NDA
+  planned by end of 2026. Gapped 8/18 from a tight 6-session base ($21.28-$23.73) through the
+  $24.60 swing high on ~16x average volume, closing at the top of the range.
+- **Right:** The stop->TP swap was the trade. On a contract whose spread ran 18-43% all day, the
+  $1.40 stop-market sat ~40% below the mark and would have filled near $1.15 — it protected
+  almost none of the gain. Swapping it for a $2.55 limit captured the band exactly. Sizing was
+  disciplined: $195 = 18.9% of budget, under the 20% conservative cap, delta 0.42, 10% spread at
+  entry, no liquidity exception needed. Holding overnight was also correct — the position was at
+  breakeven with a 34% spread at 2:30 PM on 8/19 and closed at $2.23 (+14.4%).
+- **Wrong:** The entry was day-2 extension, not the breakout candle or a 10-day EMA pullback —
+  the weakest valid form of the EP entry, and it showed. On 8/19 the stock rose 7.6% while the
+  option went nowhere: IV crush (66.6% -> 59.3%) ate the entire delta gain. The position
+  round-tripped +14.1% -> 0.0% intraday before recovering. Also, the original $35C candidate ran
+  away between confirmation and execution — the $40C substitution needed its own approval, which
+  cost time but was the right call (it came in under the conservative cap instead of over the
+  aggressive one).
+- **Cost of the swap:** the contract carried NO stop for ~47 minutes (8:47-9:34). Accepted
+  tradeoff, and it worked, but it was real unprotected risk on a biotech.
+- **Grade: B+.** Right setup, mediocre entry timing, good exit discipline. The lesson that
+  generalizes: on a wide-spread contract a stop-market cannot protect a gain — only a limit can.
+
 ## Open positions
 
-### AMLX $40C Sep 18 2026 x1 — Episodic Pivot (day 2) — OPENED 2026-08-19
-- **Entry:** $1.95 x1 = $195 (order 6a85b7b1, filled 9:03:29 AM CT)
-- **Working order (CHANGED 2026-08-20 8:47 AM CT):** take-profit LIMIT SELL $2.55 GTC
-  (order 6a87055e, confirmed) = +$60 / +30.8%. The stop-market $1.40 (order 6a85b7d4) was
-  CANCELLED to free the contract for it — one order per contract.
-- **NO STOP IS WORKING.** This is a take-profit-only structure; the downside is managed
-  manually against the thesis line below. Rationale for the swap: the $1.40 stop sat ~40%
-  below the mark and, on a 30-43% spread, would have filled near $1.15 — it protected
-  almost none of the gain. A limit TP is the only reliable way to capture the band on a
-  contract this wide. Honest caveat: the mark hit $2.55 (in band) at 8:45, but by the time
-  the cancel completed it had fallen to $2.175, so the swap did not land at the moment
-  intended. Revert to a stop on request.
-- **Thesis:** Phase 3 LUCIDITY hit 8/18 — avexitide in post-bariatric hypoglycemia met the
-  FDA-agreed primary endpoint (55% reduction in Level 2/3 hypoglycemic events) and ALL
-  secondaries. NDA planned by end of 2026. Gap 8/18 from a tight 6-session base ($21.28-$23.73)
-  through the prior $24.60 swing high on ~16x average volume, closing at the top of the range.
-  Day 2 held and extended above the gap-day high.
-- **Sizing:** $195 = 18.9% of the $1,033.93 budget — under the 20% conservative cap.
-  Delta 0.42, OI 5,712, spread 10% at entry. No liquidity exception needed.
-- **Profit plan:** 30-80% band = $2.54 (+$59) to $3.51 (+$156). Single contract, so ONE exit
-  in the band — no scaling out. Trailing past 80% only if the LETTING A WINNER RUN checklist
-  passes on all four legs.
-- **Known risks:** entry was day-2 extension, not the breakout candle or a 10-day EMA pullback
-  (the EMA sits near $25, weeks away) — the weakest valid form of the EP entry. Stop-market on
-  a wide-spread contract will slip; assume roughly half the spread. Stops do NOT protect
-  through an overnight gap (see the OCUL post-mortem above).
+(none — 100% cash)

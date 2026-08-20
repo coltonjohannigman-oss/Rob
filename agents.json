@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 733.89,
+      "balance": 793.83,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 195.0,
-      "realized_pnl": 385.0
+      "spent": 0.0,
+      "realized_pnl": 445.0
     }
   },
   "transactions": [
@@ -233,6 +233,22 @@
       "type": "debit",
       "note": "Owner transfer out of the agentic account, -$300 (CONFIRMED by owner 2026-08-19). No trade involved: no equity orders, no option orders beyond the AMLX entry and its stop, unsettled_funds=0. Budget reduced to $733.89 allocated / $538.89 free.",
       "timestamp": "2026-08-19T17:56:58.491977+00:00"
+    },
+    {
+      "id": "030db57c",
+      "agent_id": "b7763d77",
+      "amount": 255.0,
+      "type": "credit",
+      "note": "AMLX $40C Sep18 x1 sold @ $2.55 take-profit (order 6a87055e, filled 9:34:40 AM CT 8/20) - +$60 / +30.8%, inside the 30-80% band",
+      "timestamp": "2026-08-20T14:35:24.013726+00:00"
+    },
+    {
+      "id": "18f6de83",
+      "agent_id": "b7763d77",
+      "amount": -0.06,
+      "type": "debit",
+      "note": "Regulatory/exchange fees on the AMLX $40C closing contract (order 6a87055e)",
+      "timestamp": "2026-08-20T14:36:12.765775+00:00"
     }
   ]
 }
