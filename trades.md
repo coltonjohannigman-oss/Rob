@@ -102,7 +102,7 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   worthless as protection — size is the only real risk control.
 - *(Reconstructed from broker order history.)*
 
-### 4. AMLX $40C Sep 18 2026 — Episodic Pivot (day 2) — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
+### 10. AMLX $40C Sep 18 2026 — Episodic Pivot (day 2) — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
 - **Entry:** $1.95 x1 = $195 (order 6a85b7b1, 2026-08-19 9:03:29 AM CT)
 - **Exit:** $2.55 take-profit limit (order 6a87055e, 2026-08-20 9:34:40 AM CT). 1-day hold.
 - **Thesis:** Ph3 LUCIDITY hit 8/18 — avexitide in post-bariatric hypoglycemia met the FDA-agreed
