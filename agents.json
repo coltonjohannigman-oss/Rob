@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 793.83,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 445.0
     }
   },
   "transactions": [
@@ -105,6 +105,126 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "82c8202a",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4, filled 2026-07-10)",
+      "timestamp": "2026-08-21T19:24:18.199774+00:00"
+    },
+    {
+      "id": "1082d0f4",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 stop-limit $1.95/$1.80 filled @ $1.84 (order 6a54ea36, 2026-07-13)",
+      "timestamp": "2026-08-21T19:24:18.236527+00:00"
+    },
+    {
+      "id": "89c5c51c",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, owner-placed, filled 2026-07-14)",
+      "timestamp": "2026-08-21T19:24:18.272707+00:00"
+    },
+    {
+      "id": "1e0d0f19",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 (order 6a591131, 2026-07-16)",
+      "timestamp": "2026-08-21T19:24:18.312826+00:00"
+    },
+    {
+      "id": "f5526386",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, filled 2026-07-24)",
+      "timestamp": "2026-08-21T19:24:18.349411+00:00"
+    },
+    {
+      "id": "b0b4db3d",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 same day (order 6a638ca9, 2026-07-24)",
+      "timestamp": "2026-08-21T19:24:18.386959+00:00"
+    },
+    {
+      "id": "ae56f01a",
+      "agent_id": "b7763d77",
+      "amount": -250.0,
+      "type": "debit",
+      "note": "GDX $85C Aug21 x1 @ $2.50 (order 6a736b32, filled 2026-08-05)",
+      "timestamp": "2026-08-21T19:24:18.423118+00:00"
+    },
+    {
+      "id": "2312293d",
+      "agent_id": "b7763d77",
+      "amount": 575.0,
+      "type": "credit",
+      "note": "GDX $85C Aug21 x1 sold @ $5.75 (order 6a75df48, 2026-08-07)",
+      "timestamp": "2026-08-21T19:24:18.460789+00:00"
+    },
+    {
+      "id": "0d8fa6fc",
+      "agent_id": "b7763d77",
+      "amount": -160.0,
+      "type": "debit",
+      "note": "OCUL $11C Sep18 x2 @ $0.80 (order 6a83210d, filled 2026-08-17)",
+      "timestamp": "2026-08-21T19:24:18.498144+00:00"
+    },
+    {
+      "id": "ee029f8d",
+      "agent_id": "b7763d77",
+      "amount": 60.0,
+      "type": "credit",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 filled @ $0.30 (order 6a832155, 2026-08-18)",
+      "timestamp": "2026-08-21T19:24:18.534384+00:00"
+    },
+    {
+      "id": "f2403683",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 (order 6a8322f1, filled 2026-08-17)",
+      "timestamp": "2026-08-21T19:24:18.572645+00:00"
+    },
+    {
+      "id": "e71c8e9a",
+      "agent_id": "b7763d77",
+      "amount": 70.0,
+      "type": "credit",
+      "note": "NXE $12C Sep18 x2 stop-market $0.40 filled @ $0.35 (order 6a8326c3, 2026-08-17)",
+      "timestamp": "2026-08-21T19:24:18.610492+00:00"
+    },
+    {
+      "id": "7751ec43",
+      "agent_id": "b7763d77",
+      "amount": -195.0,
+      "type": "debit",
+      "note": "AMLX $40C Sep18 x1 @ $1.95 (order 6a85b7b1, filled 2026-08-19)",
+      "timestamp": "2026-08-21T19:24:18.648688+00:00"
+    },
+    {
+      "id": "7f3d7350",
+      "agent_id": "b7763d77",
+      "amount": 255.0,
+      "type": "credit",
+      "note": "AMLX $40C Sep18 x1 sold @ $2.55 (order 6a87055e, 2026-08-20)",
+      "timestamp": "2026-08-21T19:24:18.685551+00:00"
+    },
+    {
+      "id": "8e92f94c",
+      "agent_id": "b7763d77",
+      "amount": -301.03,
+      "type": "debit",
+      "note": "Reconcile ledger to broker buying power: broker cash $793.83, 0 positions, 0 working orders (2026-08-21). Realized P&L now ties exactly to broker (+$445). This adjustment covers a cash movement NOT explained by any trade \u2014 the account has never placed an equity order, so it is a deposit/withdrawal the ledger never recorded. OWNER: please confirm a ~$301 withdrawal/transfer out between 2026-07-07 and 2026-08-21.",
+      "timestamp": "2026-08-21T19:24:35.175723+00:00"
     }
   ]
 }
