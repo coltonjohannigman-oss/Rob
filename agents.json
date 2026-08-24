@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 793.83,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 445.0
     }
   },
   "transactions": [
@@ -105,6 +105,126 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "d37ffb5e",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4, filled 2026-07-10) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.754430+00:00"
+    },
+    {
+      "id": "1ce789ad",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 stop-limit $1.95/$1.80 filled @ $1.84 (order 6a54ea36, 2026-07-13) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.793488+00:00"
+    },
+    {
+      "id": "bc792bb1",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, filled 2026-07-14, placed by owner in-app) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.830344+00:00"
+    },
+    {
+      "id": "d5685fd8",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 (order 6a591131, 2026-07-16) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.877020+00:00"
+    },
+    {
+      "id": "cd7313f9",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda, filled 2026-07-24) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.916045+00:00"
+    },
+    {
+      "id": "abf528ee",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 (order 6a638ca9, 2026-07-24 same-day) [backfill]",
+      "timestamp": "2026-08-24T13:46:53.953585+00:00"
+    },
+    {
+      "id": "1cebde39",
+      "agent_id": "b7763d77",
+      "amount": -250.0,
+      "type": "debit",
+      "note": "GDX $85C Aug21 x1 @ $2.50 (order 6a736b32, filled 2026-08-05) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.721287+00:00"
+    },
+    {
+      "id": "dc5bf2fb",
+      "agent_id": "b7763d77",
+      "amount": 575.0,
+      "type": "credit",
+      "note": "GDX $85C Aug21 x1 sold @ $5.75 (order 6a75df48, 2026-08-07) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.764317+00:00"
+    },
+    {
+      "id": "a803409b",
+      "agent_id": "b7763d77",
+      "amount": -160.0,
+      "type": "debit",
+      "note": "OCUL $11C Sep18 x2 @ $0.80 (order 6a83210d, filled 2026-08-17) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.802137+00:00"
+    },
+    {
+      "id": "46c80ce7",
+      "agent_id": "b7763d77",
+      "amount": 60.0,
+      "type": "credit",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 filled @ $0.30 (order 6a832155, 2026-08-18) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.839440+00:00"
+    },
+    {
+      "id": "03f604a4",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 (order 6a8322f1, filled 2026-08-17) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.876382+00:00"
+    },
+    {
+      "id": "74ecde2e",
+      "agent_id": "b7763d77",
+      "amount": 70.0,
+      "type": "credit",
+      "note": "NXE $12C Sep18 x2 stop-market $0.40 filled @ $0.35 (order 6a8326c3, 2026-08-17 same-day) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.913802+00:00"
+    },
+    {
+      "id": "0999450f",
+      "agent_id": "b7763d77",
+      "amount": -195.0,
+      "type": "debit",
+      "note": "AMLX $40C Sep18 x1 @ $1.95 (order 6a85b7b1, filled 2026-08-19) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.953452+00:00"
+    },
+    {
+      "id": "44a06886",
+      "agent_id": "b7763d77",
+      "amount": 255.0,
+      "type": "credit",
+      "note": "AMLX $40C Sep18 x1 sold @ $2.55 (order 6a87055e, 2026-08-20; stop 6a85b7d4 cancelled to free contract) [backfill]",
+      "timestamp": "2026-08-24T13:47:03.990545+00:00"
+    },
+    {
+      "id": "25fac59c",
+      "agent_id": "b7763d77",
+      "amount": -301.03,
+      "type": "debit",
+      "note": "Capital reconcile to broker: ledger over-credited contributed capital by $301.03 (sync entries alloc0003 +$75.96 and rebal001 +$73.90 were added on top of the deposits they were meant to reconcile). Broker cash $793.83 = $348.83 net capital + $445.00 realized. Ledger set to broker ground truth.",
+      "timestamp": "2026-08-24T13:47:17.487902+00:00"
     }
   ]
 }
