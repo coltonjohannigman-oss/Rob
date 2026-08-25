@@ -5,7 +5,7 @@
       "name": "Robbin",
       "balance": 793.83,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 0.0,
+      "spent": 98.08,
       "realized_pnl": 445.0
     }
   },
@@ -225,6 +225,14 @@
       "type": "debit",
       "note": "Capital reconcile to broker: ledger over-credited contributed capital by $301.03 (sync entries alloc0003 +$75.96 and rebal001 +$73.90 were added on top of the deposits they were meant to reconcile). Broker cash $793.83 = $348.83 net capital + $445.00 realized. Ledger set to broker ground truth.",
       "timestamp": "2026-08-24T13:47:17.487902+00:00"
+    },
+    {
+      "id": "31161625",
+      "agent_id": "b7763d77",
+      "amount": -98.08,
+      "type": "debit",
+      "note": "XPEV $11P Sep18 x2 @ $0.49 + $0.08 fees (order 6a8c8b4c, filled 2026-08-24 2:29 PM CT) \u2014 breakdown/downtrend setup",
+      "timestamp": "2026-08-25T13:48:53.353553+00:00"
     }
   ]
 }
