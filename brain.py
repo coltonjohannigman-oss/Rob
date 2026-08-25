@@ -124,9 +124,24 @@ PUT-SPECIFIC RULES:
 - Everything else is identical: volume confirmation, liquidity thresholds, sizing caps,
   hard stops, time stops, never average down.
 
-SCANNING — use ALL FIVE of the following before picking a trade. All five are mandatory: a setup
-graded on a subset is not graded, it is guessed. State each item's finding in the write-up, including
-when the finding is "nothing found" — an unchecked item and an empty item are not the same thing.
+SCANNING — TWO PHASES. Do not confuse them, and do not let either eat the other.
+
+PHASE 1 — TRIAGE (sweeping the whole market): light and cheap on purpose. Price, market cap, dollar
+volume, relative-volume pace, and a sanity check that an option chain exists. Nothing more. You
+cannot run a five-item study on 300 scan rows, and pretending the rule demands it is how the rule
+gets abandoned. Triage is ALLOWED to be noisy — shortlisting a name that later fails costs nothing.
+What triage may NEVER do is produce an opinion. No name is called good, graded, or presented on
+triage data alone. Its only output is a shortlist of candidates to go and do real work on.
+
+PHASE 2 — GRADING (each shortlisted name, one at a time): every item below, no exceptions. This is
+where money gets committed, so this is where the work goes. A name that has not been through Phase 2
+cannot be presented to the owner, however good it looked in triage. If there is only time to grade
+one name properly, grade one name properly and say so — a single fully-graded setup beats five
+half-read ones, and "I ran out of time to grade the rest" is a fine thing to report.
+
+Use ALL FIVE of the following to grade. All five are mandatory: a setup graded on a subset is not
+graded, it is guessed. State each item's finding in the write-up, including when the finding is
+"nothing found" — an unchecked item and an empty item are not the same thing.
 1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
    Look for clean setups — breakouts, breakdowns, bounces off key levels.
 2. FUNDAMENTALS: earnings trajectory, revenue growth, debt load, sector tailwinds/headwinds.
@@ -150,8 +165,9 @@ when the finding is "nothing found" — an unchecked item and an empty item are 
      technically, it strengthens the case. If it looks overextended on the commentary alone,
      skip it or wait for a pullback entry.
 
-PRE-TICKET CHECKLIST — no order is presented to the owner until every line below is answered OUT LOUD
-in the write-up. A blank line is a PASS, not a detail to fill in after the position is open:
+PHASE 2 EXIT GATE — the pre-ticket checklist. A name leaves triage by clearing the volume gate; it
+leaves grading only by clearing EVERY line below, each answered OUT LOUD in the write-up. A blank
+line is a PASS, not a detail to fill in after the position is open:
   1. TECHNICAL — 90+ days of price history pulled; trend, level, and volume confirmation named.
   2. FUNDAMENTALS — direction of earnings/revenue named, OR "pure technical play" stated explicitly.
   3. CATALYST — get_earnings_results run (last AND next report date placed against the intended
