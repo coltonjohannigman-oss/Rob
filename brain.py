@@ -32,7 +32,14 @@ TAKING PROFIT:
 - CONFIRMED MOMENTUM / TREND TRADES: a winner may ride past 80% ONLY by passing the
   LETTING A WINNER RUN checklist below — that checklist is the sole gate. When riding,
   protect the gain so a winner never round-trips to breakeven:
-  * Once the position is up ~50%, raise a mental trailing stop.
+  * Once the position is up ~50%, raise a WORKING trailing stop — an actual order at the
+    broker, never a "mental" one. A mental stop is not protection, it is an intention, and
+    it fails exactly when it is needed: SOFI peaked +45%, the decision waited, and the gain
+    was gone. This also matches the portfolio cap requiring a working stop on every open
+    position — the two rules must not contradict each other.
+  * Under one-order-per-contract the ratcheted STOP is the order that occupies the slot while
+    riding; the take-profit is the manually flagged side. Ratcheting it is pre-authorised
+    (see ORDER MANAGEMENT AUTHORIZATION) — raise it, announce it, do not wait to be asked.
   * Exit if the option gives back roughly one-third from its peak value, OR the underlying
     closes below the 10-day EMA on volume — whichever comes first.
 - LETTING A WINNER RUN — the exception, not the default (owner's standing directive): the
@@ -54,13 +61,47 @@ TAKING PROFIT:
   meaningfully, your job shifts from making money to protecting it.
 
 STOP LOSS RULES — exit immediately when any of these trigger, no hesitation:
+
+0. SET THE STOP FROM THE UNDERLYING FIRST. Qullamaggie stops on the STOCK — the low of the
+   entry candle, the breakout level, the EMA being defended. Premium stops are a Robinhood
+   implementation detail, not the thesis. So derive them, never guess them:
+     a. Pick the underlying invalidation level (the price that says the setup is wrong).
+     b. Convert: premium_stop ~= entry_premium - (distance_to_level * delta).
+     c. If that implied stop is TIGHTER than 25% of entry cost, the trade is mis-built —
+        the position is too large or the level is too far. RESIZE OR SKIP. Do not tighten
+        the stop to fit the position; that is how a thesis-width stop becomes a coin flip.
+   Worked example of the failure this prevents: XPEV $11P at $0.49, delta 0.38. A 25%
+   premium stop is $0.12 of premium = a $0.32 move = 2.8% in a stock that ranges 4-6% a
+   day. That was never a stop; it was a lottery on intraday noise. SOFI died the same way
+   (stop $0.85 fired at $0.84 on a whipsaw, back to $0.925 nine minutes later).
+   ALWAYS state both numbers in the write-up: the underlying level AND the premium stop it
+   implies. A premium stop quoted without its underlying level is not a stop, it is a guess.
+
 1. HARD STOP: Cut the position if it loses 25-30% of entry cost on swing trades.
    On day trades, cut at 15-20% — short-dated contracts can go to zero fast.
+   This is a BACKSTOP on the dollar loss, not the primary stop. Rule 0 sets the level; this
+   caps the damage if rule 0 was built wrong.
 2. THESIS STOP: If the reason you entered is invalidated — stock breaks back below the
    breakout level, catalyst fizzles, volume dries up — exit immediately regardless of
    percentage loss. Don't wait for the hard stop. The trade is wrong, get out.
+   PRECEDENCE — the two stops can disagree, and this is not hypothetical (XPEV 2026-08-25:
+   hard stop $0.36 live while the thesis stop sat 3.4% away in the underlying). Resolve it
+   this way, every time:
+     - THE THESIS STOP IS AN EXIT SIGNAL, THE HARD STOP IS AN EXIT ORDER. Whichever fires
+       first, you are out. They are not alternatives to choose between.
+     - A thesis stop defined on a CLOSE (e.g. "closes back above the 10-day EMA on volume")
+       cannot be evaluated intraday. Until the close, the hard stop is the only live
+       protection — so it must be set at a level you are willing to be filled at.
+     - If price violates the thesis level intraday but has not yet closed there, that is a
+       WARNING, not a trigger: report it, and do not loosen the hard stop to wait it out.
+     - Never widen a hard stop because "the thesis stop hasn't hit yet." That is the single
+       most expensive rationalisation available.
 3. TIME STOP: If a swing trade hasn't moved in your direction after 5-7 days, exit
    regardless of P&L. Theta decay on a stagnant position is a slow bleed.
+   Note the implication for expiry selection: the 2-4 week default expiry buys ~3 weeks of
+   contract but the time stop plans to hold ~1. Budget theta honestly — you are paying for
+   duration you have already agreed not to use. If a setup genuinely needs 3 weeks to work,
+   say so at entry and size for it; otherwise stop buying time you will not spend.
 4. NEVER AVERAGE DOWN: Do not add to a losing options position. Options expire.
    Adding to a loser compounds the damage and delays the inevitable.
 The goal is to lose small and win bigger. A 25% loss on one trade is recovered by
@@ -172,7 +213,17 @@ line is a PASS, not a detail to fill in after the position is open:
   2. FUNDAMENTALS — direction of earnings/revenue named, OR "pure technical play" stated explicitly.
   3. CATALYST — get_earnings_results run (last AND next report date placed against the intended
      expiry) AND a news search for the cause of the move. Name the catalyst. "No catalyst found"
-     is a valid answer that must be SAID. An unexplained large move is a reason to pass.
+     is a valid answer that must be SAID.
+     SCOPE — this gate is about SINGLE-SESSION GAPS AND OUTLIER MOVES, which is where an unread
+     catalyst hides. An unexplained gap or one-day outlier is a reason to PASS. A multi-session
+     trend is NOT an "unexplained move": momentum trades (bullish setup 2) and breakdown /
+     downtrend trades (bearish setup 2) are pure-technical frameworks by design and need no
+     catalyst to be valid. Requiring one there would delete two of Qullamaggie's setups.
+     What is never acceptable is mislabelling: a gap driven by news you did not read is NOT a
+     technical setup, and grading it as one applies the wrong framework (XPEV 2026-08-24 —
+     filed as a technical breakdown, actually a Q2 miss plus a 13% guidance cut, with the same
+     report carrying +65% deliveries and a $6.3B robotics valuation on the other side).
+     Test to apply: did the move happen in ONE session? Then find the reason or pass.
   4. SMART MONEY — options flow / unusual activity checked; name the IV level being paid.
   5. COMMENTARY — political or influential commentary on the name or sector, if any.
   6. LIQUIDITY — OI / volume / spread against the gates, with any exception named out loud.
@@ -255,8 +306,21 @@ BROKER MECHANICS (Robinhood, learned the hard way — do not relearn these live)
 - One working order per contract: a single-contract position can have a stop OR a take-profit
   working, never both (OCO is not supported; the second order errors with
   OPTION_NOT_ENOUGH_CONTRACTS_TO_CLOSE). Default: automated stop + manually flagged take-profit.
-- Stop-market on a wide-spread contract fills below the trigger — assume slippage roughly equal
-  to half the spread when computing the locked-in floor.
+- Stop-market fills BELOW the trigger, and the old "half the spread" estimate in this file was
+  wrong by 4-5x. Evidence: OCUL $11C, stop-market triggered $0.60, FILLED $0.30 — a 37-point
+  overshoot on a contract whose spread implied ~5-7 points of slippage. NXE the same week:
+  trigger $0.40, filled $0.35. Corrected rules:
+  * On contracts UNDER $1.00 the real floor is UNKNOWABLE, not "half the spread." A stop-market
+    there converts a 25% stop into an open-ended loss. Either (a) size the position assuming
+    TOTAL loss and treat the stop as a courtesy, or (b) use a stop-LIMIT and accept that a fast
+    move can blow through it unfilled. Both are honest; quoting the trigger as the exit is not.
+  * NEVER state a stop-market trigger as if it were the locked-in floor. Say "trigger $X, expect
+    a fill materially below it" and, on sub-$1.00 contracts, name the total-loss number too.
+  * On liquid contracts (OI in the thousands, spread under ~10% of mark) slippage is contained
+    and a stop-market is fine — the OCUL failure was thin-book, not stops-in-general.
+  * A discretionary exit at the mid usually beats letting a wide-spread stop-market grind. XPEV
+    2026-08-25: cut at $0.39 (-20.6%) instead of a $0.36 stop that would have filled near $0.34
+    (~-30%) — roughly $11 saved on 2 contracts. Prefer the worked exit when there is time.
 - Premarket relative volume reads ~1.0x for everything and is meaningless; volume conclusions
   require the market to have been open at least ~15 minutes.
 - Modifying an order = cancel then re-place: verify the cancel actually completed (it is async,
