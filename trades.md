@@ -110,6 +110,43 @@ three losing/flat clusters (OCUL, NXE) share one root cause — stop-market slip
 contracts — and were opened on the same day. The winners that followed the band (WULF, AMLX)
 behaved exactly as designed.
 
+---
+
+### 11. XPEV $11P Sep 18 x2 — Breakdown/downtrend (mis-graded) — CLOSED 2026-08-25 ❌ −$20.18 (−20.6%)
+- **Entry:** $0.49 x2, 2026-08-24 2:29 PM CT (order 6a8c8b4c). Original $0.47 limit missed; re-priced ONCE to
+  $0.49 at the mid per the missed-limit policy, then left alone.
+- **Exit:** $0.39, 2026-08-25 9:30 AM CT (order 6a8da717) — discretionary cut ahead of the $0.36 stop.
+- **Thesis as written:** volume break of the 3-week $11.54–12.33 shelf to new 3-month lows on ~3.5x volume,
+  in a persistent downtrend ($17.89 Jun 2 → $11.35) with clean lower highs.
+
+- **Wrong — and this is the whole lesson: I graded the setup without its catalyst.** I filed it as a
+  technical breakdown (bearish setup 2) when it was in fact an earnings gap, i.e. an EP-down (setup 1).
+  XPeng reported Q2 on 8/24 pre-market: revenue missed ~3-4%, net loss RMB1.34B vs RMB512M expected
+  (nearly triple YoY), Q3 revenue guided ~13% under consensus. I only found this out on 8/25, *after*
+  the position was underwater, because I ran the technical scanners and never ran a news screen.
+- **What the news would have told me:** the same report carried deliveries +65% sequentially, gross margin
+  20.7%, a $6.3B valuation on the robotics arm, and a consensus price target of $24.99 against an $11.35
+  stock. That is not a tape with no bid — it is a *contested* one. Contested tapes chop; they don't trend.
+  Puts need sellers with no opposition, and this had a live bull narrative the whole time.
+- **The tell was visible on day 1 and I under-weighted it.** The entire move happened in the first 45
+  minutes ($11.83 → $11.28), then five hours of $11.10–11.40 chop on fading volume. I wrote the words
+  "gap-and-stall, not a trending breakdown" in the session log and held anyway. The WMT backtest run that
+  same morning had *just* shown that post-breakdown drift front-loads and the stall is the tell. I proved
+  the point on one trade and ignored it on another the same day.
+
+- **Right — the damage control worked:** sizing was 12% of budget (half the 20% conservative cap) precisely
+  because I'd flagged the contract-volume gate as marginal at entry; that decision is why this is a $20 loss
+  and not a $60 one. The re-price policy was honored (one re-price, at mid, then stop chasing). And cutting
+  at $0.39 beat the $0.36 stop-market: on a 23%-wide spread that stop fills nearer $0.34 (≈ −30%), so the
+  discretionary exit saved roughly $11 on 2 contracts — the OCUL slippage lesson actually applied in time.
+- **Note:** the owner independently took 8 contracts of the same strike in the personal account (4x size,
+  no stop). Robbin's sizing is not advice for the personal account and never has been — flagged live, twice.
+
+- **Rule note — NEWS IS NOT OPTIONAL.** The PERSONA's SCANNING section lists news/catalysts as item 3 and
+  political/influential commentary as item 5. Running only the technical scanners is a half-scan. From
+  2026-08-25: no setup gets graded, and no ticket gets presented, until its catalyst is identified by name.
+  If the catalyst can't be found, that fact itself is the grade.
+
 ## Open positions
 
-(none — 100% cash as of 2026-08-24)
+(none — 100% cash as of 2026-08-25, $773.65)
