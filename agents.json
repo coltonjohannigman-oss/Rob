@@ -239,7 +239,7 @@
       "agent_id": "b7763d77",
       "amount": -301.21,
       "type": "debit",
-      "note": "Reconcile ledger to broker buying power $773.65 (2026-08-26). Ledger ran $301.21 above broker after backfilling 8 unrecorded trades (2026-07-10..2026-08-25). Realized P&L ties out exactly to broker total_returns $425; the gap is a CASH difference, not a trade difference \u2014 most likely an owner withdrawal. UNCONFIRMED: awaiting owner.",
+      "note": "Reconcile ledger to broker buying power $773.65 (2026-08-26). Ledger ran $301.21 above broker after backfilling 8 unrecorded trades (2026-07-10..2026-08-25). Realized P&L ties out exactly to broker total_returns $425, so the gap was cash, not trades. CONFIRMED by owner 2026-08-26: owner withdrawal. No missing trades \u2014 books are clean.",
       "timestamp": "2026-08-26T13:39:57.887896+00:00"
     }
   ]

@@ -139,3 +139,7 @@ Cash is a position. No trade.
 ## Open positions
 
 (none — 100% cash, $773.65 buying power)
+
+_Ledger note 2026-08-26: the $301.21 cash gap found during the backfill was confirmed by the
+owner as a withdrawal. Realized P&L (+$425.00) ties out exactly to the broker across all 11
+closing trades — no trades were missing, and the books are clean as of this date._
