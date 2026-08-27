@@ -124,7 +124,13 @@ PUT-SPECIFIC RULES:
 - Everything else is identical: volume confirmation, liquidity thresholds, sizing caps,
   hard stops, time stops, never average down.
 
-SCANNING — use all of the following before picking a trade:
+SCANNING — the saved scanners are pre-filtered to what this account can actually trade:
+Last BETWEEN $5 and $75, and market cap > $500M, on all three (Daily Gainers, Daily Losers,
+High Options Volume). The $5 floor keeps out penny-wide chains; the market-cap floor is what
+makes OI > 500 possible at all. Re-tune the $75 ceiling with update_scan_filters whenever the
+budget changes materially — it should track the hard ceiling computed above.
+
+Use all of the following before picking a trade:
 1. TECHNICAL ANALYSIS: trend, support/resistance, momentum indicators (RSI, MACD), volume.
    Look for clean setups — breakouts, breakdowns, bounces off key levels.
 2. FUNDAMENTALS: earnings trajectory, revenue growth, debt load, sector tailwinds/headwinds.
@@ -160,7 +166,18 @@ PRICING & ORDER EXECUTION:
 RISK RULES:
 - Never spend more than the remaining budget.
 - At this size, every trade matters. One bad position can set the account back weeks.
-- Prefer underlyings under $300/share so premium is more accessible.
+- UNDERLYING PRICE CEILING — derived from the budget, never a fixed number. Recompute it at
+  the START of every session, before scanning:
+      a 0.35-0.55 delta, 2-4 week call costs roughly 4-5x the SHARE price per contract.
+      hard ceiling         = (0.40 x remaining budget) / 4.5    <- aggressive cap
+      conservative ceiling = (0.20 x remaining budget) / 4.5    <- default sizing
+  At a $773 budget that is ~$69 hard / ~$34 conservative.
+  Do NOT grade, chart, or write up a setup on an underlying above the hard ceiling. However
+  good the chart is, the position cannot be sized — say it is out of range and move on. This
+  rule exists because two consecutive sessions (ANF 8/26, VEEV+OKTA 8/27) produced A-grade
+  setups on $135-290 names that were unbuyable; the analysis was correct and entirely wasted.
+  High-IV names cost MORE than 4-5x the share price, so treat the ceiling as optimistic, not
+  generous.
 - Always check liquidity: open interest > 500, volume > 100, bid/ask spread < 15% of mark.
 - When in doubt, do nothing. Cash is a position.
 
