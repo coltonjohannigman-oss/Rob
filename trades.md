@@ -136,6 +136,61 @@ now ~45% above spot and effectively unreachable; the -20%-flush rule blocks it r
 
 Cash is a position. No trade.
 
+## Session note — 2026-08-27 (no trade) — the capital wall, second session running
+
+Enterprise software / cybersecurity printed a sector-wide earnings wave: CRM +18% $242.70,
+OKTA +24% $165.71, VEEV +18% $289.31, CRWD +17% $217.28, PANW +11%, ZS +10% $185.63,
+RBRK +10%, SAIL +12% $20.36. Two of these (VEEV, OKTA) graded A on the Qullamaggie EP
+checklist. Neither could be traded, and the reason is now a confirmed pattern rather than
+a one-off.
+
+**VEEV was the textbook setup of the week.** A tight 10-session base between $238.32 and
+$253.49 (8/13-8/26), sitting right under the highs after a relentless summer uptrend
+($150.39 June low to $253.49), broken decisively by an +18% earnings gap to $289.31.
+Tight base, real catalyst, sector leadership, fresh all-time highs — all four legs.
+
+**OKTA graded nearly as well and had the volume.** Beaten down 2 weeks from $155.90 to
+$127.60, high-volume reversal 8/26 (7.0M vs ~2.5M avg), then +24% through the $157.00
+90-day high. 1.43M shares in the first 15 minutes — ~57% of an average FULL day.
+
+**Both priced out, verified strike by strike (OKTA Sep 18):**
+| Strike | Mark | Cost | % of acct | Spread | OI | Vol | Delta |
+|---|---|---|---|---|---|---|---|
+| $160C | $12.10 | $1,210 | 156% | 9.9% | 1,752 | 1,077 | 0.63 |
+| $170C | $7.18 | $718 | 93% | 20.2% | 1,542 | 24 | 0.46 |
+| $175C | $5.48 | $548 | 71% | 26.5% | 443 | 741 | 0.38 |
+| $180C | $4.25 | $425 | 55% | 30.6% | 473 | 112 | 0.31 |
+| $185C | $3.23 | $323 | 42% | 69.3% | 237 | 12 | 0.25 |
+
+The only strike passing all three liquidity gates costs twice the account. Everything
+affordable fails OI, spread, or both. VEEV/CRM/CRWD/ZS are worse — a 0.35-0.55 delta
+3-week call on a $185-289 stock is $1,000-1,600 against $773.65 of buying power.
+
+**SAIL was the affordable name and it failed on its own merits, not just liquidity:**
+- Volume: 261K in the first 15 min against ~2.5-3M average daily — roughly a 1x pace.
+  A +12% earnings gap that does NOT draw outsized volume is not confirmed. First gate, failed.
+- Not a base: drifted DOWN $20.38 to $17.87 over the prior 9 sessions. Today's gap merely
+  recovers that decline and pokes $0.06 above the 8/13 high.
+- Sector laggard: +12% against OKTA's +24%. The persona names this exactly — "the strongest
+  name in the move, not a sympathy tagalong."
+- Contracts failed anyway: $20C spread 28.6% / volume 19; $22.50C OI 451.
+
+**The pattern, now twice in a row (ANF 8/26, VEEV+OKTA 8/27):** this account correctly
+identifies A-grade episodic pivots and cannot buy any of them. Yesterday's note framed it as
+a gap-day liquidity problem solved by waiting for the 10-day EMA pullback. Today refines that:
+it is a PRICE problem, not just a timing one. ANF never pulled back — it went $137 to $149.30
+and the entry never came. Waiting does not fix a $773 account trying to buy $165-290 stocks;
+OI builds on the pullback but premium does not fall enough to matter.
+
+The honest conclusion: at this size the tradeable universe is roughly **underlyings below
+~$60**, where a 0.35-0.55 delta 3-week call costs $100-200. Every A-grade setup found in two
+sessions has been in $135-290 names. Either the scans need a price ceiling so they surface
+setups this account can actually act on, or the account needs more capital to trade the
+setups it is already finding correctly. Manufacturing a trade in the one affordable laggard
+is the wrong answer, and SAIL today was exactly that temptation.
+
+No trade. Cash is a position.
+
 ## Open positions
 
 (none — 100% cash, $773.65 buying power)
