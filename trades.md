@@ -191,6 +191,60 @@ is the wrong answer, and SAIL today was exactly that temptation.
 
 No trade. Cash is a position.
 
+## Session note — 2026-08-27 PM (no trade) — the ceiling worked; FIG failed on merit
+
+First session run under the new price ceiling ($5-$75, market cap > $500M). It did exactly
+what it was supposed to: the scans returned genuinely tradeable names instead of $135-290
+setups this account cannot buy. Smart Money Flow went from 3 illiquid microcaps to 38 usable
+names. The failure mode this session was setup quality, not capital — a much healthier place
+to be.
+
+**Candidates, all inside the ceiling, all with volume confirmation (rvol > 1.2):**
+Only two of the day's cybersecurity/software cohort actually broke to new 90-day highs.
+TENB ($38.25, +13.6%) sits under its $43.67 high; S ($22.71, +10.7%) under $23.95; VRNS,
+NTSK and RPD likewise below theirs. Those are recoveries inside a range, not breakouts.
+
+**SAIL — correcting this morning's read.** At 8:44 AM I measured ~1x relative volume in the
+first 15 minutes and used it to fail the volume gate. It closed the day at **rvol 2.27**. The
+morning read was too early to be conclusive and the conclusion drawn from it was wrong. The
+pass still stands on other grounds — SAIL spiked to $21.17 in the first 30 minutes, gave back
+a third, and chopped sideways the rest of the day, and its "base" was a nine-session decline
+($19.29 to $17.87), not a consolidation — but the volume reasoning was not sound. Lesson: a
+15-minute volume sample is not a volume verdict; either wait for a fuller sample or state the
+gate as unresolved rather than failed.
+
+**FIG (Figma) — the real candidate, and the closest this account has come to a trade.**
+Everything about the near-term chart was right:
+- Tight 8-session base, $26.50-28.03, sitting directly under the $28.48 90-day high
+- Gapped to a $28.03 open and then ground HIGHER all day: 29.82, 30.24, 30.45, 30.71, 30.81
+- Closed the session near HOD at $30.79 after 4+ hours — no fade, on 1.99x volume
+- And for the first time, the liquidity was genuinely there: the $30C showed **OI 12,641,
+  volume 2,671, an 8.2% spread**, delta 0.599, at $257.50 (33% of budget)
+
+Passed anyway, on two objective failures rather than a judgment call:
+1. **Not 52-week highs.** The 90-day chart flattered it. Pulling a full year: FIG IPO'd July
+   2025, spiked to **$142.92**, and collapsed 88% to $16.60 by April 2026. Today's $30.79 is
+   78% below the 52-week high, with heavy overhead supply at **$32-40** from Nov 2025-Jan 2026
+   sitting within 5% of entry. The persona's momentum setup requires new 52-week highs; this
+   is a broken IPO in recovery breaking out directly into trapped supply.
+2. **No identifiable catalyst.** Earnings were 2026-08-05, three weeks ago; next is 11/04. The
+   +13.8% is unexplained by anything verifiable here, and the persona forbids buying an
+   unexplained pop.
+
+So FIG fails both named setups on objective criteria — EP #1 needs a genuine catalyst, and
+momentum #2 needs 52-week highs. Sizing sharpened it further: the only liquid strikes were
+the $30C (delta 0.599, 33% of budget) and the $35C (delta 0.272, a lottery ticket). Taking
+33% requires an "exceptional" setup by the persona's own words, and a setup missing its
+catalyst and its 52-week-high leg does not earn that.
+
+**Method note worth keeping:** the "pull at least 90 days" rule was not enough here. Ninety
+days showed a clean breakout; one year showed a broken IPO breaking out into supply. On any
+name that listed within the last ~18 months, pull the full listing history before grading —
+the 90-day window is exactly where a post-IPO collapse hides.
+
+FIG watchlisted with a real trigger: a close above ~$33, through the first supply shelf, on
+continued volume. No trade. Cash is a position.
+
 ## Open positions
 
 (none — 100% cash, $773.65 buying power)
