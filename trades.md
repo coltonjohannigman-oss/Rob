@@ -245,6 +245,61 @@ the 90-day window is exactly where a post-IPO collapse hides.
 FIG watchlisted with a real trigger: a close above ~$33, through the first supply shelf, on
 continued volume. No trade. Cash is a position.
 
+## Session note — 2026-08-28 AM (no trade) — held for a Fed keynote, GAP staged
+
+Ran at 8:49 AM CT, ~19 minutes into the session. The `get_equity_news` tool became available
+this session and immediately closed the biggest gap in the process: FIG was passed yesterday
+partly because its catalyst could not be identified. Today every candidate's catalyst was
+confirmed from the wire in one call. That should be a standing step from now on — check news
+before grading, not after.
+
+**The decisive fact was macro, not technical: Fed Chair Warsh's Jackson Hole keynote was
+scheduled for 9:00 AM CT, roughly ten minutes after this session started,** with UMich
+sentiment landing the same minute. The persona bars new entries in the final session before a
+major macro print unless the setup is exceptional AND sized at the conservative cap. Entering
+minutes *before* the print is strictly worse than the case the rule contemplates.
+
+**GAP — the best candidate this account has produced, and genuinely close.**
+- Catalyst (confirmed): Q2 adj EPS $0.52 vs $0.48 consensus, and FY26 EPS guidance RAISED to
+  $2.35-2.45 from $2.30-2.40. Gap brand net sales +9%, comps +10%, 11th consecutive positive
+  quarter. $600M of buybacks YTD. UBS raised its PT to $42 (Buy); mean PT $27.
+- Structure: three-month base $18.11-21.64 (June-August), gapping through it to $23.75, +14%.
+- Liquidity, finally real: the Sep 18 $23C shows OI 3,445, volume 984, a 5.9% spread, at
+  $136 = 17.6% of the account — inside the conservative cap.
+
+Held anyway, and the reasons are worth keeping:
+1. **The macro binary above** — nine minutes to a Fed Chair keynote.
+2. **Strike problem.** The $23C is liquid and affordable but delta 0.657, above the 0.35-0.55
+   band. The delta exception only unlocks when *every* OTM strike fails the OI test, and the
+   $24C does not fail it (OI 6,254, delta 0.483) — so the exception is unavailable. The $24C
+   is the correct strike, but its spread was 27.1% of mark at 8:51 AM, above even the 25%
+   exception ceiling. That is an artifact of being 20 minutes into a gap day and should
+   compress; it is a timing problem, not a structural one like FIG's open interest.
+3. **Not 52-week highs.** The 52-week high is $29.36 with supply $24-29 from Nov 2025-May 2026.
+   And the "beat" was EPS and guidance, not the top line: sales missed ($3.651B vs $3.690B),
+   comps -1%, operating margin -70bps, Old Navy -4%, Athleta -12%.
+4. **Volume unresolved,** not failed — rvol 0.32 at 22 minutes. Per yesterday's SAIL lesson
+   that is an unresolved gate, not a failed one, and it is not a basis for either entering
+   or rejecting.
+
+Grade: B+. Real catalyst, real base, real liquidity, correct sizing — but not the "exceptional"
+that the binary-event rule demands as the price of entering ahead of a Fed keynote.
+
+**PYPL — the cleanest bearish setup seen so far, deliberately not taken.** Advent and Stripe
+abandoned their ~$53B bid (Bloomberg). PYPL had rallied ~40% this quarter on that speculation
+— the 7/13 week gapped $46.90 to $56.56 on 174M shares when the interest was first reported.
+With the bid gone the whole premium is unsupported, and the retrace target is the pre-deal
+$46-47 zone, another ~15% below. That is a textbook episodic-pivot-down. But it is day one of
+the flush with put IV blown out, and the persona is explicit that the bounce entry beats the
+flush entry. Sizing kills it independently: a $54 stock needs 28-35% of the account per
+contract. Watchlisted for a weak bounce.
+
+SOLS (+17.7%, $66.33) also passed: the catalyst is real (Element Solutions merger terminated
+with no fee, $500M buyback authorized, guidance affirmed) but it is 27% below its $90.80
+52-week high, recovering into the July breakdown zone, and at $66 it needs 34-43% sizing.
+
+No trade. Cash is a position.
+
 ## Open positions
 
 (none — 100% cash, $773.65 buying power)
