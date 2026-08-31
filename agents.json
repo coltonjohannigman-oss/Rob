@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 739.86,
+      "balance": 773.6500000000001,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 90.0
+      "realized_pnl": 425.0
     }
   },
   "transactions": [
@@ -105,6 +105,142 @@
       "type": "credit",
       "note": "GRND $15C Jul17 x1 sold @ $1.40 by owner in-app (order 6a4bbd46, filled 1:02 PM CT 7/6; owner cancelled agent TP $1.50 first)",
       "timestamp": "2026-07-07T03:09:53.659172+00:00"
+    },
+    {
+      "id": "a7817acf",
+      "agent_id": "b7763d77",
+      "amount": -155.0,
+      "type": "debit",
+      "note": "MRNA $65P Jul17 x1 @ $1.55 (order 6a511da4) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.485381+00:00"
+    },
+    {
+      "id": "4c94857c",
+      "agent_id": "b7763d77",
+      "amount": 184.0,
+      "type": "credit",
+      "note": "MRNA $65P Jul17 x1 stop-limit $1.95/$1.80 filled @ $1.84 (order 6a54ea36) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.535605+00:00"
+    },
+    {
+      "id": "5dfc92d4",
+      "agent_id": "b7763d77",
+      "amount": -110.0,
+      "type": "debit",
+      "note": "WULF $18P Jul31 x1 @ $1.10 (order 6a569290, placed by owner in-app) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.585041+00:00"
+    },
+    {
+      "id": "7bb0f86c",
+      "agent_id": "b7763d77",
+      "amount": 157.0,
+      "type": "credit",
+      "note": "WULF $18P Jul31 x1 sold @ $1.57 (order 6a591131) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.632260+00:00"
+    },
+    {
+      "id": "eccb843c",
+      "agent_id": "b7763d77",
+      "amount": -120.0,
+      "type": "debit",
+      "note": "SLB $53C Aug21 x1 @ $1.20 (order 6a636dda) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.681911+00:00"
+    },
+    {
+      "id": "2d84fdf2",
+      "agent_id": "b7763d77",
+      "amount": 144.0,
+      "type": "credit",
+      "note": "SLB $53C Aug21 x1 sold @ $1.44 same day (order 6a638ca9) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.730315+00:00"
+    },
+    {
+      "id": "a419d19d",
+      "agent_id": "b7763d77",
+      "amount": -250.0,
+      "type": "debit",
+      "note": "GDX $85C Aug21 x1 @ $2.50 (order 6a736b32) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.782130+00:00"
+    },
+    {
+      "id": "2802780c",
+      "agent_id": "b7763d77",
+      "amount": 575.0,
+      "type": "credit",
+      "note": "GDX $85C Aug21 x1 sold @ $5.75 (order 6a75df48) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:25.835787+00:00"
+    },
+    {
+      "id": "d51c83b6",
+      "agent_id": "b7763d77",
+      "amount": -160.0,
+      "type": "debit",
+      "note": "OCUL $11C Sep18 x2 @ $0.80 (order 6a83210d) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:35.918670+00:00"
+    },
+    {
+      "id": "5f5054ca",
+      "agent_id": "b7763d77",
+      "amount": 60.0,
+      "type": "credit",
+      "note": "OCUL $11C Sep18 x2 stop-market $0.60 fired @ $0.30 (order 6a832155) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:35.966696+00:00"
+    },
+    {
+      "id": "8229f6df",
+      "agent_id": "b7763d77",
+      "amount": -100.0,
+      "type": "debit",
+      "note": "NXE $12C Sep18 x2 @ $0.50 (order 6a8322f1) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.014518+00:00"
+    },
+    {
+      "id": "4e0233cf",
+      "agent_id": "b7763d77",
+      "amount": 70.0,
+      "type": "credit",
+      "note": "NXE $12C Sep18 x2 stop-market $0.40 fired @ $0.35 (order 6a8326c3) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.063781+00:00"
+    },
+    {
+      "id": "20112456",
+      "agent_id": "b7763d77",
+      "amount": -195.0,
+      "type": "debit",
+      "note": "AMLX $40C Sep18 x1 @ $1.95 (order 6a85b7b1) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.113644+00:00"
+    },
+    {
+      "id": "c58cf04b",
+      "agent_id": "b7763d77",
+      "amount": 255.0,
+      "type": "credit",
+      "note": "AMLX $40C Sep18 x1 sold @ $2.55 TP (order 6a87055e) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.163676+00:00"
+    },
+    {
+      "id": "85ba57a8",
+      "agent_id": "b7763d77",
+      "amount": -98.0,
+      "type": "debit",
+      "note": "XPEV $11P Sep18 x2 @ $0.49 (order 6a8c8b4c) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.210439+00:00"
+    },
+    {
+      "id": "e7460be2",
+      "agent_id": "b7763d77",
+      "amount": 78.0,
+      "type": "credit",
+      "note": "XPEV $11P Sep18 x2 sold @ $0.39 (order 6a8da717) \u2014 backfilled 8/31",
+      "timestamp": "2026-08-31T13:44:36.259969+00:00"
+    },
+    {
+      "id": "52d33028",
+      "agent_id": "b7763d77",
+      "amount": -301.21,
+      "type": "debit",
+      "note": "Reconcile ledger to broker cash/buying power $773.65 on 2026-08-31. Realized P&L now ties exactly to broker ($425 all-time). This $301.21 write-down removes a funding overstatement that predates 2026-07-07 \u2014 the ledger credited $649.86 of deposits+reconciliations but the broker implies only $348.65 of net deposits. Not attributable to any trade; likely the alloc0003/rebal001 reconciliation credits double-counting funds. Needs owner confirmation of actual deposits/withdrawals.",
+      "timestamp": "2026-08-31T13:45:03.516992+00:00"
     }
   ]
 }
