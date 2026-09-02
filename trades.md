@@ -103,10 +103,10 @@ history and verified against `get_realized_pnl`: reconstructed total **+$425** t
 broker's reported all-time realized P&L of **+$425** (June +$55, July +$135, August +$235).
 
 The ledger had been carrying `realized_pnl: $90` and a balance of `$739.86` — stale since 2026-07-07.
-After the backfill the ledger read $1,074.86 against live broker cash of **$773.65**, leaving a
-**$301.21 residual that trading activity does not explain** (every fill is now accounted for). It was
-booked as a reconciling debit to anchor the ledger to the broker. Most likely an owner withdrawal or
-an overstated funding credit in the original ledger — **flagged for owner review, unresolved.**
+After the backfill the ledger read $1,074.86 against live broker cash of **$773.65**. The
+**$301.21 difference was an owner withdrawal**, confirmed by the owner on 2026-09-02, and is booked
+as such. It was never trading activity — every fill is accounted for and realized P&L ties to the
+broker exactly. Ledger and broker now agree at $773.65 with zero open positions.
 
 **Process fix:** the persona's BOOKKEEPING rule ("record it in the ledger immediately") was not
 followed for eight consecutive trades. Every session must now reconcile ledger realized P&L against

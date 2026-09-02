@@ -239,7 +239,7 @@
       "agent_id": "b7763d77",
       "amount": -301.21,
       "type": "debit",
-      "note": "RECONCILE to live broker buying power $773.65 (zero open positions, 2026-09-02). All 8 previously-unrecorded trades Jul10-Aug25 are now booked and realized P&L ties exactly to the broker (+$425). This residual is NOT trading activity \u2014 it is an unexplained cash difference (owner withdrawal/transfer, or an overstated funding credit in the original ledger). Flagged for owner review.",
+      "note": "Owner withdrawal of $301.21 (confirmed by owner 2026-09-02). Recorded when the ledger was reconciled to live broker buying power of $773.65 with zero open positions. Not trading activity: all 11 trades through 2026-08-25 are booked and realized P&L ties exactly to the broker at +$425.",
       "timestamp": "2026-09-02T13:15:30.435717+00:00"
     }
   ]
