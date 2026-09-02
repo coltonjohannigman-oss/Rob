@@ -44,6 +44,74 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul17 — EP-Down / breakdown put — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4). **Exit:** stop-limit $1.95/$1.80 filled @ $1.84, 2026-07-13 (order 6a54ea36).
+- **Right:** Bearish thesis paid; the stop-LIMIT (not stop-market) avoided the slippage that later gutted OCUL.
+- **Wrong:** Exited below the 30% band on a mechanical stop rather than a target. Small win, but the put never got room.
+
+### 5. WULF $18P Jul31 — Breakdown put — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 — **placed by the OWNER in-app** (order 6a569290), not by Robbin.
+- **Exit:** $1.57 limit, 2026-07-16 (order 6a591131). Clean exit inside the 30-80% band.
+- **Note:** Owner-originated entry, agent-managed exit. The division of labor worked.
+
+### 6. SLB $53C Aug21 — Momentum breakout — CLOSED 2026-07-24 ✅ +$24 (+20.0%)
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda). **Exit:** $1.44, same day (order 6a638ca9).
+- **Wrong:** Exited at +20%, below the 30-80% band, on a day trade that was never framed as one.
+  The oil/Iran catalyst was flagged fragile in the watchlist — taking the quick win was defensible,
+  but the trade had no pre-declared plan, and that is the actual error.
+
+### 7. GDX $85C Aug21 — Momentum / trend — CLOSED 2026-08-07 ✅ +$325 (+130.0%)
+- **Entry:** $2.50 x1, 2026-08-05 (order 6a736b32). **Exit:** $5.75, 2026-08-07 (order 6a75df48).
+- **Right:** The best trade in the account's history. Gold-miner trend was the strongest theme on the
+  board and the position was allowed to run past the 80% band — the LETTING A WINNER RUN checklist
+  earning its place. The $1.75 stop was cancelled and replaced by a live exit at the top.
+- **Lesson:** This single trade (+$325) exceeds the sum of every other closed trade. Position size,
+  not hit rate, produced it.
+
+### 8. OCUL $11C Sep18 — Breakout attempt — CLOSED 2026-08-18 ❌ -$100 (-62.5%)
+- **Entry:** $0.80 x2, 2026-08-17 (order 6a83210d). **Exit:** stop-MARKET $0.60 filled @ **$0.30**, 2026-08-18 (order 6a832155).
+- **Wrong:** THE WORST TRADE ON RECORD, and the loss was mechanical, not directional. A $0.60 stop on a
+  $0.80 entry is a -25% stop — inside the rules. It filled at $0.30, a **-62.5% realized loss**: the
+  stop-market gapped through the trigger on a wide-spread, low-priced contract. The persona already
+  warns "stop-market on a wide-spread contract fills below the trigger" and "stops do NOT protect
+  through gaps." Both warnings fired at once and the loss was 2.5x the intended risk.
+- **Rule note:** On sub-$1.00 contracts a stop-market is not risk control, it is a market order with a
+  delay. Use stop-LIMIT (as MRNA did) or accept that the real risk is the whole premium.
+
+### 9. NXE $12C Sep18 — Breakout attempt — CLOSED 2026-08-17 ❌ -$30 (-30.0%)
+- **Entry:** $0.50 x2, 2026-08-17 (order 6a8322f1). **Exit:** stop-market $0.40 filled @ $0.35, same day (order 6a8326c3).
+- **Wrong:** Opened same-day alongside OCUL — two speculative sub-$1 breakout calls at once. Both
+  failed within 24 hours. Stopped out in three hours; the setup was never confirmed by volume.
+
+### 10. AMLX $40C Sep18 — Episodic pivot — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
+- **Entry:** $1.95 x1, 2026-08-19 (order 6a85b7b1). **Exit:** $2.55, 2026-08-20 (order 6a87055e).
+- **Right:** Textbook execution. Entered, stop set at $1.40, then the stop was cancelled and the
+  position sold into strength at +30.8% — the low end of the band, taken cleanly. No agonizing.
+
+### 11. XPEV $11P Sep18 — Breakdown put — CLOSED 2026-08-25 ❌ -$20 (-20.4%)
+- **Entry:** $0.49 x2, 2026-08-24 (order 6a8c8b4c). **Exit:** $0.39 limit, 2026-08-25 (order 6a8da717).
+- **Right:** Cut at -20% by a discretionary limit exit BEFORE the $0.36 stop-market could fill worse —
+  exactly the lesson OCUL taught, applied one week later. Small, controlled loss.
+
+---
+
+## Bookkeeping incident — 2026-09-02
+
+Trades 4 through 11 were executed between 2026-07-10 and 2026-08-25 but were **never recorded** in
+`agents.json` or this journal. They were reconstructed on 2026-09-02 from the broker's own order
+history and verified against `get_realized_pnl`: reconstructed total **+$425** ties exactly to the
+broker's reported all-time realized P&L of **+$425** (June +$55, July +$135, August +$235).
+
+The ledger had been carrying `realized_pnl: $90` and a balance of `$739.86` — stale since 2026-07-07.
+After the backfill the ledger read $1,074.86 against live broker cash of **$773.65**, leaving a
+**$301.21 residual that trading activity does not explain** (every fill is now accounted for). It was
+booked as a reconciling debit to anchor the ledger to the broker. Most likely an owner withdrawal or
+an overstated funding credit in the original ledger — **flagged for owner review, unresolved.**
+
+**Process fix:** the persona's BOOKKEEPING rule ("record it in the ledger immediately") was not
+followed for eight consecutive trades. Every session must now reconcile ledger realized P&L against
+`get_realized_pnl` before trading, not just cash against buying power.
+
 ## Open positions
 
-(none — 100% cash)
+(none — 100% cash, $773.65 buying power)
