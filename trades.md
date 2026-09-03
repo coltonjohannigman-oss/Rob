@@ -44,6 +44,56 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — EP-Down / breakdown — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4) | **Exit:** $1.84, stop-limit $1.95/$1.80 fired (order 6a54ea36)
+- **Right:** Ratcheted stop ($1.25 → $1.95) did its job and banked the move automatically.
+- **Wrong:** Exited via stop rather than a planned target — +18.7% is below the 30-80% band. The stop was doing take-profit duty, which means the profit plan was never really set.
+
+### 5. WULF $18P Jul 31 — EP-Down / breakdown — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 (order 6a569290 — owner-placed after the agent's $1.05 limit missed) | **Exit:** $1.57 (order 6a591131)
+- **Right:** Textbook. Entry near the money, exit at +42.7% — dead center of the 30-80% band. Best-executed trade of the untracked run.
+- **Wrong:** Agent's $1.05 limit was a penny-pinch that missed; owner had to step in to get filled. Lesson: on a thesis you believe, pay the mid.
+
+### 6. SLB $53C Aug 21 — Momentum — CLOSED 2026-07-24 ✅ +$24 (+20.0%)
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda) | **Exit:** $1.44 same day, ~2h later (order 6a638ca9)
+- **Right:** Quick, clean, positive.
+- **Wrong:** +20% is below the 30-80% band — sold early on a swing thesis with no day-trade justification. Left the setup before it could work.
+
+### 7. GDX $85C Aug 21 — Momentum / sector trend — CLOSED 2026-08-07 ✅ +$325 (+130.0%)
+- **Entry:** $2.50 x1, 2026-08-05 (order 6a736b32) | **Exit:** $5.75, 2026-08-07 (order 6a75df48)
+- **Thesis:** Gold miners breaking out with gold heading toward $4,400+.
+- **Right:** THE trade of the account — +130% in two sessions, and it alone carries the entire realized P&L. Riding past 80% was correct here: gold-miner leadership, volume, and a clean trend all held, which is exactly what the LETTING A WINNER RUN checklist is for.
+- **Wrong:** Nothing on execution. Worth noting the $1.75 stop was cancelled to free the contract for the limit sell — the usual one-order-per-contract dance.
+
+### 8. OCUL $11C Sep 18 — Biotech breakout — CLOSED 2026-08-18 ❌ -$100 (-62.5%)
+- **Entry:** $0.80 x2, 2026-08-17 (order 6a83210d) | **Exit:** $0.30 x2, stop-market $0.60 fired @ $0.30 (order 6a832155)
+- **Wrong:** The worst trade in the book, and on two counts. First, a $0.60 stop on a $0.80 entry is a 25% stop — correct in intent — but the stop-market filled at $0.30, HALF the trigger. That is the wide-spread slippage the PERSONA warns about, and on a low-priced contract it turned a -25% rule into a -62.5% reality. Second, this was sized x2 alongside NXE the same day.
+- **Rule note:** On contracts under ~$1.00 with wide spreads, a stop-market is not a 25% stop — it is an unbounded one. Use a stop-LIMIT or accept a smaller size.
+
+### 9. NXE $12C Sep 18 — Uranium momentum — CLOSED 2026-08-17 ❌ -$30 (-30.0%)
+- **Entry:** $0.50 x2, 2026-08-17 (order 6a8322f1) | **Exit:** $0.35 x2, stop-market $0.40 fired @ $0.35 (order 6a8326c3), SAME DAY
+- **Wrong:** Stopped out hours after entry — the entry was into noise, not a confirmed breakout. Two same-day entries (this + OCUL) on 8/17 both stopped within 24h; that is a sizing-and-patience failure, not bad luck.
+- **Right:** The stop was honored immediately and the loss stayed at -30%.
+
+### 10. AMLX $40C Sep 18 — Biotech catalyst — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
+- **Entry:** $1.95 x1, 2026-08-19 (order 6a85b7b1) | **Exit:** $2.55 next day (order 6a87055e)
+- **Right:** +30.8% is just inside the profit band; took it and left. The $1.40 stop was cancelled to free the contract for the take-profit — correct sequencing.
+
+### 11. XPEV $11P Sep 18 — EP-Down / breakdown — CLOSED 2026-08-25 ❌ -$20 (-20.4%)
+- **Entry:** $0.49 x2, 2026-08-24 (order 6a8c8b4c; initial $0.47 limit cancelled and re-priced once) | **Exit:** $0.39 x2 (order 6a8da717)
+- **Right:** Cut at -20.4%, inside the hard-stop band, and cancelled the $0.36 stop to exit on a limit rather than eat stop slippage — the OCUL lesson applied correctly one week later.
+- **Wrong:** Thesis didn't develop; exited within a day. Puts on a name that wasn't actually breaking down.
+
+---
+
+## Untracked-run post-mortem (2026-07-10 → 2026-08-25)
+
+Eleven closed trades all-time, +$425 realized, which ties exactly to the broker. But the honest read:
+- **8 of 11 winners, yet ONE trade (GDX, +$325) is 76% of all profit.** Strip GDX out and the other ten trades net +$100 combined. The edge is thin and concentrated.
+- **Two winners were sold below the 30-80% band** (MRNA +18.7%, SLB +20%, GRND +33% was fine) — the band is being under-shot on the upside and respected on the downside, which caps compounding.
+- **Stop-market slippage on sub-$1 contracts is the single biggest mechanical leak** (OCUL: -62.5% on a -25% stop).
+- **Bookkeeping failed completely for ~7 weeks.** Eleven trades executed, zero recorded, nothing committed. Backfilled 2026-09-03.
+
 ## Open positions
 
-(none — 100% cash)
+(none — 100% cash, $773.65 buying power as of 2026-09-03 10:28 AM CT)
