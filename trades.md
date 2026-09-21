@@ -44,6 +44,64 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
   (accepted tradeoff, owner's call).
 - **Rule note:** exception rubric documented in PERSONA 2026-07-01 traces to this trade.
 
+### 4. MRNA $65P Jul 17 — EP-Down / breakdown — CLOSED 2026-07-13 ✅ +$29 (+18.7%)
+- **Entry:** $1.55 x1, 2026-07-10 (order 6a511da4) | **Exit:** $1.84, stop-limit $1.95/$1.80 (order 6a54ea36)
+- **Right:** Ratcheted the stop up into the move and let the trigger do the selling. Clean, unemotional exit.
+- **Wrong:** Nothing structural. Exit landed just under the 30% band because the ratchet was set tight.
+
+### 5. WULF $18P Jul 31 — EP-Down / breakdown — CLOSED 2026-07-16 ✅ +$47 (+42.7%)
+- **Entry:** $1.10 x1, 2026-07-14 (order 6a569290, owner-placed in-app after the agent's $1.05 limit missed)
+- **Exit:** $1.57 limit, 2026-07-16 (order 6a591131)
+- **Right:** +42.7% is dead-center in the 30-80% band on a 2-day hold. Textbook put trade: took it fast, per the
+  put-specific rule to bias toward the 30-50% end.
+- **Wrong:** The agent's original $1.05 limit missed and the owner had to place the fill. Re-price discipline was slow.
+
+### 6. SLB $53C Aug 21 — Momentum — CLOSED 2026-07-24 ✅ +$24 (+20.0%)
+- **Entry:** $1.20 x1, 2026-07-24 (order 6a636dda) | **Exit:** $1.44, same day (order 6a638ca9)
+- **Right:** Quick, clean scalp; cancelled the stop and took the limit rather than round-tripping it.
+- **Wrong:** +20% is BELOW the 30-80% band — sold early without the band being reached. Profitable but off-process.
+
+### 7. GDX $85C Aug 21 — Momentum/Trend — CLOSED 2026-08-07 ✅ +$325 (+130.0%)
+- **Entry:** $2.50 x1, 2026-08-05 (order 6a736b32) | **Exit:** $5.75 limit, 2026-08-07 (order 6a75df48)
+- **Right:** Best trade in the book by a wide margin. Gold-miner trend trade held through a 2-day rip; the
+  stop was cancelled and the position exited on a limit into strength, not a panic bid.
+- **Wrong — PROCESS FLAG:** +130% is far outside the 30-80% default band. Riding past 80% is only permitted by
+  the LETTING A WINNER RUN checklist (catalyst + Qullamaggie structure + sector leadership + holding the 10-day
+  EMA), and there is **no session record that the checklist was ever applied**. The outcome was excellent; the
+  process was not documented. A repeat of this without the checklist is gambling that happened to pay.
+
+### 8. OCUL $11C Sep 18 x2 — CLOSED 2026-08-18 ❌ -$100 (-62.5%)
+- **Entry:** $0.80 x2, 2026-08-17 (order 6a83210d) | **Exit:** $0.30, stop-market $0.60 (order 6a832155)
+- **Wrong — WORST TRADE IN THE BOOK.** The stop was set correctly at $0.60 (a -25% trigger, inside the hard-stop
+  rule). It filled at $0.30. The contract gapped down overnight and the stop-market triggered into a vacuum,
+  realizing **-62.5% on a position whose stop was set at -25%**.
+- **Rule this proves with real money:** "Stops do NOT protect through gaps" and "stop-market on a wide-spread
+  contract fills below the trigger." On a thin, low-priced contract ($0.80 premium), half-the-spread slippage is
+  not the right model — the real slippage was 50% of the trigger price. On sub-$1.00 contracts a stop-market is
+  closer to a suggestion than a floor. Size for that, or don't hold them overnight.
+
+### 9. NXE $12C Sep 18 x2 — CLOSED 2026-08-17 ❌ -$30 (-30.0%)
+- **Entry:** $0.50 x2, 2026-08-17 (order 6a8322f1) | **Exit:** $0.35, stop-market $0.40 (order 6a8326c3), same day
+- **Right:** The hard stop did its job — cut at -30%, the outer edge of the 25-30% rule, and the trade was dead
+  within hours. Losing small is the system working.
+- **Wrong — SIZING/CONCENTRATION FLAG:** NXE and OCUL were opened **13 minutes apart on 2026-08-17** ($260 of
+  premium across two speculative sub-$1.00 contracts) and BOTH were stopped out inside 24 hours for a combined
+  -$130. Two same-day entries into thin, low-priced contracts is a correlated bet on one market condition, not
+  two independent trades.
+
+### 10. AMLX $40C Sep 18 — CLOSED 2026-08-20 ✅ +$60 (+30.8%)
+- **Entry:** $1.95 x1, 2026-08-19 (order 6a85b7b1) | **Exit:** $2.55 GTC limit, 2026-08-20 (order 6a87055e)
+- **Right:** +30.8% is the bottom edge of the band, taken on a 1-day hold. Stop was cancelled to free the
+  contract for the take-profit (the one-order-per-contract swap), and the TP actually filled.
+- **Wrong:** The stop->TP swap left the position unprotected while the TP worked. Acceptable here (it filled
+  next morning) but it is the same unhedged window that cost the GRND trade five hours of drift.
+
+### 11. XPEV $11P Sep 18 x2 — CLOSED 2026-08-25 ❌ -$20 (-20.4%)
+- **Entry:** $0.49 x2, 2026-08-24 (order 6a8c8b4c) | **Exit:** $0.39 limit, 2026-08-25 (order 6a8da717)
+- **Right:** Thesis stop honored early — cancelled the $0.36 stop and exited on a limit at -20%, INSIDE the
+  25-30% hard stop rather than waiting for it. Losing small, on purpose. This is the discipline the book wants.
+- **Wrong:** Nothing. Correct trade, wrong outcome. The put thesis simply did not work.
+
 ## Open positions
 
-(none — 100% cash)
+(none — 100% cash as of 2026-09-21)
