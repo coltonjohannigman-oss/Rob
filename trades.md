@@ -105,3 +105,50 @@ Format: **Ticker contract | setup type | entry → exit | P&L | what went right 
 ## Open positions
 
 (none — 100% cash as of 2026-09-21)
+
+
+---
+
+## Process notes (not closed trades)
+
+### 2026-09-23 — The put bounce-entry rule missed an entire trend (NVO)
+The PERSONA's EP-DOWN rule prefers the bounce entry: "Buy puts on the breakdown day or — usually
+better — on the first weak bounce into the declining 10/20-day EMA." On NVO this week that
+preference cost the whole move.
+
+- 9/21: NVO -7.7% to $39.89 on 2.7x volume, light long-term targets. Oct 16 $40P = $1.44.
+  Passed on the flush; waited for a bounce-rejection at the declining 10-day EMA ($43.69).
+- 9/22: $39.56. No bounce. 9/23: $38.24, new lows. Same put = **$2.21, up 53%**.
+- The bounce never came. Three sessions, no rally above even the prior day's high.
+
+**The observation:** the bounce entry works on choppy breakdowns that retrace into the EMA. It
+structurally CANNOT fill on the strongest downtrends — the ones that go straight down are exactly
+the ones that never bounce. The rule therefore self-selects into weaker setups and misses the best
+ones. Waiting also gets worse over time: by 9/23 the remaining downside to the Feb-April base
+($35-39) had shrunk to a few percent, so the trade got less attractive while the thesis got MORE
+right.
+
+**Not changing the rule unilaterally — this is the owner's call.** One instance is not proof; the
+rule exists because flush entries do get shaken out (see the OCUL gap, trade #8). A candidate
+amendment worth testing: on an EP-Down where volume confirms AND put IV is NOT inflated (NVO's was
+34%, cheap), allow a half-size breakdown-day entry rather than requiring the bounce, and keep the
+full-size bounce entry as the add. That preserves the IV discipline while not forfeiting trends
+that never retrace.
+
+### 2026-09-23 — Position sizing, not direction, was the real VKTX constraint
+VKTX gapped +35% on 9/22 (VK2735 maintenance data). Passed: the Oct 16 $40 call cost $350 = 45% of
+buying power, over the 40% aggressive cap, with IV at 79.5%.
+
+What happened next is the useful part. The call went $3.90 (9/22 close) -> $2.19 (9/23 morning,
+-44%) -> $4.875 (9/23 afternoon). Buying at $3.90 would have been *directionally right* — it is up
+25% from there now — but a 25-30% hard stop would have fired on the morning flush, realizing a
+~$100-115 loss, and then watched the recovery.
+
+**The lesson:** at 79% IV, a position sized at ~50% of the account cannot survive its own noise.
+The stop distance the rules require is narrower than the contract's normal daily range. That makes
+the trade un-holdable at that size *regardless of whether the thesis is right*. The sizing cap did
+not just limit loss here — it correctly identified a trade this account cannot carry.
+
+Two directional predictions were also wrong and are worth logging honestly: IV was predicted to
+crush post-event and instead rose (79.5% -> 83.2%), and the 9/23 morning reversal off $42.92 was
+called distribution at resistance when it was a shakeout before a push through.
