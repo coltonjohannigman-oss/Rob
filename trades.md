@@ -152,3 +152,29 @@ not just limit loss here — it correctly identified a trade this account cannot
 Two directional predictions were also wrong and are worth logging honestly: IV was predicted to
 crush post-event and instead rose (79.5% -> 83.2%), and the 9/23 morning reversal off $42.92 was
 called distribution at resistance when it was a shakeout before a push through.
+
+**UPDATE 2026-09-24 — the VKTX note above was written mid-move and needs its ending.**
+The stock round-tripped the entire gap in three sessions: $30.11 (9/21 close) -> $42.92 (9/23 high)
+-> **$35.90 (9/24 morning)**, which is below Tuesday's $36.34 low, the level named as the kill
+trigger. The gap failed and the setup is retired.
+
+Full arc of the Oct 16 $40 call: $3.50 (9/22 open) -> $3.90 (9/22 close) -> $2.19 (9/23 am) ->
+$4.875 (9/23 pm) -> $4.05 (9/23 close) -> **$1.43 (9/24 am)**.
+
+So the 9/23 claim that a Tuesday entry "would have been directionally right" was itself a
+mid-move artifact — it was right for about four hours. From the $3.90 entry the contract is now
+**-63%**. Every path loses: hold through and you are down 63%; respect the hard stop and you are
+out at -25/30% on the 9/23 morning flush. There was no version of this trade that worked.
+
+The sizing cap was the binding constraint and it was correct, but note WHY it was correct. It was
+not because the direction was wrong on day one — the stock did go up. It was because a 79%-IV
+contract at ~50% of the account has a daily range wider than its own stop. The account could never
+have held it long enough to find out whether the thesis was right, and the thesis turned out to be
+wrong anyway.
+
+**Standing lesson: on a post-binary-event gap, IV staying elevated is not a signal that more upside
+is coming. It is the market pricing a two-sided distribution. Both tails were live here and the
+down tail won.** The 9/22 prediction of an IV crush and the 9/23 reading of the reversal were both
+wrong, in opposite directions, within 24 hours of each other. When a name generates two confident
+and contradictory reads that fast, that is itself evidence the setup is unreadable — and unreadable
+is a pass, not a coin flip.
