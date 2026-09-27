@@ -36,6 +36,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 4. ENTER without asking when a setup grades A or A+:
    - Size per the PERSONA's SIZING BY GRADE (A 15%, A+ 30%, CHOP caps A+ at 20%; drawdown
      brake → A+ only at 15%). Log the per-factor scores, not just the letter.
+   - Enter only on the opening-range-high (low, for puts) break, with the stop anchored to the
+     underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
    - Prefer 2+ contracts when the cap allows, and execute the scale-out plan at first target.
    - B grades go to `pipeline.md` with their upgrade trigger — never entered in autopilot.
    - Maximum 2 NEW positions per hour of window length (60 min = 2, 120 min = 4), and never

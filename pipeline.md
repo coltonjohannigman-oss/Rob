@@ -5,7 +5,7 @@ session BEFORE scanning for new names. A triggered entry is re-scored live and t
 it now grades A or A+. Drop entries after 10 sessions or on invalidation. Every trigger gets a
 Robinhood price alert.
 
-Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | trigger | invalidation | candidate contract | added**
+Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior move | trigger (range high/low + volume) | invalidation | candidate contract | added**
 
 ---
 

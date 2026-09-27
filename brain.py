@@ -149,7 +149,8 @@ SCANNING — use all of the following before picking a trade:
      technically, it strengthens the case. If it looks overextended on the commentary alone,
      skip it or wait for a pullback entry.
 
-MARKET REGIME — read before scanning, every session (SPY and QQQ daily charts):
+MARKET REGIME — read before scanning, every session (Qullamaggie reads the Nasdaq's 10- and
+20-day moving averages; QQQ is primary, SPY confirms):
 - RISK-ON: both above a rising 10- and 20-day EMA. Calls favored.
 - CHOP: mixed signals, or price whipping across the 10/20-day EMAs. Both directions allowed;
   A+ is capped at 20% (see SIZING BY GRADE); prefer the stronger relative-strength side.
@@ -161,10 +162,12 @@ MARKET REGIME — read before scanning, every session (SPY and QQQ daily charts)
 
 FOCUS UNIVERSE — why good setups die on liquidity, and the fix:
 - Scanners surface movers; many fail the options-liquidity test. Keep a standing focus list
-  (a saved Robinhood watchlist) of ~30-50 names that routinely pass it — liquid options
-  chains, underlying under ~$300, average volume high enough that 2x days are meaningful —
-  across several sectors. Refresh it weekly from the scanners: add names that keep showing
-  up on volume, drop names whose chains thinned out.
+  (a saved Robinhood watchlist) of ~30-50 names built the Qullamaggie way: the top
+  relative-strength performers over 1, 3 and 6 months (roughly the top 2-5% of the market),
+  with an average daily range (ADR, 20-day) of about 4% or more — a stock that moves 1% a
+  day will not move an option — AND liquid options chains, underlying under ~$300. Refresh
+  it weekly from the scanners: add new leaders, drop names that lost RS or whose chains
+  thinned out.
 - Scan the focus list for setups in formation (tight bases, bear flags, pullbacks to the
   10/20-day EMA) IN ADDITION to the day's movers. Most A setups are visible days before the
   trigger; finding them early is how trade count goes up without the bar coming down.
@@ -172,20 +175,40 @@ FOCUS UNIVERSE — why good setups die on liquidity, and the fix:
 SETUP SCORECARD — every candidate is scored before it can be traded. 0-2 points per factor:
 1. VOLUME: 2 = 2x+ average on the trigger (after the first ~15 minutes of the session);
    1 = 1.5-2x; 0 = below 1.5x. A 0 here is an automatic PASS regardless of total.
-2. STRUCTURE: 2 = clean break of a tight base/flag (2+ weeks, range contracting) near highs
-   (or lows, for puts); 1 = decent level but loose or somewhat extended; 0 = extended more
-   than ~10% from the 10-day EMA, or no identifiable level.
+2. STRUCTURE (Qullamaggie breakout anatomy): 2 = a PRIOR MOVE of roughly 30%+ in the last
+   1-3 months, then an orderly 2-week to 2-month consolidation with higher lows, range
+   contracting, volume drying up, price surfing the rising 10/20-day EMA — and today it
+   breaks the top of that range (mirror for puts: prior decline, bear flag, break of the
+   low). For an EPISODIC PIVOT, 2 = a gap of ~10%+ on the catalyst out of a neglected base
+   or sideways range. 1 = identifiable level but loose, no prior move, or somewhat
+   extended; 0 = extended more than ~1 ADR above the breakout level (chasing), or no level.
 3. CATALYST: 2 = genuine fundamental catalyst (earnings, guidance, contract, approval);
    1 = sector/theme move or strong unusual options flow; 0 = unexplained move.
-4. RELATIVE STRENGTH / TREND: 2 = above (below, for puts) a rising (falling) 10/20/50-day EMA
-   and outperforming (underperforming) SPY over 1-3 months; 1 = partial; 0 = against trend.
+4. RELATIVE STRENGTH / TREND: 2 = a market leader — top RS over 1/3/6 months and above
+   (below, for puts) a rising (falling) 10/20/50-day EMA; 1 = outperforming SPY but not a
+   leader, or trend partially intact; 0 = laggard or against trend.
 5. REGIME FIT: 2 = direction matches the MARKET REGIME; 1 = chop; 0 = against the regime.
 GATES — pass/fail, any failure is a PASS regardless of score: 90-day history reviewed;
+Qullamaggie entry and stop (see ENTRY & STOP below);
 liquidity rubric (or a named exception); IV gate (not buying spiked premium); binary-event
 rules; no earnings inside the planned hold unless that IS the thesis; a defined invalidation
 level no farther than the hard stop; and REWARD:RISK — the measured-move or prior-high/low
 target must imply an option gain of at least 2x the planned stop loss.
 GRADES: 9-10 = A+ | 7-8 = A | 5-6 = B | 0-4 = pass.
+
+ENTRY & STOP — the Qullamaggie mechanics, translated to options:
+- ENTRY TRIGGER: the underlying breaks its OPENING RANGE HIGH (low, for puts) on the day it
+  clears the base — the 5-minute ORH by default, the 60-minute ORH when the open is sloppy.
+  The volume read still needs ~15 minutes of the session, so an early 5-minute ORH break is
+  only taken when volume is already clearly running above pace.
+- STOP ANCHOR: the underlying's LOW OF DAY on the entry day (high of day, for puts). The
+  distance from entry to LOD must be no more than ~1 ADR; if it is wider, the entry is too
+  extended — skip it or wait for a tighter one.
+- The option-level hard stop (25-30%) still binds as the backstop; whichever of the LOD
+  break or the option stop hits first ends the trade. Place the broker stop at the option
+  price that corresponds to the LOD break, not blindly at -30%.
+- DON'T CHASE: if price is already more than ~1 ADR through the trigger when you get to it,
+  the entry is gone for today. Put it back in the pipeline and wait for the next setup.
 - A+ and A are tradeable. B goes into the TRADE PIPELINE with the specific condition that
   would upgrade it (e.g. "volume 2x on the break of $42.10"). Pass is dropped.
 - Show the per-factor scores in every trade write-up — never just a letter.
@@ -196,6 +219,12 @@ SIZING BY GRADE — premium at risk, as a share of the CURRENT remaining budget:
   at or below 18% of the total budget (four fresh A trades at -30% stops = 18%). A position
   whose stop has been raised to breakeven or better carries zero heat, freeing room for the
   next trade — this is how capital recycles into more trades safely.
+- VERSUS THE STANDARD: Qullamaggie risks roughly 0.25-1% of the account per trade (entry to
+  low-of-day stop). A single option contract on an account this size usually risks more than
+  that, which is why position count, the heat cap and the drawdown brake carry the risk
+  control here. As the account grows, move toward the standard: once it passes ~$2,500, cap
+  each trade's risk (premium x distance to stop) at 2% of the account, and tighten further
+  as it grows.
 - MULTIPLE CONTRACTS: when the size cap affords 2+ contracts at the target delta, buy 2+
   rather than one pricier contract — it unlocks scale-outs (see SCALE-OUTS below). Never
   drop below delta 0.35 just to afford an extra contract.
@@ -297,7 +326,11 @@ BROKER MECHANICS (Robinhood, learned the hard way — do not relearn these live)
   gone — let it go.
 
 SCALE-OUTS (2+ contracts) — the preferred structure whenever sizing allows it:
-- First target: sell HALF at +30-40% (the low end of the band), then raise the stop on the
+- Qullamaggie's own management: sell a third to a half after 3-5 days of strength, move the
+  stop to breakeven, trail the rest on the 10- or 20-day moving average (exit on a CLOSE
+  below it). Options add theta and leverage, so the first sale here triggers on WHICHEVER
+  comes first: the option reaching +30-40%, or day 3-5 of the move while the position is
+  green. Sell HALF (for an odd count, round the sale up), then raise the stop on the
   remainder to breakeven. The trade can no longer lose money, it carries zero heat, and the
   runner is free to reach the upper band or trail per the LETTING A WINNER RUN checklist.
 - Mechanics: the stop order covers ALL contracts; to scale out, cancel the stop, verify the

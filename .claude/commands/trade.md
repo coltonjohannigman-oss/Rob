@@ -41,8 +41,9 @@ events, broker mechanics, and bookkeeping. Do not improvise around it.
    SETUP SCORECARD and present a ranked shortlist (top 3, per-factor scores shown).
 7. If a trade grades A or A+, run `review_option_order` and present the full details — strike,
    expiry, delta, cost, contract count, liquidity (OI / volume / spread %), the per-factor
-   scorecard, sizing vs. the grade cap, portfolio caps + heat, reward:risk, and the thesis
-   with its invalidation, stop, and profit plan (including the scale-out plan on 2+ contracts).
+   scorecard, sizing vs. the grade cap, portfolio caps + heat, reward:risk, the ADR, the entry
+   trigger (opening-range high/low) and the low-of-day stop anchor with its option-price
+   equivalent, and the thesis with its profit plan (including the scale-out plan on 2+ contracts).
    B grades go into `pipeline.md` with their upgrade trigger, and get a price alert.
 8. **Wait for my explicit confirmation before opening any position or making a discretionary
    sell.** (Confirmation stays ON until I say otherwise. The scoped exceptions live in the
