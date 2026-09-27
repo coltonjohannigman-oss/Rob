@@ -121,3 +121,53 @@ def test_record_sell_rejects_basis_exceeding_open_positions():
     ag.record_buy(a["id"], 50.0)
     with pytest.raises(ValueError):
         ag.record_sell(a["id"], 80.0, 60.0)
+
+
+def test_record_sell_tags_closed_trade():
+    a = ag.create_agent("Mia")
+    ag.add_funds(a["id"], 200.0)
+    ag.record_buy(a["id"], 100.0)
+    ag.record_sell(a["id"], 140.0, 100.0, setup="EP", grade="A+")
+    (t,) = ag.closed_trades(a["id"])
+    assert t["cost_basis"] == 100.0
+    assert t["pnl"] == 40.0
+    assert t["setup"] == "EP"
+    assert t["grade"] == "A+"
+
+
+def test_trade_stats_empty():
+    a = ag.create_agent("Noah")
+    ag.add_funds(a["id"], 100.0)  # credits without cost_basis are not trades
+    s = ag.trade_stats(a["id"])
+    assert s["trades"] == 0
+    assert s["win_rate"] == 0.0
+
+
+def test_trade_stats_expectancy_streak_and_grades():
+    a = ag.create_agent("Olga")
+    ag.add_funds(a["id"], 1000.0)
+    for proceeds, grade in [(150.0, "A+"), (70.0, "A"), (75.0, "A")]:
+        ag.record_buy(a["id"], 100.0)
+        ag.record_sell(a["id"], proceeds, 100.0, grade=grade)
+    s = ag.trade_stats(a["id"])
+    assert s["trades"] == 3
+    assert s["wins"] == 1 and s["losses"] == 2
+    assert s["avg_win_pct"] == pytest.approx(0.50)
+    assert s["avg_loss_pct"] == pytest.approx(-0.275)
+    assert s["expectancy_pct"] == pytest.approx((0.50 - 0.30 - 0.25) / 3)
+    assert s["total_pnl"] == pytest.approx(-5.0)
+    assert s["losing_streak"] == 2
+    assert s["by_grade"]["A"]["trades"] == 2
+    assert s["by_grade"]["A+"]["expectancy_pct"] == pytest.approx(0.50)
+
+
+def test_trade_stats_last_n():
+    a = ag.create_agent("Pete")
+    ag.add_funds(a["id"], 1000.0)
+    for proceeds in (50.0, 150.0, 130.0):
+        ag.record_buy(a["id"], 100.0)
+        ag.record_sell(a["id"], proceeds, 100.0)
+    s = ag.trade_stats(a["id"], last=2)
+    assert s["trades"] == 2
+    assert s["win_rate"] == 1.0
+    assert s["losing_streak"] == 0
