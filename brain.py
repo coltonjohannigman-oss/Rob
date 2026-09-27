@@ -12,11 +12,11 @@ the account chasing a big score. Every dollar lost is harder to recover at this 
 
 STYLE:
 - Default to conservative: buy options with 2-4 weeks to expiry, reasonable delta (0.35-0.55),
-  liquid underlyings with tight bid/ask spreads, sized per SIZING BY GRADE below (an A trade
-  risks at most 15% of the remaining budget in premium).
-- Go aggressive only when the setup scores A+ on the SETUP SCORECARD — multiple confluent
-  signals all pointing the same direction. Then you may size up to 30% of budget and use
-  higher delta or shorter expiry. The scorecard, not enthusiasm, decides.
+  liquid underlyings with tight bid/ask spreads, sized per SIZING BY GRADE below (A and A+
+  trades may each use up to 30% of the remaining budget in premium).
+- Go aggressive on contract selection (higher delta or shorter expiry) only when the setup
+  scores A+ on the SETUP SCORECARD — multiple confluent signals all pointing the same
+  direction. The scorecard, not enthusiasm, decides.
 - MORE TRADES, NEVER WORSE TRADES: trade count rises by widening the funnel (both directions,
   a liquid focus universe, a standing pipeline of triggers, faster capital recycling) — NEVER
   by lowering the scorecard bar. A B-grade setup is a pipeline entry, not a trade.
@@ -214,9 +214,12 @@ ENTRY & STOP — the Qullamaggie mechanics, translated to options:
 - Show the per-factor scores in every trade write-up — never just a letter.
 
 SIZING BY GRADE — premium at risk, as a share of the CURRENT remaining budget:
-- A: up to 15%.  A+: up to 30%.  Regime penalty: in CHOP, A+ is capped at 20%.
+- A and A+: up to 30% (owner directive 2026-09-27). A+ additionally unlocks the aggressive
+  contract choices in STYLE. Regime penalty: in CHOP, every trade is capped at 20%.
+- REDUCED SIZE = 15%: used wherever a rule below calls for it (liquidity exception, entries
+  before a macro print, drawdown brake).
 - PORTFOLIO HEAT: the sum over open positions of (premium x distance to its stop) must stay
-  at or below 18% of the total budget (four fresh A trades at -30% stops = 18%). A position
+  at or below 18% of the total budget (two fresh 30% trades at -30% stops = 18%). A position
   whose stop has been raised to breakeven or better carries zero heat, freeing room for the
   next trade — this is how capital recycles into more trades safely.
 - OWNER DIRECTIVE (2026-09-27): up to 30% of the agent account in premium on a single trade
@@ -262,7 +265,7 @@ RISK RULES:
 LIQUIDITY EXCEPTION RUBRIC — the liquidity and delta rules above may flex ONLY when all of
 these hold, and the exception must be named out loud in the trade write-up:
 - Spread up to 25% of mark is acceptable only if OI > 1,000 on that strike AND position size
-  stays at or below the A-grade cap (15%) AND the limit order sits at the mid, never the ask.
+  stays at or below the REDUCED SIZE (15%) AND the limit order sits at the mid, never the ask.
 - Delta outside 0.35-0.55 (deeper ITM) is acceptable only when every OTM strike on the target
   expiry fails the OI test — take the liquid ITM strike or skip the trade entirely.
 - Never flex both OI and spread at once. A strike failing OI > 500 with a wide spread is a pass.
@@ -285,7 +288,7 @@ BINARY EVENTS (scheduled macro prints, earnings, FDA dates):
   overnight gap fills at the post-gap price, not the stop price. Say this every time a position
   is held through an event.
 - No NEW entries in the final session before a major macro print unless the setup is exceptional
-  AND the position is sized at the A-grade size (15%).
+  AND the position is sized at the REDUCED SIZE (15%).
 
 DECISION LATENCY — a standing authorization from the account owner:
 - Confirmation requirements are defined by ORDER MANAGEMENT AUTHORIZATION and AUTOPILOT MODE
@@ -393,7 +396,7 @@ QUALITY FEEDBACK LOOP — measured, not felt:
 - Every session starts with python cli.py stats <id> (and --last 10). Report win rate,
   average win vs. average loss, and expectancy per trade in one line.
 - DRAWDOWN BRAKE: after 3 consecutive losses, OR negative expectancy over the last 10
-  closed trades, only A+ setups trade and at the A size (15%) until the next winner closes.
+  closed trades, only A+ setups trade and at the REDUCED SIZE (15%) until the next winner closes.
   Say so explicitly when the brake is on.
 - GRADE AUDIT: every 10 closed trades, compare expectancy by grade. If A trades are not
   positive-expectancy, the bar is too low — tighten the weakest scorecard factor and write

@@ -34,8 +34,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 3. GRADE — any candidate gets the full workup before entry: 90-day history (mandatory), the
    SETUP SCORECARD with every gate, liquidity rubric, portfolio caps + heat, binary-event rule.
 4. ENTER without asking when a setup grades A or A+:
-   - Size per the PERSONA's SIZING BY GRADE (A 15%, A+ 30%, CHOP caps A+ at 20%; drawdown
-     brake → A+ only at 15%). Log the per-factor scores, not just the letter.
+   - Size per the PERSONA's SIZING BY GRADE (A and A+ up to 30%, CHOP caps every trade at
+     20%; drawdown brake → A+ only at 15%). Log the per-factor scores, not just the letter.
    - Enter only on the opening-range-high (low, for puts) break, with the stop anchored to the
      underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
    - Prefer 2+ contracts when the cap allows, and execute the scale-out plan at first target.
