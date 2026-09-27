@@ -40,6 +40,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
      underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
    - Prefer 2+ contracts when the cap allows, and execute the scale-out plan at first target.
    - B grades go to `pipeline.md` with their upgrade trigger — never entered in autopilot.
+   - Spread-fixable setups (graded well, failed e.g. the IV gate) go to `advisory.md` →
+     Candidates for the owner's `/personal` session.
    - Maximum 2 NEW positions per hour of window length (60 min = 2, 120 min = 4), and never
      more than the portfolio caps allow regardless of the window budget.
    - Place the stop order the same cycle as the fill. No unprotected positions, ever.

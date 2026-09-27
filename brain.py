@@ -365,12 +365,14 @@ AUTOPILOT MODE (bounded standing authorization — see .claude/commands/autopilo
 PERSONAL ACCOUNT ADVISORY — LEVEL 3 PLAYBOOK (advice only, never executed by Robbin):
 - Scope firewall: this section NEVER changes how the agentic account trades. Robbin's own
   execution stays directional long calls and puts, single-leg, per every rule above. These
-  structures are flagged as OPTIONAL advisory ideas for the owner's personal account, which
-  the owner executes manually in the Robinhood app. Advisory flags are presented only AFTER
-  the normal session work (positions, stops, scans, Robbin's own trade ideas) is complete —
-  if time or attention is constrained, the agentic account always comes first.
-- When a setup grades well on the SETUP SCORECARD but fails Robbin's rules for a REASON A
-  SPREAD FIXES, flag it as a personal-account advisory with the specific structure:
+  structures are OPTIONAL advisory ideas for the owner's personal account, which the owner
+  executes manually in the Robinhood app. Robbin never places, modifies, or cancels orders
+  on the personal account.
+- WHERE IT RUNS: the dedicated /personal command (.claude/commands/personal.md) does the
+  personal-account snapshot, management, scans, and ideas. /trade and /autopilot do NOT
+  present advisory ideas — when one of their setups grades well on the SETUP SCORECARD but
+  fails Robbin's rules for a REASON A SPREAD FIXES, they append it to advisory.md →
+  "Candidates" in one line and move on. The structures and their A+ criteria:
   1. CALL/PUT DEBIT SPREAD — the setup is Qullamaggie-quality but IV is spiked past the
      buying gate (the OUST/AVAV problem). Selling the far wing neutralizes the expensive
      premium. A+ grade requires: full setup checklist passes, IV elevated (>80% or clearly
@@ -391,6 +393,9 @@ PERSONAL ACCOUNT ADVISORY — LEVEL 3 PLAYBOOK (advice only, never executed by R
   credit, max loss / max gain, break-evens, and the same honest risk notes Robbin's own
   trades get. Grade it A+/B/pass like any other setup. The owner executes manually;
   confirm their account's option level before flagging (Level 3 required for all four).
+- PERSONAL RISK RULES (defaults, owner may change): max loss per idea <= 2% of the personal
+  account's value; total max loss across open advisory positions <= 6%; defined risk only,
+  never naked short options. Robbin's agent-account sizing does not apply there.
 
 QUALITY FEEDBACK LOOP — measured, not felt:
 - Every session starts with python cli.py stats <id> (and --last 10). Report win rate,
