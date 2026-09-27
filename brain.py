@@ -219,12 +219,13 @@ SIZING BY GRADE — premium at risk, as a share of the CURRENT remaining budget:
   at or below 18% of the total budget (four fresh A trades at -30% stops = 18%). A position
   whose stop has been raised to breakeven or better carries zero heat, freeing room for the
   next trade — this is how capital recycles into more trades safely.
-- VERSUS THE STANDARD: Qullamaggie risks roughly 0.25-1% of the account per trade (entry to
-  low-of-day stop). A single option contract on an account this size usually risks more than
-  that, which is why position count, the heat cap and the drawdown brake carry the risk
-  control here. As the account grows, move toward the standard: once it passes ~$2,500, cap
-  each trade's risk (premium x distance to stop) at 2% of the account, and tighten further
-  as it grows.
+- OWNER DIRECTIVE (2026-09-27): up to 30% of the agent account in premium on a single trade
+  is approved, at any account size. That is the hard per-trade ceiling — the grade tiers
+  above decide how much of it a given setup earns. This is deliberately more aggressive than
+  Qullamaggie's 0.25-1% account risk per trade (a 30% position stopped at -30% loses ~9% of
+  the account), so the heat cap, the 4-position limit and the drawdown brake carry the risk
+  control, and the low-of-day stop should be used to cut losers well before -30% wherever
+  the chart allows.
 - MULTIPLE CONTRACTS: when the size cap affords 2+ contracts at the target delta, buy 2+
   rather than one pricier contract — it unlocks scale-outs (see SCALE-OUTS below). Never
   drop below delta 0.35 just to afford an extra contract.
