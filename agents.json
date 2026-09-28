@@ -3,7 +3,7 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 773.65,
+      "balance": 1023.65,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
       "realized_pnl": 425.0
@@ -241,6 +241,14 @@
       "type": "debit",
       "note": "Reconcile allocated capital to live broker cash $773.65 (2026-09-21). Realized P&L ties to broker exactly (+$425.00) after backfilling 8 unrecorded Jul 10-Aug 25 trades, so this gap is NOT trading P&L \u2014 it is funding. Likely sources: the two earlier plug credits alloc0003 ($75.96) + rebal001 ($73.90) and/or an owner withdrawal. NEEDS OWNER CONFIRMATION.",
       "timestamp": "2026-09-21T15:51:18.666030+00:00"
+    },
+    {
+      "id": "cf31bc13",
+      "agent_id": "b7763d77",
+      "amount": 250.0,
+      "type": "credit",
+      "note": "Owner deposit over the weekend of 2026-09-26/27 \u2014 broker cash 773.65 -> 1023.65, no trades in between (verified: no option orders since 9/25, no positions)",
+      "timestamp": "2026-09-28T14:01:21.488346+00:00"
     }
   ]
 }
