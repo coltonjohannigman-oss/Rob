@@ -178,3 +178,115 @@ down tail won.** The 9/22 prediction of an IV crush and the 9/23 reading of the 
 wrong, in opposite directions, within 24 hours of each other. When a name generates two confident
 and contradictory reads that fast, that is itself evidence the setup is unreadable — and unreadable
 is a pass, not a coin flip.
+
+---
+
+## Session note — Friday 2026-10-02 (no trade)
+
+**The scanner fix worked, and it immediately changed what I can see.** First session with the
+`$5-75` price filter removed from all three scans. The gainers scan went from the handful of thin
+small caps it had been returning to **110 matches**, and the list was overwhelmingly
+semiconductors and semicap equipment: SYNA +14%, MXL +13.7%, IMOS +10.8%, WOLF +9.1%, CRDO +8.7%,
+PENG +8.6%, VECO +8.1%, ALGM +7.3%, ACLS/NVTS +7.1%, ONTO/SMTC +6.8%, ARM +6.2%, TER +6.1%,
+ENTG +5.6%, MPWR +5.5%, STM/ON +5.2%, SITM/MTSI +5.0%, KLIC/DIOD +4.8%, INTC +4.6%, LSCC +4.5%,
+COHU/RMBS +4.2%, AMD +4.2%. SMH +2.94%. Four sessions of calling this tape "dead" were a
+measurement artifact, exactly as suspected. The blind spot was real and it was mine.
+
+Three names graded, three different disqualifications. None of them was "nothing is moving."
+
+**1. SYNA — the best-looking chart on the board, and completely untradeable.**
+Structure was textbook episodic pivot: three-month downtrend $137 -> $93, base at $88-$106 through
+September, an accumulation day 10/1 ($101 -> $106.15 on 1.01M shares, ~2x normal), then a +14% gap
+on **2,656,026 shares in the first 30 minutes — about 5.9x an entire average day** (prior six
+sessions averaged ~451K). On structure and volume alone I would have graded this A+.
+
+It is an all-cash acquisition. onsemi amended its 6/25 merger agreement on 10/1, converting from
+all-stock to **all-cash at $123/share** (~$5.7B), after an unsolicited competing proposal on 9/2.
+Debt financing fully committed (~$2.45B, Morgan Stanley), no financing condition, US antitrust
+already cleared. Stock $121.08. **Upside is $1.92, permanently.** The 5.9x volume was merger-arb
+funds taking the spread, not institutional accumulation. No call has convexity under a hard cap.
+
+This is the WBD deal-pin trap a second time, and it is the clearest argument yet for why the
+catalyst check runs BEFORE the grade. Structure alone said A+; the catalyst said zero.
+
+**2. MXL — clean momentum structure, options fail the gate by 10x.**
+Genuine flag breakout: bottomed $57.59 (9/1), ran to $93.84 (9/25) = +63%, tight four-day flag at
+$90-$93, broke to $104.78. Legitimate Qullamaggie continuation setup. Nov 20 calls:
+
+| Strike | Mark | Spread | OI | IV |
+|---|---|---|---|---|
+| $105 | $16.80 | 10.7% PASS | **40** FAIL | 111% |
+| $110 | $14.55 | **17.2%** FAIL | **330** FAIL | 109% |
+| $115 | $11.75 | 7.7% PASS | **40** FAIL | 113% |
+
+Every strike misses the 500 OI minimum badly. The only one with meaningful OI also blows the
+spread gate — failing both at once, which the rules never allow me to flex together. Independently
+it was a chase: the $105 call closed $9.75 and marked $16.80, **premium already +72% on the day**,
+111% IV, break-even $121.80 requiring another +16% to get flat. Fourth time this pattern has killed
+a name (CRML, EVER, OCUL, MXL): attractive mid-cap chart, untradeable options.
+
+**3. STX / WDC — the best setup I have found, and I cannot afford it.**
+The losers scan was the more valuable of the two today. STX **-11.86%** to $833.35 ($178B cap,
+4.75M shares at 1.91x relvol — roughly 2x a full day in 38 minutes), WDC **-10.06%** to $415.49
+($150B cap). Semis ripping while storage breaks is not a broad chip rally, it is a violent rotation
+*within* tech.
+
+Ran the CTVA check on both before anything else. STX implied prior close $945.57, ratio 1.135 — no
+split; $178.1B / $833.39 = 214M shares, consistent with the real count. WDC $150.3B / $416.01 =
+361M shares, also consistent. **Both declines real.**
+
+Catalyst is specific and structural: **Toshiba investing ~Y60B ($400M) to double HDD output by
+FY2027, targeting 30% share from just over 10%** — new supply aimed directly at the pricing power
+that drove STX +240% YTD and WDC +170% YTD. Extended name, real competitive-threat catalyst,
+volume confirming, peer confirming. Textbook parabolic exhaustion.
+
+| Contract | Mark | Per contract | Delta | OI | Spread |
+|---|---|---|---|---|---|
+| STX Nov20 $800p | $66.60 | **$6,660** | -0.383 PASS | 269 FAIL | 7.8% PASS |
+| WDC Nov20 $400p | $34.35 | **$3,435** | -0.392 PASS | **924 PASS** | **2.9% PASS** |
+
+The WDC put passes every liquidity gate cleanly and is the best-structured contract I have priced
+in nine sessions. It costs **16.8x the $204.73 conservative cap and 3.4x the entire account.** STX
+is 32.5x the cap. Both IVs ~70% post-gap, so day-one entry also means paying inflated vol — the
+condition the pending EP-Down amendment explicitly excludes. Reaching for a ~$2.04 contract means
+roughly a $280 strike at delta ~0.05: a lottery ticket. The rules permit flexing delta only when
+every OTM strike fails OI, not to force an unaffordable name into the account.
+
+### The finding worth the owner's attention
+
+**Account size, not judgment, is now the binding constraint on the best opportunities.** Two of the
+last three sessions had their strongest setup blocked purely by affordability — VKTX by position
+size, STX/WDC by contract price. At $1,023.65 with a 20% cap of $204.73, I can only buy contracts
+under ~$2.04/share, which systematically confines me to low-priced underlyings with thin option
+books. That is precisely the population that produced CRML, EVER, OCUL and NXE.
+
+So the nine-session no-trade record is not one thing. Early on it was partly a broken scanner.
+Today it is that the two best setups on a genuinely active tape were a merger arb and a pair of
+$3,400-6,700 contracts. I am not going to widen the cap to fix this — that is the owner's call, not
+mine. Flagging it as a decision rather than acting on it.
+
+**Also unchanged and still awaiting a ruling:** the $301.21 funding gap, the SOFI 50-share trim,
+and the EP-Down half-size breakdown-day amendment. The STX setup is exactly the case that amendment
+was written for, and it went untaken today for affordability rather than for the bounce rule — so
+the amendment still has not been tested either way.
+
+### Watch triggers set
+
+- **STX** — no entry on day one of a -12% break. The thesis is a multi-quarter supply story, so it
+  has time. Watch for a bounce toward **$880-$900** (broken shelf / 10-day EMA) that stalls and
+  rolls over. Unaffordable at current premiums regardless; tracking it to test the thesis, and
+  actionable in the individual account where capital is not the constraint.
+- **PLTR** — touched the $192.59 confirmation level and failed it. 1,674,815 shares in the first 30
+  minutes against a ~20M full-day average: ~8% of a day's volume in ~8% of the session, i.e. flat,
+  not expanding. It printed $194.78 then faded to $192.40, below its own open. Level reached,
+  volume absent. Recommendation unchanged at ~$191.35 entry / $184.50 stop for the individual
+  account, but it is not confirmed.
+- **ACN** — the decline is fully vindicated. Peaked $227.41 intraday Thursday where I passed,
+  closed $212.30, now **$202.58, -4.58%**. That is roughly **-10.9% from the point I declined to
+  chase**, and it appears in today's LOSERS scan. Second time this week (with VKTX) that declining
+  day one of a gap was correct. Still watching for the first pullback that holds, but it has not
+  stopped going down yet.
+- **IONQ** — unchanged: close through $48 on 25M+ shares, or $42-43 holding and turning up. Retire
+  below $40. $44.73 today, no trigger.
+
+**Cash is a position. Nine sessions, zero trades, and today the tape was not the problem.**
