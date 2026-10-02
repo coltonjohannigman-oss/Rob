@@ -41,6 +41,26 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   - Sizing blocked until the ledger is reconciled: $224 exceeds 30% of the ledger's $739.86,
     but fits 30% of the broker's $1,023.65.
 
+  - 10/2 status (8:36 CT): $42.67, NOT triggered (ORH trigger $43.76). Base widened: closes of
+    $41.02/$41.07 on 9/29-9/30 dipped under the $41.74 base top, but the $40.13 base low held and
+    MU earnings + the jobs print are now behind it. Session 5 of 10. Kept.
+
+- **NKE | put | EP-down / breakdown | V2/S0/C2/RS2/R0 = 6 (B) | ADR 2.9% | prior decline $46 -> $35
+  in 3 mo | Q1 FY27 earnings 10/1 pm: EPS beat (0.48 vs 0.44), stock gapped -6.6% to new 52-week
+  lows ($31.97) on 30M shares in the first 6 minutes (30-day avg 37.5M/day) | TRIGGER: a weak,
+  low-volume bounce into the declining 10-day EMA (~$35.3-35.9) that is REJECTED, with put IV
+  still under ~45% | INVALIDATION: close above the 10-day EMA on volume | CONTRACT: Oct 23 $33P or
+  $34P re-checked at trigger (10/2 open: IV 34-38%, cheap; but spreads 23-37% of mark this early,
+  OI ~1,000-1,600) | added 2026-10-02**
+  - Why not today: counter-regime (QQQ risk-on) caps it at A only with perfect other factors, and
+    structure scores 0 — at $33.10 it is ~2 ADR below the $35.00 breakdown level (chasing), gap is
+    6.6% not the 10% EP standard, and ADR 2.9% is under the 4% focus-universe bar. Spreads fail too.
+  - NVO lesson applies (trades.md 9/23): a trend this persistent may never bounce. The candidate
+    half-size breakdown-day amendment is still the owner's call and is NOT adopted.
+
 ## Recently removed
+
+- **SYNA (10/2)** — +14.6% gap on 3x volume is an AMENDED ALL-CASH TAKEOVER by ON Semi at $123/sh.
+  Price pinned at ~$121.6: merger arb, no upside to a call. Permanent pass.
 
 (none)
