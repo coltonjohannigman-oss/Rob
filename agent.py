@@ -81,11 +81,19 @@ def record_buy(agent_id: str, cost: float, note: str = "") -> dict:
     return agent
 
 
-def record_sell(agent_id: str, proceeds: float, cost_basis: float, note: str = "") -> dict:
+def record_sell(
+    agent_id: str,
+    proceeds: float,
+    cost_basis: float,
+    note: str = "",
+    setup: str = "",
+    grade: str = "",
+) -> dict:
     """Record a closing trade: releases the cost basis and books realized P&L.
 
     proceeds may be 0 (position expired worthless). cost_basis must match the
-    open cost recorded by record_buy so the books stay balanced.
+    open cost recorded by record_buy so the books stay balanced. setup and grade
+    tag the closed trade so trade_stats can measure quality by setup type/grade.
     """
     if proceeds < 0:
         raise ValueError("Proceeds cannot be negative")
@@ -102,18 +110,66 @@ def record_sell(agent_id: str, proceeds: float, cost_basis: float, note: str = "
     agent["spent"] = spent - cost_basis
     agent["balance"] += pnl
     agent["realized_pnl"] = agent.get("realized_pnl", 0.0) + pnl
-    data["transactions"].append(
-        {
-            "id": str(uuid.uuid4())[:8],
-            "agent_id": agent_id,
-            "amount": proceeds,
-            "type": "credit",
-            "note": note,
-            "timestamp": _now(),
-        }
-    )
+    txn = {
+        "id": str(uuid.uuid4())[:8],
+        "agent_id": agent_id,
+        "amount": proceeds,
+        "type": "credit",
+        "note": note,
+        "timestamp": _now(),
+        "cost_basis": cost_basis,
+        "pnl": pnl,
+    }
+    if setup:
+        txn["setup"] = setup
+    if grade:
+        txn["grade"] = grade
+    data["transactions"].append(txn)
     _save(data)
     return agent
+
+
+def closed_trades(agent_id: str) -> list[dict]:
+    """Closing transactions (those carrying a cost_basis), oldest first."""
+    return [t for t in get_transactions(agent_id) if "cost_basis" in t]
+
+
+def trade_stats(agent_id: str, last: int = 0) -> dict:
+    """Win rate, average win/loss and expectancy over closed trades.
+
+    last > 0 restricts the stats to the most recent N closed trades.
+    Returns an empty-trade summary (trades == 0) when nothing has closed yet.
+    """
+    trades = closed_trades(agent_id)
+    if last > 0:
+        trades = trades[-last:]
+    returns = [t["pnl"] / t["cost_basis"] for t in trades]
+    wins = [r for r in returns if r > 0]
+    losses = [r for r in returns if r <= 0]
+    streak = 0
+    for t in reversed(trades):
+        if t["pnl"] > 0:
+            break
+        streak += 1
+    by_grade: dict[str, list[float]] = {}
+    for t, r in zip(trades, returns):
+        by_grade.setdefault(t.get("grade", "ungraded"), []).append(r)
+    n = len(trades)
+    return {
+        "trades": n,
+        "wins": len(wins),
+        "losses": len(losses),
+        "win_rate": len(wins) / n if n else 0.0,
+        "avg_win_pct": sum(wins) / len(wins) if wins else 0.0,
+        "avg_loss_pct": sum(losses) / len(losses) if losses else 0.0,
+        "expectancy_pct": sum(returns) / n if n else 0.0,
+        "total_pnl": sum(t["pnl"] for t in trades),
+        "losing_streak": streak,
+        "by_grade": {
+            g: {"trades": len(rs), "expectancy_pct": sum(rs) / len(rs)}
+            for g, rs in sorted(by_grade.items())
+        },
+    }
 
 
 def get_agent(agent_id: str) -> dict:

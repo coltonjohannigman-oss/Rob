@@ -12,6 +12,7 @@ from agent import (
     list_agents,
     record_buy,
     record_sell,
+    trade_stats,
 )
 
 
@@ -82,7 +83,14 @@ def cmd_buy(args):
 
 def cmd_sell(args):
     try:
-        agent = record_sell(args.id, args.proceeds, args.cost_basis, note=args.note or "")
+        agent = record_sell(
+            args.id,
+            args.proceeds,
+            args.cost_basis,
+            note=args.note or "",
+            setup=args.setup or "",
+            grade=args.grade or "",
+        )
         pnl = args.proceeds - args.cost_basis
         sign = "+" if pnl >= 0 else ""
         remaining = agent["balance"] - agent["spent"]
@@ -90,6 +98,23 @@ def cmd_sell(args):
     except (KeyError, ValueError) as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
+
+
+def cmd_stats(args):
+    try:
+        s = trade_stats(args.id, last=args.last)
+    except KeyError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+    scope = f"last {args.last}" if args.last else "all"
+    if not s["trades"]:
+        print(f"No closed trades ({scope}).")
+        return
+    print(f"Closed trades ({scope}): {s['trades']}  |  {s['wins']}W / {s['losses']}L  |  win rate {s['win_rate']:.0%}")
+    print(f"  Avg win: {s['avg_win_pct']:+.1%}  |  Avg loss: {s['avg_loss_pct']:+.1%}  |  Expectancy: {s['expectancy_pct']:+.1%} per trade")
+    print(f"  Total realized: ${s['total_pnl']:+.2f}  |  Current losing streak: {s['losing_streak']}")
+    for grade, g in s["by_grade"].items():
+        print(f"  Grade {grade:<9} {g['trades']} trades, expectancy {g['expectancy_pct']:+.1%}")
 
 
 def cmd_trade(args):
@@ -142,7 +167,14 @@ def main():
     p_sell.add_argument("proceeds", type=float, help="Sale proceeds (USD, 0 if expired worthless)")
     p_sell.add_argument("cost_basis", type=float, help="Original cost of the position being closed (USD)")
     p_sell.add_argument("--note", help="Trade description, e.g. 'IRDM $55C Jul17 x1 sold @ $1.30 TP'")
+    p_sell.add_argument("--setup", help="Setup type, e.g. 'EP', 'momentum', 'squeeze', 'EP-down', 'breakdown'")
+    p_sell.add_argument("--grade", help="Scorecard grade at entry, e.g. 'A+' or 'A'")
     p_sell.set_defaults(func=cmd_sell)
+
+    p_stats = sub.add_parser("stats", help="Closed-trade quality stats (win rate, expectancy, by grade)")
+    p_stats.add_argument("id", help="Agent ID")
+    p_stats.add_argument("--last", type=int, default=0, help="Only the most recent N closed trades")
+    p_stats.set_defaults(func=cmd_stats)
 
     p_trade = sub.add_parser("trade", help="Generate a trading session prompt for an agent")
     p_trade.add_argument("id", help="Agent ID")

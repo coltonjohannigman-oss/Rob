@@ -12,7 +12,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 
 **Session start:**
 1. Fresh quote for wall-clock time (report Central Time). Compute the window end time.
-2. Ledger + broker reconcile, position and stop audit — same as /trade steps 1-3.
+2. Ledger + broker reconcile, quality stats + drawdown brake, market regime, position and
+   stop audit — same as /trade steps 1-3.
 3. Send a push notification: autopilot engaged, window end time, current positions.
 
 **The cycle — repeat every ~10 minutes (ScheduleWakeup, ~600s), until the window ends:**
@@ -27,23 +28,31 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
    - Stop ratchet: raise stops per trailing rules (never lower them).
    - Thesis stop: breakout level lost / catalyst dead → sell immediately at the mid,
      do not wait for the hard stop.
-2. SCAN — all three saved scanners (gainers, smart-money options flow, AND daily losers for
-   put setups per the PERSONA's BEARISH SETUPS section) + watchlist trigger check. Volume
-   gate first, both directions.
-3. GRADE — any candidate gets the full workup before entry: 90-day history (mandatory),
-   5-factor check, liquidity rubric, portfolio caps, binary-event rule.
-4. ENTER without asking when a setup fully qualifies:
-   - Default sizing: conservative cap (20% of remaining). The 40% aggressive cap requires an
-     A+ grade (all Qullamaggie legs present) — state the grade in the log.
+2. SCAN — `pipeline.md` triggers first, then all three saved scanners (gainers, smart-money
+   options flow, AND daily losers for put setups per the PERSONA's BEARISH SETUPS section),
+   the focus-universe watchlist, and watchlist triggers. Volume gate first, both directions.
+3. GRADE — any candidate gets the full workup before entry: 90-day history (mandatory), the
+   SETUP SCORECARD with every gate, liquidity rubric, portfolio caps + heat, binary-event rule.
+4. ENTER without asking when a setup grades A or A+:
+   - Size per the PERSONA's SIZING BY GRADE (A and A+ up to 30%, CHOP caps every trade at
+     20%; drawdown brake → A+ only at 15%). Log the per-factor scores, not just the letter.
+   - Enter only on the opening-range-high (low, for puts) break, with the stop anchored to the
+     underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
+   - Prefer 2+ contracts when the cap allows, and execute the scale-out plan at first target.
+   - B grades go to `pipeline.md` with their upgrade trigger — never entered in autopilot.
+   - Spread-fixable setups (graded well, failed e.g. the IV gate) go to `advisory.md` →
+     Candidates for the owner's `/personal` session.
    - Maximum 2 NEW positions per hour of window length (60 min = 2, 120 min = 4), and never
      more than the portfolio caps allow regardless of the window budget.
    - Place the stop order the same cycle as the fill. No unprotected positions, ever.
-5. BOOK — after any fill: `python cli.py buy/sell ...`, update trades.md on closes, commit and
+5. BOOK — after any fill: `python cli.py buy/sell ...` (`--setup`/`--grade` on sells), update
+   trades.md on closes and pipeline.md as setups trigger or die, commit and
    push state, and send a push notification (one line: what, price, P&L or stop level).
 6. If nothing to do, do nothing — cash remains a position. Log the cycle in one line.
 
 **Hard limits (cannot be overridden inside a window):**
-- All PERSONA risk caps: max 3 concurrent positions, 60% deployed, never average down.
+- All PERSONA risk caps: max 4 concurrent positions, 60% deployed, 18% portfolio heat,
+  never average down, and the drawdown brake.
 - No new entries within the binary-event restriction (final session before a macro print,
   or 30 min before any scheduled market-moving release).
 - Never spend beyond the ledger's remaining balance.

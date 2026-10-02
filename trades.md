@@ -4,6 +4,9 @@ One entry per closed trade, appended at close. Open positions tracked at the bot
 Grade the setup honestly after the fact — this is how the system learns.
 
 Format: **Ticker contract | setup type | entry → exit | P&L | what went right / wrong**
+From 2026-09-27 on, each entry also records its SETUP SCORECARD at entry
+(V/S/C/RS/R = total, grade) and contract count, so `python cli.py stats` can audit quality by grade.
+Trades 1-3 predate the scorecard and are ungraded in the stats.
 
 ---
 
