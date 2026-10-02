@@ -290,3 +290,46 @@ the amendment still has not been tested either way.
   below $40. $44.73 today, no trigger.
 
 **Cash is a position. Nine sessions, zero trades, and today the tape was not the problem.**
+
+### Friday 10/2 close (2:31 PM CT, 29 min to bell)
+
+Account unchanged: $1,023.65 all cash, no positions, no working orders. No trade taken.
+
+| | Close-ish | vs prior close |
+|---|---|---|
+| PLTR | $189.08 | **-0.50%** |
+| ACN | $199.20 | -6.17% |
+| STX | $850.98 | -10.00% |
+| WDC | $416.11 | -10.04% |
+| SMH | $631.64 | +2.24% |
+| SYNA | $121.60 | +14.56% |
+
+**PLTR: setup failed, recommendation retired.** It printed $194.78 in the morning, rejected the
+$192.59 confirmation level on flat volume (1.67M shares in the first 30 min vs a ~20M full-day
+average), and closed **red at $189.08**. That is a failed breakout, not a pending one, and the
+$191.35 entry I had standing is now above the market. Retiring it rather than leaving a stale buy
+level in the journal. A fresh setup needs a new base, not a re-poke of this one. Worth noting the
+morning volume read called this correctly in real time — the level was reached and the volume was
+absent, and the volume was the part that mattered.
+
+**ACN: falling knife, still not a pullback.** $199.20, through $200, now **-12.4% below the
+$227.41 Thursday high where I declined to chase.** Three straight sessions down. The "first
+pullback that holds" has not started — nothing to buy, and the decline is now emphatically
+vindicated rather than merely lucky.
+
+**STX: partial absorption, thesis intact.** Recovered off the $833.35 morning low to $850.98 but
+still -10% on the day. Not a close at the low (which would be clean continuation) and not a
+recovery into the green either. Monday's bounce-failure zone stays **$880-$900** (broken shelf /
+10-day EMA); a stall and roll there is the entry if it comes. Still unaffordable in this account at
+$3,435-6,660 per contract — tracking the thesis, actionable only in the individual account.
+
+**Semis held.** SMH closed +2.24% off an intraday +2.94%. A sector move that holds into the bell is
+a live theme for Monday, not a one-day rotation. MXL finished +14.0% near its high — the structure
+was right, the option book is still the problem.
+
+**SYNA closed $121.60, grinding toward the $123 cash price.** Exactly the arb-pin behavior the
+morning read predicted. Good confirmation that reading the catalyst before the chart was the right
+call, not excessive caution.
+
+Nine sessions, zero trades. Today the tape was alive and the three best setups were a merger arb,
+an untradeable option book, and a $3,435 contract against a $204.73 cap.
