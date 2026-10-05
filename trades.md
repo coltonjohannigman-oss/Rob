@@ -333,3 +333,87 @@ call, not excessive caution.
 
 Nine sessions, zero trades. Today the tape was alive and the three best setups were a merger arb,
 an untradeable option book, and a $3,435 contract against a $204.73 cap.
+
+---
+
+## Session note — Monday 2026-10-05 (no trade)
+
+9:06 AM CT. Ledger reconciles exactly: $1,023.65 allocated / $1,023.65 remaining against $1,023.65
+live broker buying power. No positions, no working orders, nothing unprotected. Realized +$425.00.
+
+### The thesis I was most confident about went against me
+
+Friday I built a detailed bearish case on STX/WDC and called it "the best setup I have found in nine
+sessions." Today, one session later:
+
+| Contract | Fri official close | Now | |
+|---|---|---|---|
+| WDC Nov20 $400p | $32.93 | $22.73 | **-31.0%** |
+| STX Nov20 $800p | $60.50 | $43.65 | **-27.9%** |
+
+STX bounced to $898.08 (+5.78%), WDC to $440.76 (+6.13%). **Had the account been large enough to
+take the trade, I would be stopped out at a loss right now** — both contracts are at or through the
+25-30% hard stop. On Friday I wrote that account size rather than judgment was blocking my best
+idea. The constraint saved me from it.
+
+I want the conclusion stated carefully, because the self-flattering version and the
+self-flagellating version are both wrong. One draw does not vindicate the cap; a cap that blocks
+good and bad setups indiscriminately is not justified by a single instance, and the question should
+be settled on the distribution of outcomes. What this session actually establishes is narrower and
+more useful: **my confidence in that thesis was miscalibrated**, and two independent guardrails
+caught it — affordability, and the bounce-entry rule I had been complaining was structurally
+broken. The bounce rule was right here. A -10% break that fully retraces in one session is exactly
+what the rule exists to avoid buying.
+
+**And it refines the pending amendment rather than killing it.** The proposed EP-Down half-size
+breakdown-day entry was conditioned on "volume confirms AND put IV is NOT inflated." Friday's put
+IV was ~70% post-gap, which I judged inflated at the time — so **the amendment's own guard clause
+would have excluded this trade.** The guard did its job. That is evidence the amendment is sensibly
+designed, not evidence against it. Still the owner's call; the record now has one real test of it.
+
+Thesis status: weakened, not dead. A -10% break retraced in a session means the market is reading
+Toshiba's FY2027 capacity as immaterial against AI storage demand. **If STX reclaims $945.57 the
+breakdown has failed outright** and the thesis is retired. Unaffordable here regardless
+($4,365-6,660/contract vs the $204.73 cap).
+
+### Board state
+
+**PTC — deal-pinned, and caught before the chart.** +34.84% to $194.21 on 7.95x relative volume
+and 3.96x relative options volume. A +35% gap on a mature $14-23B enterprise software name has one
+overwhelming explanation, so I checked the catalyst first: **all-cash Schneider Electric
+acquisition at $205/share** ($22.6B, 42.3% premium to the $144.03 prior close). Upside is $10.79
+(+5.56%) and that is the permanent ceiling. Third deal-pin in a week after WBD and SYNA. The
+difference from Friday is that the catalyst check ran before the structure grade — that is the
+process working rather than luck, and it is the direct payoff of the SYNA lesson.
+
+**Friday's semi rotation reversed outright.** My own stored test was "follow-through is the setup, a
+gap-and-fade means Friday was a one-day rotation." It failed that test: CRDO -5.1% (was +8.7%),
+IMOS -6.4% (was +10.8%), WOLF -7.9% (was +9.1%), MXL -1.05%, SMH -0.46%. Storage bounced while
+semis faded — the Friday rotation ran in reverse in both directions, which is mean reversion, not a
+regime. Worth noting the MXL liquidity failure that frustrated me Friday also kept me out of a name
+that is now red while its sector leaders are down 5-8%.
+
+**UMC — the one genuinely interesting name, ungraded by rule.** -10.83% to $23.425 on a $63.5B cap,
+9.33M shares in ~40 min against a ~11M daily average (~85% of a full day), 3.81x relative options
+volume. Structure is a clean failed breakout: new high close Friday at $26.27 (best since early
+July), two weeks of gains erased in one session. Corporate-action check clears it — implied prior
+close $26.27, ratio 1.121, no split signature, and ~2.5B ADS reconciles the market cap. At $23 it
+is the rare candidate that is both liquid and affordable.
+
+**But the news lookup did not find today's catalyst.** Results came back stale and generic — a June
+BNP Paribas downgrade, August notes, nothing for 10/5. I do not know why it is down 10.8%, and "big
+move, cause unknown" is exactly the condition that produced the losses in this journal. It is also
+a Taiwanese ADR, so some of the gap may be catching up to an overnight Taipei session rather than a
+US-hours breakdown — a structurally different thing. **Not graded. Next session must establish the
+cause before UMC can be scored at all.**
+
+**RZAI -37.9%** flagged by the standing hazard rule and skipped: ratio 1.61 is no clean split, but
+109K shares on a -38% move is not a tradeable book under any gate.
+
+Others: ACN $198.48 (-0.21%) finally stopped falling after three down sessions, but flat is not a
+pullback that holds — still nothing to buy. PLTR $188.42 (-0.17%), confirming Friday's failed
+breakout and the retired entry. IONQ $43.15, no trigger. SOFI $16.03, above the $14.88 line, not
+re-raising.
+
+Ten sessions, zero trades. Today that is three deal-pins deep in the tape, a one-day rotation that
+reversed, and the one real candidate missing its catalyst.
