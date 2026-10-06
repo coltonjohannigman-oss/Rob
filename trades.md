@@ -417,3 +417,78 @@ re-raising.
 
 Ten sessions, zero trades. Today that is three deal-pins deep in the tape, a one-day rotation that
 reversed, and the one real candidate missing its catalyst.
+
+---
+
+## Session note — Tuesday 2026-10-06 (no trade)
+
+9:07 AM CT. $1,023.65 allocated / remaining, matching live buying power. No positions, no orders.
+
+### The bounce-entry rule just settled its own argument, with numbers
+
+Friday I wrote that the put bounce-entry rule "structurally cannot fill on the strongest
+downtrends" and proposed an amendment to allow a half-size breakdown-day entry. Monday the STX
+bounce reached my $880-$900 zone (closed $887.09). Today it is rolling over: STX $836.98 (-5.65%),
+WDC $418.90 (-5.15%). The trigger I defined on Friday has fired. Same contracts, two entry dates:
+
+| Entry | STX Nov20 $800p | WDC Nov20 $400p |
+|---|---|---|
+| Friday breakdown day | $60.50 -> $57.15 = **-5.5%** | $32.93 -> $28.28 = **-14.1%** |
+| Monday bounce failure | $40.05 -> $57.15 = **+42.7%** | $21.33 -> $28.28 = **+32.6%** |
+
+**The breakdown-day entry is still underwater even after the move went my way.** The bounce entry
+is up 33-43% on an identical thesis from a cost basis 34% cheaper. The rule I complained about is
+the rule that would have made this trade work, and the amendment's "put IV not inflated" guard
+would have correctly blocked the Friday entry at ~70% IV.
+
+I want my own role stated accurately: **I did not call the entry at Monday's bounce high.** Monday
+I said the trigger was unmet because the stock was ripping +5.78% rather than stalling. That was
+correct, and today confirms it — but the rule earned this, not my timing. The honest version is
+that a mechanical rule outperformed my discretionary read of the same chart on both Friday (when I
+wanted to be short early) and Monday (when I thought the thesis was breaking down).
+
+Caveat against my own case: today's roll is on **1.73M shares vs 4.75M on Friday's break**. A
+bounce failure on lighter volume than the initial break is less emphatic, and I am not going to
+pretend otherwise just because the direction suits the thesis.
+
+Unaffordable regardless: **$5,715 and $2,827.50 per contract against the $204.73 cap.** So the
+setup I built, the trigger I defined, and the rule that vindicated it all worked, and the account
+could not participate in any of it. That is the cap question with the opposite sign from Monday,
+and both signs belong in the record.
+
+### Five flow artifacts in one week
+
+**UMC — catalyst found, and it disqualifies the setup.** On 10/5 UMC priced **$1.8B of unsecured
+overseas convertible bonds**; the -10.8% was convertible-arbitrage hedging and dilution, as arb
+desks shorted stock against the new paper. That is a mechanical one-time supply event, not business
+deterioration — the bearish mirror of a merger-arb pin. An EP-Down needs a thesis that compounds;
+convert hedging decays. Not a setup. (Separately the fundamentals are weak — 4-analyst consensus
+Sell, $18.49 target — but the proximate cause of the gap was flow, and the gap is what I would
+have been trading.) $23.42 today, -2.09%.
+
+**OPCH — acquisition.** +32.76% on 8.98x relative volume and 6.67x options flow. **CD&R and
+McKesson at $32.05/share**, ~$5.8B, 51/49 split. Stock $31.025, so upside is $1.025 (+3.3%) and
+capped. Checked the catalyst before the chart; cost about two minutes instead of an hour.
+
+So this week: **WBD, SYNA, PTC and OPCH deal-pinned, UMC convert-driven.** Every large-gap candidate
+I examined was a flow or structure artifact, and every one looked clean on structure alone. The
+standing insight: in this regime my gainers scan is substantially an M&A announcement detector, and
+the catalyst check is not a formality on top of the process — it is the single highest-yield step in
+it. Five for five.
+
+### Rest of the board
+
+Losers list is ~27 of 35 biotech — a broad sector drawdown, nothing name-specific to grade.
+**AVBP -59.56% on 12.996x relative volume** flagged by the hazard rule: ratio 2.47 and 118M shares
+reconcile, so it is a real collapse rather than a split, almost certainly a failed readout. Per the
+VKTX lesson a post-binary-event biotech is unreadable, and puts after a -60% move have no
+risk/reward left. Skipped.
+
+SMH $638.78 (+0.77%) and SPY $779.77 (+0.64%) — semis recovered again after Monday's fade. Two
+reversals in two sessions is chop, not a theme; the Friday rotation call stays retired.
+**PLTR $191.78 (+1.26%)**, back near the $192.59 level it failed. One green day is not a new base —
+holding the retirement rather than resurrecting a level that already broke once.
+ACN $194.32 (-0.38%), still drifting; no pullback that holds. IONQ $44.38 (+3.28%), below $48.
+SOFI $16.02, above the $14.88 line.
+
+Eleven sessions, zero trades.
