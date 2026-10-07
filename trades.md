@@ -595,3 +595,44 @@ asserting a merger I did not verify.
 
 Twelve sessions, zero trades — but today the honest reason is narrow and specific: the best setup
 of the stretch needed 27.6% of the account in a contract that decays 8.9% a day.
+
+### 10/7 addendum — remaining scans, and a second real candidate
+
+Closing two gaps from the morning run (only the gainers scan had been run, and the watchlists were
+stale from 9/24 and 9/28).
+
+**PENG strengthened through the morning.** Now in the options-flow scan at **3.83x relative options
+volume**, 9.64M shares (~6x a full average day), and **ATM IV cooled 102.5% -> 88.8%**. The thesis
+is getting better, not worse, which is what an EP should do. Grade unchanged at B+ for the agentic
+account — the sizing and decay arithmetic has not changed — but if IV keeps compressing while price
+holds, the Nov 20 chain becomes the right vehicle and the OI there should build off today's tape.
+
+**BULL (Webull) — a real EP-Down, barred by an explicit rule.** -20.6% to $5.78 on **7.22x relative
+volume** (42.7M shares) and 2.43x options flow; it printed -29% at $5.15 intraday. Catalyst is
+serious and durable: the **House Select Committee on China** report finds Webull structurally tied
+to the Chinese government — ownership architecture, technical workforce, technology infrastructure,
+cross-border data routing, corporate financing and compliance — with concerns sharpened since it
+began holding customer cash directly in Oct 2025. Ownership and data-routing findings are a
+multi-month overhang, not a one-day print. Corporate-action check clears: implied prior close
+$7.28, ratio 1.26, no split signature, ~540M shares reconciles the $3.93B cap.
+
+And at $5.78 it is the first bearish candidate all month that would actually be **affordable**.
+
+**Passed anyway, and not as a judgment call.** PERSONA PUT-SPECIFIC RULES: *"Never buy puts after a
+-20% single-day flush with IV blown out — that trade is over."* BULL is -20.6% with IV 63.5%. That
+is the barred case verbatim. The persona also names the correct entry: *"the first weak bounce into
+the declining 10/20-day EMA, when put IV has cooled off the panic print."* Trigger set on the
+EP-Down watchlist: a weak bounce into roughly **$6.50-7.00** (the declining 10-day EMA — compute it
+properly at trigger time rather than trusting this estimate) that stalls on light volume.
+**Invalidation: a close back above the 10-day EMA on volume.**
+
+Worth noting the shape of today: two genuinely good setups, one long and one short, both with real
+compounding catalysts — and both declined for *instrument* reasons rather than thesis reasons. PENG
+on sizing and decay, BULL on an explicit put rule. That is a materially different kind of no-trade
+day than the eleven before it, and both now have defined triggers rather than vague watching.
+
+Watchlists refreshed (both descriptions had been carrying dead VKTX and OCUL triggers for ~10 days).
+
+Still outstanding to the owner: whether to take the PENG Oct 16 $80C anyway — the gate I invoked is
+my own A+ sizing judgment, not a hard rule violation, and the liquidity genuinely clears. Asked,
+not assumed. No position opened.
