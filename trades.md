@@ -492,3 +492,106 @@ ACN $194.32 (-0.38%), still drifting; no pullback that holds. IONQ $44.38 (+3.28
 SOFI $16.02, above the $14.88 line.
 
 Eleven sessions, zero trades.
+
+---
+
+## Session note — Wednesday 2026-10-07 (no trade, but a real setup for once)
+
+8:49 AM CT. $1,023.65 allocated/remaining vs $1,023.65 buying power. No positions, no orders.
+Owner pushed: "cmon let's find something today." Fair — twelve sessions is a lot. The right
+response is to work harder, not to lower a gate, and today there was finally something to work on.
+
+### PENG — the first genuine setup in twelve sessions, and a near miss
+
+Catalyst is fundamental and compounding, not a deal or a flow artifact: **FQ4 net sales $567M
+(+68% YoY), beating by $46.01M; adjusted EPS $1.00 (+133%); FY2027 guide ~$2.43B revenue (+40%
+YoY) and $4.45 EPS, both above consensus.** After five straight flow artifacts (WBD, SYNA, PTC,
+OPCH deal-pinned; UMC convert-driven) this is the first catalyst all week that actually compounds.
+
+Structure is a textbook EP: collapsed -51% in July ($89.86 -> $43.70), based $46-$64 for ~2.5
+months, accumulation day 10/2 (+7.5% on 2.4x volume), 15.6M shares on 10/6 (~10x normal) into the
+print, gapping to $75.685 today. Not extended — still well under the July high. Up 18% while
+SMH is -1.91%, so idiosyncratic strength rather than a sympathy tagalong. ~6.5M shares in 20
+minutes against a ~1.5M average full day.
+
+**The Nov 20 chain fails OI outright** (131/199/66/25 vs the 500 floor). But the Oct 16 chain is
+where the liquidity lives, and one contract clears every gate:
+
+| Oct 16 | Mark | Spread | OI | Vol | Delta | Cost |
+|---|---|---|---|---|---|---|
+| $75 | $4.50 | 8.9% PASS | 2,210 PASS | 4,428 | 0.522 PASS | $450 |
+| **$80** | **$2.825** | **8.8% PASS** | **2,681 PASS** | **2,695** | **0.369 PASS** | **$282.50** |
+| $85 | $1.60 | 18.8% FAIL | 614 | 552 | 0.241 FAIL | $160 |
+| $90 | $0.875 | 28.6% FAIL | 872 | 621 | 0.148 FAIL | $87.50 |
+
+First contract in twelve sessions to pass OI, volume, spread and delta simultaneously.
+
+**And I am still not taking it.** $282.50 is 27.6% of the account, above the 20% conservative cap
+of $204.73. Anything over 20% requires the "exceptional — multiple confluent signals all pointing
+the same direction" standard, and PERSONA says to be honest with myself about whether the setup
+truly earns it. It does not, for one decisive reason:
+
+**Theta is -0.251/day on a $2.825 premium — -8.9% per day.** A five-day hold costs ~44% of the
+premium to decay alone at a flat price; the 25-30% hard stop would trigger on theta in about three
+flat sessions. IV is **102.5%** one day after the event that caused it, which is the VKTX lesson
+verbatim: elevated IV after a binary event prices a two-sided distribution, not pending upside.
+
+So the signals are not confluent. The *stock* signals are excellent; the *option structure*
+signals are bad. Grading it A+ to unlock aggressive sizing would be me wanting the trade, not the
+setup earning it. The $85 strike fits the cap at $160 but fails delta AND spread together, which is
+never allowed. The $75 passes every gate but costs $450, over even the aggressive cap.
+
+**Honest grade: B+. Good setup, wrong instrument at this account size.** Qullamaggie buys EPs on
+day one — but he buys *shares* with a 2-3% stop, not 9-DTE calls at 102% IV where decay alone
+trips the stop. The instrument is the disqualifier here, not timidity, and that distinction matters.
+
+**Plan, not a punt.** The disciplined EP entry is the first pullback that holds. By then IV crushes
+off ~102% and the Nov 20 contracts get both cheaper and structurally sound, and their OI should
+build off today's volume. Trigger: a pullback into roughly **$66-$70 that holds and turns up**,
+then re-check Nov 20 OI against the 500 floor. **Invalidation: a close back below $64.21** (the
+pre-gap close) means the gap failed outright and PENG is retired.
+
+### Personal-account advisory (Level 3) — the gap I have been leaving unfilled
+
+PERSONA carries a PERSONAL ACCOUNT ADVISORY playbook requiring that when a setup grades well but
+fails Robbin's rules for a reason a spread fixes, I flag it with exact strikes, expiries, debit,
+max loss/gain and break-evens. I have been saying "actionable in the individual account" for a
+week without ever doing that work. Correcting that. Account ••••1866 confirmed margin /
+option_level_3. (The agentic account is option_level_2, so spreads are not even mechanically
+available there — the single-leg restriction is doubly binding.)
+
+PENG is precisely structure #1's case: Qullamaggie-quality setup, IV spiked past the buying gate
+(97-103%, clearly >80% and event-inflated).
+
+**Cleanest expression — shares.** No IV, no theta, no expiry. For an EP with a multi-week horizon
+this is the right instrument and it sidesteps every objection above.
+
+**Leveraged alternative — Oct 16 $75/$85 call debit spread:**
+- Buy Oct 16 $75C (~$4.53), sell Oct 16 $85C (~$1.57) -> **net debit ~$2.97 = $297/spread**
+- Max loss **$297** (the debit) | Max gain **$703** at $85+ | Break-even **$77.97** (+3.0%)
+- Risk/reward ~2.37:1; both legs liquid (OI 2,210 and 614)
+- Selling the $85 neutralizes most of the 102% IV and offsets the theta that disqualifies the
+  single leg — which is exactly why the playbook exists.
+- Honest risks: still a day-one-of-gap entry; 9 DTE; a fade below $75 by 10/16 loses the full
+  $297; the short $85 caps upside if it runs hard.
+- Nov 20 $75/$85 is the better horizon (~$415 debit, $585 max gain, break-even $79.15) but OI of
+  131/66 makes fills unreliable. Grade: Oct 16 structure **A-**, Nov 20 structure **B-** on
+  liquidity.
+
+### Rest of the board
+
+**STX thesis fully confirmed and still unaffordable.** Arc: $945.57 -> $848.99 -> bounce $887.09 ->
+$805.63 -> **$792.17** (-1.67%), now below the original breakdown low. WDC $402.27 (-2.13%). The
+bounce-entry rule continues to be the right call. Contracts remain multiples of the cap.
+
+IONQ **$41.32 (-4.56%)**, closing on the $40 retirement level — if it closes below $40 it is
+retired. ACN $195.85 (+1.26%), first real bounce in four sessions but one green day is not a
+pullback that holds. PLTR $191.73, flat; entry stays retired. SOFI $15.57. UMC $22.94, still
+disqualified. SMH -1.91%, SPY -0.60%.
+
+NWE +6.91% and BKH +6.91% — two utilities moving near-identically, which given the week's pattern
+suggests a deal between them. Not chased: neither is affordable or actionable here, and I am not
+asserting a merger I did not verify.
+
+Twelve sessions, zero trades — but today the honest reason is narrow and specific: the best setup
+of the stretch needed 27.6% of the account in a contract that decays 8.9% a day.
