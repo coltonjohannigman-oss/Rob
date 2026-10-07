@@ -636,3 +636,83 @@ Watchlists refreshed (both descriptions had been carrying dead VKTX and OCUL tri
 Still outstanding to the owner: whether to take the PENG Oct 16 $80C anyway — the gate I invoked is
 my own A+ sizing judgment, not a hard rule violation, and the liquidity genuinely clears. Asked,
 not assumed. No position opened.
+
+---
+
+## POSITION OPENED — Wednesday 2026-10-07, 9:31 AM CT
+
+**First position in twelve sessions.** Owner-authorized above my own sizing gate after I declined it.
+
+### Trade #12 (open) — PENG Oct 16 2026 $80 Call
+
+| | |
+|---|---|
+| Entry | **$2.15** x1 contract (order 6ac657ae, filled 14:31:10 UTC) |
+| Cost | **$215.04** incl. fees |
+| Sizing | **21.0%** of $1,023.65 |
+| Remaining | $808.61 |
+| Stop | **stop $1.50 / limit $1.35 GTC** (order 6ac657e8, state confirmed) |
+
+Limit was $2.20; **filled at $2.15 for $0.05 of price improvement.** PENG had pulled back from
+$75.28 to $73.86 in the six minutes between my presenting the trade and placing it, so the
+contract cheapened from $2.55 to $2.175 — the sizing came in at 21.0% instead of the 24.9% I
+quoted. The pullback worked in the account's favor on entry price.
+
+**Liquidity at entry:** OI 2,681, volume 3,806, spread $0.05 (2.3%), delta 0.326, IV 94.2%.
+Note delta had slipped from 0.369 to 0.326 — **below the 0.35 floor** — between presentation and
+fill, because the stock fell. I flagged that to the owner before sending rather than quietly
+filling through the gate. Every other gate passed with room.
+
+**Thesis — Episodic Pivot.** FQ4 net sales $567M (+68% YoY, beat by $46.01M), adjusted EPS $1.00
+(+133%), FY2027 guide ~$2.43B revenue (+40%) and $4.45 EPS, both above consensus. Gapped out of a
+2.5-month $46-$64 base built after a -51% July collapse ($89.86 -> $43.70). ~9.6M shares by
+mid-morning against a ~1.5M average full day. Not extended — well below the July high. Rising
+while SMH was -1.91%, so idiosyncratic strength rather than a sympathy move.
+
+**Exit plan:**
+- Hard stop **-30% at $1.50** (resting, GTC). Chose the loose end of the 25-30% band deliberately:
+  theta is -0.218/day on a $2.15 entry = **-10.1%/day**, so a -25% stop would be hit by decay alone
+  in ~2.5 flat sessions. The looser stop buys the thesis room against its known enemy.
+- Thesis stop: **close below $64.21** (pre-gap close) — gap failed, exit regardless of the stop.
+- Time stop: **hard exit Oct 14**, two days before expiry. This needs to work in 2-3 sessions.
+- Profit: 30-80% band, **biased to 30-50%** given the decay. +30% = $2.80 (+$65); +50% = $3.23
+  (+$108). One working order per contract, so the stop and any take-profit cannot both rest —
+  take-profit gets managed at check-ins.
+
+**My grade was B+, not A+, and I said so before and after.** I declined this trade twice on my own
+sizing gate: at 21% it is over the 20% conservative cap, and the aggressive tier requires an A+ the
+setup does not earn because the *instrument* is poor even though the *stock* signals are excellent
+(94% IV one day post-earnings, -10.1%/day decay, day one of a gap). The owner overrode that
+judgment with explicit authorization, which is their call to make — I presented the full decay math
+twice and they took it with eyes open. Recording the disagreement plainly so the post-mortem is
+honest either way: **if this wins it is because the catalyst was strong enough to beat a bad
+instrument, and if it loses it will most likely be theta and IV rather than direction.** That is
+the specific thing to grade later.
+
+### Also found in the individual account (advisory, not executed)
+
+Owner asked for an A-grade idea there and the account turned out to need attention first.
+Account ••••1866: $4,414.92 total, $2,510.42 cash, buying power $7,138.28, Level 3.
+
+**PLTR Nov 6 $210/$230 call debit spread is AT ITS STOP — recommended close.** Long $210C paid
+$690, short $230C collected $224 = **net debit $466**. Now worth $3.39 net = **$339, or -27.3%**,
+inside the 25-30% hard-stop band. The thesis stop has also fired: PLTR is $191.73 and needs
+**$214.66 to break even by Nov 6 (+12% in 30 days)** on net spread delta of just **0.163**, ~20%
+probability of profit, bleeding ~$6.44/day of net theta. I independently retired the PLTR long
+thesis on 10/2 when it rejected $192.59 on flat volume and closed red. Closing recovers ~$339.
+
+**A+ idea — PENG Oct 16 $75/$85 call debit spread.** Meets playbook structure #1's criteria
+explicitly: setup checklist passes, IV 91-97% (>80% AND event-inflated), max loss below a normal
+position for that account. Net debit ~$3.25 = $325; max gain $675 at $85+; break-even $78.25
+(+3.9%); **R/R 2.08:1**. Both legs clear OI and volume ($75C: OI 2,210 / vol 5,657; $85C: OI 614 /
+vol 831). Critically it fixes what made the single leg B+: **net theta -1.8%/day vs -8.9%, net vega
+0.013 vs 0.045.** Suggested 2 contracts = $650 = 14.7% of that account.
+
+**WDC put spread examined and REJECTED** despite the stronger thesis — honest record of the check:
+Nov20 $400/$360 is $1,717.50 (38.9% of the account) at only 1.33:1; $400/$380 is 1.11:1; and both
+short legs ($380P, $360P) show **volume of 13**, under the 100 floor. The puts are already rich at
+65% IV, so the spreads surrender most of the move. Good thesis, not an A structure.
+
+**SOFI:** 100 shares at $18.10 average, now ~$15.57 (-14%, -$253). Shares are held, so per the
+persona a plain covered call beats a PMCC — selling a Nov $18-18.50 call collects premium without
+capping below cost basis. Offered, not yet priced.
