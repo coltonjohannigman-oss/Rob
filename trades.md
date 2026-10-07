@@ -716,3 +716,67 @@ short legs ($380P, $360P) show **volume of 13**, under the 100 floor. The puts a
 **SOFI:** 100 shares at $18.10 average, now ~$15.57 (-14%, -$253). Shares are held, so per the
 persona a plain covered call beats a PMCC — selling a Nov $18-18.50 call collects premium without
 capping below cost basis. Offered, not yet priced.
+
+### 10/7 mid-session (10:39 AM CT) — position management, no second trade
+
+**PENG Oct 16 $80C: +20.9% (+$45.00).** PENG $75.17 (+17.07%), contract mark $2.60 vs $2.15 entry.
+Account value $1,068.61. Ledger reconciles exactly: allocated $1,023.65 / open $215.04 / remaining
+$808.61 against broker cash $808.61.
+
+Stop order 6ac657e8 verified **confirmed**, exactly one working order on the contract — no
+unprotected position, no duplicates. Delta has recovered to **0.369**, back above the 0.35 floor
+that it had slipped under at the moment of entry.
+
+Volume is sustaining: **13.8M shares** by 10:39, which at ~33% of the session elapsed is roughly
+2.7x the normal pace. That is the single most important confirmation for an EP — the move is not
+a one-print gap.
+
+**Take-profit: not triggered.** +20.9% is below the 30-80% band (+30% = $2.795).
+
+**Considered a stop ratchet and declined it.** The position is two hours old; the persona's
+trailing rule starts near +50%, and tightening to ~$1.85 now would very likely stop me out on
+routine post-gap consolidation, which is the most common price action after an EP. The $1.50 stop
+risks $65 = 6.4% of the account, inside tolerance. **Ratchet trigger: at +50% ($3.23), move the
+stop to breakeven.** Recording that I weighed it rather than silently leaving it — over-managing a
+two-hour-old winner is its own failure mode.
+
+**Breadth was sharply risk-off: 23 gainers vs 293 losers** against a mild SPY -0.41%. That
+asymmetry argued against adding a second long regardless of what the scans turned up.
+
+**HESM — genuine EP-Down thesis, untradeable instrument.** -15.59% to $32.66 on **6.49x relative
+volume**, $5.08B cap. Catalyst is real and compounding, not flow: FY26 net income guided down to
+$650-675M; **FY27 adj EBITDA guided $850-950M against FY26's $1.23-1.25B, a 25-30% decline**;
+Bakken tariffs with Chevron revised through 2045; and **Chevron divesting its HESM and DJ Basin
+interests for $200M while taking a $3-4B after-tax loss** — a sponsor eating that loss to exit is
+the strongest tell in the set. JPMorgan cut to Underweight on 10/2 with a $39 target the stock is
+already below; consensus is now Reduce.
+
+Nov 20 puts, every strike:
+
+| Strike | Spread | OI | Delta |
+|---|---|---|---|
+| $30 | 40.0% FAIL | 114 FAIL | -0.230 FAIL |
+| $31 | 25.6% FAIL | 4 FAIL | -0.313 FAIL |
+| $32 | 44.1% FAIL | 74 FAIL | -0.401 pass |
+| $33 | 32.9% FAIL | 61 FAIL | -0.485 pass |
+
+**Fails OI and spread simultaneously at every strike** — the one combination the rules never allow
+flexing. IV is only 39-42%, so the premium is not even rich; the book is simply empty, which is
+normal for a midstream LP. Fifth time this pattern has killed a candidate (CRML, EVER, OCUL, MXL,
+now HESM). No watchlist trigger set, because setting an entry trigger for a trade that can never be
+filled is self-deception — logged as thesis-tracking only.
+
+**BULL: trigger not hit.** -21.06% at $5.75 on **9.21x relative volume** (54.4M shares), but it is
+sitting at the lows with no bounce. The entry is a weak bounce into the declining 10-day EMA; that
+has not happened. Still barred from a flush-day entry by the persona rule.
+
+**BKH +10.09% / NWE +10.06%** — two utilities moving in near-lockstep on heavy volume (relvol 1.43
+and 1.75) for a second consecutive session. Given five deal-pins this week the shape strongly
+suggests a transaction between them, but **I did not verify it and am not asserting it.** Not
+chased: a pinned deal is untradeable and neither fits the remaining cap cleanly.
+
+Portfolio caps checked: max 3 concurrent, max 2 per sector/theme. At 1 of 3, so room existed — the
+pass was on merit, not on a cap.
+
+**Net: one position, working, protected. No second trade.** Conservative sizing on the remaining
+$808.61 budget would cap a new position at $161.72, and nothing today cleared the gates anyway.
