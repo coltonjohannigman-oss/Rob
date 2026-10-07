@@ -780,3 +780,96 @@ pass was on merit, not on a cap.
 
 **Net: one position, working, protected. No second trade.** Conservative sizing on the remaining
 $808.61 budget would cap a new position at $161.72, and nothing today cleared the gates anyway.
+
+---
+
+## Trade #12 CLOSED — PENG Oct 16 2026 $80 Call — **-$75.04 (-34.9%)**
+
+| | |
+|---|---|
+| Entry | $2.15 x1, 9:31 AM CT (order 6ac657ae) |
+| Exit | **$1.40**, 12:35 PM CT (order 6ac657e8, stop filled) |
+| Cost basis | $215.04 |
+| Proceeds | $140.00 |
+| **Realized** | **-$75.04, -34.9%** |
+| Hold time | **3 hours 4 minutes** |
+
+Stop triggered at $1.50 and filled at **$1.40 — $0.10 below the trigger**, the exact
+stop-market/stop-limit slippage the persona warns about. Intended loss was -30%; actual was -34.9%.
+The extra 4.9 points is that slippage.
+
+Account after: $948.61 allocated, flat, no working orders. Broker cash $948.56 — the **$0.05 gap is
+the exit fee** I did not net into the ledger entry. Note buying power is **$808.61**, not $948.56:
+the $139.95 of proceeds does not settle until 10/8. All-time realized P&L now **+$349.96** (from
++$425.00).
+
+### The question I set up at entry: theta/IV or direction?
+
+**Direction, dominantly — with the instrument amplifying it.** PENG ran to $75.69 in the morning
+and dipped to roughly $71.7 by 12:35, a **-5.3% intraday reversal off the high**. Decomposing the
+$0.75 loss per share at the stop:
+
+| Driver | Approx. contribution |
+|---|---|
+| Delta (PENG -2.9% from entry) | **~-$0.65 (~70%)** |
+| IV (94.2% -> ~91%) | ~-$0.13 (~15%) |
+| Theta (~0.45 of a session) | ~-$0.10 (~11%) |
+
+So the stock genuinely went against me; this was not a pure decay death. **But the instrument turned
+a -2.9% move in the underlying into a -35% move in the option** — roughly 12:1 effective leverage.
+That is precisely why a -30% stop was reachable on an ordinary post-gap pullback, and precisely the
+risk I named when I graded this B+ rather than A+. The entry analysis was correct. "Day one of a
+gap" plus 94% IV plus -10%/day theta is a configuration where normal consolidation kills the
+position before the thesis resolves. PENG closed the day **+13.3% at $72.73** — the gap held, the
+thesis is intact, and the option still lost 35%. That gap between "thesis fine" and "position dead"
+IS the lesson.
+
+### My actual mistake was the stop ratchet, and it was a reasoning error
+
+At 10:39 the contract was $2.60 (+20.9%). I considered ratcheting the stop from $1.50 to ~$1.85 and
+declined, writing: *"tightening to ~$1.85 now would very likely stop me out on routine post-gap
+consolidation."*
+
+**That reasoning was backwards.** I was already going to be stopped out by that consolidation — the
+$1.50 stop caught it two hours later. The choice was never "stopped out vs. not stopped out"; it was
+**"stopped out at $1.85 or stopped out at $1.40."** A ratchet to $1.85/limit $1.70 would have exited
+near $1.70-1.80, a loss of roughly **$35-45 instead of $75.04**. Declining the ratchet cost about
+**$30-40**.
+
+**The generalizable error: "I might get stopped out" is not an argument for placing a stop lower.**
+A stop's job is to define the exit price, not to avoid being triggered. I conflated *avoiding the
+trigger* with *protecting the position*, and on a position already in profit those are opposites.
+Writing this down as a standing correction: once a position is green, the ratchet question is "where
+do I want to be out," never "how do I avoid being taken out."
+
+Honest caveat so this does not overcorrect: in the branch where PENG recovered and ran to $85, the
+looser stop is the right one and the ratchet would have been the error. One instance does not
+establish "always ratchet." But the *reasoning* I used was faulty independent of the outcome, and
+that is the part to fix. Also worth noting the contract is **$1.65 as of 2:31 PM**, above the $1.40
+fill — the stop sold near the intraday low. That is the inherent cost of resting stops and not a
+reason to stop using them; the stop executed correctly and unattended while I was not watching
+between 10:39 and 2:31.
+
+### Grade: C on execution, and the B+ setup call was right
+
+The setup assessment holds up: I identified the instrument risk specifically and in advance, twice
+declined the trade on sizing, and the risk I named is the one that materialized. The owner overrode
+that judgment with explicit authorization — a legitimate call on genuinely strong stock signals, and
+their money — and the override lost $75.04. Recording that plainly, not as vindication but because
+the next sizing decision should have an accurate record to work from.
+
+What I would do differently, in order: (1) ratchet the stop at +20% per the corrected logic above;
+(2) prefer the **$75/$85 debit spread** structure even in the agentic account if it were Level 3 —
+net theta -1.8%/day vs -8.9% would have survived this exact pullback; (3) hold the 20% cap, since
+at 21% a -34.9% loss cost 7.3% of the account on a single 3-hour trade.
+
+### Rest of the board at 2:31 PM CT
+
+**BULL $5.98** — bounced off the $5.75 low toward the trigger zone but **not there yet**; the entry
+is a weak bounce into the declining 10-day EMA at roughly $6.50-7.00. Closest it has been.
+**IONQ $41.27** — above $40, **not retired**. Needs a CLOSE below $40.
+**STX $800.52** (-0.63%), thesis intact, still unaffordable. **SPY $777.04** (-0.26%).
+
+Individual account (advisory, unexecuted): PLTR Nov 6 spread still recommended closed; PENG
+$75/$85 A+ spread still open as an idea — note it would have *held* through today's pullback where
+the single leg did not; SOFI covered call still unpriced.
