@@ -873,3 +873,98 @@ is a weak bounce into the declining 10-day EMA at roughly $6.50-7.00. Closest it
 Individual account (advisory, unexecuted): PLTR Nov 6 spread still recommended closed; PENG
 $75/$85 A+ spread still open as an idea — note it would have *held* through today's pullback where
 the single leg did not; SOFI covered call still unpriced.
+
+---
+
+## Session note — Thursday 2026-10-08 (no trade) — I WAS WRONG ON THE PLTR SPREAD
+
+9:13 AM CT. Account flat: $948.56, buying power $948.56 (yesterday's proceeds settled). No positions,
+no working orders. Ledger $948.61 vs broker $948.56 — the **$0.05 is the exit fee** from trade #12,
+identified, not a mystery, too small to warrant a correcting transaction.
+
+### The PLTR spread: my recommendation cost the owner $220
+
+Yesterday at ~9:28 AM CT I recommended closing the owner's **PLTR Nov 6 $210/$230 call debit
+spread** at a -27.3% mark, citing both the hard stop and the thesis stop. They acted on it 32
+minutes later, filling at 10:00 AM CT: sold the $210C at $5.57, bought back the $230C at $2.12, net
+**$345 credit** against a $466 basis = **realized -$121**.
+
+Today PLTR is **$201.12 (+3.61%)** and that spread is worth **$565 (+21.2%)**. Holding would be
+**+$99**. **The advice cost $220.** Order 6ac65758, placed_agent "user".
+
+Three errors, in increasing order of importance:
+
+**1. I conflated two different theses.** My retired PLTR idea was a $191.35 single-leg swing entry
+that failed at $192.59 on 10/2. The spread needed PLTR above $214.66 by Nov 6 — a different trade,
+different level, 30 days of runway. I cited "I independently retired the PLTR long thesis on 10/2"
+as evidence the *spread's* thesis was dead. It was not the same thesis and I had no basis to declare
+the move impossible.
+
+**2. I read consolidation as failure.** I wrote that PLTR "has gone nowhere since" 10/2. It was
+coiling under $192.59 and broke out two sessions later to $201.12. Four flat sessions is what a base
+looks like; I scored it as a dead thesis.
+
+**3. The rule-level error: I applied single-leg stop math to a defined-risk spread.** The 25-30%
+hard stop exists because a long option can decay to zero — it is protection against unbounded
+premium loss. **A debit spread's max loss is already capped at the debit; the structure IS the risk
+control.** Stopping out at -27% mark-to-market on a spread with 30 days left surrenders exactly the
+convexity that was paid for. The spread's net delta was **0.163** — far OTM and highly convex to
+precisely the move that then happened. Mark-to-market percentage is close to meaningless on a far-OTM
+vertical mid-life; it swings violently on small underlying moves (this one went -27.3% to +21.2%, a
+48-point swing, on a 4.9% move in PLTR).
+
+**What I would still defend:** at the moment of the advice the mark genuinely was -27.3% and PLTR
+genuinely had failed a breakout. In the branch where PLTR drifts into Nov 6, the spread decays toward
+zero and the exit looks smart. **One favorable outcome does not prove the recommendation wrong in
+expectation**, and I will not pretend otherwise. But errors (1) and (2) were faulty reasoning
+regardless of outcome, and (3) is a rule misapplication that would recur on every future spread.
+
+### PERSONA amendment proposed (owner's ruling required, not applied unilaterally)
+
+**Defined-risk spreads should not use the single-leg 25-30% hard stop.** Proposed replacement for
+spreads only: exit on (a) **thesis invalidation** — the underlying violates the level the structure
+was built around; or (b) **time** — less than ~1/3 of original DTE remains and the underlying has not
+made meaningful progress toward the short strike; or (c) a **max-loss budget set at entry** and
+accepted as the whole debit. Never on a mid-life mark-to-market percentage. Rationale: the debit IS
+the stop, and a vertical's mark is a noisy estimator of its terminal value until late in its life.
+
+This now sits alongside the other open rulings, and note it points the opposite way from Wednesday's
+lesson: on **single-leg** positions I under-managed the stop (should have ratcheted); on **spreads**
+I over-managed it (should have left it alone). The unifying principle is that the stop discipline has
+to match the instrument's risk profile, not be applied uniformly.
+
+### Second consecutive day of a self-inflicted error, and both are now encoded
+
+Wednesday: declined a stop ratchet on reasoning that was backwards, costing ~$30-40.
+Thursday: recommended closing a defined-risk spread on single-leg stop math, costing $220.
+Both are management errors, not analysis errors — the setups were graded correctly both times. That
+is the pattern worth watching: my entry screening is holding up; my **position management** is where
+the losses are coming from.
+
+### Board
+
+**PCRX is deal #6** this stretch: +44.05% to $36.30 on **18.69x relative volume** and 19.64x options
+flow — **Viatris cash tender at $36.50/share**, ~$1.65B, both boards approved, targeted to close by
+end-2026. Upside $0.20 (+0.55%). Pinned. Caught on the first search before any chart work; the
+catalyst-first rule has now paid for itself six times (WBD, SYNA, PTC, OPCH, PCRX, plus UMC's
+convert flow).
+
+**PENG: resolved as a no, on numbers rather than willpower.** The revenge-re-entry question answered
+itself. Nov 20 IV compressed to 74.3% (from ~80%) but OI is still **185-293 against the 500 floor**
+with volume **3-35 against the 100 floor**, and the contracts run $400-735 against a $189.71
+conservative cap. The Oct 16 $80C I was stopped out of is back to $1.675 — above my $1.40 exit — but
+delta has decayed to **0.300** (below the 0.35 floor) with theta at **-12%/day** and 8 days left.
+Strictly worse than Wednesday's entry. Not re-enterable. PENG $74.29 (+2.31%), gap intact, kill level
+$64.21 unchanged.
+
+**BULL: trigger still not hit.** $5.825 (-1.10%), fourth session pinned near the lows with no bounce.
+Entry remains a weak bounce into the declining 10-day EMA.
+
+**IONQ $40.68** — above $40, **not retired**. Needs a CLOSE below $40; it is one bad session away.
+
+Gainers (31) held nothing tradeable: MANE +18.5% and HAE +12.1% are $114-131 stocks too expensive for
+the cap; GFUZ +11.8% traded 226K shares; GFS +6.0% is not an EP. **ACN +4.08% to $204.67** is finally
+the bounce I was waiting for after $227.41 -> $193.40, but it is day one of that bounce and a $204
+underlying does not fit a $189.71 cap. Watching for it to hold.
+
+STX $799.01 (-1.06%), thesis intact, unaffordable. SMH -1.15%, SPY -0.15%.
