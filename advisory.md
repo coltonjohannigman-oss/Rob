@@ -82,3 +82,5 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   cap ($88) needs width ≤ $1.32, and the Nov 20 monthlies are $2.50/$5 wide. Checked: NKE 37.5/40 bear call
   ($0.37 credit, max loss $214, 15% of width), LW 45/42.5 bull put ($0.55, $195, legs 74% wide, OI 33), STZ
   115/110 bull put ($1.50, $350 = 8%, 30% of width) | pass
+- 2026-10-08 | RULE CHANGE (owner): max loss per idea raised from 2% to 6% (~$264 on $4,395). The total cap across
+  open advisory positions stays at 6%, so one full-size idea uses the whole risk budget.

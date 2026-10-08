@@ -63,7 +63,7 @@ NOT apply here — the PERSONAL RISK RULES below do.
 8. If nothing grades A+, say so plainly. No idea is better than a forced one.
 
 **PERSONAL RISK RULES** (defaults — the owner can change them; record changes in brain.py):
-- Max loss per idea: <= 2% of the personal account's value.
+- Max loss per idea: <= 6% of the personal account's value (owner directive 2026-10-08, was 2%).
 - Total max loss across open advisory positions: <= 6% of the account's value.
 - No more than 2 open advisory positions in the same sector or theme, and flag any idea
   that adds to the account's largest existing concentration.

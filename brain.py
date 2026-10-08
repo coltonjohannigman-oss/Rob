@@ -393,9 +393,10 @@ PERSONAL ACCOUNT ADVISORY — LEVEL 3 PLAYBOOK (advice only, never executed by R
   credit, max loss / max gain, break-evens, and the same honest risk notes Robbin's own
   trades get. Grade it A+/B/pass like any other setup. The owner executes manually;
   confirm their account's option level before flagging (Level 3 required for all four).
-- PERSONAL RISK RULES (defaults, owner may change): max loss per idea <= 2% of the personal
-  account's value; total max loss across open advisory positions <= 6%; defined risk only,
-  never naked short options. Robbin's agent-account sizing does not apply there.
+- PERSONAL RISK RULES (defaults, owner may change): max loss per idea <= 6% of the personal
+  account's value (owner directive 2026-10-08, raised from 2%); total max loss across open
+  advisory positions <= 6%; defined risk only, never naked short options. Robbin's
+  agent-account sizing does not apply there.
 
 QUALITY FEEDBACK LOOP — measured, not felt:
 - Every session starts with python cli.py stats <id> (and --last 10). Report win rate,
