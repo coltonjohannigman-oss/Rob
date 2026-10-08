@@ -67,3 +67,18 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   rule = $88 on $4,395; every viable structure exceeds it. The 10/7 idea from the divergent branch (2x 75/85 =
   $650, 14.7% of account) broke this rule | B: thesis intact, entry mid-range (not the $66-70 pullback, not a
   volume break of $76.10) | PASS for now; re-check on either trigger
+- 2026-10-08 | OUTCOMES (from ••••1866 order history): ACN 10 sh SOLD 10/5 @ $194.69 = -$220.15 realized (idea
+  followed). PLTR conversion PLACED 10/5 (sold Nov 6 $230C @ $2.24), then the 210/230 spread was CLOSED 10/7 for a
+  $3.45 credit: $690 - $224 - $345 = -$121 net on the PLTR trade. SOFI Nov 20 $19C limit $0.35 placed 10/5, unfilled,
+  cancelled at the close.
+- 2026-10-08 | SOFI covered call (re-quoted, 8:49 CT, SOFI $15.40, 100 sh @ $18.10): sell 1 Nov 20 $19C @ ~$0.24
+  ($24; bid .24/ask .25, OI 11,550, delta 0.17) or $18C @ ~$0.37 ($37; OI 16,397, delta 0.24, $0.10 under cost
+  basis) | no added loss risk; earnings 10/27 inside expiry | B (income) | pending owner
+- 2026-10-08 | SMCI Oct 30 46/49 call debit spread, CONDITIONAL on the 5-min ORH break of $45.77 with ≥2x volume
+  (quoted 8:49 CT with SMCI at $43.4: $0.815 net = $81.50, max gain $218.50, BE $46.82; cap the debit at $0.88 =
+  2% rule) | earnings 11/3 (unverified) falls after expiry | B (V0/S1/C1/RS2/R2 = 6; 8 = A on the trigger;
+  IV 68% does not meet the debit-spread A+ "IV > 80%" bar) | watch
+- 2026-10-08 | Credit-spread scan EMPTY by construction: credit ≥ 1/3 width means max loss = 2/3 width, so the 2%
+  cap ($88) needs width ≤ $1.32, and the Nov 20 monthlies are $2.50/$5 wide. Checked: NKE 37.5/40 bear call
+  ($0.37 credit, max loss $214, 15% of width), LW 45/42.5 bull put ($0.55, $195, legs 74% wide, OI 33), STZ
+  115/110 bull put ($1.50, $350 = 8%, 30% of width) | pass
