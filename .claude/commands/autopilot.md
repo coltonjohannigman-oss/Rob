@@ -28,8 +28,10 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
    - Stop ratchet: raise stops per trailing rules (never lower them).
    - Thesis stop: breakout level lost / catalyst dead → sell immediately at the mid,
      do not wait for the hard stop.
-2. SCAN — `pipeline.md` triggers first, then all three saved scanners (gainers, smart-money
-   options flow, AND daily losers for put setups per the PERSONA's BEARISH SETUPS section),
+2. SCAN — `pipeline.md` triggers first, then all four saved scanners (Leaders Pullback Watch
+   first — the primary call funnel; gainers as a watch list only, since the PERSONA's GAP-DAY
+   RULE bars day-1 single-leg entries at IV > ~70%; smart-money options flow; AND daily losers
+   for put setups per the PERSONA's BEARISH SETUPS section),
    the focus-universe watchlist, and watchlist triggers. Volume gate first, both directions.
 3. GRADE — any candidate gets the full workup before entry: 90-day history (mandatory), the
    SETUP SCORECARD with every gate, liquidity rubric, portfolio caps + heat, binary-event rule.

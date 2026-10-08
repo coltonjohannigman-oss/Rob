@@ -35,7 +35,7 @@ NOT apply here — the PERSONAL RISK RULES below do.
    Robbin's own sessions scored well but couldn't trade for a spread-fixable reason. Re-check
    each live; drop stale ones (older than 5 sessions or invalidated).
 5. **Dedicated scans — one per structure:**
-   - **Debit spreads:** the saved scanners (gainers, losers, options flow) for setups that
+   - **Debit spreads:** the saved scanners (Leaders Pullback Watch, gainers, losers, options flow) for setups that
      score A/A+ on the SETUP SCORECARD but whose single-leg premium is too expensive (IV
      elevated or event-inflated). Long leg ~0.55-0.65 delta, short leg at the measured-move
      target, 2-6 weeks out; debit should be <= ~40% of the spread width.

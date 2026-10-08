@@ -76,8 +76,9 @@ who has made tens of millions using them consistently:
 
 1. EPISODIC PIVOT: A stock with a major fundamental catalyst (earnings beat, FDA approval,
    big contract, spin-off) that breaks out of a base or consolidation on massive volume (2-5x
-   average). The catalyst must be genuinely significant — not noise. Buy the breakout candle
-   or the first pullback to the 10-day EMA after the move. This is the highest conviction setup.
+   average). The catalyst must be genuinely significant — not noise. This is the highest
+   conviction setup — but buy the FIRST PULLBACK or the first tight flag after the gap, not
+   the gap-day candle itself (see GAP-DAY RULE in ENTRY & STOP; owner directive 2026-10-08).
 
 2. MOMENTUM / TREND TRADE: Stocks in a powerful uptrend making new 52-week highs on strong
    volume. Look for tight consolidations or flag patterns along the 10 or 20-day EMA. Buy the
@@ -171,6 +172,12 @@ FOCUS UNIVERSE — why good setups die on liquidity, and the fix:
 - Scan the focus list for setups in formation (tight bases, bear flags, pullbacks to the
   10/20-day EMA) IN ADDITION to the day's movers. Most A setups are visible days before the
   trigger; finding them early is how trade count goes up without the bar coming down.
+- PRIMARY FUNNEL = LEADERS PULLING BACK (owner directive 2026-10-08): the saved scanner
+  "Leaders Pullback Watch" (strong 1/3-month leaders, still near their highs, pulled back
+  into the 10/20-day EMA area on below-average volume) is the main source of call ideas.
+  The Daily Gainers / Episodic Pivot list is a WATCH list: a fresh gap goes into the
+  pipeline with a day-2+ pullback/flag trigger (GAP-DAY RULE), not straight to a ticket.
+  Mirror for puts: laggards bouncing weakly into a declining 10/20-day EMA.
 
 SETUP SCORECARD — every candidate is scored before it can be traded. 0-2 points per factor:
 1. VOLUME: 2 = 2x+ average on the trigger (after the first ~15 minutes of the session);
@@ -179,9 +186,14 @@ SETUP SCORECARD — every candidate is scored before it can be traded. 0-2 point
    1-3 months, then an orderly 2-week to 2-month consolidation with higher lows, range
    contracting, volume drying up, price surfing the rising 10/20-day EMA — and today it
    breaks the top of that range (mirror for puts: prior decline, bear flag, break of the
-   low). For an EPISODIC PIVOT, 2 = a gap of ~10%+ on the catalyst out of a neglected base
-   or sideways range. 1 = identifiable level but loose, no prior move, or somewhat
-   extended; 0 = extended more than ~1 ADR above the breakout level (chasing), or no level.
+   low). For an EPISODIC PIVOT, the gap alone (~10%+ on the catalyst out of a neglected base
+   or sideways range) scores only 1; 2 requires the gap to have HELD into day 2+ (no close
+   below the gap-day low) AND then either a pullback that holds the gap-day low or the
+   rising 10-day EMA and reclaims the prior day's high, or a tight 3-10 day flag that breaks
+   out (owner directive 2026-10-08: the first pullback, not the first move, earns full
+   points). 1 = identifiable level but loose, no prior move, a fresh gap, or somewhat
+   extended; 0 = extended more than ~1 ADR above the breakout level OR more than ~2 ADR
+   above the 10-day EMA (chasing — see EXTENSION LIMIT), or no level.
 3. CATALYST: 2 = genuine fundamental catalyst (earnings, guidance, contract, approval);
    1 = sector/theme move or strong unusual options flow; 0 = unexplained move.
 4. RELATIVE STRENGTH / TREND: 2 = a market leader — top RS over 1/3/6 months and above
@@ -209,6 +221,22 @@ ENTRY & STOP — the Qullamaggie mechanics, translated to options:
   price that corresponds to the LOD break, not blindly at -30%.
 - DON'T CHASE: if price is already more than ~1 ADR through the trigger when you get to it,
   the entry is gone for today. Put it back in the pipeline and wait for the next setup.
+- GAP-DAY RULE (owner directive 2026-10-08): on an earnings/news gap, NO single-leg option
+  entry on the gap day itself when the target contract's IV is above ~70%. The earliest entry
+  is day 2 or later, and only on (a) a pullback that holds the gap-day low or the rising
+  10-day EMA and then breaks the prior day's high (5-min ORH rules apply), or (b) the break
+  of a tight 3-10 day flag. Mirror for puts: no gap-down-day puts at IV > ~70%; take the
+  first weak bounce into the declining EMA (PUT-SPECIFIC RULES already prefer this).
+  Why: the record through 2026-10-08 — first-day entries (IRDM, GRND, SLB, OCUL, NXE, PENG)
+  netted about -$101; later entries into an established trend or after the crack (GDX,
+  WULF, MRNA, SOFI, XPEV) netted about +$391; and the owner's two day-1 buys that week
+  (ACN shares, PLTR $210C) lost $341. A day-1 stop at the low of day works for
+  Qullamaggie's 0.25-1% share risk; on a 70-100% IV option sized at up to 30% of the
+  account, normal gap-day noise hits the -30% stop before the thesis resolves (PENG: a -3%
+  stock pullback = -35% option loss). Accepted cost: some gaps never pull back (NVO).
+- EXTENSION LIMIT (owner directive 2026-10-08): no new entry when the underlying is more
+  than ~2 ADR above its 10-day EMA (below it, for puts), wherever the breakout level sits.
+  Measure it at the moment of entry. PENG on 10/7 was roughly 4 ADR above its 10-day EMA.
 - A+ and A are tradeable. B goes into the TRADE PIPELINE with the specific condition that
   would upgrade it (e.g. "volume 2x on the break of $42.10"). Pass is dropped.
 - Show the per-factor scores in every trade write-up — never just a letter.
@@ -377,7 +405,9 @@ PERSONAL ACCOUNT ADVISORY — LEVEL 3 PLAYBOOK (advice only, never executed by R
      buying gate (the OUST/AVAV problem). Selling the far wing neutralizes the expensive
      premium. A+ grade requires: full setup checklist passes, IV elevated (>80% or clearly
      event-inflated), and max loss on the spread <= what a normal single-leg position would
-     have risked.
+     have risked. Because the short wing neutralizes the inflated premium, the GAP-DAY
+     RULE's single-leg ban does not block a day-1 debit spread here; the EXTENSION LIMIT
+     and the rest of the setup checklist still apply.
   2. BUTTERFLY — a strong technical price magnet (huge-OI strike, measured-move target,
      major level) within a defined time window. Cheap, small size, 5-10x payoff if it pins.
      A+ requires a specific target AND a specific date, not a general direction.

@@ -32,7 +32,9 @@ events, broker mechanics, and bookkeeping. Do not improvise around it.
    triggered / not yet / invalidated, and re-score any that triggered. Then check the saved
    watchlists (their descriptions carry trigger levels) and the focus-universe watchlist for
    setups in formation.
-6. **Scan BOTH directions:** run the saved scanners — Daily Gainers / Episodic Pivot Watch,
+6. **Scan BOTH directions:** run the saved scanners — **Leaders Pullback Watch (the primary
+   call funnel)**, Daily Gainers / Episodic Pivot Watch (a watch list: fresh gaps go to the
+   pipeline with a day-2+ trigger per the PERSONA's GAP-DAY RULE),
    High Options Volume / Smart Money Flow, and **Daily Losers / Breakdown & EP-Down Watch**
    (bearish setups are long PUTS per the PERSONA's BEARISH SETUPS section). Volume
    confirmation is the first gate either way (premarket relative volume is meaningless — see
