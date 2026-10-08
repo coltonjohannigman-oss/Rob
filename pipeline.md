@@ -107,7 +107,34 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
     cannot survive ordinary post-gap noise. Only re-enter after IV cools.
   - Theme cap: XP + PBR = 2 Brazil names, the sector maximum.
 
+### From the first Leaders Pullback Watch run (2026-10-08, 9:42 CT) — new GAP-DAY/EXTENSION rules apply
+
+- **SNOW | call (personal-account spread) | 5-week base | V?/S2/C1/RS1/R2 = 6 now, 8 (A) with ≥2x
+  volume on the break | ADR 3.9% | prior move +77% (6m +123%), then a $316.6–349 range since early
+  Sept with volume drying (0.5–0.7x), back above the rising 10/20-day EMAs | TRIGGER: 5-min ORH
+  break above $349.00 (10/6 high) with ≥2x volume | INVALIDATION: close below $328 (10/7 low area /
+  20-EMA) | CONTRACTS: Oct 30 350/360 call spread was $3.58 ($358 = 8%, over the 6% cap) and both
+  legs OI < 300, so price a $5-wide or the Nov 20 monthly at trigger; agent account can't afford
+  single-leg ($12+) | earnings late Nov, clear | added 2026-10-08**
+- **CRWD | call (personal-account spread) | trend pullback to the rising 10-day EMA | V?/S1/C1/RS2/R2
+  = 6 now, 8 (A) with ≥2x volume | ADR 4.7% | 9/14 cybersecurity-wide gap (+14%, 2.6x; PANW/RBRK/NET
+  gapped the same day), trended $205 -> $287 (10/6), 10/7 pulled back to $264.5 = the 10-EMA on
+  0.9x volume | TRIGGER: break of $276.90 (10/7 high) with ≥2x volume | INVALIDATION: close below
+  the 20-EMA (~$253) | CONTRACTS: Oct 30 285/290 call spread $1.48 ($148, 29.5% of width, max gain
+  $352) but legs OI 309/291 (< 500) and long-leg delta 0.36, so re-check OI or use Nov 20 at
+  trigger | theme: cyber, max 2 (PANW is the alternate) | earnings Dec, clear | added 2026-10-08**
+- **DOCU | call | 4-week base, tightest structure on the list | V?/S2/C1/RS1/R2 = 6, 8 with volume |
+  ADR 3.7% | $63.9–74.1 range since 9/15, last 10 days $66.8–70.8, volume 0.6–0.8x | TRIGGER: break
+  of $70.80 with ≥2x volume (then $74.07) | INVALIDATION: close below $66.80 | LIQUIDITY BLOCKS
+  IT: Oct 30 strikes OI 11–104 with 19–37% spreads; Nov 20 70C OI 71 ($4.13, also over the agent's
+  $284 cap). A spread doesn't fix OI. Watch-only unless OI builds | added 2026-10-08**
+
 ## Recently removed
+
+- **Passed 10/8 (Leaders Pullback Watch):** ANF (good base, but options OI 1–73), MSFT/NTNX/DT (ADR
+  2.1–2.9%), LITE ($1,080, unaffordable), NET (earnings 10/29 inside the hold), MRNA (+303% in 3 mo,
+  earnings 11/5), SMTC (loose: 24% 10-day range), ELF/RNG/ERO (earnings 11/2–11/4; ERO also a 22%
+  pullback below its 10-EMA), PANW/RBRK (same cyber theme as CRWD; CRWD is the cleaner pullback).
 
 - **Passed 10/8:** PCRX (+44%, pinned at $36.27–36.33 on 2.2M shares in 10 min, so a cash deal is
   likely; merger-arb pattern), HELE (+21% on the FQ2 beat/raise but faded from $31.94 to $29.2 in
