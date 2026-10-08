@@ -61,3 +61,9 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   earnings ~11/2 pm inside expiry | management: CONVERT if holding into earnings | pending owner
 - 2026-10-05 | no new A+ idea: the 2% max-loss rule ($89 on a $4,458 account) rules out every scanned
   spread (e.g. NKE post-earnings bear call 35/37.5 would need a $1.61 credit to fit) | pass
+- 2026-10-08 | PENG re-check (owner asked, 8:43 CT; PENG $74.22, day 3 of the FQ4 EP, range $70.40–74.20,
+  10/7 high $76.10) | Oct 16 75/85 call spread ~$2.63 ($263, max gain $737, BE $77.63); Oct 16 80/85 ~$1.03
+  ($103, max gain $397, BE $81.03); Nov 20 80/90 ~$2.80 ($280; OI under 300, legs 11-35% wide) | 2% max-loss
+  rule = $88 on $4,395; every viable structure exceeds it. The 10/7 idea from the divergent branch (2x 75/85 =
+  $650, 14.7% of account) broke this rule | B: thesis intact, entry mid-range (not the $66-70 pullback, not a
+  volume break of $76.10) | PASS for now; re-check on either trigger
