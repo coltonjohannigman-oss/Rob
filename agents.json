@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 1023.65,
+      "balance": 948.56,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
       "spent": 0.0,
-      "realized_pnl": 425.0
+      "realized_pnl": 349.90999999999997
     }
   },
   "transactions": [
@@ -249,6 +249,26 @@
       "type": "credit",
       "note": "Owner deposit over the weekend of 2026-09-26/27 \u2014 broker cash 773.65 -> 1023.65, no trades in between (verified: no option orders since 9/25, no positions)",
       "timestamp": "2026-09-28T14:01:21.488346+00:00"
+    },
+    {
+      "id": "cab1acb1",
+      "agent_id": "b7763d77",
+      "amount": -215.04,
+      "type": "debit",
+      "note": "PENG Oct16 $80C x1 @ $2.15 (10/7, backfilled from branch trade-feature-k6dyxg; owner override of B+ grade)",
+      "timestamp": "2026-10-08T13:28:06.447002+00:00"
+    },
+    {
+      "id": "05c0793f",
+      "agent_id": "b7763d77",
+      "amount": 139.95,
+      "type": "credit",
+      "note": "PENG Oct16 $80C x1 stop filled @ $1.40 (10/7) net of $0.05 fee; -34.9%",
+      "timestamp": "2026-10-08T13:28:06.502264+00:00",
+      "cost_basis": 215.04,
+      "pnl": -75.09,
+      "setup": "EP",
+      "grade": "B"
     }
   ]
 }

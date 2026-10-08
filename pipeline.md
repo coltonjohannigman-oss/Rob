@@ -47,6 +47,12 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   - 10/5 status (2:09 CT): $43.08. Probed $44.05 (above the $43.76 trigger) but volume is NOT
     there — 15.3M by 2:09 CT ≈ 0.6x pace vs the 36M average. Volume 0 = automatic pass; faded back
     under the trigger. Session 6 of 10. Kept; alert set at $43.76.
+  - 10/8 status (8:41 CT): $43.36 (-3.5%). The 10/7 session cleared $43.76 and ran to $45.77
+    (close $44.94) on 40.5M ≈ 1.1x — a breakout WITHOUT volume, so it never qualified. Today it gave
+    the move back below the old trigger. NEW TRIGGER: 5-min ORH break above $45.77 with ≥2x volume;
+    don't-chase above ~$48.20. Invalidation unchanged (close < $41.74). Contract re-quote: Oct 23 $47C
+    $1.75 (delta 0.41, IV 70%, OI 1,160, spread 6.9%) or Oct 30 $47C $2.34 (OI 2,569). Session 9 of 10 —
+    drops after the next session unless it triggers. Alert moved to $45.77.
 
 - **NKE | put | EP-down / breakdown | V2/S0/C2/RS2/R0 = 6 (B) | ADR 2.9% | prior decline $46 -> $35
   in 3 mo | Q1 FY27 earnings 10/1 pm: EPS beat (0.48 vs 0.44), stock gapped -6.6% to new 52-week
@@ -62,6 +68,8 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
     half-size breakdown-day amendment is still the owner's call and is NOT adopted.
   - 10/5 status (2:09 CT): $33.70, range $32.76–34.12, never reached the 10-EMA bounce zone.
     Not yet. Session 2 of 10. Alert set at $35.30.
+  - 10/8 status (8:41 CT): $34.03. 10-day EMA has declined to $34.99; 10/6 high $34.62 was the
+    closest approach. Not yet. Session 5 of 10. Alert at $35.30 kept.
 
 - **XP | call | EP day-2 continuation (Brazil election) | V2/S1/C1/RS2/R2 = 8 on score, but GATES
   FAIL today | ADR 3.8% (pre-gap) | prior move +30% in 3 mo ($16.60 -> $21.50, at 90-day highs) |
@@ -74,6 +82,10 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   below $27.80 (flag low) | CONTRACT: Oct 16 $29C (mark $1.18, delta 0.50, IV 63%) or Oct 23 $29C
   (mark $1.45) — re-check OI | BINARY EVENT: Brazil runoff Sun 10/25 — exit by Fri 10/23 close,
   no holding through the runoff | added 2026-10-05**
+  - 10/8 status (8:41 CT): $30.18. Day-2 (10/6) opened $29.25, ABOVE the trigger, so the ORH entry
+    never set up; 10/7 made $30.215 on 14.3M. Today testing that high on light volume (~260K in
+    10 min). NEW TRIGGER: ORH break above $30.22 with ≥2x volume and LOD within 1 ADR. Invalidation
+    unchanged ($27.80). Session 3 of 10. Alert moved to $30.22.
 
 - **PBR | call | EP day-2 continuation (Brazil election + oil) | V1/S1/C1/RS1/R2 = 6 (B) |
   ADR 2.4% (under the 4% bar) | +14% gap to new 90-day highs ($21.99 prior) | WHY NOT TODAY: LOD
@@ -81,9 +93,28 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   $24.76 with ≥2x volume and day-2 LOD within 1 ADR | INVALIDATION: close below $23.54 | CONTRACT:
   Oct 23 $25C (mark $0.76, spread 10.5%, vol 340, OI 0 — new today, re-check; delta 0.47, IV 41%)
   | same 10/25 runoff rule | added 2026-10-05**
+  - 10/8 status (8:41 CT): $24.41. Poked $24.77 (one cent through the trigger) in the first 5 minutes
+    and faded straight back to $24.41. No hold, so no trigger (a hold above $24.76 with ≥2x volume
+    would score 7 = A). Session 3 of 10. Alert at $24.76 kept.
+
+- **PENG | call | EP day-3 pullback (FQ4 rev +68%, FY27 guide +40%) | V1/S1/C2/RS1/R2 = 7 on score,
+  IV GATE FAILS | ADR 5.9% | gap 10/6–10/7 from $60.71 to $76.10 high on 15–21M (avg 2.3M) |
+  10/8: opened $72.50, low $70.40, back to $74.23 | TRIGGER: pullback into $66–70 that holds,
+  then a 5-min ORH reclaim on volume, AND Oct 23/30 ATM IV back under ~80% (89% today) |
+  INVALIDATION: close below $64.21 (10/6 close) | CONTRACT: re-check Oct 23 $75C/$80C at trigger |
+  added 2026-10-08**
+  - Lesson from trade #12 (10/7, -34.9%): at 90%+ IV a single contract at 21% of the account
+    cannot survive ordinary post-gap noise. Only re-enter after IV cools.
   - Theme cap: XP + PBR = 2 Brazil names, the sector maximum.
 
 ## Recently removed
+
+- **Passed 10/8:** PCRX (+44%, pinned at $36.27–36.33 on 2.2M shares in 10 min, so a cash deal is
+  likely; merger-arb pattern), HELE (+21% on the FQ2 beat/raise but faded from $31.94 to $29.2 in
+  10 min, avg volume 0.38M, options thin), WOLF ($1.5B Dept. of War loan commitment is a real
+  catalyst, but the Oct 23 $35–38C have OI 6–88 and spreads 40–70% of mark: liquidity fails on
+  both tests, which a spread does not fix; fading from $35.93 ORH), ARGX (-10.8% at $828:
+  unaffordable), AAOI/COHR (-4% pullbacks inside uptrends: no puts against leaders).
 
 - **Passed 10/5:** PTC (+33%, 21x volume; pinned in a $192.4–196 range all day: Autodesk deal
   pattern, merger arb), RXO (pinned $28–29: same pattern), PCVX (opened $87, faded to $72:

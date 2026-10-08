@@ -105,9 +105,27 @@ Trades 1-3 predate the scorecard and are ungraded in the stats.
   25-30% hard stop rather than waiting for it. Losing small, on purpose. This is the discipline the book wants.
 - **Wrong:** Nothing. Correct trade, wrong outcome. The put thesis simply did not work.
 
+### 12. PENG $80C Oct 16 — Episodic pivot (day 2) — CLOSED 2026-10-07 ❌ -$75.09 (-34.9%)
+- **Scorecard at entry:** graded B+ by the session (IV 94%, about -9%/day theta); entered on the
+  owner's explicit override. x1 contract, $215.04 = 21% of $1,023.65.
+- **Entry:** $2.15 x1, 9:31 AM CT (order 6ac657ae). **Exit:** stop $1.50 / limit $1.35 filled at
+  $1.40, 12:35 PM CT (order 6ac657e8). Net proceeds $139.95 after a $0.05 fee. Hold time 3h04m.
+- **Thesis:** FQ4 revenue +68%, EPS +133%, FY27 guidance +40%; gap from $60.71 to $76.10 on 15–21M
+  shares (avg 2.3M).
+- **Wrong:** A -2.9% pullback in the stock became a -35% loss in the option (delta ~70%, IV ~15%,
+  theta ~11% of the loss). At 90%+ IV, a single contract sized at 21% of the account cannot
+  survive normal post-gap noise. The stop also filled $0.10 under its trigger. Declining the
+  ratchet to ~$1.85 at +21% cost about $30–40. Once a position is green, decide where you want
+  to be out; "a tighter stop might get hit" is not a reason to leave it low.
+- **Right:** The setup read was correct and the named risk is the one that hit. PENG closed +13%
+  that day with the gap intact. The thesis was fine and the instrument still failed.
+- **Bookkeeping:** this trade was booked on the divergent branch `claude/trade-feature-k6dyxg`
+  and backfilled into this ledger on 2026-10-08 (buy $215.04 / sell $139.95, `--setup EP --grade B`).
+- **Post-mortem grade:** C (execution). Owner-override trades get logged at the session's grade.
+
 ## Open positions
 
-(none — 100% cash as of 2026-09-21)
+(none — 100% cash, $948.56, as of 2026-10-08)
 
 
 ---
