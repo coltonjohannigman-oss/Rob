@@ -1129,3 +1129,66 @@ SIRI +2.53%, SOLV +1.60%.
 PENG $72.32 (+1.05%), gap intact. ACN $206.705 (-0.79%), bounce still holding. SPY +0.33%.
 
 **No trade.**
+
+### 10/9 close (2:30 PM CT) — T trigger NOT fired, shelf held; individual-account advisory specified
+
+Agentic account flat: $948.56, no positions, no working orders.
+
+**T: the shelf held, exactly as the pass predicted.** $22.115 at 2:30, having sat between $22.10
+and $22.20 for the prior 2.5 hours. The trigger is a **close below $22.00** — it is 0.5% above with
+30 minutes left, so **not fired**. Consolidating ON the $21.50-22.30 shelf is a different thing from
+breaking it, and the trigger is the discriminator between the two.
+
+Sector at 2:30, all dividend-adjusted: T **-10.07%**, TMUS **-12.76%**, VZ **-8.54%** (recovered
+from -9.66% at midday). TMUS holding near the lows is the cleanest confirmation — it had no
+ex-div adjustment to muddy it.
+
+**Honest accounting of what patience cost today:** the Nov 20 $22 put went **$0.485 -> $0.815
+(+68%)** and the $23 put **$0.87 -> $1.370 (+57%)** from 9:32. If the trigger fires Monday I pay up.
+The analysis was right — the stock stopped at the shelf and held, which is what I said — and the
+entry price got worse anyway. **Right call, worse price. Both are true and neither cancels the
+other.** What would make the pass wrong is if T never breaks $22 and I never get filled; that is
+the risk I accepted, and it is still live.
+
+**Strike selection shifted as the stock fell.** The $22 put is now the correct strike, not the $23:
+delta **-0.445** (in the 0.35-0.55 band) versus the $23's **-0.620** (through the ceiling, now ITM),
+spread **3.7%** vs 5.1%, and volume **6,953** vs 1,408. Worth noting for the trigger: re-select the
+strike at entry rather than reusing the one I first priced.
+
+**BULL $6.335 (+6.47%)** — fourth session bouncing, now 8.4% below the $6.92 EMA. The EMA declines
+to roughly **$6.81** on today's close as the old highs roll off, so the two are converging and the
+trigger zone could be reached early next week. The 39% spread problem on Nov 6 remains unresolved;
+check Oct 23 / Oct 30 / Nov 13 if it triggers.
+
+**PENG $75.05 (+4.86%)** — back above the $2.15-entry level I was stopped out of, gap fully intact.
+Not re-enterable (Oct 16 delta decayed, Nov 20 fails OI/volume), but the thesis was right and the
+instrument was wrong, which is the trade #12 post-mortem in one line.
+
+### Individual account ••••1866 — advisory specified (Level 3, advisory only, I cannot execute)
+
+Account: **$4,426.82** total, cash **$2,855.32** (PLTR proceeds settled), 100 SOFI worth $1,571.50.
+Conservative 20% cap here is **$885.36**, so the constraint that cripples the agentic account does
+not bind.
+
+**1. T Nov 20 2026 $22 put, ~$0.82 = $82.** OI 1,200, volume 6,953, spread 3.7%, delta -0.445,
+IV 31.0%, theta -1.2%/day, break-even $21.18, 42 DTE. Every gate passes.
+
+**Why I recommend this for the individual account while passing in the agentic one — and this is
+not a reversal.** My objection is entry location: T sitting mid-shelf. At **$82 it is 1.9% of a
+$4,426 account**, so a bounce to $23 costs roughly $25, or 0.6% of the account. The identical trade
+in the agentic account was 8.6% of capital behind a tight stop, where being early is fatal — that is
+precisely how trade #12 died. **Same thesis, different sizing, different answer.** Position size is
+what converts "early" from fatal to tolerable.
+
+Thesis stop: a close back above **$24.87**. Profit: 30-50% band ($1.07-1.22).
+
+**2. Checked the put debit spread and rejected it.** The Nov 20 $23/$21 runs ~$0.95 net for $1.05
+max gain = **1.11:1**. A debit spread exists to solve a premium-cost problem that does not exist in
+this account; it caps the upside and buys nothing. Single leg is correct here.
+
+**3. SOFI Nov 20 2026 $18 covered call, collect ~$0.41 = $41.** The income idea I offered twice and
+never priced — now priced. OI **17,272**, spread **2.4%**, delta 0.264 (~26% assignment odds).
+**2.6% yield in 6 weeks** on the $1,571.50 position. If assigned at $18.00 the effective exit is
+**$18.41, above the $18.10 cost basis**, so assignment is a small win rather than a loss booked
+below cost. Downside unchanged — the $41 is pure cushion on a position that has been dead money.
+Persona prefers a plain covered call over a PMCC when the shares are held, which they are.
