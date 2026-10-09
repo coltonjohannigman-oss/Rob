@@ -1078,3 +1078,54 @@ ACN $206.205 (-1.03%), pulling back after bouncing $193.40 -> $208.36; the bounc
 what I wanted to see, but the stock is too expensive for the cap — individual-account material.
 STX $775.41, thesis intact, unaffordable; it has now walked $945.57 -> $775.41 since the break.
 SMH -0.19%, SPY +0.26%, SOFI $15.745.
+
+### 10/9 mid-session (9:32 AM CT) — CORRECTION: I overstated the telecom declines
+
+Account flat, $948.56, no positions or working orders. Ledger $948.61 (the $0.05 exit fee).
+
+**T and VZ both went ex-dividend today, and I missed it this morning.** The live quote shows T's
+`adjusted_previous_close` at **$24.5925** against an unadjusted `previous_close` of $24.87 — a
+**$0.2775** gap, matching AT&T's quarterly dividend. VZ shows **$45.6425 vs $46.35**, a $0.7075 gap
+matching Verizon's. TMUS shows no adjustment.
+
+| | Reported this morning | Actual (dividend-adjusted) |
+|---|---|---|
+| T | -8.62% | **-6.37%** |
+| VZ | -7.76% | **-5.69%** |
+| TMUS | -9.96% | **-9.62%** (no adjustment, real) |
+
+**This is a specific process miss, not bad luck.** The standing rule from the CTVA trap says
+*compare `adjusted_previous_close` to `previous_close`*. I ran the share-count reconciliation —
+which correctly cleared all three of a split — but I took the prior close from the **scan's
+net-change field**, which is unadjusted. So I performed half the check and skipped the half designed
+to catch exactly this. The scan's `% Change` column is computed off the unadjusted close and will
+overstate any decline on an ex-dividend date.
+
+**Standing rule, tightened:** the corporate-action check is not complete until
+`adjusted_previous_close` has been read from a live quote and compared to `previous_close`. Never
+compute a percentage move from a scanner's net-change field alone — it is unadjusted. This matters
+most on dividend payers, where ex-div dates manufacture 1-3% of phantom decline.
+
+The thesis survives the correction: TMUS at **-9.62%** is unadjusted and real, and -6% on a $170B
+telecom is still a large move. But the magnitudes I presented were inflated by roughly a point, and
+anyone sizing off my numbers would have been working from a slightly overstated break.
+
+**T bounced off the July shelf, exactly as predicted.** $22.725 at the open -> **$23.025** now. The
+Nov 20 $23 put went **$0.985 -> $0.87 (-11.7%)**, so passing on entry location has saved money
+rather than cost it so far. **Neither trigger has fired:** it is moving away from the $22.00 break,
+and has not reached the $23.50-24.00 failed-bounce zone. The pass stands on its own reasoning.
+
+Worth noting: the Nov 20 **$22 put's volume jumped to 1,209** from 587 this morning — heavy
+positioning for a break of that shelf. Someone else is watching the same level.
+
+**BULL $6.205 (+4.29%)**, third session bouncing on light volume, now 10% below the $6.92 EMA.
+Converging on the trigger zone. The 39% spread problem on the Nov 6 book is unresolved; if the
+trigger fires, check Oct 23 / Oct 30 / Nov 13 before concluding it is untradeable.
+
+Options-flow scan: 5 hits, nothing tradeable. CON 18.6x options volume on a flat price (positioning,
+no move), TAL +2.84%, **TSLA +3.11%** on 3.06x options volume but $386.68 is far over the cap,
+SIRI +2.53%, SOLV +1.60%.
+
+PENG $72.32 (+1.05%), gap intact. ACN $206.705 (-0.79%), bounce still holding. SPY +0.33%.
+
+**No trade.**
