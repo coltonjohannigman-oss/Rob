@@ -968,3 +968,113 @@ the bounce I was waiting for after $227.41 -> $193.40, but it is day one of that
 underlying does not fit a $189.71 cap. Watching for it to hold.
 
 STX $799.01 (-1.06%), thesis intact, unaffordable. SMH -1.15%, SPY -0.15%.
+
+---
+
+## Session note — Friday 2026-10-09 (no trade) — best-structured candidate yet, passing on the chart
+
+9:07 AM CT. Account flat: $948.56, buying power $948.56 (fully settled). No positions, no working
+orders. Ledger $948.61 vs broker $948.56 — the $0.05 exit fee from trade #12, already explained.
+
+### IONQ RETIRED
+
+It closed 10/8 at **$39.45**, below the $40 line I set weeks ago. That is the retirement condition
+and I am honoring it: **IONQ is off the watchlist.** $39.42 today. The entry conditions I defined
+(close through $48 on 25M+ shares, or $42-43 holding and turning up) were never met and the stock
+simply decayed out of range. Clean, uneventful, correctly retired rather than quietly carried.
+
+### BULL: EMA computed properly, and the book fails
+
+I promised to compute the actual 10-day EMA instead of reusing my $6.50-7.00 estimate. Seeding a
+10-day SMA at 9/21 (8.711) and iterating forward with k=0.1818 through 10/8's close: **the 10-day
+EMA is $6.92.** My estimate was in range but at the top of it.
+
+BULL is **$6.1601 (+3.55%)**, bouncing off the $5.51 low **on declining volume** (81.4M on the
+break -> 21.4M -> lighter today). A weak bounce on fading volume is exactly the shape the setup
+wants. It sits 11% below the EMA, so the trigger has not fired.
+
+**But the Nov 6 put book fails, and not for the reason I expected:**
+
+| Strike | Mark | Spread | OI | Vol | Delta |
+|---|---|---|---|---|---|
+| $5.00 | $0.10 | 100% FAIL | 130 FAIL | 0 FAIL | -0.137 FAIL |
+| $5.50 | $0.22 | 63.6% FAIL | 293 FAIL | 2 FAIL | -0.256 FAIL |
+| $6.00 | $0.41 | **39.0% FAIL** | **1,430 PASS** | **1 FAIL** | **-0.405 PASS** |
+| $6.50 | $0.525 | 81.9% FAIL | 229 FAIL | 0 FAIL | -0.625 FAIL |
+
+The $6 strike has real open interest and the right delta, but a **39% spread** — past even the 25%
+exception — and volume of 1. I did NOT establish whether another expiry quotes tighter (the Nov 20
+$6 strike does not exist, and I declined to map every expiry for an untriggered trade).
+
+**Structural finding worth the owner's attention:** a $0.16 bid/ask is ordinary market-making width,
+but on a $0.41 premium it is 39%. **Percentage spread scales inversely with premium**, so the
+$189.71 cap that pushes me toward cheap contracts pushes me toward structurally bad percentage
+spreads. Expensive contracts fail on cost; cheap ones fail on spread. That is a systematic bind in
+the rule set, not a run of bad luck, and it explains a lot of the no-trade record.
+
+### T (AT&T) — the best-structured candidate of the entire stretch, and I am still passing
+
+**The losers scan found the biggest sector event yet: telecom is being repriced.** TMUS **-9.96%**
+($183.8B), VZ **-7.76%** ($192.6B), T **-8.62%** ($170.4B), plus LUMN -6.6%, TIGO -4.9%, SHEN -4.9%,
+TDS -4.8%, BCE -4.4%, VOD -4.4%, RCI -4.0%, and ASTS -8.0% — on a day SPY is **+0.26%**.
+
+Corporate-action check on all three mega-caps: share counts reconcile (7.50B / 1.19B / 4.50B),
+ratios 1.08-1.11, no split signatures. All real.
+
+**Catalyst (checked before any chart work):** SpaceX agreed to buy a nationwide low-band spectrum
+portfolio from Grain Management, reportedly **~$8B cash** (WSJ), as a step toward **Starlink
+Mobile** — pairing its satellite-to-device constellation with a terrestrial buildout, pending final
+FCC approval. Shotwell said in August that Starlink would target VZ/T/TMUS customers; the FCC has
+already cleared the direct-to-device constellation; and the three carriers announced a defensive
+satellite JV on 10/2. **A funded new entrant with spectrum attacking a three-player oligopoly is a
+genuine multi-year thesis — the first structural bearish catalyst I have found all stretch that is
+not a deal-pin or a flow artifact.**
+
+Volume confirms. At ~9.7% of the session elapsed: T relvol 0.69 = **~7x normal pace**, VZ 0.92 =
+~9.5x, TMUS 0.64 = ~6.6x.
+
+**And the instrument is the best I have priced.** T Nov 20 puts:
+
+| Strike | Mark | Spread | OI | Vol | Delta | IV | Cost |
+|---|---|---|---|---|---|---|---|
+| $22 | $0.555 | 12.6% PASS | 1,200 PASS | 587 PASS | -0.332 | 31.2% | $55.50 |
+| **$23** | **$0.985** | **9.1% PASS** | **1,426 PASS** | **133 PASS** | **-0.494 PASS** | **30.7%** | **$98.50** |
+
+The $23 put clears **every** gate. The two things that killed PENG are both absent: **IV is 30.7%,
+not inflated** — the options market is not pricing panic even after an 8.6% drop — and **theta is
+-1.0%/day versus PENG's -10%/day**, so the position can breathe for weeks. At $98.50 it is 10.4% of
+the account, half the conservative cap. 42 DTE is a proper swing horizon.
+
+That low IV also disarms the usual bounce-entry objection. The persona says wait for the bounce
+*"when put IV has cooled off the panic print"* — **T's put IV never spiked**, so the condition the
+rule exists to wait for is already satisfied.
+
+**So why pass?** The chart, specifically:
+
+T ran $20.48 -> **$26.72** (9/15) over Jul-Sep, declined to $24.24, bounced to $24.87 yesterday on
+53.3M shares, and today gapped to $22.725 — **below every close since July 21.** It cleared 2.5
+months of structure in one move. **But it landed directly on the July congestion shelf at
+$21.50-$22.30, and the $23 put's break-even of $22.01 sits inside that shelf.**
+
+Buying puts into support is a poor entry regardless of how good the thesis is. You want the break
+*through* support, or a failed bounce off it. This is not the day-one reflex that burned me on PENG
+— it is a specific technical objection about where the gap stopped. Chance of profit on the $23 put
+is **36.7%**, with roughly 2-3x upside if T reaches $21-20 by Nov 20.
+
+**Grade: B+.** Excellent catalyst, excellent instrument, confirmed volume and sector breadth,
+poor entry location. **Trigger: a decisive close below $22.00** (through the July shelf, on volume),
+**or a weak bounce to $23.50-24.00 that stalls and rolls over.** Either gives a materially better
+entry than buying mid-shelf. Thesis invalidation: a close back above **$24.87** (yesterday's close)
+means the market has dismissed the SpaceX threat and the gap has been reclaimed.
+
+If the owner wants in today over my recommendation, the ticket is **BUY 1x T Nov 20 2026 $23 put,
+limit ~$0.99** (mid), $98.50, 10.4% of the account — and I would set the stop by the thesis
+($24.87 reclaim) rather than a tight percentage, given theta is only -1%/day.
+
+### Rest of the board
+
+PENG $72.955 (+1.93%), gap intact, kill level $64.21. Still not re-enterable per yesterday's check.
+ACN $206.205 (-1.03%), pulling back after bouncing $193.40 -> $208.36; the bounce held, which is
+what I wanted to see, but the stock is too expensive for the cap — individual-account material.
+STX $775.41, thesis intact, unaffordable; it has now walked $945.57 -> $775.41 since the break.
+SMH -0.19%, SPY +0.26%, SOFI $15.745.
