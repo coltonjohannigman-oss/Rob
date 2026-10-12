@@ -1273,3 +1273,110 @@ PENG **$77.30 (+1.34%)**, now well above the $2.15-entry level I was stopped out
 SPY $777.89 (-0.09%).
 
 **No agentic trade. Cash is a position.**
+
+---
+
+## Monday, October 12, 2026 — 2:33 PM CT (late-session check)
+
+Prices below are from a live quote at **2:33 PM CT**, ~27 minutes before the bell. Not closes.
+
+### Agentic account 452369101 — flat, reconciled
+- Live: total $948.56 | cash $948.56 | buying power $948.56 | no positions | no working orders.
+- Ledger: Allocated $948.61 | Open $0.00 | Remaining $948.61 | Realized +$349.96.
+- Delta $0.05 = trade #12's exit fee. Reconciled, no action.
+
+### Owner positions — individual ••••1866 (ADVISORY ONLY)
+
+**T Nov 20 2026 $22 put x4** — basis $0.79 = $316.00 (opened 10/9 12:40 PM CT)
+
+| | Price | Value | P&L |
+|---|---|---|---|
+| Mark | $0.585 | $234.00 | **-$82.00 (-25.9%)** |
+| Bid | $0.560 | $224.00 | -$92.00 (-29.1%) |
+| Ask | $0.610 | | |
+
+Book: bid 0.56 x63 / ask 0.61 x247. Spread $0.05 = **8.5% of mark** — tight. OI 6,964, volume 2,481.
+This is a valid input to a stop decision, unlike Friday's 8:32 AM open-auction print (25.6%).
+IV 29.6%, delta -0.373, 39 days to expiry. Morning read was -15.8%; it has roughly doubled the loss intraday.
+
+**SOFI Nov 20 2026 $18 call, SHORT 1** — credit $41.00
+- Buy-back $0.305 = $30.50 → **+$10.50** on the call. Delta 0.214, 39 DTE.
+- Underlying SOFI $15.2586, **-3.43%** (adj prev close $15.80 = prev close, no corporate action).
+- The 100 shares at $18.10 avg are **-$284.14**. Net SOFI package **-$273.64**. The call is doing its job.
+
+### T thesis status — levels intact, but the move today went against the position
+
+T $22.5099, **+1.49%** (adjusted_previous_close $22.18 = previous_close — no corporate action; check complete).
+
+Intraday shape matters more than the close-to-close number:
+
+| Time (CT) | Action | Volume |
+|---|---|---|
+| 8:30–9:00 | Open $22.255 → **HOD $22.658**, close $22.575 | **3.30M** |
+| 9:00–9:30 | Faded to $22.465 | 2.48M |
+| 9:30–10:00 | Round-tripped to **$22.2685** — entire gap given back | 1.58M |
+| 10:00–2:30 | Ground back to $22.49–22.51 | 0.93–1.33M/bar |
+
+- **$22.00 shelf held** (LOD $22.25). Thesis still needs a break of $22.00 — not close.
+- **High of day $22.658.** Nowhere near the $23.50–24.00 "real damage" zone, and far from $24.87 full invalidation.
+- The bounce was **sold into**: a full round trip off the high inside 90 minutes on the session's heaviest volume, then a low-volume afternoon grind. That is distribution on a bounce, not accumulation.
+- Sector: VZ +2.49% ($42.685), TMUS +2.28% ($151.96). Second straight up session sector-wide.
+
+### ASTS — the thesis tell FAILED its bounce. This is the day's most informative data point.
+
+I named ASTS in advance as the better thesis read than T's own price. Result:
+
+| | Price | Note |
+|---|---|---|
+| Friday close | $50.965 | after -8.0% |
+| 9:29 AM today | $53.565 | +5.1% |
+| **HOD (8:30–9:00)** | **$54.670** | +7.3% |
+| 2:33 PM | **$51.4496** | **+0.95%** |
+
+ASTS gave back **-5.9% from its high of day** and held barely a point above Friday's close, on an up day for every telecom. Volume front-loaded exactly like T: 3.54M in the opening bar, then 0.30–0.67M.
+
+**Read:** the market is NOT unwinding the SpaceX-disruption trade. Friday's repricing is sticking. The pure play rallied 7% and was sold all day. If this were an overreaction being corrected, ASTS would be the thing that rips — it is the highest-beta expression of the narrative. It didn't.
+
+So today produced a **divergence**: T's price went against the position while the thesis tell confirmed it. Two days of telecom bounce on fading volume with the pure play failing is consistent with an oversold bounce inside a repriced sector, not a reversal.
+
+### The stop decision on the T put — presenting the case
+
+-25.9% on a tight mark is **inside the PERSONA 25–30% hard-stop band** on a single-leg swing. I am not going to launder the PLTR lesson into an excuse here: PLTR was a defined-risk vertical whose mid-life mark is a noisy estimator (it swung 48 points on a 4.9% move). This is a single-leg long put with a two-sided book, 6,964 OI and 2,481 contracts traded. **The mark is reliable and the hard stop genuinely applies.**
+
+**Case to stop now (-$82):**
+- The rule exists so I don't rationalize. I am rationalizing-adjacent right now and should say so.
+- Entry was into strength — the owner filled at $0.79 at 12:40 PM Friday with T already bouncing. I flagged entry location as the weak part of this advisory and it is now the reason the position is underwater.
+- 4x sizing magnified that error. At 1 contract this is -$20.50 and irrelevant; at 4 it is -$82 and 7.1% of a ~$4,400 account.
+- Two consecutive adverse sessions on a fresh position.
+
+**Case to hold:**
+- Every thesis level is intact. The shelf held, the bounce high was $22.658, and $23.50 is 4.4% away.
+- The tell I committed to in advance confirmed the thesis today. That is evidence, not hindsight.
+- Volume structure says bounce, not reversal: heaviest print at the high, fading all day, in both names.
+- 39 days of time and IV at 29.6% — no decay cliff and no blown-out premium to bleed out of.
+
+**Recommendation: HOLD, with a pre-committed exit line rather than a daily re-judgment.** Exit on whichever comes first:
+1. Put marks **≤ $0.55** (-30%, ≈ -$96) on a tight book — the far edge of the band, at a close, not an intraday wick; or
+2. **T closes above $23.50** — thesis damage, exit regardless of the premium.
+
+I am explicitly choosing the **loose edge (30%) of a 25–30% band**, and the owner should know that is a choice, not the rule speaking. I'm choosing it because the thesis tell confirmed today and the level structure is untouched. If he'd rather take -$82 now and re-enter on a failed bounce into the declining EMA with better location, that is a defensible read and I won't argue it — the entry location was my weak spot, not his.
+
+**Nothing here is executable by me. Discretionary sell in ••••1866 is the owner's call, done manually.**
+
+### BULL — trigger still not fired, declined to widen a second time
+- $6.26, -0.79% (adj prev close $6.31 = prev close, clean).
+- 10-day EMA recomputed off today's price: 6.26 x 0.181818 + 6.81 x 0.818182 = **$6.71** (provisional; recompute on the official close).
+- Stock sits **~6.7% below** the EMA. The setup is a weak bounce INTO the declining EMA that stalls. It has not tagged it.
+- Trigger NOT fired. Nov 6 book still fails (39% spread, volume 1). If it rolls from here without tagging $6.71, the NEXT bounce attempt is the setup — I am not rewriting this one.
+
+### Owner rulings still outstanding (6)
+1. **Defined-risk-spread stop amendment** — spreads exit on thesis invalidation / time / entry-set max loss, never a mid-life mark. Cost $220 on PLTR.
+2. **$301.21 funding gap** — unexplained, operationally closed.
+3. **SOFI 50-share trim** — now blocked by mechanics: 1 short call covers 100 shares. Selling 50 leaves the call half-uncovered. The call must be closed or rolled first, which costs $30.50 to buy back and gives up the remaining $10.50 of credit. Flagging the interaction, not recommending.
+4. **EP-Down breakdown-day half-size amendment** — my recommendation remains **DROP it**. The bounce rule earned its keep Friday and again today.
+5. **20% cap** — record unchanged.
+6. **Premium/spread bind** — percentage spread scales inversely with premium; the cap pushes toward contracts that fail the spread gate.
+
+### No new trade
+Agentic account stays flat. Nothing scanned into a qualifying setup, and I'm not manufacturing one 27 minutes before the bell. Cash is a position.
+
