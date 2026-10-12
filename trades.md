@@ -1192,3 +1192,84 @@ never priced — now priced. OI **17,272**, spread **2.4%**, delta 0.264 (~26% a
 **$18.41, above the $18.10 cost basis**, so assignment is a small win rather than a loss booked
 below cost. Downside unchanged — the $41 is pure cushion on a position that has been dead money.
 Persona prefers a plain covered call over a PMCC when the shares are held, which they are.
+
+---
+
+## Session note — Monday 2026-10-12 (no agentic trade) — owner ACTED on both advisories
+
+9:29 AM CT. Agentic account flat: $948.56, no positions, no working orders. Ledger $948.61 (the
+$0.05 exit fee). All-time realized +$349.96.
+
+**Correcting the record: the owner executed BOTH Friday advisories**, which my carry-forward note
+had wrongly listed as "not yet acted on."
+
+| Position | Entry | Size | Opened |
+|---|---|---|---|
+| T Nov 20 $22 put | **$0.79** | **4 contracts = $316.00** | 10/9 12:40 PM CT |
+| SOFI Nov 20 $18 call (short) | **-$41.00** credit | 1 contract | 10/9 12:28 PM CT |
+
+He took the T put at **4x the size I specced** (I framed 1 contract at ~$82) and got a better fill
+than I quoted ($0.79 vs my ~$0.82). At $316 the position is 7.1% of the $4,426 account — inside the
+20% cap, so the sizing is defensible.
+
+**But it weakens an argument I used.** I justified the early entry location by writing "$82 is 1.9%
+of the account, so a bounce to $23 costs maybe $25." **At 4x that arithmetic is 4x weaker** — a
+bounce to $23 now costs roughly $100. The conclusion (sizing makes early entry tolerable) still
+holds at 7.1%, but the specific numbers I used to reach it do not describe the position actually
+taken. Worth stating plainly so the reasoning is not retroactively credited with more precision
+than it had.
+
+### T position status: -15.8%, thesis intact, entry was early as flagged
+
+T **$22.455 (+1.24%)**. Put mark **$0.665** -> 4 x $66.50 = **$266.00** against a $316.00 basis =
+**-$50.00 (-15.8%)**; at the bid, -$60 (-19.0%).
+
+**A process point worth keeping:** at 8:32 AM the book was **0.58/0.75 — a 25.6% spread** two
+minutes after the open, which would have shown -26.6% and tripped the hard-stop band. By 9:29 it
+tightened to 0.64/0.69 (**7.5%**). Refusing to act on the opening print was correct: the
+open-auction book is not a valid input to a stop decision. Friday's spread was 3.7%, so 25.6% was
+pure noise.
+
+Friday's OFFICIAL close was **$22.18** — above $22.00, so **my agentic trigger never fired.** The
+shelf held, which is exactly what the pass predicted, and the owner's position was opened ahead of
+the trigger into the mid-shelf location I objected to.
+
+**The sector is bouncing for a second session:** T +1.24%, **TMUS +2.96%**, **VZ +1.96%**. Thesis
+stop (close above $24.87) is far away; 39 DTE; theta only -1.6%/day. Nothing to do. The level that
+would constitute real damage is **T reclaiming $23.50-24.00** — the top of the shelf and the zone I
+had defined as the failed-bounce entry.
+
+**New thesis-negative signal: ASTS +5.1%** to $53.565, bouncing after Friday's -8.0%. ASTS is
+satellite-to-phone — if it rallies *alongside* the telecoms rather than against them, the market is
+unwinding the entire satellite-disruption trade and reading Friday as an overreaction. That is a
+better read on the thesis than T's own price, because ASTS is the pure-play expression of it. Watch
+ASTS as the thesis tell.
+
+### BULL: bounce stalled BELOW the trigger zone — not fired, and I am not widening it
+
+Recomputed the EMA off Friday's official $6.31 close rather than reusing the estimate:
+EMA = 6.31 x 0.181818 + 6.9202 x 0.818182 = **$6.81**.
+
+BULL topped around **$6.34** and is now **$6.155 (-2.46%)** — it never reached the EMA, stalling
+roughly 7% below it.
+
+There is a real argument that a bounce failing *below* a declining EMA is **more** bearish than one
+that tags it, and the persona's language ("rejection at the EMA") is about a failed bounce in a
+downtrend. But my trigger said "into the EMA," and it did not get there. **Amending a trigger
+mid-flight to permit an entry is precisely how discipline erodes**, and I am not doing it. Not
+fired. If BULL rolls over from here without tagging $6.81, I will treat the *next* bounce attempt
+as the setup rather than rewriting this one.
+
+The Nov 6 book problem is unresolved anyway (39% spread, volume 1), so the trigger question is
+partly moot until the premium/spread bind is addressed.
+
+### Board
+
+Gainers (19): nothing tradeable. **WFF +117.6%** on a $515M cap with relvol 0.097 — a micro-cap
+pump, hazard territory, skipped without further work. TRAX +7.1% on 4.18x volume (biotech),
+CCC +9.6%, MANH +6.9%, SNAP +4.0% — no catalyst worth the effort against a $189.71 cap.
+
+PENG **$77.30 (+1.34%)**, now well above the $2.15-entry level I was stopped out of, gap intact.
+SPY $777.89 (-0.09%).
+
+**No agentic trade. Cash is a position.**
