@@ -2016,3 +2016,116 @@ $6.295 (-0.08%). EMA **$6.72** (recompute on the close). Stock ~6.3% below, neve
 
 ### No new scan
 Tape has not changed materially since 8:53 — SPY -0.18%, same themes. This morning's full session stands: no trade. Agentic account flat.
+
+---
+
+## Tuesday, October 13, 2026 — 2:38 PM CT — **T PUT FULLY CLOSED: -$133.00 (-42.1%)**
+
+The T put position is gone. Owner closed all four contracts today, every order `placed_agent: user`.
+
+### The full order sequence
+
+| Order | Qty | Limit | Time (CT) | Outcome |
+|---|---|---|---|---|
+| `6ace37a7` | 1 | $0.54 | 8:52 placed → **8:53 FILLED** | **-$25.00** |
+| `6ace3b0e` | 3 | $0.57 | 9:07 placed → 1:34 PM cancelled | never filled |
+| `6ace79a7` | 3 | $0.48 | 1:34 PM → 1:35 PM cancelled | lived 50 seconds |
+| `6ace79d8` | 3 | $0.44 | 1:35 PM → 1:35 PM cancelled | lived 27 seconds |
+| `6ace79f3` | 3 | **$0.43** | **1:35 PM FILLED** | **-$108.00** |
+
+He walked the offer down $0.57 → $0.48 → $0.44 → $0.43 in about 80 seconds and took the fill.
+
+### Final accounting — trade is CLOSED
+
+| | |
+|---|---|
+| Basis | 4 × $79.00 = **$316.00** |
+| Proceeds | $54.00 + (3 × $43.00 = $129.00) = **$183.00** |
+| **Realized** | **-$133.00 (-42.1%)** |
+
+Per contract: #1 **-$25.00 (-31.6%)**; #2-4 **-$36.00 each (-45.6%)**.
+
+Execution note, for the record rather than as criticism: $0.43 was about $0.05 under the $0.48 I
+recommended at 11:09 and roughly $0.02 under where the contract marks now ($0.450, bid $0.44 ×43).
+The walk-down cost roughly **$15.00** versus a filled $0.48. That is the price of certainty on a
+position whose thesis had failed, and it is a reasonable thing to pay. He is flat. **This is not
+treated as an error — it is the owner's execution, and getting out beat optimizing the last nickel.**
+
+### POST-MORTEM — T Nov 20 2026 $22 put ×4 | EP-Down (SpaceX spectrum) | **-$133.00 (-42.1%)** | GRADE: D
+
+**Entry:** $0.79 ×4 = $316.00, 10/9 12:40 PM CT (owner-executed, my advisory).
+**Exit:** $0.54 ×1 (10/13 8:53 AM), $0.43 ×3 (10/13 1:35 PM).
+
+**Thesis:** SpaceX's ~$8B Grain Management low-band spectrum purchase plus FCC clearance for up to
+15,000 direct-to-cell satellites = a funded new entrant attacking a three-player oligopoly. T fell
+-6.37% (dividend-adjusted) on 10/9 with sector breadth and ~7x volume pace. The catalyst was real,
+and it is still real — this was never a deal-pin or a flow artifact.
+
+**What killed it, in order of blame:**
+
+1. **I recommended an entry my own trigger had not authorized. This is the whole trade.**
+   In the same 10/9 session I graded T **B+ and PASSED** in the agentic account on entry location —
+   the gap landed on the July congestion shelf at $21.50-22.30 — wrote *"the trigger is the
+   discriminator"* between consolidating on the shelf and breaking it, set that trigger at **a close
+   below $22.00 or a failed bounce to $23.50-24.00**, and then recommended the same trade in the
+   individual account with **neither condition met**, justified on size: *"At $82 it is 1.9% of a
+   $4,426 account."* **The trigger never fired, all week.** T probed $22.25 (Mon) and $22.26 (Tue),
+   reversed hard both times, and closed higher three sessions running. The agentic pass was right
+   every single day the advisory was losing money.
+
+2. **The sizing argument was arithmetic on one contract, and I never named a quantity.**
+   "$82, 1.9% of the account, a bounce to $23 costs maybe $25." The position taken was **4 contracts,
+   $316** — so the bounce cost ~$100 and the position was 7.1% of the account, not 1.9%. The
+   justification did not survive the scaling, and I had written no do-not-exceed line.
+
+3. **Size makes a bad entry affordable; it does not make it a good entry.** I asserted survivability
+   and used it to license edge. Those are different claims. The entry was poorly located at 1
+   contract and poorly located at 4; only the damage scaled.
+
+4. **I never flagged T's Oct 21 earnings**, sitting 6 sessions inside a Nov 20 expiry. Fixed today as
+   owner ruling #7, now live in PERSONA.
+
+5. **I over-weighted a proxy.** ASTS failing its bounce on 10/12 was the strongest argument I gave
+   for holding at -25.9%. The next morning ASTS was -6.88% while T was +0.49%, and today ASTS closed
+   around -8.1% while T ran +1.71%. The correlation that made it a tell was gone; it was trading
+   Piper Sandler's downgrade on its own story. **A tell that moves opposite what it predicts is not a
+   tell**, and leaning on it is what produced the one-day hold that cost $18 before the real exit.
+
+**What was right:** the catalyst work (real, verified, share counts reconciled, dividend adjustment
+caught and corrected), the instrument selection (every liquidity gate passed — OI 9,002, spread
+3.7% at entry, IV 31%, theta -1.2%/day), and **the agentic pass**, which held correctly for four
+straight sessions while the advisory bled.
+
+**The lesson in one line:** this was not a bad read of the market. It was a good read entered at a
+location I had myself ruled out, at a size I had not specified, under a standard I applied only to
+the account I do not control.
+
+**Thesis status: CLOSED and retired.** The SpaceX story may still be vindicated by the FCC's Oct 29
+satellite-spectrum vote, but **this instrument is done and I am not re-pitching it.** Any future T
+expression starts from a blank grade with the Oct 21 print priced in up front.
+
+### Where that leaves things at 2:38 PM CT
+
+**Agentic 452369101:** flat — $948.56, no positions, **no working orders**. Ledger $948.61; the $0.05
+is trade #12's exit fee. Reconciled. **The T loss does NOT touch this ledger** — it was an advisory
+trade in the individual account. Agentic realized P&L remains **+$349.96**.
+
+**Individual ••••1866:** T is closed. Only SOFI remains.
+- 100 shares @ $18.10, SOFI **$15.20** → **-$290.00**
+- Short Nov 20 $18C: $28.50 to buy back vs $41.00 credit = **+$12.50**, delta 0.205
+- **Net SOFI package -$277.50.** Hold. No action.
+- Earnings (unconfirmed, most likely Oct 27-28) is inside the expiry — named as accepted risk under
+  ruling #7. **The roll-or-ride decision wants making by ~Oct 23**, and the 50-share trim is cheaper
+  after the print than before it.
+
+**T levels, now academic for the position but kept for the record:** **$22.875, +1.71%**, a new
+post-gap high, while SPY is +0.04%. The trade needed a close under $22.00 — T finished 3.9% above it.
+$23.50-24.00 is 2.7% away; $24.87 full invalidation is untouched.
+
+**ASTS: $47.29, -8.10%.** Information only. Not a tell, not cited as confirmation.
+
+**BULL: $6.325 (+0.40%).** EMA $6.72 → recomputing on this close gives roughly **$6.65**
+(6.325 × 0.181818 + 6.72 × 0.818182), provisional until the official print. Stock ~4.9% below.
+**Trigger NOT fired — sixth session, and I have declined to widen it every one of them.**
+
+**No new trade.** Agentic account closes the day flat and 100% cash, which is where it started.
