@@ -1747,3 +1747,216 @@ accepted risk rather than recommending a change, and here is the honest read:
 5. The 20% cap.
 6. The premium/spread bind, both failure modes.
 ~~7. Earnings-date check~~ — **ADOPTED 2026-10-13, now live in PERSONA.**
+
+---
+
+## Tuesday, October 13, 2026 — FULL RETROSPECTIVE: 12 closed trades, what went wrong, PERSONA proposals
+
+Owner asked for a look back across the whole book. Nothing below changes PERSONA — these are
+proposals. The only PERSONA edit made in this session was ruling #7, on the owner's instruction.
+
+### The record
+
+| # | Trade | Setup | P&L | % |
+|---|---|---|---|---|
+| 1 | IRDM $55C | Momentum | +$45 | +52.9% |
+| 2 | SOFI $18.5C | Catalyst swing | +$10 | +13.5% |
+| 3 | GRND $15C | EP base breakout | +$35 | +33.3% |
+| 4 | MRNA $65P | EP-Down | +$29 | +18.7% |
+| 5 | WULF $18P | EP-Down | +$47 | +42.7% |
+| 6 | SLB $53C | Momentum | +$24 | +20.0% |
+| 7 | **GDX $85C** | Momentum/Trend | **+$325** | **+130.0%** |
+| 8 | OCUL $11C ×2 | Speculative | **-$100** | -62.5% |
+| 9 | NXE $12C ×2 | Speculative | -$30 | -30.0% |
+| 10 | AMLX $40C | Momentum | +$60 | +30.8% |
+| 11 | XPEV $11P ×2 | EP-Down | -$20 | -20.4% |
+| 12 | PENG $80C | EP | -$75.04 | -34.9% |
+
+**8-4, 66.7% win rate, +$349.96 realized.** Average win $71.88, average loss $56.26.
+
+### THE HEADLINE NUMBER NOBODY SHOULD MISS
+
+**GDX is +$325 of the +$349.96.** Strip that one trade and the book is **+$24.96 across 11 trades**.
+Implied net funding is ~$598.65 ($948.61 allocated less $349.96 realized), so:
+- With GDX: **+58.4%**
+- Without GDX: **+4.2%** over roughly 3.5 months
+
+And GDX's own post-mortem flags that it rode to +130% with **no session record that the LETTING A
+WINNER RUN checklist was ever applied.** So the book's entire profitability rests on one trade taken
+off-process. Excluding it, average win drops to **$35.71** against an average loss of **$56.26** — a
+**0.63:1** payoff ratio. PERSONA's stated mandate is "lose small and win bigger." The realized
+distribution is the inverse of that.
+
+---
+
+## WHAT WENT WRONG — five patterns, each with its dollar cost
+
+### 1. The 30-80% profit band is systematically undershot. **Four of eight winners exited below the floor.**
+
+| Trade | Exit | vs the 30% floor | What the note says |
+|---|---|---|---|
+| #2 SOFI | **+13.5%** | -16.5 pts | peaked +45%; "the sell decision waited" |
+| #4 MRNA | **+18.7%** | -11.3 pts | "just under the band because the ratchet was set tight" |
+| #6 SLB | **+20.0%** | -10.0 pts | "BELOW the band — sold early, off-process" |
+| #10 AMLX | +30.8% | at the edge | bottom edge, 1-day hold |
+
+Meanwhile losses ran **-20.4%, -30.0%, -34.9%, -62.5%** — the full width of the stop band and past it.
+**The band is enforced on the downside and advisory on the upside.** That asymmetry, not the win
+rate, is why the book nets +$24.96 ex-GDX on a 67% hit rate.
+
+### 2. Stops do not work on sub-$1.00 contracts, the book proved it with the worst loss, and PERSONA still has the wrong model
+
+**#8 OCUL: stop set at $0.60 (a -25% trigger, correctly inside the rule). It filled at $0.30. -62.5%, -$100.**
+PERSONA's BROKER MECHANICS still says: *"assume slippage roughly equal to half the spread when
+computing the locked-in floor."* On OCUL the real slippage was **50% of the trigger price.** The
+trade's own post-mortem wrote the correct lesson — *"on sub-$1.00 contracts a stop-market is closer
+to a suggestion than a floor"* — and **it was never carried into PERSONA.** #9 NXE repeated it
+smaller the same week ($0.40 trigger, $0.35 fill).
+
+### 3. Concurrent entries are capped by sector, but the damage came from shared STRUCTURE
+
+**#8 OCUL and #9 NXE were opened 13 minutes apart on 2026-08-17.** Different sectors (biotech,
+uranium), so the "max 2 per sector" cap never engaged. Both were sub-$1.00 contracts bought ×2, both
+stopped out inside 24 hours, combined **-$130 — 58% of every dollar lost in this book, from one
+13-minute decision window.** They were not two trades. They were one bet on thin speculative premium
+surviving a session, placed twice.
+
+### 4. Position management, not selection, is where the money goes — and this is now quantified
+
+Entry screening is the strongest part of the system. Nine flow/structure artifacts caught before any
+money moved (WBD, SYNA, PTC, OPCH, PCRX deal-pinned; UMC and CIFR convert-arb; BMBL deal-pinned;
+EFXT no catalyst), plus VKTX (sizing cap correctly refused an unholdable trade), WFF (skipped at
++117.6%, **-48.1% the next session**), IONQ (retired on its own condition).
+
+Every significant loss, by contrast, is a management failure against a correctly-graded setup:
+- **#12 PENG -$75.04.** At +20.9% I declined to ratchet $1.50 → ~$1.85, reasoning tightening would
+  stop me out on routine consolidation. **Stopped out anyway at $1.40.** The real choice was $1.85
+  vs $1.40. Cost ~$30-40. The thesis was right — PENG closed back above the entry two days later.
+- **#2 SOFI.** +45% peak → +13.5% exit, because the decision waited.
+- **PLTR advisory, -$220 to the owner.** Applied single-leg percentage-stop math to a defined-risk
+  vertical whose mid-life mark swung 48 points on a 4.9% underlying move. Largest single loss
+  anywhere in the record, and it was an advisory, so it is not even in the table above.
+
+### 5. THE BIGGEST UNLOGGED FAILURE: I applied a looser standard to the advisory account than to my own
+
+This one is not in the closed-trades table and it should be the headline finding.
+
+On **10/9, in a single session**, I:
+1. Graded T **B+** and **PASSED** in the agentic account, on entry location — the gap landed on the
+   July congestion shelf at $21.50-22.30.
+2. Wrote the discriminator myself: *"Consolidating ON the $21.50-22.30 shelf is a different thing
+   from breaking it, **and the trigger is the discriminator between the two.**"*
+3. Set the trigger explicitly: **a close below $22.00, or a failed bounce to $23.50-24.00.**
+4. Then, **in the same session, with neither trigger fired**, recommended the identical trade in the
+   individual account — and justified it on size: *"At $82 it is 1.9% of a $4,426 account, so a
+   bounce to $23 costs roughly $25... Position size is what converts 'early' from fatal to tolerable."*
+
+Three things wrong with that:
+- **I overrode my own trigger with a sizing argument.** The trigger was the thing I said separated a
+  good entry from a bad one. Size does not change where the stock is on the chart.
+- **Size makes a bad entry affordable; it does not make it a good entry.** I blurred survivability
+  with edge. Those are different claims and I asserted the first to license the second.
+- **The arithmetic was computed on 1 contract ($82). I never specified a quantity or a scaling cap.**
+  The owner took **4 contracts, $316** — so the "0.6% of the account" bounce cost became ~$100, and
+  the position became 7.1% of the account, not 1.9%.
+
+**Outcome: the trigger has still never fired.** T has never closed below $22.00 — it probed $22.25
+(10/12) and $22.26 (10/13) and reversed hard both times. The agentic pass was right for three
+straight sessions. The advisory, same analyst, same session, looser standard, is **-$89.50** of the
+original $316 (-$25.00 realized on the contract sold at $0.54, -$64.50 open on the remaining three).
+
+PERSONA's scope firewall protects the agentic account *from* the advisory section. **Nothing protects
+the advisory account from me.**
+
+---
+
+## WHERE PERSONA CAN IMPROVE — 7 proposals, owner's call on every one
+
+### P1. Advisory entries must clear the same trigger as the agentic account, and must name a quantity
+Add to PERSONAL ACCOUNT ADVISORY: an advisory may differ from the agentic decision on **structure,
+strike, expiry and size** — never on **whether the entry trigger has fired.** If Robbin passes on
+entry location or timing, the advisory is a WAIT at the same level, not a BUY at a smaller size.
+Every advisory must state an explicit **contract quantity and a do-not-exceed quantity**, because any
+sizing-based justification is quantity-dependent and is void if the quantity changes.
+*Evidence: the T put. -$89.50 and counting, on a trigger that never fired.*
+
+### P2. Replace the stop-slippage model for low-priced contracts
+Amend BROKER MECHANICS: the half-the-spread slippage estimate applies only to contracts above ~$1.50.
+**Below ~$1.00, a stop-market is not a floor** — model the realistic fill as roughly half the trigger
+price, which means the position must be sized as if **the entire premium is the risk.** If that fails
+the 20% cap, the trade is too big. Alternatively don't hold sub-$1.00 contracts overnight at all.
+*Evidence: #8 OCUL, -$100, stop at -25% filled at -62.5%. The lesson was written and never adopted.*
+
+### P3. Cap concurrent entries by risk structure, not only by sector
+Add to PORTFOLIO RISK CAPS: **maximum one new sub-$1.00-premium contract per session**, and no two
+entries in the same session that share a risk structure (thin premium, same-week expiry, top-decile
+IV) regardless of sector. Two trades that die to the same market condition are one position.
+*Evidence: #8 + #9, 13 minutes apart, -$130 = 58% of all losses.*
+
+### P4. Make an exit below the 30% floor an explicit named exception
+Add to TAKING PROFIT: setting a take-profit or ratchet **below the 30% band floor** is an exception
+that must be named out loud with its reason, exactly like the liquidity exception. Today the band is
+enforced on the stop side and advisory on the profit side, and the record shows it gets undercut in
+half of all winners.
+*Evidence: #2 +13.5%, #4 +18.7%, #6 +20.0%, #10 +30.8%. Average win ex-GDX $35.71 vs average loss $56.26.*
+
+### P5. The LETTING A WINNER RUN checklist must be written down at the decision, not reconstructed
+Add to that checklist: the four legs must be **recorded in the session log at the moment the decision
+to ride past 80% is taken.** If it is not written, the 30-80% band applies and the position is closed
+in the band. A checklist that can be asserted after the fact is not a gate.
+*Evidence: #7 GDX, +130%, +$325 — which is 93% of all profit in the book — with no record the
+checklist was ever applied. The outcome was excellent; a repeat without the checklist is a coin flip
+that happened to land.*
+
+### P6. Put the two management corrections into PERSONA; they currently live only in trades.md
+- **"Once a position is green, the ratchet question is 'where do I want to be out,' never 'how do I
+  avoid being taken out.' A stop defines the exit price; it is not there to dodge triggers."**
+  *(#12 PENG, ~$30-40.)*
+- **Defined-risk spreads exit on thesis invalidation, time remaining, or an entry-set max-loss
+  budget — never on a mid-life mark-to-market percentage.** STOP LOSS RULES currently says "25-30% of
+  entry cost" with no instrument carve-out, while the advisory section introduces spreads without any
+  stop rule of their own. *(PLTR, -$220 — the largest single loss in the record.)*
+
+### P7. CORRECTING MYSELF on the EP-Down bounce rule — the evidence is 1-1, not settled
+I have written "recommend DROP the amendment, the bounce rule earned its keep" for several sessions
+running. **That overstates it.** The honest tally:
+- **Against the bounce rule:** NVO (9/23). The bounce never came. The rule missed **+53%**. And the
+  objection was structural, not anecdotal: *"the bounce entry... structurally CANNOT fill on the
+  strongest downtrends — the ones that go straight down are exactly the ones that never bounce. The
+  rule therefore self-selects into weaker setups and misses the best ones."*
+- **For the bounce rule:** T/VZ (10/6). Breakdown-day entries gave -5.5% / -14.1%; failed-bounce
+  entries gave +42.7% / +32.6%.
+
+One each. I was weighting the more recent case and calling it resolved.
+
+**A tiebreaker that actually reconciles both, rather than picking one: choose the entry by what lies
+beneath the gap.**
+- Gap lands **ON identifiable support** (T: the July shelf at $21.50-22.30) → the bounce is likely, so
+  **wait** for the break or the failed bounce. T probed that shelf twice and reversed both times —
+  exactly the behaviour the rule anticipates.
+- Gap lands **in open air**, next support more than ~5-7% below (NVO: nothing until the $35-39 base)
+  → the bounce may never come, so a **half-size breakdown-day entry** is justified, with the full-size
+  bounce entry kept as the add.
+
+Note this discriminator beats the IV-based one I proposed on 9/23: NVO's put IV was 34% and T's was
+30.7%, both cheap, so IV does not separate the cases. **Structure beneath the gap does.** Worth
+testing before adoption, but it is the first version of this rule that fits both data points.
+
+---
+
+## WHAT NOT TO "FIX"
+
+The selection gates are the part that works and the temptation after a thin stretch is to loosen them.
+Do not. The passes have been right essentially every time: nine flow/structure artifacts caught before
+a dollar moved, VKTX correctly refused as unholdable at that size, WFF skipped at +117.6% and down
+48.1% the next session, IONQ retired on its own stated condition, BULL's trigger declined four
+sessions running.
+
+**The real strategic problem is not the gates, it is the account size.** One agentic position opened
+since 9/21 — trade #12, a loss. The $948 budget with a $189.72 cap collides with the gate stack from
+both directions: expensive contracts fail the cost cap (MU $944, STX $712, WDC $366 today), cheap ones
+fail the percentage-spread gate (BULL's $0.41 premium with an ordinary $0.16 width = 39%). That is
+outstanding ruling #6, and it is a bigger question than any rule above: **this account may be too
+small to run this process at the frequency that compounds.** That is the owner's call, not mine.
+
+**Owner rulings outstanding: 6 prior + 7 proposed above.** None acted on unilaterally.
