@@ -1685,3 +1685,65 @@ The depth is also an argument for acting sooner rather than later: liquidity in 
 
 ### The 56% cash position is correct today, not idle
 Three scans, 80 rows: the best long on the tape is **capped at +1.5% by a merger agreement** (BMBL, Ithaca all-cash $6.05), the top-volume short is **convert-arb hedging** (CIFR's $850M note), the best-structured breakout has **no catalyst** (EFXT), and the cleanest bearish chart is a **fatality** (FUN). Holding $2,123.82 in cash on a day like this is the position, not a failure to find one.
+
+---
+
+## Tuesday, October 13, 2026 — OWNER RULING ADOPTED: the earnings-date check is now in PERSONA
+
+The owner ruled: **include the 7th ruling.** Added to `brain.py` PERSONA as the first bullet of
+the **BINARY EVENTS** block (the natural home — that section already governs scheduled prints).
+`brain.py` parses clean. This is the first PERSONA change made in this session, and it was made
+only on the owner's explicit instruction.
+
+**Rule as written:**
+> EARNINGS-DATE CHECK (owner ruling 2026-10-13) — run this BEFORE specifying any position,
+> Robbin's own or a personal-account advisory, and state the result in the write-up: find the
+> underlying's next confirmed earnings date and say whether it falls inside the chosen expiry.
+> Prefer the company's own IR announcement over an estimated date. If it lands inside the
+> expiry, do one of three things and say which: pick an expiry that closes before the print,
+> size down, or name the print out loud as an accepted risk. Never leave it unsaid. An earnings
+> date inside the position is a binary uncorrelated with the setup's thesis — it can invalidate
+> a correct directional read on numbers that have nothing to do with it.
+
+Three design choices worth recording:
+- **"Before specifying," not "before placing."** The T failure happened at the recommendation
+  stage, not the execution stage. Gating on placement would not have caught it, because Robbin
+  does not place in the individual account at all.
+- **"Confirmed" and "prefer IR over an estimate."** The check is worthless if it accepts a
+  scraped estimate. T's Oct 21 came from AT&T's own August 27 release; TipRanks had Oct 28.
+- **Three permitted responses, not a prohibition.** Earnings inside an expiry is not
+  automatically disqualifying — unsaid earnings is. The rule forces disclosure, not avoidance.
+
+### Running the new rule immediately against the live book — it found something on the first pass
+
+**T Nov 20 $22P x3 (owner, advisory):** Q3 **Wednesday Oct 21, before the open** — AT&T's own
+IR announcement, dated 2026-08-27, call 8:30 AM ET. **INSIDE the expiry**, 6 sessions out.
+Already flagged this morning; the exit recommendation stands on the thesis stop.
+
+**SOFI Nov 20 $18C, SHORT 1 (owner, advisory) — NOT previously stated, and it should have been:**
+Q3 is **UNCONFIRMED**, with sources split: Wall Street Horizon projects **Oct 27 (flagged
+UNCONFIRMED)**, ChartRow Oct 27 pre-open, AJ Bell Oct 28; TipRanks and Earnings Whispers say
+Nov 2-3. Last year's Q3 landed Oct 28, 2025; Q2 2026 was July 29. Consensus ~$0.17 EPS.
+**Every candidate date falls INSIDE the Nov 20 expiry.** Per the rule I am naming it as an
+accepted risk rather than recommending a change, and here is the honest read:
+- For a *short* call, earnings is the real assignment risk, not theta. $18 is **+18.7%** away
+  and delta is 0.200, so a single print would have to be extraordinary — but SOFI is a name that
+  moves double digits on prints, and **stops do not protect through gaps.**
+- The same print is *why* the $41 credit was available: the call was sold into elevated
+  pre-earnings IV (still 55.4%). The structure is not wrong; the date was simply unstated.
+- **Action: none.** Hold the covered call. But the date is now on the record, and the owner
+  should decide before ~Oct 23 whether he wants to roll it past the print or let it ride.
+- **It also constrains the trim ruling further:** closing the call to free 50 shares costs
+  $28.00 now and gives up a credit whose main remaining value is the pre-earnings IV. Doing it
+  *after* the print would be cheaper. One more reason not to rush that decision.
+
+**Owner rulings outstanding: back to 6.**
+1. Defined-risk-spread stop amendment (cost $220 on PLTR).
+2. The $301.21 funding gap.
+3. SOFI 50-share trim — blocked by mechanics (margin account makes a half-uncovered call
+   *possible* but unwise; close the call first), and now also calendar-constrained by the
+   late-October print.
+4. EP-Down breakdown-day half-size amendment — recommend DROP.
+5. The 20% cap.
+6. The premium/spread bind, both failure modes.
+~~7. Earnings-date check~~ — **ADOPTED 2026-10-13, now live in PERSONA.**

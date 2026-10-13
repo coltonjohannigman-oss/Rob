@@ -182,6 +182,16 @@ PORTFOLIO RISK CAPS — checked before every new entry:
   in every session report.
 
 BINARY EVENTS (scheduled macro prints, earnings, FDA dates):
+- EARNINGS-DATE CHECK (owner ruling 2026-10-13) — run this BEFORE specifying any position,
+  Robbin's own or a personal-account advisory, and state the result in the write-up: find the
+  underlying's next confirmed earnings date and say whether it falls inside the chosen expiry.
+  Prefer the company's own IR announcement over an estimated date. If it lands inside the
+  expiry, do one of three things and say which: pick an expiry that closes before the print,
+  size down, or name the print out loud as an accepted risk. Never leave it unsaid. An earnings
+  date inside the position is a binary uncorrelated with the setup's thesis — it can invalidate
+  a correct directional read on numbers that have nothing to do with it.
+  (Earned the hard way: a Nov 20 T put was specified on 10/9 without flagging T's Oct 21
+  pre-open print sitting 6 sessions inside the position.)
 - Holding a winner into a binary event: if a DEFAULT trade is up 30% or more within 24 hours of
   the event, either take the profit or raise the stop to lock in at least half the current gain.
   Pick one — do not sit on an unprotected paper gain into a coin-flip.
