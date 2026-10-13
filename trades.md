@@ -1620,3 +1620,68 @@ Three scans, 80 rows, three artifacts caught, one setup passed on principle, one
 5. The 20% cap.
 6. The premium/spread bind — now with a second failure mode (share price excludes the best setups outright).
 7. **NEW (proposed):** mandatory earnings-date check before specifying any position.
+
+---
+
+## Tuesday, October 13, 2026 — 9:05 AM CT — individual account review (advisory)
+
+### The 1-contract sell FILLED
+Order `6ace37a7`, `placed_agent: user`, filled **$0.54 at 13:53:26Z (8:53 AM CT)**, 1 contract.
+**Realized: $54.00 proceeds vs $79.00 basis = -$25.00.** Three contracts remain.
+
+### Full account picture — ••••1866 (margin account)
+
+| | | |
+|---|---|---|
+| Total value | **$3,785.82** | |
+| Cash | **$2,123.82** | **56.1% of the account** |
+| Equity | $1,516.50 | 100 SOFI @ $15.165 |
+| Options (net) | $144.50 | 3 T puts long, 1 SOFI call short |
+| Buying power | $6,365.70 | unleveraged $3,182.85 — **it is a margin account** |
+
+| Position | Basis | Now | P&L |
+|---|---|---|---|
+| SOFI 100 sh | $18.10 = $1,810.00 | $15.165 = $1,516.50 | **-$293.50 (-16.2%)** |
+| SOFI Nov20 $18C short 1 | +$41.00 credit | $28.00 to close | **+$13.00** |
+| *SOFI package* | | | **-$280.50** |
+| T Nov20 $22P ×3 | $0.79 = $237.00 | $0.575 = $172.50 | **-$64.50 (-27.2%)** |
+| T ×1 closed today | $79.00 | $54.00 | **-$25.00 realized** |
+| *T total of the original $316* | | | **-$89.50** |
+
+### The remaining 3 puts: the percentage line is NOT triggered right now — say so
+
+Mark **$0.575 = -27.2%**, which is back **inside** the 25-30% band, not through it. My stated line was mark <= $0.55. It isn't. The put rose from $0.540 to $0.575 because T eased from its $22.635 high back to $22.565.
+
+**I am not going to claim the line fired when it didn't.** But the exit recommendation stands, and on the stronger of the two grounds:
+
+PERSONA's **THESIS STOP**: "If the reason you entered is invalidated — stock breaks back below the breakout level, catalyst fizzles, volume dries up — exit immediately **regardless of percentage loss**." All three legs of the entry reason are now gone:
+1. The trade needed a **break of $22.00**. T probed $22.25 Monday and $22.26 today and reversed hard both times. Never came within 1.2%. The level is a tested double bottom, not a breakdown candidate.
+2. Third consecutive up session, sector-wide.
+3. The proxy I used to read the theme **decoupled**: ASTS $46.85, **-8.96%**, while T is **+0.33%**. A tell that moves opposite the thing it predicts is not a tell.
+Plus the unpriced binary: **T reports Q3 pre-open Oct 21**, 6 sessions inside the expiry.
+
+The percentage gate is the weaker argument today. The thesis gate is the one that governs, and it does not need -30%.
+
+### NEW: the book depth collapsed — this matters more than the spread %
+
+Bid **$0.55 x1** / ask **$0.60 x641**. Headline spread 8.7% looks fine. **It isn't: there is ONE contract bid and 641 offered.** Volume 85 all day.
+
+That is a one-sided book. Selling 3 contracts into a 1-lot bid fills the first at $0.55 and walks the rest down. **Do not market-sell this.** Post 3 at **$0.57** (just under the $0.575 mark) and let it work; drop to $0.56 if it sits. If only part fills, that is fine — partials beat slippage here.
+
+The depth is also an argument for acting sooner rather than later: liquidity in this contract is thinning while everyone's attention is on earnings, and it will not be better on Oct 20.
+
+### SOFI — hold everything, no action
+- The covered call is doing its job: **+$13.00**, delta 0.200, $28.00 of premium left to decay over 38 days. SOFI would need **+18.7%** to $18 to threaten the strike. Collecting the rest beats paying $28.00 to close it.
+- **The 50-share trim ruling, updated for a fact I had wrong in emphasis:** this is a *margin* account ($6,365.70 buying power), so a half-uncovered short call is mechanically *possible* — Robinhood would allow it. That does not make it advisable: it converts a covered call into a partially naked call with unbounded upside risk for $13 of remaining credit. If the trim happens, **close the call first ($28.00), then sell the shares.** Still the owner's ruling, not mine.
+
+### Level 3 playbook — no A+ advisory today, and two specific near-misses worth naming
+
+1. **PUT DEBIT SPREAD on the memory-semi breakdown — right structure, wrong day.** MU -4.5% ($944.53), STX -5.5% ($711.97), WDC -5.4% ($366.15), SKHY -5.2%, CRDO -5.2% on the CXMT China server-memory story. This is the most genuinely-catalyzed, broadest move on the tape. A vertical is exactly what fixes the problem here — the obstacle is absolute premium, not IV, and a spread caps the debit. **But a spread fixes cost, not entry timing**, and this is day 1 of the flush. The entry per PERSONA setup #2 is the rejection at the declining 10/20-day EMA. **Flagging the structure now so it is ready if the bounce comes.** No strikes specified, because specifying them on a day-1 flush would be the same error in a nicer wrapper.
+
+2. **PUT CREDIT SPREAD on T — right level, wrong calendar.** T has now defended $22.25/$22.26 twice on volume, the SpaceX catalyst is 3 sessions past, and Nov 20 $22P IV has cooled to 30.2%. That is the shape of the post-event-IV-crush credit spread: sell below a level that already held. **It fails the A+ gate on the event leg** — PERSONA requires "the event to be OVER," and while the SpaceX event is, **T's Oct 21 earnings is a brand-new binary inside the window.** Also worth saying plainly: flipping from long puts to short puts on the same name in the same session, after losing money on the bearish side, is how direction-chasing starts. Not advised.
+
+3. Butterfly: nothing today — no specific price magnet with a specific date.
+4. PMCC: not applicable, he owns the 100 SOFI shares (a plain covered call beats a PMCC when the shares are held), and it is already written.
+
+### The 56% cash position is correct today, not idle
+Three scans, 80 rows: the best long on the tape is **capped at +1.5% by a merger agreement** (BMBL, Ithaca all-cash $6.05), the top-volume short is **convert-arb hedging** (CIFR's $850M note), the best-structured breakout has **no catalyst** (EFXT), and the cleanest bearish chart is a **fatality** (FUN). Holding $2,123.82 in cash on a day like this is the position, not a failure to find one.
