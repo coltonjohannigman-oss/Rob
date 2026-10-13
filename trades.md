@@ -1453,3 +1453,79 @@ MU -2.4% on reports of CXMT server-memory architecture (China memory competition
 ### BULL — EMA recomputed off the official close
 6.30 x 0.181818 + 6.81 x 0.818182 = **$6.72**. Premarket $6.2514 is **~7% below** it. Never tagged. Trigger not fired, not widened — third time.
 
+
+---
+
+## Tuesday, October 13, 2026 — 8:48 AM CT (open check) — **STOP TRIGGERED ON THE T PUT**
+
+Quote timestamp 13:48:43Z = **8:48 AM CT**, 18 minutes after the open.
+
+### Agentic account 452369101 — flat, reconciled
+$948.56 cash / $948.56 buying power, no positions, **no working orders**. Ledger $948.61; the $0.05 is trade #12's exit fee. Not a gap.
+
+### T put — through the far edge of the band on a TIGHT book
+
+**T Nov 20 2026 $22 put x4** — basis $0.79 = $316.00
+
+| | Price | Value | P&L |
+|---|---|---|---|
+| **Mark** | **$0.540** | **$216.00** | **-$100.00 (-31.6%)** |
+| Bid | $0.520 | $208.00 | -$108.00 (-34.2%) |
+| Ask | $0.560 | | |
+
+Book: bid 0.52 x117 / ask 0.56 x8. Spread $0.04 = **7.4% of mark — TIGHT.** Not an open-auction artifact; this is a valid input.
+Volume 40 so far (thin this early), **OI 9,002** (up from 6,964 Friday — the contract is accumulating interest). IV 29.6% -> 29.3%, delta -0.355, 38 DTE.
+
+My pre-committed line was "mark <= $0.55 **at a close**." Mark is $0.540. The price threshold is through; the close qualifier is not met at 8:48 AM.
+
+**I am not waiting for the close, and here is why that is not me moving the goalposts.** The close qualifier existed to filter an intraday wick. This is not a wick:
+- The book is 7.4% wide with a 117-lot bid. No liquidity distortion.
+- -31.6% on mark and -34.2% at the bid are **past the entire PERSONA 25-30% band**, not inside it. Yesterday I explicitly chose the loose 30% edge and flagged that as a choice. The loose edge is now breached.
+- The mechanism that justified yesterday's hold has broken (below).
+- Waiting until 3:00 PM to re-confirm a number already past my own far edge is precisely the PENG rationalization I wrote a standing correction about.
+
+### The reason I was wrong yesterday: my tell decoupled
+
+Yesterday I held at -25.9% and the single strongest argument I gave was that ASTS failing its bounce confirmed the thesis. Today:
+
+| | ASTS | T |
+|---|---|---|
+| Mon close | $51.46 | $22.49 |
+| 8:48 AM today | **$47.9175 (-6.88%)** | **$22.6006 (+0.49%)** |
+
+**ASTS is down 6.9% and T is up 0.5% in the same 18 minutes.** The correlation that made ASTS a valid proxy for the SpaceX-disrupts-telecom theme is gone. ASTS is trading its own story now — Piper's launch-cadence doubts and the $98 -> $54 target cut — and the market is explicitly NOT extending "SpaceX wins" to "carriers lose." The carriers are being bought: VZ +0.34%, TMUS +1.03%.
+
+**A tell that moves opposite the thing it is supposed to predict is not a tell.** I assigned information to ASTS that it was not carrying, and that misweighting is what produced yesterday's hold. The hold cost $18 (-$82 -> -$100). Small in dollars, but the reasoning error is the thing to record.
+
+### The shelf has now held twice, and that kills the setup
+
+T intraday, 5-min bars:
+
+| Time (CT) | O | H | L | C | Vol |
+|---|---|---|---|---|---|
+| 8:30 | 22.280 | 22.605 | **22.260** | 22.581 | 543K |
+| 8:35 | 22.580 | 22.595 | 22.485 | 22.510 | 352K |
+| 8:40 | 22.510 | **22.635** | 22.495 | 22.630 | 384K |
+
+T **gapped down** to $22.28, probed **$22.26**, and reversed to $22.635 inside 18 minutes.
+
+- Monday LOD **$22.25**. Today LOD **$22.26**. Two probes of the same shelf, two sharp reversals.
+- The thesis requires a **break of $22.00**. It has not come within 1.2% of it, and the shelf is now a tested double bottom rather than an untested level.
+- Third consecutive up session. Opening volume 1.28M/15min is lighter than Monday's 3.30M/30min pace, so this is not a volume thrust — but "it is bouncing on light volume" stops being a bear argument when the bounce has run three sessions and the level you need never got tested.
+
+### RECOMMENDATION: EXIT THE T PUT
+
+Advisory only — this is account ••••1866 and **I cannot execute it; the sell is the owner's to place manually.**
+
+- Sell 4 x T Nov 20 $22P, **limit $0.54** (mid, into a 117-lot bid). Fills at $216.00 → **realized -$100.00 (-31.6%)**.
+- If it will not fill, $0.53 → $212.00 (-$104.00, -32.9%). At the bid $0.52 → $208.00 (-$108.00, -34.2%).
+- Capital still at risk if held: **$216.00**, against a thesis whose trigger level has held twice and whose tell has decoupled.
+- **T reports Q3 before the open Wednesday Oct 21** — 6 sessions away, inside the position, a binary uncorrelated with the SpaceX story. I did not flag this when I specified the trade on 10/9. Holding from here means holding an earnings bet I never priced.
+
+Four things went wrong and only one was the market: entry into strength at $0.79 (my call), 4x sizing on arithmetic I had computed at 1 contract (my error, recorded 10/12), an unflagged earnings date inside the expiry (my omission), and a tell I overweighted (yesterday's hold). The directional read on Friday's catalyst may still prove right after Oct 29 — but this position is not the instrument to express it, and -31.6% is the rule telling me to stop paying to find out.
+
+### Everything else
+- **SOFI Nov 20 $18C short 1:** $0.305 to buy back = **+$10.50**, unchanged. SOFI $15.29 (+0.39%); 100 shares at $18.10 = -$281.00. Net package -$270.50. Working as designed, no action.
+- **BULL:** $6.33 (+0.48%). EMA **$6.72**. Still ~5.8% below, never tagged. Trigger not fired — fourth session declined to widen it.
+- **ASTS** also bouncing off its low intraday ($47.13 -> $48.32), so its own flush is being bought too.
+- **Both-direction scan deferred.** The position decision is time-sensitive and I am not burying a stop recommendation under a watchlist. Agentic account stays flat; nothing is being opened without confirmation regardless.
