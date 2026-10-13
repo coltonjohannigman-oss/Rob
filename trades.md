@@ -1529,3 +1529,94 @@ Four things went wrong and only one was the market: entry into strength at $0.79
 - **BULL:** $6.33 (+0.48%). EMA **$6.72**. Still ~5.8% below, never tagged. Trigger not fired — fourth session declined to widen it.
 - **ASTS** also bouncing off its low intraday ($47.13 -> $48.32), so its own flush is being bought too.
 - **Both-direction scan deferred.** The position decision is time-sensitive and I am not burying a stop recommendation under a watchlist. Agentic account stays flat; nothing is being opened without confirmation regardless.
+
+---
+
+## Tuesday, October 13, 2026 — 8:53 AM CT (full /trade session) — **NO TRADE**
+
+Time from a fresh SPY quote: 13:53:17Z = **8:53 AM CT**. SPY $778.30, +0.03% vs the $778.10 close — flat index, themed carnage underneath.
+
+### 1-2. Ledger reconciled
+Live broker: total $948.56 | cash $948.56 | **buying power $948.56**. Ledger: Allocated $948.61 | Open $0.00 | Remaining $948.61 | Realized +$349.96.
+Delta **$0.05** = trade #12's exit fee. Known, reconciled, not the funding gap.
+20% conservative cap = **$189.72**. 40% aggressive cap = $379.44 (requires A+).
+
+### 3-4. Position & stop audit / take-profit duty
+**Agentic 452369101: flat.** No positions, no working orders → no stops owed, no take-profit duty. Nothing unprotected.
+
+**Owner's ••••1866 (advisory only):**
+- **T Nov 20 $22P ×4** — and **the owner has acted**: a sell order is working, `placed_agent: user`, `agent_initiated: false`, placed 13:52:39Z (8:52 AM CT), **limit $0.54, quantity 1** (not 4). `pending_sell_quantity: 1.0`, processed 0.
+  **That is 1 of the 4 contracts I recommended selling, and it is the owner's order — I am not correcting it and did not touch it.** Per PERSONA, an in-app order is the owner's will. Flagging the facts only: it exits a quarter of the position; the other **3 contracts remain unencumbered** (the lock holds only the 1), so he can still sell them manually if he wants. Book at 8:53: bid $0.52 ×32 / ask $0.56 ×8, mark $0.540, spread 7.4%. His $0.54 offer sits $0.02 above the bid, inside the spread — it needs a buyer to come up, and bid size has thinned from 117 to 32 since 8:48.
+  Full position at the $0.540 mark: $216.00 vs $316.00 = **-$100.00 (-31.6%)**.
+- **SOFI Nov 20 $18C short 1** — $0.295 mark, **$29.50 to buy back vs $41.00 credit = +$11.50 (+28.0% of credit)**. Delta 0.210, IV 55.7%, 38 DTE. SOFI $15.24. 100 shares at $18.10 = -$286.00; net package -$274.50. No change recommended: on a covered call this far OTM, the remaining $29.50 is decay I'd rather collect than pay to close.
+
+### 5. Watchlist trigger status — nothing fired
+| List | Trigger | Status |
+|---|---|---|
+| **EP-Down Watch** (T) | close under **$22.00**, or failed bounce **$23.50-24.00** | **NOT FIRED.** T $22.635. Updated the description today. |
+| **BULL** | weak bounce INTO the declining 10d EMA that stalls | **NOT FIRED.** EMA **$6.72**, stock $6.305 — ~6.2% below, never tagged. Declined to widen it a 4th session. |
+| Momentum Breakout (PENG) | first pullback $66-70 holding | Retired, not re-enterable. |
+| LiDAR & Drone (OUST) | IV cool-off + new base | Thesis dead, puts still blocked (IV ~130%, OI<100). |
+
+### 6. Scans — both directions
+
+**Elapsed-time scaling:** 23 min of a 390-min session = **5.9%** at scan time. A reported relvol of 1.0 is a **~17x** full-day pace. All multiples below are scaled.
+
+**Daily Gainers — Episodic Pivot Watch: 25 items.**
+
+| Ticker | % | Last | Scaled relvol | Verdict |
+|---|---|---|---|---|
+| BMBL | **+56.8%** | $5.96 | 21x | **DEAL-PINNED — dead** |
+| EFXT | +11.8% | $26.93 | **24.5x** | structure without catalyst |
+| RZAI | +9.5% | $10.91 | 19x | $556M micro-cap AI, skip |
+| MDB | +7.3% | $409.22 | 5.8x | unaffordable |
+| INFY/CTSH/GLOB/CNXC/KD/OTEX/WPP | +4-6% | — | 1.1-4.0x | sympathy tagalongs |
+| CRM, SMTC, FSLY, FIGS, PBF, HPQ, FIG, LIFE, SDRL | +4-6% | — | 1.5-2.9x | analyst actions, no EP |
+
+**High Options Volume — Smart Money Flow: exactly 1 item, and it was BMBL.** The entire unusual-options-flow signal on the tape today is merger arb. That is the cleanest illustration yet of why this scan cannot be read as institutional accumulation without the catalyst check.
+
+**Daily Losers — Breakdown & EP-Down Watch: 54 items.** Coherent themes, not noise:
+- **Crypto miners / AI datacenter:** CIFR -16.9%, APLD -7.3%, IREN -5.6%, CLSK -5.4%, WULF -4.9%, HUT -4.8%, CRWV -4.3%, NBIS -4.7%, RIOT -4.1%, SHAZ -5.0%, WYFI -4.5%, BRUN -4.9%
+- **Memory / semis:** STX -5.5%, WDC -5.4%, ACMR -5.4%, SKHY -5.2%, CRDO -5.2%, MU -4.5%, ALAB -4.4%, FLEX -4.3% — the CXMT China server-memory story
+- **Space:** ASTS -9.0%, LUNR -4.0%, PL -4.0%
+- **Biotech:** SNDX -18.0%, SMMT -6.1%, IBRX -5.1%, LQDA -5.0%, BNTX -4.8%, MRVI -4.7%, TXG -4.5%
+- **JNJ -4.4%** on 3.8x — mega-cap, $252.18, premium far past the cap
+
+### THREE MORE CATALYST-CHECK CATCHES — the running count is now NINE
+
+1. **BMBL +56.8% — all-cash acquisition.** Ithaca Holdings, **$6.05/share cash**, $1.3B. Stock $5.96. **Upside permanently capped at $0.09 (+1.5%).** Calls are structurally worthless barring a competing bid. On structure alone this was the single biggest EP on the board with 56.9M shares traded.
+2. **CIFR -16.9%, the highest scaled relvol on the losers list (18.7x) — an $850M convertible note offering** plus an exchange of old notes for shares. This is the **UMC pattern**: convert buyers short the stock to hedge delta, producing mechanical selling that stops when the deal prices. A financing event, not the "earnings miss / guidance cut / lost contract" that PERSONA's EP-Down requires. The 90-day chart is a genuine downtrend ($22.11 July 10 → $13.00 Oct 12, -41%), so it belongs on the watchlist — but not bought today.
+3. **EFXT +11.8%, the highest scaled relvol anywhere today (24.5x) — and the best *structure* on the board:** Oct 1 gap $22.79 → $25.75 open on 2.10M shares (~5x), then a tight 9-session base $23.47-26.00, now breaking the base high on ~5x pace. That is a textbook Qullamaggie EP-plus-base. **It fails on leg 1: no identifiable catalyst for the Oct 1 gap, and the last reported quarter MISSED both lines** (EPS $0.25 vs $0.31, revenue $582M vs $606.78M est). Structure without a catalyst is precisely the trap the catalyst-first rule exists to catch. Chain exists (Oct 16 / Nov 20 / Dec 18 / Feb 19 / May 21) but I did not price strikes — the setup died upstream of liquidity.
+
+Running tally of flow/structure artifacts the catalyst check has caught: **WBD, SYNA, PTC, OPCH, PCRX (deal-pinned), UMC (convert-arb), BMBL (deal-pinned), CIFR (convert-arb), EFXT (no catalyst) = nine.** This step is not a formality; it is the highest-yield gate in the process by a wide margin.
+
+### FUN — passing, and saying why honestly
+Six Flags **-10.7% at $10.64 on 10.5x scaled relvol**, a clean 3-month downtrend ($19.46 → $10.64, -45%) breaking a 2-week bounce. Structurally the best bearish chart on the list.
+
+The catalyst is a **fatal roller coaster accident at a Six Flags park in Georgia** — one person killed, several injured, ride closures across parks. I'm not putting on a position to profit from that. Separately and independently, the trade also fails my rules: a single-incident headline is a legal/PR process with no numbers to anchor a price target or a thesis stop, it is a day-1 flush with IV blown out, and PERSONA's EP-Down wants a catalyst that trends for days-to-weeks off a fundamental trajectory. Both reasons stand on their own.
+
+### The real reason there is no trade: every bearish candidate is a day-1 breakdown
+My own 10/6 vindication table settled this empirically — breakdown-day entries on T/VZ gave -5.5% / -14.1% while the failed-bounce entries gave +42.7% / +32.6%. That is why I recommend DROPPING the EP-Down breakdown-day amendment, and it is why I am not buying any of today's 54 losers on day one. The correct action on a themed flush is to write down the bounce trigger and wait for the rejection at the declining EMA.
+
+### And the premium bind again, in its other form
+The memory-semi breakdown is the most structurally real move on the tape — a genuine catalyst (CXMT server-memory architecture) with sector-wide breadth. Every name in it is priced out of reach of a $948 account: **MU $944.53, STX $711.97, WDC $366.15, CRDO $190.31, ALAB $309.85.** An ATM put on any of them is multiples of the $189.72 cap. This is outstanding ruling #6 from the other direction: the cap does not only push toward contracts that fail the spread gate, it also excludes the highest-quality setups entirely on share price. Both failure modes come from the same $948 constraint.
+
+### 7-8. Nothing to review, nothing to confirm
+No `review_option_order` was run because nothing reached the grading stage with both a catalyst and an affordable, liquid contract. Confirmation mode remains ON; no order was placed in the agentic account.
+
+### 10. NO TRADE — cash is a position
+Three scans, 80 rows, three artifacts caught, one setup passed on principle, one real theme priced out of reach. The account stays flat at $948.56. I am not manufacturing a trade on a day whose best long is capped at +1.5% by a merger agreement and whose best short is a fatality.
+
+**Also vindicated:** **WFF -48.1% today** — the $515M micro-cap I skipped Monday at **+117.6%** with relvol 0.097 as a probable pump. It gave back nearly half in one session.
+
+### Proposed seventh owner ruling
+**Require an earnings-date check before specifying any option position, and state the date plus whether it lands inside the expiry.** The T put earned this: I specified a Nov 20 put on 10/9 without noting T reports Q3 on **Oct 21, before the open** — a binary uncorrelated with the thesis, sitting 6 sessions inside the position. Not acting on this unilaterally; it is the owner's call like the other six.
+
+### Owner rulings outstanding (now 7)
+1. Defined-risk-spread stop amendment (cost $220 on PLTR).
+2. The $301.21 funding gap.
+3. SOFI 50-share trim — **blocked by mechanics**: 1 short call covers 100 shares, so selling 50 leaves it half-uncovered. The call must be closed or rolled first: $29.50 to buy back, giving up the remaining $11.50 of credit.
+4. EP-Down breakdown-day half-size amendment — **recommend DROP**, reinforced again today.
+5. The 20% cap.
+6. The premium/spread bind — now with a second failure mode (share price excludes the best setups outright).
+7. **NEW (proposed):** mandatory earnings-date check before specifying any position.
