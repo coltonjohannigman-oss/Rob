@@ -1960,3 +1960,59 @@ outstanding ruling #6, and it is a bigger question than any rule above: **this a
 small to run this process at the frequency that compounds.** That is the owner's call, not mine.
 
 **Owner rulings outstanding: 6 prior + 7 proposed above.** None acted on unilaterally.
+
+---
+
+## Tuesday, October 13, 2026 — 11:09 AM CT (midday check) — owner's 3-lot sell is STALE and unfilled
+
+### Agentic 452369101 — flat
+$948.56 / buying power $948.56, no positions, **no working orders**. Ledger $948.61; $0.05 = trade #12's exit fee. Reconciled.
+
+### The owner placed the 3-contract sell at exactly the price I suggested, and the market left it behind
+
+Order `6ace3b0e`, **3 contracts, limit $0.57**, `placed_agent: user`, placed **14:07:10Z = 9:07 AM CT** — two minutes after I recommended $0.57. **processed 0 of 3, still working, GFD.**
+
+It was a fair price when he set it. T has since run another 0.97%.
+
+| | 9:05 AM | **11:09 AM** |
+|---|---|---|
+| T | $22.565 | **$22.785 (+1.31%)** |
+| Put mark | $0.575 | **$0.485** |
+| Bid / ask | 0.55 **x1** / 0.60 x641 | **0.47 x128 / 0.50 x127** |
+| Spread | 8.7% (one-sided) | **6.2% (two-sided)** |
+| Volume | 85 | **444** |
+
+3 contracts, basis $237.00:
+- **Mark $0.485 → $145.50 = -$91.50 (-38.6%)**
+- Bid $0.47 → $141.00 = **-$96.00 (-40.5%)**
+
+**His $0.57 offer now sits $0.10 above the bid. It is not going to fill at that price today.**
+
+### Two things changed in the owner's favour, and one against
+
+**For:** the book healed. At 9:05 it was bid x1 against ask x641 — I warned against market-selling into that. Now it is **128 up / 127 down with 444 contracts traded**, a genuinely two-sided book that can absorb 3 lots without walking the price. The execution risk I flagged this morning is gone.
+
+**Against:** the position is 11.4 points worse (-27.2% → -38.6%) while the order sat. That is the cost of a limit that the market moved past, and it is the same failure mode as PERSONA's missed-limit re-price policy — which says re-price **once, to no higher than the current mid.**
+
+### RECOMMENDATION: re-price the working order to $0.48. Advisory only — his order, his cancel.
+
+- **Cancel `6ace3b0e` and replace: sell 3, limit $0.48** (just under the $0.485 mark, $0.01 over the bid). → $144.00, **realized -$93.00 (-39.2%)** on the three, **-$118.00 total** across all four contracts.
+- Taking the bid at $0.47 instead costs $3.00 more. Not worth chasing; $0.48 into a 128-lot bid should fill.
+- **Do not raise the limit hoping for a bounce.** That is the PENG error inverted — the put is falling because the thesis is failing, so waiting for a better exit price means waiting for the thesis to come back, which is the thing three sessions of evidence say is not happening.
+- I cannot cancel or replace it. It is `placed_agent: user` and per PERSONA that is his will, not mine to override.
+
+### Thesis status: worse, and now on relative strength
+
+- **T $22.785, a new post-gap high** — above this morning's $22.635 and above Monday's $22.658.
+- **SPY is -0.18%.** T is **+1.31% on a down tape.** Relative strength in the name the position is short is additional thesis damage, not noise.
+- Levels: **$23.50-24.00 (real damage) is 3.1% away** — not reached. **$24.87 (full invalidation)** — not reached. The thesis needed a close under **$22.00** and T is now 3.6% above it.
+- **ASTS $46.945, -8.77%**, while T is +1.31%. Recorded as information only — it is not a tell any more and I am not citing it as confirmation in either direction.
+
+### SOFI — unchanged, hold
+$15.12 (-0.72%). Short Nov 20 $18C: mark $0.275, **$27.50 to buy back vs $41.00 credit = +$13.50.** Delta 0.199. 100 shares = -$298.00. Net package **-$284.50**. No action. Earnings (unconfirmed, ~Oct 27-28) remains named as accepted risk per ruling #7; decide by ~Oct 23 whether to roll past it.
+
+### BULL — not fired, fifth session
+$6.295 (-0.08%). EMA **$6.72** (recompute on the close). Stock ~6.3% below, never tagged. Trigger not fired; declined to widen it again.
+
+### No new scan
+Tape has not changed materially since 8:53 — SPY -0.18%, same themes. This morning's full session stands: no trade. Agentic account flat.
