@@ -1380,3 +1380,76 @@ I am explicitly choosing the **loose edge (30%) of a 25–30% band**, and the ow
 ### No new trade
 Agentic account stays flat. Nothing scanned into a qualifying setup, and I'm not manufacturing one 27 minutes before the bell. Cash is a position.
 
+
+---
+
+## Tuesday, October 13, 2026 — 6:50 AM CT (premarket news check)
+
+Requested: premarket news. Quote timestamp 11:49:57Z = **6:50 AM CT**, 1h40m to the open.
+**The Robinhood news tool is absent from the server's tool list entirely** — not unloaded, absent. All news below is from web search and is disclosed as such.
+
+### Official Monday closes (now settled)
+
+| | Close 10/12 | vs my 2:33 PM read |
+|---|---|---|
+| T | **$22.49** | $22.5099 |
+| VZ | $42.78 | $42.685 |
+| TMUS | $151.87 | $151.96 |
+| ASTS | $51.46 | $51.4496 |
+| BULL | **$6.30** | $6.26 |
+| SOFI | $15.23 | $15.2586 |
+
+T closed $22.49. **$22.00 shelf held, HOD $22.658, nowhere near $23.50.** All thesis levels intact.
+
+### THE NEWS THAT MATTERS: Piper Sandler downgraded ASTS, and the stated reason is SpaceX
+
+Overweight → **Neutral**, price target **$98 → $54**. ASTS **$49.40 premarket, -4.00%**.
+
+Piper's cited reasons:
+1. Reduced confidence in 2026/2027 satellite **launch pace**.
+2. **SpaceX's direct-to-cell push, explicitly including the ~$8B mobile spectrum purchase** — SpaceX could limit launch access for partners like AST, or undercut on price.
+3. Still constructive post-2027; argues SpaceX aggression could eventually *increase* operator demand for AST.
+
+**This confirms the thesis rather than contradicting it, and the distinction matters.** Yesterday I wrote that ASTS failing its bounce meant the market was not unwinding the SpaceX repricing. The downgrade is stronger evidence than price action: the sell side is now putting ratings and price targets behind the view that SpaceX's direct-to-cell capability is credible and formidable. A satellite pure-play cut in half on target *because SpaceX is too strong* is not a signal that terrestrial carriers are safe.
+
+**But the counter-evidence is live and I'm not going to bury it:** the carriers are bid premarket while ASTS breaks.
+
+| Premarket | Last | vs close |
+|---|---|---|
+| T | $22.4386 | **-0.23%** (bid 22.34 / ask 22.50, $0.16 wide) |
+| VZ | $43.148 | **+0.86%** |
+| TMUS | $153.2769 | **+0.93%** |
+| ASTS | $49.40 | **-4.00%** |
+| BULL | $6.2514 | -0.77% (bid 6.00 / ask 6.29 — 4.6% wide, garbage) |
+| SOFI | $15.20 | -0.20% |
+
+Premarket relative volume is meaningless and these books are thin — standing rule, no conclusions drawn from them. T is flat.
+
+### TWO HARD CATALYST DATES, BOTH INSIDE THE NOV 20 EXPIRY
+
+**1. T reports Q3 earnings Wednesday, October 21, before the open.** Conference call 8:30 AM ET.
+
+**I did not flag this when I specified the advisory on 10/9, and I should have.** Recommending a Nov 20 put without naming a binary earnings event 8 days inside its life is a gap in my own work, not a detail. It changes the position's character:
+- The outcome is **idiosyncratic and uncorrelated with the SpaceX thesis**. T can beat on subscriber adds and postpaid churn and rip through $23.50 on numbers that have nothing to do with Starlink.
+- IV should rise into the print, which supports the premium modestly.
+- Management **will** be asked about Starlink Mobile on the call. The answer is a thesis catalyst in either direction, and it is the one place the two stories collide.
+- Practical consequence: the pre-committed exit line has 6 trading sessions to work before the position becomes an earnings bet.
+
+**2. FCC votes October 29 on auctioning spectrum for satellite-to-phone service.** Thesis-aligned, 16 days out, also inside expiry. Separately, SpaceX's Grain Management purchase (up to 14 MHz paired, 800 MHz band) still needs FCC approval — a third pending item with no fixed date.
+
+### Background now filled in on the original catalyst
+- FCC cleared SpaceX Oct 7 for up to **15,000** direct-to-phone satellites and **waived** the rule requiring SpaceX to lease airwaves from a carrier.
+- Musk claims Starlink Mobile V2 carries **100x** the bandwidth of the current system.
+- T, VZ and TMUS formed a satellite/direct-to-device JV last week for underserved coverage — **Starlink notably absent**. That is their defensive answer and it is worth watching.
+- Analysts note the network is years out and per-user speed under real load is unproven. That is the bear case against the bear case: a long-dated disruption story does not have to show up in a Nov 20 option.
+- One CNBC account puts VZ's Friday close at -8.75%, worst day since July 2002. My own dividend-adjusted figure from live quotes was **-5.69%**; the search itself flags that outlets disagree. I'm keeping my number and not restating theirs as fact.
+
+### No pricing of the T put this morning
+Premarket option books are not a valid input and I set that rule myself after the 10/9 open-auction print (25.6% spread would have falsely shown -26.6%). **The put gets priced after the open, on a tight book, against the pre-committed line:** mark <= $0.55 at a close, or T closes above $23.50. Neither can be evaluated at 6:50 AM.
+
+### Other premarket movers — nothing for the agentic account
+MU -2.4% on reports of CXMT server-memory architecture (China memory competition). ADBE -1.4%, HSBC to Hold. VFC +3.9% on Piper/Truist upgrades. UNH +2.8% to ~$389 on a raised 2026 profit forecast. All analyst-action or single-headline moves; none is an Episodic Pivot with volume confirmation, and I have not graded any of them. Agentic account remains flat.
+
+### BULL — EMA recomputed off the official close
+6.30 x 0.181818 + 6.81 x 0.818182 = **$6.72**. Premarket $6.2514 is **~7% below** it. Never tagged. Trigger not fired, not widened — third time.
+
