@@ -2129,3 +2129,92 @@ $23.50-24.00 is 2.7% away; $24.87 full invalidation is untouched.
 **Trigger NOT fired — sixth session, and I have declined to widen it every one of them.**
 
 **No new trade.** Agentic account closes the day flat and 100% cash, which is where it started.
+
+---
+
+## Wednesday, October 14, 2026 — 8:49 AM CT (full session) — **NO TRADE**
+
+Time from a live SPY quote: 13:49:16Z = **8:49 AM CT**, 19 minutes in. Elapsed 4.87% of the session, so the relvol scaling factor today is **×20.5**.
+
+### Ledger reconciled
+Broker: $948.56 total / $948.56 buying power, **no positions, no working orders**. Ledger: $948.61 | Open $0.00 | Remaining $948.61 | Realized **+$349.96**. Delta $0.05 = trade #12's exit fee. 20% cap = **$189.72**.
+
+### SOFI — EARNINGS DATE NOW CONFIRMED, and ruling #7's IR-over-estimate preference earned its keep immediately
+
+**Q3 2026: Tuesday, October 27, 2026.** Release ~7:00 AM ET, call 8:00 AM ET. **Confirmed on SoFi's own IR site**, announced via Nasdaq on Sept 29.
+
+That settles a spread the third-party calendars could not: Wall Street Horizon had Oct 27 flagged *unconfirmed*, ChartRow Oct 27, AJ Bell Oct 28, and **TipRanks and Earnings Whispers were wrong at Nov 2-3**. Ruling #7 says prefer company IR over a scraped estimate; had I taken the TipRanks date I would have believed the print fell outside a decision window it actually sits well inside. **8 trading days out, inside the Nov 20 expiry.**
+
+**Position, repriced:**
+
+| | | |
+|---|---|---|
+| Short Nov 20 $18C ×1 | credit $41.00 | **$22.50 to buy back → +$18.50 (+45.1% of credit)** |
+| | | bid $0.22 ×629 / ask $0.23 ×744, delta **0.171**, IV 57.8%, 37 DTE |
+| 100 shares @ $18.10 | SOFI **$14.795 (-2.92%)** | **-$330.50 (-18.3%)** |
+| **Net package** | | **-$312.00** |
+
+**Recommendation: hold the call now, close it on or before Monday Oct 26.** Advisory only; I cannot execute there.
+- 45.1% of the credit captured in 5 of 42 days is ahead of schedule, and $18 is now **21.7% away** at delta 0.171. There is ~$22.50 of premium and ~8 sessions of decay left worth harvesting.
+- But carrying a short call **through** the print for the last few dollars is precisely the "unprotected paper gain into a coin-flip" PERSONA's BINARY EVENTS rule exists to prevent, and **stops do not protect through gaps.** The rule's 24-hour trigger binds on Oct 26; I would rather act a day early than discover the gap.
+- **Rolling is not the answer.** The next monthly after Nov 20 is Dec 18 — rolling collects more premium but extends exposure for a position whose job (income on dead money) is already 45% done.
+- **The 50-share trim is now clearly cheaper after Oct 27 than before it:** closing the call costs $22.50 today, and post-print IV crush should make it cheaper. One more reason that ruling can wait.
+
+Separately and without pushing: the **shares are now -18.3%** and SOFI has fallen every session this week. Whether to hold the equity at all is the owner's call, not a covered-call question.
+
+### Scans — 15 gainers, **93 losers** (vs 54 yesterday), 1 smart-money name
+
+**The breadth number is the headline.** 93 names down >4% while SPY is only **-0.29%** ($775.78). Yesterday it was 54. The index is masking a broadening liquidation.
+
+**Themes on the losers list:**
+- **Financials cracking on earnings:** BAC **-7.63%** (9.2x scaled), STT **-7.38%** (5.4x), PGR **-9.50%** (5.1x), SHG -4.73%. Earnings season has begun and the reactions are negative.
+- **AI / datacenter, second day:** CRWV **-12.27%** (12.2x), NBIS -8.08% (8.0x), DELL -6.89%, ORCL -6.13%, SMCI -4.61%, HPE -4.82%, CLS -4.60%, AAOI -4.33%, VST -4.39%
+- **Crypto miners, third day:** IREN -7.28%, WULF -6.06%, APLD -5.61%, CORZ -5.61%, HUT -4.92%, CIFR -4.89%, RIOT -4.38%, CLSK -4.14%
+- **Semis:** WOLF -8.40%, MXL -5.71%, NVTS -5.70%, AOSL -4.22%, ASX -4.05%, SMTC -4.02%, FLEX -4.04%
+- **Precious metals selling as a complex:** MUX, NG, SA, CDE, HL, EQX, SKE, SSMR, NEWP, SCZM. Gold miners going down *together* is a liquidation tell, not a rotation.
+- Old names behaving as retired: **IONQ -4.64%** ($33.12, retired at $40 — correct call), **PENG -6.70%** ($72.96), **ASTS -5.26%** ($44.591), **FUN -4.40%** ($9.75, still falling after the accident).
+
+### THE CANDIDATES — all three graded and all three passed
+
+**1. LQDA +29.3% at $34.67 — real catalyst, broken chart. PASS, grade C+.**
+$380.7M global settlement with United Therapeutics resolving six lawsuits and securing YUTREPIA for PAH. 18.2x scaled relvol on 6.77M shares. This is **not** a deal-pin or a flow artifact — the catalyst is genuine and the relief is real. But the 90-day chart kills it:
+
+| | |
+|---|---|
+| Jul-Sep 29 | ranged **$65-91** |
+| **Sept 30** | open $70.54 → **close $30.26 on 22.95M shares (-57%)** — the Delaware ruling found UTHR's patent valid and infringed |
+| Oct 1-13 | consolidated $25.76-30.86 |
+| Today | $26.81 → **$34.67**, after a $38.68 premarket high |
+
+- This is a **relief bounce inside a destroyed chart**, not an Episodic Pivot to new highs. The stock is still **51% below where it traded two weeks ago.** PERSONA's momentum setup wants new 52-week highs; this is the opposite pole.
+- **The gap is already being sold:** $38.68 premarket → $34.67 now, **-10.4% off the high, 19 minutes in.** Buying a breakout candle that is actively failing is the PENG error.
+- **Liquidia is PAYING, not receiving:** $175M due within 30 business days plus two $72.7M installments by early 2027, against a ~$2.0B market cap. That is ~19% of the cap in cash out the door. **A follow-on equity raise is a live risk** — and today's VSTM is the template for exactly that.
+- Day-after-a-29%-litigation-gap IV will be enormous, which is the call-side mirror of the put-IV gate.
+
+**2. VSTM +8.6% at $8.09 — ARTIFACT #10. PASS.**
+Highest scaled relvol anywhere today by a wide margin: 2.910 reported → **59.7x pace**, 9.98M shares on a $675M cap. On structure alone it is the single most volume-confirmed name on the board.
+
+**It is a $250M equity offering priced at $8.00 — 30,937,500 shares, closing Oct 15.** The stock is $8.09. The volume *is* the distribution. Same family as CIFR's $850M convertible and UMC's convert-arb: **a financing event wearing volume confirmation as a costume**, with price anchored at the deal price.
+
+The accompanying "catalyst" does not survive inspection either: initial VS-7375 Phase 1/2 data showing a 50% confirmed ORR in 2L PDAC — **4 of 8 patients.** n=8 is not PERSONA's "genuinely significant" catalyst, and the company monetized it with a $250M raise the same day. Raising into your own good news is information.
+
+**Running artifact count: ten** — WBD, SYNA, PTC, OPCH, PCRX (deal-pinned), UMC and CIFR (convert-arb), BMBL (deal-pinned), EFXT (no catalyst), **VSTM (equity offering)**.
+
+**3. GFS +5.35% at $49.20 — no catalyst, range-bound, earnings inside the expiry. PASS.**
+7.8x scaled relvol on a $26.0B cap, affordable underlying. But:
+- **No identifiable Oct 14 catalyst.** Searching turned up a vague TSMC-linked AI deal and an "FDX Fusion" item, both undated, and a report that GFS *fell* 3.4% yesterday.
+- Chart is a two-week chop: $67 in July → $43.54 (Sept 15) → $50.99 (Oct 2) → range $46.22-51.45 since. Today is a bounce **inside** the range, below the Oct 2 high. The Oct 8 volume spike (10.47M, high $51.45) already failed once.
+- **Ruling #7: GFS reports Q3 on November 4** — inside a Nov 20 expiry. Flagged as required; moot since the setup fails anyway.
+
+**4. SKYD -22.65% at $7.17 — UNRESOLVED, and recorded as unresolved rather than guessed.**
+The scanner reports a **$46.7B market cap** down 22.65% on 9.1M shares (7.0x scaled). **Two separate searches could not identify this security or any catalyst** — results suggest Skydance merged with Paramount and trades as PSKY. I have a live conflict between the scanner and every news source I can reach. An unexplained 22% move in a nominally $46.7B company is exactly where artifacts live, so the catalyst gate fails by default. Not traded, not explained, logged honestly as a gap in my data rather than filled in with a guess.
+
+**5. Smart Money Flow: 1 item — KNSL**, 5.67x relative *options* volume but relative share volume 0.048 → **1.0x scaled**, price **-0.84%** at $337.115. Positioning with no move, and over the cap. Same shape as the CON hit on 10/9. Pass.
+
+### BULL — not fired, and now moving away
+Tuesday's official close **$6.31**. EMA recomputed: 6.31 × 0.181818 + 6.72 × 0.818182 = **$6.6455 ≈ $6.65**. Stock **$6.20 (-1.74%)** → **6.7% below** and widening, not converging. It is rolling over without ever having tagged the EMA, so per my own rule **the NEXT bounce attempt is the setup.** Trigger not fired, seventh session, not widened.
+
+### NO TRADE — and the tape is the reason, not timidity
+15 gainers and 93 losers. The best long on the board is a relief bounce 51% below its own two-week-old price, already fading 10% off its high, by a company that owes $175M in cash within 30 business days. The highest-volume name anywhere is a share offering. The one semi that moved has no catalyst and earnings inside the expiry. The only smart-money hit is positioning without a move.
+
+**Agentic account stays flat at $948.56, 100% cash.** On a day when breadth is collapsing underneath a flat index and earnings season is starting badly, cash is the position.
