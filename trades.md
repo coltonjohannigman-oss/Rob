@@ -2218,3 +2218,89 @@ Tuesday's official close **$6.31**. EMA recomputed: 6.31 × 0.181818 + 6.72 × 0
 15 gainers and 93 losers. The best long on the board is a relief bounce 51% below its own two-week-old price, already fading 10% off its high, by a company that owes $175M in cash within 30 business days. The highest-volume name anywhere is a share offering. The one semi that moved has no catalyst and earnings inside the expiry. The only smart-money hit is positioning without a move.
 
 **Agentic account stays flat at $948.56, 100% cash.** On a day when breadth is collapsing underneath a flat index and earnings season is starting badly, cash is the position.
+
+---
+
+## Wednesday, October 14, 2026 — 2:37 PM CT (close check) — **400 LOSERS. Revising the SOFI call to CLOSE NOW.**
+
+### The tape: this became a liquidation
+**SPY $769.09, -1.15%** — it was -0.29% at 8:49 AM. And the losers scan went **54 (Tue) → 93 (this morning) → 400 now.**
+
+Mega-caps being liquidated, not drifting:
+
+| | | |
+|---|---|---|
+| SKYD | **-24.70%** (adjusted) | $46.7B |
+| CRWV | -16.05% | $42.9B |
+| DELL | -11.57% | $364B |
+| NBIS | -10.96% | $56.2B |
+| CIEN | -10.30% | $56.8B |
+| AFRM | -10.09% | $26.3B |
+| **ORCL** | **-9.00%** | **$434.1B** |
+| BE | -9.00% | $77.6B |
+| FLEX | -9.33% | $41B |
+| CLS | -9.16% | $44.8B |
+| HOOD | -8.81% | $99.4B |
+| LITE | -8.61% | $89.5B |
+
+A 9% day in a $434B company is not a rotation. **This is the AI-infrastructure/datacenter complex being sold, plus fintech.** The agentic account sat through it 100% in cash, which is the system working rather than luck.
+
+### SOFI — I am REVISING my own recommendation: close the call NOW, not Oct 26
+
+**SOFI $14.150, -7.15%.**
+
+| | | |
+|---|---|---|
+| 100 shares @ $18.10 | $1,415.00 | **-$395.00 (-21.8%)** |
+| Short Nov 20 $18C | $15.50 mid to buy back vs $41.00 credit | **+$25.50 (+62.2% of credit)** |
+| | bid $0.15 ×711 / ask $0.16 ×433, delta **0.128**, IV 60.2%, volume 6,473 | |
+| **Net package** | | **-$369.50** |
+
+**Action: buy to close 1 SOFI Nov 20 $18C, limit $0.16.** Fills immediately into that book. Realized **+$25.00 (+61.0% of credit)**; at the $0.155 mid it is +$25.50.
+
+**Why I am changing my mind, stated plainly.** This morning I said hold until Oct 26. That was wrong on my own rules:
+- **62.2% of the credit captured is squarely inside the 30-80% band**, and PERSONA says of the band: *"take profit in the 30-80% gain range and exit. Don't get greedy."* The band does not say "wait for the far edge."
+- **Tuesday's retrospective named this exact failure as the single biggest leak in the whole book** — "the band is enforced on the downside and advisory on the upside," with four of eight winners exiting below the 30% floor because the exits were undisciplined. Having identified that two days ago, holding a winner *inside* the band for 8 more sessions to squeeze maybe $5-8 more — into an earnings print — would be the same error wearing a different hat.
+- Delta is **0.128** with the strike **27.2% away**. The remaining $15.50 is almost pure time value; there is very little left to harvest and the only way to lose it is an event.
+- Closing now also frees all 100 shares immediately, so **the 50-share trim ruling becomes mechanically unblocked today** rather than after Oct 27.
+
+Advisory only — I cannot execute in ••••1866.
+
+Separately, said once: the **shares are now -21.8%** and SOFI has fallen every session this week. That is a question about holding the equity, which the covered call does not answer.
+
+### Today's names — the record
+
+| | 8:49 AM | 2:37 PM | Read |
+|---|---|---|---|
+| **LQDA** | $34.67 | **$33.60** (+25.3% on day) | **Fade continued** — now **-13.1% off the $38.68 premarket high.** The C+ pass held. No equity-raise announcement yet; still watching, since $175M is due within 30 business days. |
+| **VSTM** | $8.09 | **$7.905** | **Confirmed precisely. It is now BELOW the $8.00 offering price.** A stock that cannot hold its own deal price is distribution, not demand. Artifact #10 stands. |
+| **GFS** | $49.20 | **$49.14** (+5.22%) | Flat since the open, still inside the $46.22-51.45 range. Pass stands. |
+| **ASTS** | $44.591 | **$42.405 (-9.90%)** | Information only. Third straight heavy down day. Not a tell, not cited. |
+
+### SKYD — RESOLVED, and it is the corporate-action rule's best day yet
+
+It is **Paramount Skydance Corp**, renamed to SKYD after the Warner Bros. Discovery merger closed Oct 7. The catalyst is a **warrant distribution**: one warrant per Class B share held Oct 5, **strike $12**. Today is the ex-warrant date. If all **471 million** warrants were exercised that is ~**$5.65B** raised and heavy dilution, on top of **$78.9B pro forma net debt**.
+
+**Running the rule properly, because this is exactly what it is for:**
+
+| | |
+|---|---|
+| `previous_close` | **$9.27** |
+| `adjusted_previous_close` | **$9.0763** |
+| Adjustment | **$0.1937** — the warrant detaching |
+| Scanner's unadjusted move | **-26.11%** |
+| **True adjusted move** | **-24.70%** |
+
+**And here is the honest nuance, which matters more than a clean "artifact" label:** the check caught a **1.4-percentage-point overstatement**, so the number I reported this morning was wrong and is now corrected. But unlike the T/VZ ex-dividend case, **the adjustment does not explain the move** — $0.19 of a $2.42 decline. **The remaining 24.7% is genuine dilution repricing.** So this is a real catalyst, not a phantom.
+
+Which makes it a textbook EP-Down candidate — **and PERSONA explicitly forbids today's entry:** *"Never buy puts after a -20% single-day flush with IV blown out — that trade is over."* -24.70% in one session. **Pass, and watch for the bounce into the declining EMA.**
+
+### BULL — broke $6, now 10% below the EMA
+**$5.985 (-5.15%)**, through $6.00. EMA **$6.65** → stock is now **10.0% below** and widening fast. It is rolling over decisively without ever having tagged the EMA, which is precisely the case my own rule covers: **the NEXT bounce attempt is the setup, not this one.** Provisional EMA on tonight's close ≈ **$6.53**. Trigger not fired, seventh session, not widened — and the gap is now wide enough that widening it would be absurd.
+
+### Agentic account — flat, and that was the right call
+$948.56 / $948.56 buying power, no positions, **no working orders**. Ledger $948.61 ($0.05 exit fee). Realized **+$349.96**.
+
+**No trade.** On a day with 400 names down more than 4%, ORCL -9% on $434B, and the one high-volume gainer trading below its own offering price, cash is not caution — it is the position. **Tomorrow's posture: a third broadening day, now confirmed at the index level, argues for staying flat regardless of what any single chart looks like.** More bank earnings land Thursday.
+
+**Running artifact count: ten confirmed** (WBD, SYNA, PTC, OPCH, PCRX deal-pinned; UMC, CIFR convert-arb; BMBL deal-pinned; EFXT no catalyst; VSTM equity offering), **plus SKYD as a partial** — a real catalyst whose headline percentage the corporate-action check corrected by 1.4 points.
