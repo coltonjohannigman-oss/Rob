@@ -3013,3 +3013,150 @@ pitching a long — there is no reversal signal, the tape is still falling, and 
 **DELL: watch item, not a trade. Thesis C+. Route (a) withdrawn. Route (b) at half size only, and only
 if the bounce actually fails.** Ticket details from 12:41 PM stand as mechanics; the conviction behind
 them does not.
+
+---
+
+## 2026-10-15 — MEAN-REVERSION / "OUT OF BOUNDS" SCREEN (owner request, 12:57 PM CT)
+
+Owner asked, alongside the DELL downgrade: *look for other possible Level 3 trades — stocks that have
+dropped or risen out of bounds and are looking at a correction.* This is a **mean-reversion** request,
+and the first honest thing to record is that **PERSONA contains no mean-reversion setup.** All three
+long frameworks (EP, Momentum/Trend, Short Squeeze) and two of the three bearish inversions are
+**continuation** patterns. The only reversal framework in the book is Parabolic Exhaustion, and it
+requires the crack to have already happened. So extension alone cannot produce a trade here — it can
+only produce a watch list plus a trigger. I am writing it that way on purpose.
+
+### The screen, re-based on LIVE prices (not the Oct 14 closes I first computed)
+
+EMAs are computed through the Oct 14 close and decline slightly each session, so treat the EMA columns
+as approximate. Volume is raw vs the 30-day average, then projected to a full session (12:57 PM CT =
+267 of 390 minutes elapsed = 68.5%, so x1.46).
+
+| Sym  |    Live | vs 10dEMA | vs 20dEMA |  Today | Vol vs 30d | projected | 52wk high |  off high |
+|------|---------|-----------|-----------|--------|------------|-----------|-----------|-----------|
+| RGC  |  $10.40 |  **+41.1%** |  **+50.5%** | **+28.2%** |   7.59x    | **11.1x** |    $69.00 |   -84.9%  |
+| ASTS |  $43.75 |    -17.0% |    -22.0% |  +3.82% |   1.10x    |    1.61x  |   $133.86 |   -67.3%  |
+| NBIS | $181.00 |    -16.6% |    -18.7% |  -2.69% |   2.04x    |    2.98x  |   $299.86 |   -39.6%  |
+| CRWV |  $67.79 |    -15.7% |    -18.7% |  +3.06% | **2.87x**  | **4.19x** |   $150.40 |   -54.9%  |
+
+**Correction to my own first pass:** on Oct 14 closes I ranked ASTS as the most extended name down
+(-20.0% vs its 10d EMA) and had RGC at only +10.0% up. Live, that ordering is wrong in both directions
+— today's session moved RGC to +41.1% and lifted ASTS/CRWV off their lows. **RGC is now the most
+extended name on the board by a factor of two, and it is extended UP.** The screen had to be re-based
+before any conclusion; this is the same stale-denominator trap as the relvol pollution note.
+
+**All four put in a violent intraday reversal today**, off the low: CRWV **+13.9%**, NBIS **+10.8%**,
+ASTS **+9.7%**. ASTS ($39.87) and CRWV ($59.51) both set **new 52-week lows this morning** and reversed.
+NBIS did not — its 52-week low is $73.52 from Feb 5, and it is still +146% above it.
+
+That simultaneity matters and cuts against treating these as separate ideas: **CRWV and NBIS are one
+AI-infrastructure trade with two tickers, not two setups.** Sizing both would be doubling a single bet.
+
+### RGC — the most extended name, and NOT a trade. Disqualified on the book, not on the chart.
+
+Regencell Bioscience: $5.19B market cap, **10 employees**, no revenue, P/E -343.6, **P/B 301.3**, float
+**56.1M of 495.9M shares = 11.3%** (founder holds the rest). Intraday range today $7.72-$11.12, a 44%
+swing. 52-week high $69.00 (Jan 8), 52-week low $4.51 (Jul 17).
+
+PERSONA's Parabolic Exhaustion rule is explicit: **never buy puts into the vertical move itself; enter
+only after the first crack, ideally on the failed lower-high bounce.** RGC is +28% today. There is no
+crack. So the chart says watch, not trade.
+
+**But the option book says never, and that is the stronger finding.** RGC Nov 20 $10 put, live:
+
+- bid **$1.00** / ask **$4.80** — a $3.80 spread on a $2.90 mark = **131% of mark**
+- open interest **0**, volume **0**
+- IV **253.8%**
+- At the ask you pay **$480** for a contract holding **$40** of intrinsic value. $440 is premium.
+  RGC must fall to **$5.20 by Nov 20 — another -50% — just to double.**
+
+There is no price at which this expresses the thesis. A 131%-of-mark spread on zero open interest is not
+a wide market, it is **no market**. So RGC does not go on the watch list either: **it is out of scope
+permanently for an options account**, and writing a trigger I could never act on would be theatre.
+
+**New finding worth a ruling (P9): extension is a screen, not a setup, and a tradeable book is a
+precondition, not a detail.** The most extended name on the board is the one whose options cannot be
+traded at any price. Check the book before building the thesis — I priced the put *after* writing up
+the chart, and had the book been checked first, RGC would never have reached the write-up.
+
+**Ruling #7 on RGC — cannot be satisfied.** The earnings tool returns a single stale row (labelled
+"2022 Q1", dated 2026-06-15, unverified). RGC is a Hong Kong foreign private issuer filing 20-F, which
+reports semi-annually rather than quarterly, so there is likely no quarterly print to fear — but I could
+not confirm the schedule and am not going to pretend otherwise. Moot given the disqualification above.
+
+### CRWV — the one real candidate. Grade C. Conditional ticket only.
+
+CoreWeave, $37.3B cap, at $67.79 after a new 52-week low of $59.51 this morning and a +13.9% intraday
+reversal on **4.19x projected volume**. That is genuine capitulation volume with a genuine reversal bar.
+
+**For:** new 52-week low reversed hard; the heaviest volume in the set; -54.9% from the high; a
+complex-wide washout; and a clean expiry that dodges the print (below).
+
+**Against, and it is enough to stop the trade:** it is **day one with no follow-through**; CRWV sits
+**below both the 10d (~$78) and 20d (~$81) EMAs**, so buying calls is **counter-trend**; the decline has
+a live, un-refuted bearish thesis (AI-capex financing, debt load, the memory-cost margin argument);
+at -55% off the high every prior bounce has failed, and this would be at least the third. **No PERSONA
+long framework fits "bounced off a 52-week low on heavy volume."**
+
+**Grade C.** I am grading before pricing this time, which is the specific order I got wrong on DELL.
+
+**Ruling #7 — the binding constraint.** CRWV Q3 is scheduled **Mon Nov 9, post-close, UNVERIFIED**
+(history 11/10/25, 2/26/26, 5/7/26, 8/11/26 — all pm, highly consistent, so plausible but tentative).
+Nov 6 is the **last expiry that closes before the print** (1 session clear). Nov 13 and Nov 20 both
+contain it. **This hands the idea a hard shelf life: the trigger must fire by ~Oct 27 or the trade stops
+existing, because rolling out crosses the print.** A time stop set by the calendar, not by my discretion.
+
+**Pre-priced ticket — CRWV Nov 6 $70/$80 call debit spread, at realistic fills (P8: buy ask, sell bid):**
+
+| | |
+|---|---|
+| Buy $70C | ask **$5.30** (OI 1,111, vol 1,959, spread 4.8% of mark, delta 0.494) |
+| Sell $80C | bid **$2.03** (OI 808, vol 649, spread **16.7%** of mark, delta 0.269) |
+| Net debit | **$3.27 = $327/spread** |
+| Max loss / max gain | **$327 / $673 — 2.06:1** |
+| Breakeven | **$73.27 (+8.1%)** |
+| Max profit at | **≥$80 (+18.0%)** |
+| IV both legs | **90.2% / 90.1% — flat, no skew edge** |
+| Size | 1 spread $327; 2 = $654 under the $747.13 cap |
+
+**P8 earns its keep again:** mid-to-mid this spread is $2.96 ($296). Realistic fills are **$327 — 10.5%
+worse.** Pricing it at mids would have understated the cost by $31/spread and the reward:risk by a fifth.
+
+**Two gate failures to state rather than bury:** the short leg's spread is **16.7% of mark, over the 15%
+gate**, and flat IV across strikes means the spread is pure directional financing — there is no vol edge
+being harvested, only 38% of the debit financed by selling the $80.
+
+**TRIGGER — not met today.** A daily close above today's high of **$68.04** on volume at or above the
+30-day average (33.9M), confirming the reversal bar; better, a close above **$72**, reclaiming the
+breakdown shelf. **If it has not fired by Mon Oct 27, the idea is dead — do not roll to Nov 13/20.**
+
+The reason this is written as a trigger and not a recommendation: the most expensive error in the book
+is the 10/9 T put, where I named a trigger, graded the agentic entry a pass on it, and then recommended
+the same trade in the individual account with the trigger unmet. Cost $133, grade D. **CRWV is that
+same shape, caught earlier.** Entry on confirmation or no entry.
+
+### ASTS and NBIS — no ticket
+
+**ASTS** $43.75, new 52-week low $39.87 today, -67.3% from the high — the deepest drawdown in the set,
+but **projected volume only 1.61x.** A 52-week low that reverses on average volume is not capitulation;
+it is a pause. No ticket, and the existing SpaceX-disruption thesis (Piper $98→$54) is unrefuted.
+
+**NBIS** $181.00, -16.6% below its 10d EMA on 2.98x projected volume, but **down -2.69% today** — the
+only name in the set still falling, and not at a 52-week low. Nothing has turned. It is also the same
+trade as CRWV; if either is ever taken it is one position, not two.
+
+### Bottom line for the owner
+
+**No Level 3 trade qualifies today.** One pre-priced conditional ticket (CRWV Nov 6 70/80 at $327,
+2.06:1) that requires a close above $68.04 on average volume by Oct 27 and dies after that. RGC is the
+most extended name on the board and is permanently out of scope because its options have no market.
+Cash is a position.
+
+### Disclosure
+
+**Catalyst check incomplete on both names.** The Robinhood news tool is absent from this server's tool
+list, and web search returned nothing current for either move — all RGC coverage was 2025 (the 38-for-1
+June 2025 split, the 60,000% run, $0 revenue 2021-2025, short interest ~3% of float so not a squeeze,
+and a later -74% drawdown — which corroborates the manipulation profile but says nothing about today),
+and nothing at all for CRWV's new low. **I could not confirm why either name moved today.** For CRWV
+that is a real gap in a thesis I graded C; it is one more reason the trigger has to carry the entry.
