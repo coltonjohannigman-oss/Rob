@@ -2376,3 +2376,94 @@ No orders placed yesterday or today; the short call is still on.
 
 ### NO TRADE
 The heaviest-volume gainer is capped at +0.35% by a merger agreement, the rest of the gainers list is sympathy to that same deal or low-beta defensives priced past the cap, the only options-flow hit is positioning on a down move, and the losers list doubled overnight inside a global AI unwind triggered by a hot CPI print. **Agentic account stays flat at $948.56, 100% cash.** That is the posture the tape earns, not caution for its own sake.
+
+---
+
+## Thursday, October 15, 2026 — 12:03 PM CT (manual /trade) — **NO TRADE. VSTM graded properly and failed on the book.**
+
+Time from a live SPY quote: 17:03:43Z = **12:03 PM CT**. Elapsed 54.6% of the session → relvol scaling factor **×1.83**.
+
+### Ledger reconciled, account flat
+Broker $948.56 / $948.56 buying power, no positions, **no working orders**. Ledger $948.61 ($0.05 = trade #12's exit fee). Realized **+$349.96**. 20% cap **$189.72**.
+`CronList` is empty — it tracks a different mechanism than my Routines. The 2:38 PM CT check-in (`trig_01B2yLJrgEcj3gTHnByXgCWm`) is still armed.
+
+### THE OWNER CLOSED THE SOFI CALL — the individual account is now options-flat
+
+Order `6ad10771`, buy to close 1 contract, **executed $0.18 at 17:03:45Z = 12:03 PM CT** (same minute as this session's opening quote). `placed_agent: user`. He first posted $0.18 (`6ad10734`), cancelled, re-posted at $0.19, and filled at $0.18.
+
+| | |
+|---|---|
+| Credit collected | **+$41.00** |
+| Cost to close | **-$18.00** |
+| **Realized** | **+$23.00 (+56.1% of credit)** |
+
+**Honest note on the timing, stated once and not belabored:** my recommendation yesterday afternoon and again this morning was a **$0.16 limit for +$25.00**. SOFI rallied **+2.34%** this morning, lifting the call from $0.155 to $0.18, so waiting from the first recommendation cost **$2.00**. The decision to take 56% of the credit rather than hold into the Oct 27 print was the right one and he made it; the $2 is noise and worth recording only because the whole argument I made was *that waiting earns nothing*. It earned -$2.
+
+**Consequences:**
+- **All option positions in ••••1866 are now zero.** The 100 SOFI shares are unencumbered.
+- **The 50-share trim ruling is mechanically unblocked** — no call to close or roll first. Stating that as a fact; I am not pushing the trim.
+- Shares: 100 @ $18.10 → SOFI **$14.5529 (+2.34%)** = **-$354.71 (-19.6%)**. All-in SOFI package including the call: **-$331.71**.
+- The Oct 27 print is now irrelevant to an option position and matters only to the shares.
+
+### Breadth: the tape turned at the index level, but the liquidation is in day three
+
+| | Wed AM | Wed close | Thu AM | **Thu 12:03 PM** |
+|---|---|---|---|---|
+| Gainers >4% | 15 | — | 74 | **301** |
+| Losers >4% | 93 | 400 | 195 | **136** |
+| SPY | -0.29% | -1.15% | -0.42% | **+0.01%** |
+
+**Gainers now outnumber losers better than 2:1** — a real improvement, and SPY has clawed back to flat from -0.42%.
+
+**But the AI-infrastructure complex is still being sold for a third consecutive session:** RKLB **-11.00%** ($37.8B), MTSI -10.51%, DELL -8.69%, COHR -7.06%, ASX -7.06% ($102.2B), VRT -6.93%, TER -6.61%, P -7.41%. The index is flat *because the rotation nets out*, not because selling stopped.
+
+Against my own morning test (losers under ~100 AND SPY positive AND mega-caps bid), **two of three still fail.** So the posture softens from "do not grade" to **"grade, but the bar stays high"** — and I did grade the one name that earned it.
+
+### VSTM — the setup finally qualified. The option book does not. PASS.
+
+**And I need to correct my own call from Wednesday.** I labeled this **artifact #10** — a $250M offering priced at $8.00 with the stock at $8.09, the volume being distribution rather than demand. That read was **right for two sessions** ($7.85-8.09, below the deal price) and is **wrong about the outcome**. The offering closed today, the overhang cleared, and the stock broke out:
+
+| | |
+|---|---|
+| Sept 24 - Oct 13 | consolidated **$7.32-8.60**, a three-week base |
+| Oct 13 | $7.45 close (offering leak) |
+| **Oct 14** | open $8.00, **low $6.70**, **high $8.955**, close $7.71 on **33.76M shares** (~13x the ~2.5M baseline) |
+| **Now** | **$9.115, +18.2%** — through the $8.955 Oct 14 high, through the $8.645 Sept high, and **$1.11 above the $8.00 deal price** |
+
+That is a **breakout to a 3-month high on the whole 90-day chart**, which is a different thing from distribution. The mechanism I described was real; the conclusion I drew from it was too strong. **Recording it as a partial artifact, not a clean one.**
+
+**A methodology catch worth keeping:** the scanner showed VSTM **relvol 0.204 → 0.37x scaled, i.e. below normal.** That is wrong. Back out the denominator: 6.87M / 0.204 ≈ **33.7M implied average** — the 30-day average is contaminated by yesterday's single 33.76M offering print. Against the true pre-event baseline of ~2.5M/day, today's 6.87M at 54.6% elapsed is a ~12.6M full-day pace, or **~5x**. **Standing refinement: the session after a volume explosion, the scanner's relative-volume denominator is polluted — compute from raw volume against the pre-event baseline instead of trusting relvol.**
+
+**Setup grade on the chart: B+/A-.** Real catalyst (VS-7375 Phase 1/2 KRAS G12D, 50% confirmed ORR in 2L PDAC — though **n=8**, which I still weigh against it), $250M raise **complete** so the balance sheet is funded and the dilution is behind it, tight three-week base, breakout on ~5x volume holding above the breakout level.
+
+**Then the instrument killed it. Every Nov 20 call fails:**
+
+| Strike | Mark | Bid/Ask | Spread % | OI | Vol | Delta | IV | Cost | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| $8 | $1.800 | 0.10 / 3.50 | **188.9%** | 143 | 2 | 0.696 | 116% | $180 | FAIL spread, OI, vol, delta |
+| **$9** | **$0.975** | **0.65 / 1.30** | **66.7%** | **4,740** | **249** | **0.558** | **86%** | **$97.50** | **FAIL spread, delta** |
+| $10 | $0.650 | 0.30 / 1.00 | **107.7%** | 161 | 1 | 0.412 | 90% | $65 | FAIL spread, OI, vol |
+| $11 | — | 0.00 / 2.90 | no bid | 67 | 0 | 0.029 | 32% | — | FAIL everything |
+
+The **$9 strike is the only one with real depth** — OI 4,740, volume 249 — and its **spread is 66.7% of mark**. The liquidity exception rubric tops out at **25%** and requires OI > 1,000 plus size at the cap plus a mid limit. **66.7% is 2.7x past even the exception ceiling.** There is no reading of the rubric that permits it. Delta 0.558 is also fractionally over the 0.55 band edge, and **IV at 86-116%** is exactly the "buying expensive premium" PERSONA warns against.
+
+*Data note: the $11 call shows `mark_price` $1.45 against a $0.00 bid and 0.029 delta — a broken/stale mark. Not a real quote.*
+
+**This is outstanding ruling #6 — the premium/spread bind — in its purest form yet. The chart finally cleared every gate and the book was untradeable.** Not a near miss on conviction; a hard structural fail.
+
+**Ruling #7 applied:** VSTM's Q3 date is **NOT confirmed** and the sources conflict — TipRanks says **Nov 11** (self-labeled an estimate), CNBC says **Nov 2 (est)**. Q2 landed Aug 6 and Q1 May 7, both ~5 weeks post-quarter, pointing to early November. **Either date falls inside a Nov 20 expiry, and the chain offers no expiry between Oct 16 and Nov 20**, so "pick an expiry that closes before the print" was not even available. Moot given the book fails, but the check ran and is on the record.
+
+### Rest of the board
+- **RGC +30.33% at $10.57 on a $4.01B market cap** — Regencell Bioscience, 2.2x scaled relvol. A multi-billion valuation on a micro-revenue TCM company with a known pump profile. Pass without further work.
+- **PAG $211.305 against the $212.00 take-private** — **confirmed capped**, as called this morning. Artifact #11 behaving exactly as a deal-pin does.
+- **LQDA $34.95 (+2.98%)** — holding the settlement gap. Still no follow-on raise announced; $175M remains due within 30 business days.
+- **SKYD $7.215 (+2.19%)** — stabilized for a second session after the warrant went ex. Promoted onto the EP-Down watchlist (description updated), **failed-bounce-into-the-declining-EMA entry only, never the flush.**
+- **T retired.** Watchlist description rewritten to replace the dead T thesis with SKYD.
+
+### BULL — first session it has CONVERGED on the EMA instead of widening
+**$6.175 (+1.73%)**, back above $6.00. EMA **$6.54** (recomputed off the official $6.07 close). Stock is now **5.6% below** — against 9.0% yesterday and 10.0% Wednesday. **This is the first convergence in the whole sequence.**
+
+The setup is a weak bounce INTO the declining EMA that stalls and rolls over. It is now approaching that zone for the first time. **Trigger still NOT fired — eighth session — and not widened.** If it reaches ~$6.50 and stalls on fading volume, that is the setup and I will price the book then. The Nov 6 chain failed at a 39% spread on volume 1; Oct 23 / Oct 30 / Nov 13 get checked if it triggers.
+
+### NO TRADE
+One name earned a full grade today and it failed on an untradeable options book, which is the honest reason — not conviction, not the tape. The agentic account stays flat at **$948.56, 100% cash.**
