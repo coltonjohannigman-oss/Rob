@@ -2467,3 +2467,124 @@ The setup is a weak bounce INTO the declining EMA that stalls and rolls over. It
 
 ### NO TRADE
 One name earned a full grade today and it failed on an untradeable options book, which is the honest reason — not conviction, not the tape. The agentic account stays flat at **$948.56, 100% cash.**
+
+---
+
+## Thursday, October 15, 2026 — 12:12 PM CT — LEVEL 3 ADVISORY REVIEW (individual ••••1866)
+
+Owner asked whether there is anything for the individual account, Level 3 included. Worked all four
+playbook structures. **One dated recommendation, and one finding that the playbook needs amending for.**
+
+### Account state
+Options: **zero** (he closed the SOFI call at $0.18 this morning, +$23.00). Equity: **100 SOFI @ $18.10
+avg, now $14.5529 = -$354.71 (-19.6%)**, fully unencumbered. All-in SOFI package **-$331.71**.
+
+---
+
+## VSTM — I checked whether a spread fixes it. It does not, and the reason matters.
+
+The Level 3 trigger is specific: flag an advisory when a setup grades well **"but fails Robbin's rules
+for a REASON A SPREAD FIXES"** — the named case being IV spiked past the buying gate. VSTM looked like
+a perfect fit: chart graded B+/A-, and **IV 86-116%** is exactly the OUST/AVAV problem.
+
+**So I priced every vertical. They are all worse than the single leg I already rejected.**
+
+Full Nov 20 call book, live:
+
+| K | mark | bid | ask | spread % | OI | vol | delta | IV |
+|---|---|---|---|---|---|---|---|---|
+| $7 | $2.350 | 1.95 | 2.75 | 34.0% | 55 | 0 | 0.831 | 102% |
+| $8 | $1.800 | 0.10 | 3.50 | **188.9%** | 143 | 2 | 0.696 | 116% |
+| **$9** | **$0.975** | **0.65** | **1.30** | **66.7%** | **4,740** | **249** | 0.558 | 86% |
+| $10 | $0.650 | 0.30 | 1.00 | **107.7%** | 161 | 1 | 0.412 | 90% |
+| $11 | — | **0.00** | 2.90 | **no bid** | 67 | 0 | 0.029 | 32% |
+| $12 | — | **0.00** | 2.85 | **no bid** | 1 | 0 | 0.023 | 43% |
+
+Verticals at **realistic** fills — buy the ask, sell the bid, because you do not get the mid on a
+contract with volume 0-2:
+
+| Spread | Debit | Width | Max gain |
+|---|---|---|---|
+| $9/$10 | **$1.00** | $1.00 | **$0.00** |
+| $7/$9 | **$2.10** | $2.00 | **-$0.10** |
+| $8/$10 | **$3.20** | $2.00 | **-$1.20** |
+| $9/$11, $9/$12 | — | — | **cannot be opened — short leg has no bid** |
+
+At mids the $9/$10 reads a tidy 2.08:1. **At fillable prices it pays the entire width for zero upside.**
+The two wider spreads cost *more than they can ever be worth*. And the strikes you would actually want
+to sell — $11, $12 — **have no bid at all**.
+
+### THE FINDING, and a proposed eighth amendment
+
+**The Level 3 playbook assumes the failure mode is expensive premium. VSTM's failure mode is an empty
+book — and a multi-leg structure strictly worsens that, because you cross the bid/ask twice instead of
+once.** A spread converts an IV problem into a width problem. It cannot convert a liquidity problem
+into anything but a bigger liquidity problem.
+
+**Proposed P8 (owner's call, not acted on):** add a gate to the PERSONAL ACCOUNT ADVISORY section —
+*before* flagging any multi-leg structure, verify the short leg has a real two-sided market and price
+the structure at **realistic fills (buy the ask, sell the bid), never at mids**. If the structure is
+only attractive at mids, it is not attractive. A spread fixes IV; it never fixes depth.
+
+**VSTM is a PASS for both accounts.** Same conclusion, now tested against the structure that was
+supposed to rescue it rather than assumed.
+
+---
+
+## The other three structures, worked honestly
+
+**2. BUTTERFLY** — needs "a specific target AND a specific date, not a general direction." Nothing on
+the board has one. **PAG** is the only name with a hard price anchor ($212.00 take-private) and that is
+precisely why options there are a theta donation: the stock will sit at $211-212 until the deal closes
+and every long option decays against a pinned underlying. **Pass.**
+
+**3. CREDIT SPREAD** — "post-event IV crush: sell a put spread below defended support right after a
+binary event resolves. A+ requires the event to be OVER and the level to have already held on volume."
+Two candidates, both failing:
+- **SKYD $7.215.** The warrant event *is* over and ~$7.00 has now held two sessions. But selling puts
+  here would be **directionally opposite to my own EP-Down watchlist entry on the same ticker** — I have
+  it flagged as a short candidate on 471M warrants at a $12 strike against $78.9B pro forma net debt.
+  Writing puts under a name I am watching for a breakdown is incoherent. **Pass, and the contradiction
+  is the reason.**
+- **LQDA $34.95.** The settlement is over and the gap has held three sessions. But the level is the gap
+  itself, not a tested shelf, and **Liquidia owes $175M in cash within 30 business days** — a follow-on
+  equity raise is live risk, which is the worst thing that can happen under a short put. **Pass.**
+
+**4. PMCC** — explicitly excluded by the playbook: "only flag when the owner does NOT already own 100
+shares." He owns them. **Not applicable.**
+
+---
+
+## THE ONE RECOMMENDATION: re-write the SOFI covered call AFTER Oct 27, not before
+
+This is the genuine idea on the board, and it has a date.
+
+**Why it works.** He holds 100 unencumbered SOFI shares at an $18.10 basis against a $14.55 tape —
+dead money he has already decided to hold. The last covered call turned that into **+$23.00 in six
+days.** Writing another is the same trade.
+
+**Why the date is the whole point.** **Q3 earnings are CONFIRMED for Tuesday, Oct 27** (SoFi's own IR,
+~7:00 AM ET release, 8:00 AM ET call). Writing a call *into* the print is what I advised him out of
+yesterday, and it would be inconsistent to turn around and recommend it now. **Writing it the day
+after** is the opposite trade and is structurally the better one: post-event IV crush is exactly
+condition #3 of the playbook, and a short option is the side that *benefits* from the collapse in
+implied volatility rather than paying for it.
+
+**The plan, to execute on or after Wednesday Oct 28:**
+- Sell 1 covered call, **Dec 18 expiry** (Nov 20 will be ~3 weeks out by then — too little premium).
+- **Strike selection rule, not a fixed number:** pick the strike with delta **0.20-0.30** (the last one
+  was 0.264 at open and worked), OI > 1,000, spread < 15% of mark. Do not reach for premium by going
+  closer to the money.
+- **Do not price it now.** IV will reprice completely through the print; today's chain tells you nothing
+  about Oct 28's. I will price it that morning.
+- **The trade-off, stated plainly:** a call at a $16-17 strike caps his recovery on the shares at that
+  level. With the basis at $18.10 he would still be exiting below cost if assigned. That is the cost of
+  the income, and it is his call whether dead money earning 2-3% per six weeks beats keeping the full
+  upside on a position that has fallen every session this week.
+
+**Also now unblocked, as a fact and not a push:** with no call against the shares, the **50-share trim
+ruling** can be executed any time. It costs nothing to wait for the print either.
+
+### Nothing else qualifies
+Of 301 gainers and 136 losers, the only name whose chart earned a full grade was VSTM, and it fails for
+both accounts on a book that no structure repairs. **No advisory flagged beyond the dated SOFI plan.**
