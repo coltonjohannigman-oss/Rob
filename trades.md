@@ -542,7 +542,7 @@ setup earning it. The $85 strike fits the cap at $160 but fails delta AND spread
 never allowed. The $75 passes every gate but costs $450, over even the aggressive cap.
 
 **Honest grade: B+. Good setup, wrong instrument at this account size.** Qullamaggie buys EPs on
-day one — but he buys *shares* with a 2-3% stop, not 9-DTE calls at 102% IV where decay alone
+day one — but that method buys *shares* with a 2-3% stop, not 9-DTE calls at 102% IV where decay alone
 trips the stop. The instrument is the disqualifier here, not timidity, and that distinction matters.
 
 **Plan, not a punt.** The disciplined EP entry is the first pullback that holds. By then IV crushes
@@ -1208,7 +1208,7 @@ had wrongly listed as "not yet acted on."
 | T Nov 20 $22 put | **$0.79** | **4 contracts = $316.00** | 10/9 12:40 PM CT |
 | SOFI Nov 20 $18 call (short) | **-$41.00** credit | 1 contract | 10/9 12:28 PM CT |
 
-He took the T put at **4x the size I specced** (I framed 1 contract at ~$82) and got a better fill
+The owner took the T put at **4x the size I specced** (I framed 1 contract at ~$82) and got a better fill
 than I quoted ($0.79 vs my ~$0.82). At $316 the position is 7.1% of the $4,426 account — inside the
 20% cap, so the sizing is defensible.
 
@@ -1359,7 +1359,7 @@ So today produced a **divergence**: T's price went against the position while th
 1. Put marks **≤ $0.55** (-30%, ≈ -$96) on a tight book — the far edge of the band, at a close, not an intraday wick; or
 2. **T closes above $23.50** — thesis damage, exit regardless of the premium.
 
-I am explicitly choosing the **loose edge (30%) of a 25–30% band**, and the owner should know that is a choice, not the rule speaking. I'm choosing it because the thesis tell confirmed today and the level structure is untouched. If he'd rather take -$82 now and re-enter on a failed bounce into the declining EMA with better location, that is a defensible read and I won't argue it — the entry location was my weak spot, not his.
+I am explicitly choosing the **loose edge (30%) of a 25–30% band**, and the owner should know that is a choice, not the rule speaking. I'm choosing it because the thesis tell confirmed today and the level structure is untouched. If the owner would rather take -$82 now and re-enter on a failed bounce into the declining EMA with better location, that is a defensible read and I won't argue it — the entry location was my weak spot, not the owner's.
 
 **Nothing here is executable by me. Discretionary sell in ••••1866 is the owner's call, done manually.**
 
@@ -1546,7 +1546,7 @@ Delta **$0.05** = trade #12's exit fee. Known, reconciled, not the funding gap.
 
 **Owner's ••••1866 (advisory only):**
 - **T Nov 20 $22P ×4** — and **the owner has acted**: a sell order is working, `placed_agent: user`, `agent_initiated: false`, placed 13:52:39Z (8:52 AM CT), **limit $0.54, quantity 1** (not 4). `pending_sell_quantity: 1.0`, processed 0.
-  **That is 1 of the 4 contracts I recommended selling, and it is the owner's order — I am not correcting it and did not touch it.** Per PERSONA, an in-app order is the owner's will. Flagging the facts only: it exits a quarter of the position; the other **3 contracts remain unencumbered** (the lock holds only the 1), so he can still sell them manually if he wants. Book at 8:53: bid $0.52 ×32 / ask $0.56 ×8, mark $0.540, spread 7.4%. His $0.54 offer sits $0.02 above the bid, inside the spread — it needs a buyer to come up, and bid size has thinned from 117 to 32 since 8:48.
+  **That is 1 of the 4 contracts I recommended selling, and it is the owner's order — I am not correcting it and did not touch it.** Per PERSONA, an in-app order is the owner's will. Flagging the facts only: it exits a quarter of the position; the other **3 contracts remain unencumbered** (the lock holds only the 1), so they can still be sold manually if he wants. Book at 8:53: bid $0.52 ×32 / ask $0.56 ×8, mark $0.540, spread 7.4%. That $0.54 offer sits $0.02 above the bid, inside the spread — it needs a buyer to come up, and bid size has thinned from 117 to 32 since 8:48.
   Full position at the $0.540 mark: $216.00 vs $316.00 = **-$100.00 (-31.6%)**.
 - **SOFI Nov 20 $18C short 1** — $0.295 mark, **$29.50 to buy back vs $41.00 credit = +$11.50 (+28.0% of credit)**. Delta 0.210, IV 55.7%, 38 DTE. SOFI $15.24. 100 shares at $18.10 = -$286.00; net package -$274.50. No change recommended: on a covered call this far OTM, the remaining $29.50 is decay I'd rather collect than pay to close.
 
@@ -1986,7 +1986,7 @@ It was a fair price when he set it. T has since run another 0.97%.
 - **Mark $0.485 → $145.50 = -$91.50 (-38.6%)**
 - Bid $0.47 → $141.00 = **-$96.00 (-40.5%)**
 
-**His $0.57 offer now sits $0.10 above the bid. It is not going to fill at that price today.**
+**That $0.57 offer now sits $0.10 above the bid. It is not going to fill at that price today.**
 
 ### Two things changed in the owner's favour, and one against
 
@@ -1994,12 +1994,12 @@ It was a fair price when he set it. T has since run another 0.97%.
 
 **Against:** the position is 11.4 points worse (-27.2% → -38.6%) while the order sat. That is the cost of a limit that the market moved past, and it is the same failure mode as PERSONA's missed-limit re-price policy — which says re-price **once, to no higher than the current mid.**
 
-### RECOMMENDATION: re-price the working order to $0.48. Advisory only — his order, his cancel.
+### RECOMMENDATION: re-price the working order to $0.48. Advisory only — the owner's order, the owner's cancel.
 
 - **Cancel `6ace3b0e` and replace: sell 3, limit $0.48** (just under the $0.485 mark, $0.01 over the bid). → $144.00, **realized -$93.00 (-39.2%)** on the three, **-$118.00 total** across all four contracts.
 - Taking the bid at $0.47 instead costs $3.00 more. Not worth chasing; $0.48 into a 128-lot bid should fill.
 - **Do not raise the limit hoping for a bounce.** That is the PENG error inverted — the put is falling because the thesis is failing, so waiting for a better exit price means waiting for the thesis to come back, which is the thing three sessions of evidence say is not happening.
-- I cannot cancel or replace it. It is `placed_agent: user` and per PERSONA that is his will, not mine to override.
+- I cannot cancel or replace it. It is `placed_agent: user` and per PERSONA that is the owner's will, not mine to override.
 
 ### Thesis status: worse, and now on relative strength
 
@@ -2033,7 +2033,7 @@ The T put position is gone. Owner closed all four contracts today, every order `
 | `6ace79d8` | 3 | $0.44 | 1:35 PM → 1:35 PM cancelled | lived 27 seconds |
 | `6ace79f3` | 3 | **$0.43** | **1:35 PM FILLED** | **-$108.00** |
 
-He walked the offer down $0.57 → $0.48 → $0.44 → $0.43 in about 80 seconds and took the fill.
+The owner walked the offer down $0.57 → $0.48 → $0.44 → $0.43 in about 80 seconds and took the fill.
 
 ### Final accounting — trade is CLOSED
 
@@ -2048,7 +2048,7 @@ Per contract: #1 **-$25.00 (-31.6%)**; #2-4 **-$36.00 each (-45.6%)**.
 Execution note, for the record rather than as criticism: $0.43 was about $0.05 under the $0.48 I
 recommended at 11:09 and roughly $0.02 under where the contract marks now ($0.450, bid $0.44 ×43).
 The walk-down cost roughly **$15.00** versus a filled $0.48. That is the price of certainty on a
-position whose thesis had failed, and it is a reasonable thing to pay. He is flat. **This is not
+position whose thesis had failed, and it is a reasonable thing to pay. The account is flat. **This is not
 treated as an error — it is the owner's execution, and getting out beat optimizing the last nickel.**
 
 ### POST-MORTEM — T Nov 20 2026 $22 put ×4 | EP-Down (SpaceX spectrum) | **-$133.00 (-42.1%)** | GRADE: D
@@ -2389,7 +2389,7 @@ Broker $948.56 / $948.56 buying power, no positions, **no working orders**. Ledg
 
 ### THE OWNER CLOSED THE SOFI CALL — the individual account is now options-flat
 
-Order `6ad10771`, buy to close 1 contract, **executed $0.18 at 17:03:45Z = 12:03 PM CT** (same minute as this session's opening quote). `placed_agent: user`. He first posted $0.18 (`6ad10734`), cancelled, re-posted at $0.19, and filled at $0.18.
+Order `6ad10771`, buy to close 1 contract, **executed $0.18 at 17:03:45Z = 12:03 PM CT** (same minute as this session's opening quote). `placed_agent: user`. The owner first posted $0.18 (`6ad10734`), cancelled, re-posted at $0.19, and filled at $0.18.
 
 | | |
 |---|---|
@@ -2476,7 +2476,7 @@ Owner asked whether there is anything for the individual account, Level 3 includ
 playbook structures. **One dated recommendation, and one finding that the playbook needs amending for.**
 
 ### Account state
-Options: **zero** (he closed the SOFI call at $0.18 this morning, +$23.00). Equity: **100 SOFI @ $18.10
+Options: **zero** (the owner closed the SOFI call at $0.18 this morning, +$23.00). Equity: **100 SOFI @ $18.10
 avg, now $14.5529 = -$354.71 (-19.6%)**, fully unencumbered. All-in SOFI package **-$331.71**.
 
 ---
@@ -2551,7 +2551,7 @@ Two candidates, both failing:
   equity raise is live risk, which is the worst thing that can happen under a short put. **Pass.**
 
 **4. PMCC** — explicitly excluded by the playbook: "only flag when the owner does NOT already own 100
-shares." He owns them. **Not applicable.**
+shares." The owner holds them. **Not applicable.**
 
 ---
 
@@ -2559,12 +2559,12 @@ shares." He owns them. **Not applicable.**
 
 This is the genuine idea on the board, and it has a date.
 
-**Why it works.** He holds 100 unencumbered SOFI shares at an $18.10 basis against a $14.55 tape —
+**Why it works.** The owner holds 100 unencumbered SOFI shares at an $18.10 basis against a $14.55 tape —
 dead money he has already decided to hold. The last covered call turned that into **+$23.00 in six
 days.** Writing another is the same trade.
 
 **Why the date is the whole point.** **Q3 earnings are CONFIRMED for Tuesday, Oct 27** (SoFi's own IR,
-~7:00 AM ET release, 8:00 AM ET call). Writing a call *into* the print is what I advised him out of
+~7:00 AM ET release, 8:00 AM ET call). Writing a call *into* the print is what I advised against
 yesterday, and it would be inconsistent to turn around and recommend it now. **Writing it the day
 after** is the opposite trade and is structurally the better one: post-event IV crush is exactly
 condition #3 of the playbook, and a short option is the side that *benefits* from the collapse in
@@ -2577,9 +2577,9 @@ implied volatility rather than paying for it.
   closer to the money.
 - **Do not price it now.** IV will reprice completely through the print; today's chain tells you nothing
   about Oct 28's. I will price it that morning.
-- **The trade-off, stated plainly:** a call at a $16-17 strike caps his recovery on the shares at that
-  level. With the basis at $18.10 he would still be exiting below cost if assigned. That is the cost of
-  the income, and it is his call whether dead money earning 2-3% per six weeks beats keeping the full
+- **The trade-off, stated plainly:** a call at a $16-17 strike caps recovery on the shares at that
+  level. With the basis at $18.10 that would still be exiting below cost if assigned. That is the cost of
+  the income, and it is the owner's call whether dead money earning 2-3% per six weeks beats keeping the full
   upside on a position that has fallen every session this week.
 
 **Also now unblocked, as a fact and not a push:** with no call against the shares, the **50-share trim
@@ -2685,7 +2685,7 @@ The original 100 are **-$347.01**; the new 100 are **+$41.00**. Averaging down m
 
 **Rule check, stated once:** PERSONA's "NEVER AVERAGE DOWN" is written about *options* — "Options expire.
 Adding to a loser compounds the damage." Shares have no expiry and no theta, so this is not a rule
-violation. It is his call, made in-app, and I treat it as his will.
+violation. It is the owner's call, made in-app, and I treat it as the owner's will.
 
 **Two consequences that matter:**
 1. **200 shares = TWO covered calls** after Oct 27, not one. The income plan I specified doubles.
@@ -2698,7 +2698,7 @@ violation. It is his call, made in-app, and I treat it as his will.
 ## THE LARGE-CAP SWEEP — and the gate that killed almost everything was earnings
 
 The AI-capex / semicap complex is the only large-cap group with a real, broad, verified catalyst right
-now. His account can reach these names through defined-risk spreads where mine cannot touch them on
+now. The owner's account can reach these names through defined-risk spreads where mine cannot touch them on
 premium. So I ran ruling #7 across the group first, because a Nov 20 expiry is the only sensible swing
 window and the whole sector reports inside it:
 
@@ -2796,7 +2796,7 @@ equipment names (AMAT, LRCX, TER, KEYS, ONTO) have the same problem plus late-Oc
 ## Thursday, October 15, 2026 — 12:37 PM CT — DELL SPREAD PRICED (advisory, trigger NOT fired)
 
 Owner asked for the actual price. **DELL $464.765** — it has bounced off the $462 low since the earlier
-read. Here is the live Nov 20 put book and every vertical that fits his cap, priced at **realistic
+read. Here is the live Nov 20 put book and every vertical that fits the cap, priced at **realistic
 fills** per P8, not mids.
 
 ### The chain — and this is the opposite of VSTM
@@ -2834,7 +2834,7 @@ the structure would neutralize nothing. Worth stating because that is the condit
 the $400 leg has the deepest book on the board (OI 2,466, 119 on the bid), so the short side fills.
 
 ### THIS is the Level 3 case in one number
-**A single-leg Nov 20 $420 put costs $1,790 — 2.4× his conservative cap.** Unaffordable. The $420/$400
+**A single-leg Nov 20 $420 put costs $1,790 — 2.4× the conservative cap.** Unaffordable. The $420/$400
 spread gets the same directional exposure for **$665**, and **max loss $665 ≤ the $747.13 a single leg at
 the cap would have risked** — playbook condition #3 satisfied exactly. That is a spread doing the job the
 playbook describes, as opposed to VSTM where it made things worse.
@@ -2925,7 +2925,7 @@ Owner asked for the exact dates and contracts. **DELL $465.41.**
 - **$420 long:** delta **-0.268**, OI **1,025**, volume 230, spread 4.9%. Sits just under the **Sept 1 pre-earnings low of $421.89** — the level the thesis needs broken, so the long leg is placed exactly where the move has to go.
 - **$400 short:** delta -0.198, **OI 2,466 — the deepest book on the chain**, volume 503, spread 7.3%. Deep enough that the short side fills reliably, which is what killed VSTM.
 - **IV 65.0% / 66.3% on the two legs — near-identical.** The flat skew is what makes the vertical neutralize the flush-inflated premium rather than just capping gains.
-- **$420 single leg alone costs $1,795** — 2.4× the $747.13 cap. The spread is the only way this position exists in his account.
+- **$420 single leg alone costs $1,795** — 2.4× the $747.13 cap. The spread is the only way this position exists in that account.
 
 ### The honest requirement, restated
 Break-even **$414.00** is **below the Sept 1 low of $421.89**. **This does not pay for a drift — DELL has to break its pre-earnings base and keep going.** That is why route (b) matters: entering after a failed bounce cuts the debit to roughly $4.00-4.50 and lifts R:R toward 3.5:1, which is the difference between needing a big move and needing a moderate one.
@@ -2986,7 +2986,7 @@ had fired, and I should say so plainly rather than defend a ticket I spent two m
 ### The self-criticism, stated directly
 
 **By pricing the ticket in that much detail, I made a C+ thesis look like conviction.** The detail was
-responsive to what he asked for, but thoroughness reads as confidence and that was misleading. The
+responsive to what was asked for, but thoroughness reads as confidence and that was misleading. The
 honest framing I should have led with: *"this is a watch item with a structure attached, not a call."*
 
 That is the same failure mode as the T put in a different costume — there I let a sizing argument license
@@ -3229,7 +3229,7 @@ counter-example to RGC: same methodology, opposite verdict, because the book is 
    none of that work. "Down 55% and profitable" is a screen, which is exactly the error I just caught
    myself making on RGC and CRWV.
 2. **It is making new 52-week lows today.** Counter-trend on every timeframe including the one that matters.
-3. **He is already long 200 shares and underwater.** Adding a levered long-dated SOFI bet **doubles down
+3. **The owner is already long 200 shares and underwater.** Adding a levered long-dated SOFI bet **doubles down
    on a losing position.** "Never average down" is written about options, but the spirit reaches this.
 
 **Grade: A on structure, C+ on thesis.** And the DELL post-mortem from this morning says precisely this:
@@ -3258,7 +3258,7 @@ buybacks plus the EMC debt. A long-term *long* in DELL is levered to a balance s
 cushion; a long-term *short* is fighting a $294B cap, a 0.45% dividend and a $95B backlog. Neither side
 is a clean multi-quarter story.
 
-### The one genuinely actionable long-term item: income on the shares he already owns
+### The one genuinely actionable long-term item: income on the shares the owner already holds
 
 Not a new position — the **covered-call program on the 200 SOFI shares**, already calendared for Oct 28
 (post-earnings). Reference pricing today, SOFI Dec 18 $17C: bid **$0.57**, OI 5,919, spread 5.1% of mark.
@@ -3276,7 +3276,7 @@ same stale-denominator error as the extension screen.
 
 ### New facts recorded today
 
-- **SOFI** new 52-week low **$13.875**, now $14.7232, **-55.0%** from its Nov 2025 high. His 200 shares
+- **SOFI** new 52-week low **$13.875**, now $14.7232, **-55.0%** from its Nov 2025 high. The 200 shares
   at $16.16 avg: **-$287.36 (-8.89%)**, improved from -$306.02.
 - **DELL -8.93%** to **$462.57** (low $452.42, 1.48x raw / ~2.1x time-scaled volume). Still **above** the
   withdrawn route (a) trigger of $421.89.
