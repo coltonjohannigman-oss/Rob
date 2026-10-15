@@ -3289,3 +3289,125 @@ same stale-denominator error as the extension screen.
 $243, 3.11:1, zero theta) attached to a thesis I have not earned the right to pitch. The short side is
 disqualified by arithmetic, not opinion. The only long-horizon action worth taking is the SOFI
 covered-call program already on the calendar for Oct 28, which is income rather than a new bet.
+
+---
+
+## 2026-10-15 — THURSDAY CLOSE CHECK (2:41 PM CT, ~19 min to the bell)
+
+Scheduled check-in. Note first that the stored prompt was written at 8:48 AM and **its SOFI state is two
+revisions stale** — it asks whether the Nov 20 $18 call was closed (it was, at 12:03 PM, +$23.00) and
+describes 100 shares at $18.10 (it is 200 at $16.16). Worked from live data, not the prompt's premises.
+
+### Accounts
+
+**Agentic 452369101 — flat and clean.** $948.56 cash, **no positions, no option orders today**. Ledger
+`Allocated $948.61 | Open $0.00 | Remaining $948.61 | Realized +$349.96`. The $0.05 gap to live buying
+power is trade #12's exit fee, as documented. **No trade was placed today.**
+
+### THE REAL NEWS: three new positions opened in the individual account, in-app
+
+All three are `placed_agent: user`, `agent_initiated: false` — the owner's own orders. **Per PERSONA
+these are the owner's will. I am not overriding, cancelling or "correcting" any of them.** Facts only,
+stated once each.
+
+**1. SOFI — covered calls re-written. 2 short Oct 30 $17 calls, $0.20 each = $40.00 credit** (filled
+2:11 PM CT). SOFI now **$15.045 (+5.80%)**, after setting a **new 52-week low of $13.875** this morning.
+
+- 200 shares at $16.16: **-$223.00 (-6.90%)**. With the $40 credit, net package **-$183.00**.
+- Strike $17 is **13.0% above spot**.
+- **Assignment at $17 would be PROFITABLE: (17.00 - 16.16) x 200 = +$168.00, plus $40 = +$208.00.**
+- **Oct 27 earnings is inside the Oct 30 expiry** (3 days before it).
+
+**I need to retract my earlier warning rather than repeat it.** I previously advised against writing a
+call into the print — but that was against a **$18.10 basis on 100 shares**, where a $16-17 strike meant
+assignment *below cost*. The basis is now **$16.16** because 100 more shares were bought at $14.2199, so
+**the same strike is now a profitable exit.** The arithmetic flipped and the old objection no longer
+applies. The residual risk is a **downside** gap on Oct 27, against which $40 of credit on $3,009 of
+stock is a 1.3% cushion — but a covered call never protected the downside anyway. **This is a sound trade
+and I am not going to pretend otherwise just because it resembles one I argued against.**
+
+**2. NVDA — short put spread, Nov 13, short $215 / long $205, 1 contract, $340 net credit** (filled
+1:24 PM CT; legs $7.20 sold / $3.80 bought).
+
+- **Ruling #7: PASSES CLEANLY.** NVDA Q3 FY2027 is **confirmed Tue Nov 17, post-close (verified)**. The
+  **Nov 13 expiry clears the print by 4 days.** That is correct expiry selection, not luck.
+- **But the position is nearly at-the-money into a falling tape.** NVDA **$217.425, -1.75% today** — only
+  **$2.425 (1.1%) above the short strike.** Breakeven $211.60, so **2.7% of cushion**.
+- **Max loss $660 vs max gain $340 = 0.52:1.**
+
+The one thing worth flagging: this is a bullish NVDA bet placed on a day NVDA fell 1.75%, with the short
+strike 1.1% away, during an AI-capex unwind in which **ANET -5.16% and VRT -4.18% — my two dated AI-capex
+tells — both sold off today.** Those were the names I said would tell us about this complex. They are
+telling us something, and it is not constructive. Facts only; it is the owner's call.
+
+**3. MU — four short put spread attempts, ALL CANCELLED, none filled.** Credit walked **$5.95 -> $5.20 ->
+$5.15 -> $5.10** across Oct 21 $900/$910 and Nov 13 $895/$905; last cancelled 2:26 PM CT. MU **$925.77
+(+1.27%)**.
+
+**The mechanical reason it never filled, worth recording:** those are **$10-wide spreads** and the ask
+was **$5.10-$5.95 — 51% to 60% of the width — on strikes that are 2-3% OUT of the money.** A vertical
+only pays half its width when it is essentially at-the-money. The market was never going to fill it, and
+walking the credit down $0.85 did not fix a structural mispricing. **If that trade is wanted, the strikes
+have to come closer to spot, not the credit come down.**
+
+### Breadth — the number that sets Friday's posture
+
+**79 losers under -4%.** The week: **54 (Tue) -> 93 (Wed AM) -> 400 (Wed close) -> 195 (Thu AM) -> 79 now.**
+
+**Thursday's close IMPROVED sharply — the first non-broadening day of the week**, and a 60% contraction
+intraday. Index confirmation: **SPY +0.33%, IWM +1.33%, QQQ -0.05%.** Small caps leading, broad market up.
+
+Against the three stabilization conditions: **losers under ~100 PASS (79). SPY positive PASS (+0.33%).
+Mega-caps not selling a third day — MIXED/FAIL: QQQ flat is better than Wednesday's -1.9%, but NVDA
+-1.75% and the semis are still heavy.**
+
+**And the composition matters more than the count.** The residual 79 is overwhelmingly one complex:
+**DELL -8.09%, HPE -6.61%** (the memory-cost pair), **SMTC -8.78%, LSCC -6.68%, MTSI -6.65%, AXTI -6.24%,
+FORM -5.19%, ACMR -5.38%, SITM -5.67%, ANET -5.16%, VIAV -5.15%, COHR -4.81%, ONTO -4.57%, CAMT -4.50%,
+TER -4.40%, KEYS -4.32%, VRT -4.18%** — plus an entire tanker complex (FRO, ECO, DHT, NAT, INSW, TNK,
+TEN, NVGS, CMBT, HAFN, NMM all -4% to -7%).
+
+**So the regime changed shape today: 400 names of indiscriminate liquidation narrowed into a 79-name
+sector unwind.** That is healing, not deterioration.
+
+**Friday posture: gradeable for the first time this week — but NOT inside the semi / AI-hardware complex**,
+because that is precisely where the residual selling is concentrated, and that is where nearly every
+watch name lives. Breadth earned the right to look; it did not earn the right to buy this group.
+
+**Two data notes on the scan.** **BIO.B shows -28.1% on volume 0 and relative volume 0 — that is a data
+artifact, not a decline**; an illiquid Class B line with no trades. Reporting it as a mover would be
+wrong. The genuine worst on the board is **FMC -30.2% at $5.645 on 9.22x relative volume** ($1.26B cap),
+not investigated.
+
+### Closes recorded — no re-grading
+
+- **PAG $211.75 (+8.71%) against the $212.00 cash deal price = -0.12%.** Artifact #11 pinned to the
+  penny, exactly as called. It had the heaviest scaled relvol on the board (53.2x) with 0.35% of upside.
+- **The auto-dealer read-across FAILED MY TEST, in the direction against me.** I said it was sympathy to
+  one deal's multiple and that **fading would confirm** the read. They did not fade — they **extended a
+  second day**: SAH **+5.71%**, ABG **+4.81%**, GPI **+4.67%**, LAD **+5.08%**, KMX **+4.17%**, AN
+  **+4.08%**. **Six names up another 4-6% on day two is behaving like a re-rating, not like sympathy. My
+  read is now unsupported and I am recording it as such** rather than holding a call whose own falsifiable
+  test came back against it.
+- **VSTM $9.245 (+19.91%) — now decisively ABOVE its $8.00 offering price**, having closed below it two
+  sessions running. The offering closed today and the overhang cleared. Artifact #12's pin is resolved.
+- **LQDA $35.56 (+4.77%)** — watch continues for the $175M follow-on due within 30 business days.
+- **SKYD $7.255 (+2.76%)** — mechanical warrant adjustment fully absorbed, behaving as one. Stays on
+  EP-Down watch: **failed-bounce-into-the-declining-EMA entry only, never the flush.**
+- **ASTS $44.625 (+5.90%)**, +11.9% off this morning's new 52-week low of $39.87. Information only.
+  **T is closed and retired — not to be re-pitched in any form.**
+- **DELL** $462.57 live (the scan row reads $466.845, slightly stale). Still **above** the withdrawn
+  route (a) trigger of $421.89. **Ex-dividend $0.63 on Tue Oct 20.**
+
+### BULL
+
+**$6.295 (+3.71%)**, prior EMA **$6.54** = **3.7% below** and converging. Projecting tonight's EMA off this
+price (k = 2/11 = 0.181818): 6.54 + 0.181818 x (6.295 - 6.54) = **~$6.495**, narrowing the gap to ~3.1%.
+Needs the official close to finalize. **Trigger NOT fired nine sessions running — do not widen it.**
+
+### Bottom line
+
+Agentic flat, no trade, nothing manufactured — **cash is a position.** The day's real content was three
+owner-placed positions in the individual account, all recorded, none overridden, with one earlier warning
+of mine formally retracted because the basis change inverted its arithmetic. Breadth healed sharply and
+the macro panic narrowed into a sector unwind.
