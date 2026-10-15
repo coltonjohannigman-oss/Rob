@@ -2660,3 +2660,133 @@ I flagged on 10/9 that **percentage spread scales inversely with premium**: "a $
 
 ### NO TRADE
 The best tech setup of the week — real catalyst, cleared base, 2.3x volume, 29.4% IV, affordable underlying, earnings already behind it — **passes every gate except one, and the one it fails is the rule the owner already has an open ruling on.** That is the honest answer. Agentic account stays flat at **$948.56**.
+
+---
+
+## Thursday, October 15, 2026 — 12:27 PM CT — LARGE-CAP LEVEL 3 SWEEP + **you doubled SOFI**
+
+Owner asked for a Level 3 trade worth doing, on larger stocks. Two things to report: a position change
+I found while auditing, and the sweep itself.
+
+### FIRST — the SOFI position doubled and I did not know until now
+
+Order `6acfe661`, **BUY 100 SOFI at $14.2199**, filled **Wed Oct 14 at 20:30:25Z = 3:30 PM CT**,
+extended hours, `placed_agent: user`.
+
+| | |
+|---|---|
+| Position now | **200 shares @ $16.16 average** (was 100 @ $18.10) |
+| Cost | $3,232.00 |
+| Value at $14.6299 | $2,925.98 |
+| **Unrealized** | **-$306.02 (-9.5%)** |
+
+The original 100 are **-$347.01**; the new 100 are **+$41.00**. Averaging down moved the percentage from
+-19.6% to -9.5% and the dollar loss improved by $41 because the adds are green.
+
+**Rule check, stated once:** PERSONA's "NEVER AVERAGE DOWN" is written about *options* — "Options expire.
+Adding to a loser compounds the damage." Shares have no expiry and no theta, so this is not a rule
+violation. It is his call, made in-app, and I treat it as his will.
+
+**Two consequences that matter:**
+1. **200 shares = TWO covered calls** after Oct 27, not one. The income plan I specified doubles.
+2. **Cash is now $812.66**, down from $2,123.82. Total account $3,735.66; buying power $5,165.73 on
+   margin, $2,582.87 unleveraged. **20% conservative cap = $747.13.** A defined-risk spread of a few
+   hundred dollars fits; much more does not.
+
+---
+
+## THE LARGE-CAP SWEEP — and the gate that killed almost everything was earnings
+
+The AI-capex / semicap complex is the only large-cap group with a real, broad, verified catalyst right
+now. His account can reach these names through defined-risk spreads where mine cannot touch them on
+premium. So I ran ruling #7 across the group first, because a Nov 20 expiry is the only sensible swing
+window and the whole sector reports inside it:
+
+| Name | Price | Today | Earnings | Inside Nov 20? |
+|---|---|---|---|---|
+| **VRT** | $207.39 | -6.93% | **CONFIRMED Oct 28**, pre-open | **YES** — fails |
+| **ANET** | $183.10 | -6.31% | **CONFIRMED Nov 3**, post-close | **YES** — fails |
+| LRCX | $271.85 | -5.25% | late Oct | YES — fails |
+| TER | $335.70 | -6.61% | late Oct | YES — fails |
+| AMAT | $428.06 | -4.16% | mid-Nov | YES — fails |
+| **DELL** | **$462.37** | **-10.15%** | **~Nov 24 (NOT confirmed)** | **NO — a Nov 20 expiry closes before it** |
+
+**DELL is the only large-cap in the complex where ruling #7's first and best response — "pick an expiry
+that closes before the print" — is actually available.** Every other name forces you to accept an
+earnings binary inside the position, which is the exact mistake the T put taught.
+
+**The caveat, and it is load-bearing:** Dell has **not** confirmed the date. MarketBeat estimates
+**Tuesday Nov 24**, and Dell's FQ3 call last year was Nov 25 — a consistent late-November pattern. But
+ruling #7 prefers company IR over an estimate, and **if Dell announces anything earlier than Nov 20 the
+entire argument collapses.** That has to be re-checked before any entry.
+
+### But DELL is not a trade TODAY, and the reason is my own proposed P7
+
+DELL, 90 days: ranged $369-494 through July-August → **Sept 2 earnings gap** (opened $462.05, closed
+$492.20 on **36.7M shares**) → ran to **$595.51 (Sept 18)** → held $536-595 for a month → **Oct 14 broke
+it, closing $507.93** → **today $462.37.**
+
+| Move | |
+|---|---|
+| Oct 13 close → now | **-19.2%** |
+| Sept 18 high → now | **-22.4%** |
+
+**And look where it stopped: $462.37, against the Sept 2 gap open of $462.05.** It has retraced the
+entire post-earnings advance and is sitting **exactly on the gap origin**, with the Sept 1 pre-earnings
+low at **$421.89** a further 8.8% below.
+
+That is **support, not open air** — which is precisely the discriminator I proposed as **P7** on Tuesday:
+*gap lands ON identifiable support → wait for the break or the failed bounce; gap lands in open air →
+half-size breakdown-day entry.* By my own rule, **DELL says WAIT.** It is also day 2 of a violent flush
+with IV blown out, and buying long premium into that is the OUST/AVAV problem.
+
+### So why not sell premium instead? Because the event is not over.
+
+Structure #3 (credit spread) exists for **post-event IV crush** and requires *"the event to be OVER and
+the level to have already held on volume."* Neither holds:
+- The CPI print is past, but **the AI-capex unwind is actively running** — day 3-4, and it has gone
+  global (Nikkei -5%, Kospi into a bear market). Selling premium into an in-progress liquidation is
+  picking up pennies in front of it.
+- DELL is **touching** $462 for the first time today. It has not "already held." A level is support when
+  it has been tested and rejected, not when price first arrives.
+
+### HONEST ANSWER: no A+ Level 3 trade right now. The problem is timing, not candidates.
+
+Every setup in the group is 2-4 days late into a flush that is still moving — the worst moment for both
+sides of premium. **Long premium: IV too high. Short premium: direction still running.** That is not a
+trade, it is a coin flip with a spread on it.
+
+### THE PLAN — DELL Nov 20 put debit spread, trigger-based, to arm not to place
+
+Specified now so it is ready, priced at the trigger because today's IV tells you nothing about the
+trigger day's.
+
+**Trigger — either one:**
+- **(a) A decisive close below $421.89** (the Sept 1 pre-earnings low — that breaks the whole gap and
+  puts it in open air, which flips P7 to "go"), **or**
+- **(b) A bounce to $505-525** (the Oct 14 close / broken range floor) **that stalls and rolls over** —
+  the failed-bounce entry, which is the better of the two.
+
+**Structure at trigger:** Nov 20 **put debit spread**, long strike near the money, short strike ~8-10%
+below. Why a vertical rather than a single leg: IV will still be elevated, and **selling the lower strike
+recovers the inflated premium** — condition #1 of the playbook. And **the debit IS the stop**, which is
+the PLTR lesson: a defined-risk structure cannot be shaken out of a correct thesis by noise.
+
+**Sizing:** debit at or under **$400**, well inside the $747.13 cap and inside the $812.66 cash. Max loss
+= the debit, known at entry.
+
+**Before entering, two checks that can kill it:**
+1. **Re-confirm Dell's earnings date from Dell IR.** If it lands on or before Nov 20, abandon the Nov 20
+   expiry — the whole edge here is that the print falls outside.
+2. **Apply P8 from this morning:** price the spread at **realistic fills (buy the ask, sell the bid)**,
+   not mids. DELL's chain is deep enough that this should be fine, unlike VSTM — but check it, do not
+   assume it.
+
+**Kill the idea entirely if:** DELL reclaims **$507.93** on volume (the broken floor recovered = the
+breakdown failed), or the AI-capex complex turns and holds for two sessions.
+
+### Nothing else flagged
+VRT and ANET are structurally similar and better-priced, and **both are disqualified on confirmed
+earnings inside the expiry** — no spread fixes a binary you have chosen to sit through. The semicap
+equipment names (AMAT, LRCX, TER, KEYS, ONTO) have the same problem plus late-October prints.
+**No advisory placed. The DELL plan is armed, not recommended for today.**
