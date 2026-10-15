@@ -2868,3 +2868,66 @@ gentle one, and it is why the entry price matters so much.
    sessions.
 
 **Advisory only — I cannot execute in ••••1866, and I am not recommending entry today.**
+
+---
+
+## Thursday, October 15, 2026 — 12:41 PM CT — **DELL TICKET + FULL CALENDAR** (advisory, armed not placed)
+
+Owner asked for the exact dates and contracts. **DELL $465.41.**
+
+### THE TICKET — one 2-leg order, not two separate orders
+
+**DELL Nov 20 2026 $420 / $400 PUT DEBIT SPREAD × 1**
+
+| Leg | Action | Contract |
+|---|---|---|
+| Long | **BUY TO OPEN** | **DELL 11/20/2026 $420 PUT** |
+| Short | **SELL TO OPEN** | **DELL 11/20/2026 $400 PUT** |
+
+**Place it as a single vertical/spread order in Robinhood** (Trade Options → select both strikes → it builds the spread). **Do not leg in with two separate orders** — legging a vertical means paying both bid/asks and carrying naked directional risk between fills.
+
+**Limit price (net debit):**
+
+| | Debit | Cost | Max gain | R:R | Break-even |
+|---|---|---|---|---|---|
+| Mid-to-mid | $5.63 | $563 | $1,438 | 2.56:1 | $414.38 |
+| **Target limit** | **$6.00** | **$600** | **$1,400** | **2.33:1** | **$414.00** |
+| **Do not exceed** | **$6.50** | **$650** | **$1,350** | **2.08:1** | **$413.50** |
+
+**Start at $6.00 and work up only to $6.50.** PERSONA: *"place limit orders at or below the midpoint... Never overpay just because the ask is posted there."* Above $6.50 the R:R degrades below 2:1 and the trade stops being worth the entry risk.
+
+**Max loss = the debit = $600.** That is the entire risk, known at entry, and it is the stop — no percentage stop on a vertical (the PLTR lesson).
+
+**Smaller alternative if $600 is too much:** the **$420/$410** at a **$3.25** limit = **$325** cost, $675 max gain, 2.08:1, break-even $416.75. Same thesis, half the size, slightly worse R:R, and a thinner short leg (OI 429 vs 2,466).
+
+### THE CALENDAR — every date that matters
+
+| Date | What happens | Action |
+|---|---|---|
+| **Thu Oct 15 (today)** | DELL $465.41, sitting on the Sept 2 gap open ($462.05). **Trigger NOT fired.** | **Do nothing** |
+| **Mon Oct 19 – Fri Nov 13** | Watch window. **Route (b):** bounce to **$505-525** that stalls and rolls over ← *preferred, and cheaper*. **Route (a):** decisive close below **$421.89** ← works, costs more | Enter on either |
+| **Tue Oct 27** | **SOFI earnings** (confirmed, SoFi IR, ~7:00 AM ET) | Separate position — no action on DELL |
+| **Wed Oct 28** | **SOFI covered-call window opens** — now **2 contracts** (200 shares), Dec 18, delta 0.20-0.30 | Price it that morning |
+| **Wed Oct 28** | **VRT reports** (confirmed, pre-open) | **First real tell on the AI-capex complex** |
+| **Tue Nov 3** | **ANET reports** (confirmed, post-close) | **Bigger tell.** A weak ANET guide is the thesis confirming |
+| **Fri Nov 13** | **LAST SENSIBLE ENTRY.** Inside a week to expiry a vertical stops behaving — gamma dominates and there is no time for the move | If untriggered by here, the Nov 20 idea is dead |
+| **Fri Nov 20** | **Expiry.** Both legs settle | Must be closed or expired by then |
+| **~Tue Nov 24** | **Dell earnings — UNCONFIRMED.** The entire edge is this landing *after* Nov 20 | **Re-verify from Dell IR before entering** |
+
+### THE EXIT PLAN, set now so it is not improvised later
+
+- **Profit target: close at 70-80% of max value** — roughly **$14.00-16.00** on the $20 width, i.e. **+$800 to +$1,000** on a $600 debit. Do not hold for the last dollar; a vertical's final value only arrives at expiry and the mark is a poor estimator until then.
+- **Thesis stop (not a mark-to-market percentage):** exit if **DELL closes above $507.93** — the broken range floor reclaimed means the breakdown failed. This is the proposed spread-stop amendment applied: *thesis invalidation, time, or the entry-set max loss — never a mid-life mark.*
+- **Time stop: Fri Nov 13.** If DELL has not broken $421.89 by then, close for whatever it is worth. Do not ride a vertical into expiry week on hope.
+- **Max loss stop:** none needed. The $600 debit **is** the stop.
+
+### Why these strikes and not others
+- **$420 long:** delta **-0.268**, OI **1,025**, volume 230, spread 4.9%. Sits just under the **Sept 1 pre-earnings low of $421.89** — the level the thesis needs broken, so the long leg is placed exactly where the move has to go.
+- **$400 short:** delta -0.198, **OI 2,466 — the deepest book on the chain**, volume 503, spread 7.3%. Deep enough that the short side fills reliably, which is what killed VSTM.
+- **IV 65.0% / 66.3% on the two legs — near-identical.** The flat skew is what makes the vertical neutralize the flush-inflated premium rather than just capping gains.
+- **$420 single leg alone costs $1,795** — 2.4× the $747.13 cap. The spread is the only way this position exists in his account.
+
+### The honest requirement, restated
+Break-even **$414.00** is **below the Sept 1 low of $421.89**. **This does not pay for a drift — DELL has to break its pre-earnings base and keep going.** That is why route (b) matters: entering after a failed bounce cuts the debit to roughly $4.00-4.50 and lifts R:R toward 3.5:1, which is the difference between needing a big move and needing a moderate one.
+
+**Advisory only. I cannot execute in ••••1866, and the trigger has not fired — this is the ticket to have ready, not an instruction to place today.**
