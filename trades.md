@@ -2790,3 +2790,81 @@ VRT and ANET are structurally similar and better-priced, and **both are disquali
 earnings inside the expiry** — no spread fixes a binary you have chosen to sit through. The semicap
 equipment names (AMAT, LRCX, TER, KEYS, ONTO) have the same problem plus late-October prints.
 **No advisory placed. The DELL plan is armed, not recommended for today.**
+
+---
+
+## Thursday, October 15, 2026 — 12:37 PM CT — DELL SPREAD PRICED (advisory, trigger NOT fired)
+
+Owner asked for the actual price. **DELL $464.765** — it has bounced off the $462 low since the earlier
+read. Here is the live Nov 20 put book and every vertical that fits his cap, priced at **realistic
+fills** per P8, not mids.
+
+### The chain — and this is the opposite of VSTM
+
+| K | mark | bid × size | ask × size | spread % | OI | vol | delta | IV |
+|---|---|---|---|---|---|---|---|---|
+| 470 | $39.125 | 38.70 ×6 | 39.55 ×8 | **2.2%** | 782 | 217 | -0.472 | 64.5% |
+| 460 | $33.800 | 33.25 ×28 | 34.35 ×9 | **3.3%** | 1,692 | 1,221 | -0.430 | 64.5% |
+| 450 | $29.050 | 28.65 ×40 | 29.45 ×6 | **2.8%** | 1,448 | 395 | -0.388 | 64.7% |
+| 430 | $20.925 | 20.45 ×12 | 21.40 ×74 | **4.5%** | 898 | 172 | -0.306 | 65.3% |
+| **420** | **$17.475** | **17.05 ×11** | **17.90 ×70** | **4.9%** | **1,025** | **230** | **-0.268** | **65.6%** |
+| 410 | $14.425 | 13.90 ×85 | 14.95 ×84 | 7.3% | 429 | 782 | -0.231 | 65.9% |
+| **400** | **$11.675** | **11.25 ×119** | **12.10 ×74** | **7.3%** | **2,466** | **499** | **-0.197** | **65.9%** |
+
+**Every spread is 2.2-7.3% against a 15% gate.** OI 429-2,466, volume 172-1,221. This chain is deeply
+liquid — the P8 check passes without strain, unlike VSTM where it failed outright.
+
+**And the structurally important fact: IV is 64.5-65.9% and essentially FLAT across strikes.** DELL's
+normal is well under this, so the flush has inflated premium — condition #1 of the playbook. The flat
+skew is what makes the vertical actually work: **selling the lower leg recovers premium at the same
+inflated IV you pay on the upper leg.** If the skew were steep, the short leg would recover far less and
+the structure would neutralize nothing. Worth stating because that is the condition, not an assumption.
+
+### The verticals that fit — $747.13 cap, $812.66 cash
+
+| Spread | Debit | Cost | Max gain | R:R | Break-even | Move needed | Fits? |
+|---|---|---|---|---|---|---|---|
+| **420 / 400** | **$6.65** | **$665** | **$1,335** | **2.01:1** | **$413.35** | **-11.1%** | **YES** |
+| 420 / 410 | $4.00 | $400 | $600 | 1.50:1 | $416.00 | -10.5% | YES |
+| 430 / 400 | $10.15 | $1,015 | $1,985 | 1.96:1 | $419.85 | -9.7% | no |
+| 430 / 410 | $7.50 | $750 | $1,250 | 1.67:1 | $422.50 | -9.1% | no |
+| 460 / 420 | $17.30 | $1,730 | $2,270 | 1.31:1 | $442.70 | -4.7% | no |
+
+**My pick if it triggers: the $420/$400 at a $6.65 debit or better.** Best R:R of the two that fit, and
+the $400 leg has the deepest book on the board (OI 2,466, 119 on the bid), so the short side fills.
+
+### THIS is the Level 3 case in one number
+**A single-leg Nov 20 $420 put costs $1,790 — 2.4× his conservative cap.** Unaffordable. The $420/$400
+spread gets the same directional exposure for **$665**, and **max loss $665 ≤ the $747.13 a single leg at
+the cap would have risked** — playbook condition #3 satisfied exactly. That is a spread doing the job the
+playbook describes, as opposed to VSTM where it made things worse.
+
+### THE TRIGGER HAS NOT FIRED — and the price is the reason to wait, not just the chart
+
+DELL is **$464.765**, bouncing off $462.37, still sitting on the Sept 2 gap open of **$462.05**. Per P7
+that is support, so the entry condition is unmet. But the pricing makes the case sharper than the chart
+alone:
+
+- **Route (b) — a bounce to $505-525 that stalls — makes this exact spread materially CHEAPER.** At
+  DELL ~$510 the $420 put drops from ~$17.90 toward $10-12 and the $400 toward $6-8, so the debit falls
+  from $6.65 to roughly **$4.00-4.50**. Same $20 width, same max value — **R:R improves from 2.01:1 to
+  roughly 3.5:1.**
+- **Route (a) — a close below $421.89 — makes it MORE expensive.** The $420 goes near-the-money (~$28-32)
+  and the debit widens toward $10-12. Still workable, worse value.
+
+**So waiting for the failed bounce is both the technically correct entry and the economically better one.
+Route (b) is strictly superior to route (a), and that is the answer to "what price": not today's.**
+
+### The honest requirement
+Break-even on the $420/$400 is **$413.35**, which is **below the Sept 1 pre-earnings low of $421.89.**
+This trade does not pay for a drift — **it needs DELL to break its pre-earnings base and keep going.**
+That is coherent with the thesis (gap fill to the pre-earnings shelf) but it is a real condition, not a
+gentle one, and it is why the entry price matters so much.
+
+### Unchanged pre-entry checks
+1. **Re-confirm Dell's earnings date from Dell IR.** The entire edge is that a Nov 20 expiry closes
+   before the print (~Nov 24, unconfirmed). If Dell announces on or before Nov 20, abandon this expiry.
+2. **Kill the idea** if DELL reclaims **$507.93** on volume, or the AI-capex complex turns and holds two
+   sessions.
+
+**Advisory only — I cannot execute in ••••1866, and I am not recommending entry today.**
