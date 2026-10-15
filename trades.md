@@ -2588,3 +2588,75 @@ ruling** can be executed any time. It costs nothing to wait for the print either
 ### Nothing else qualifies
 Of 301 gainers and 136 losers, the only name whose chart earned a full grade was VSTM, and it fails for
 both accounts on a book that no structure repairs. **No advisory flagged beyond the dated SOFI plan.**
+
+---
+
+## Thursday, October 15, 2026 — 12:20 PM CT — TECH SWEEP. **ERIC is the best setup of the week and it fails ruling #6 by 7 points.**
+
+Owner asked specifically about tech. Pulled every tech name off both scans (301 gainers / 136 losers) and graded the affordable ones. Elapsed 57.7% → relvol scaling **×1.73**.
+
+### The tech tape is cleanly bifurcated, and it fits the macro frame exactly
+
+**SOLD — the entire semicap and hardware complex, not just AI-datacenter:**
+| | |
+|---|---|
+| Semicap equipment | AMAT **-4.16%** ($354B), LRCX **-5.25%** ($359B), TER -6.61%, KEYS -6.38%, ONTO -7.07%, FORM -7.94%, ACMR -7.85%, COHU -8.33%, AEIS -8.11%, ENTG -4.88%, MKSI -4.58%, UCTT -4.84%, ICHR -4.16%, ACLS -4.31% |
+| Analog / RF / specialty | SMTC **-14.19%**, MTSI -10.51%, AXTI -10.11%, MXL -8.56%, SITM -8.28%, IMOS -7.73%, LSCC -7.35%, AMKR -4.69%, NVTS -4.70%, ASX -7.06% ($102B) |
+| Mega-cap semis | AMD **-4.24%** ($932B), INTC -4.24% ($519B) |
+| Optical / networking | COHR -7.06%, AAOI -6.14%, LITE -5.54%, **ANET -6.25% ($246B)** |
+| Hardware / infra | DELL -8.69%, HPE -6.42%, VRT -6.93%, FLEX -5.91%, CLS -5.46%, SMCI -4.95%, PLXS -4.69% |
+| Software | NET -4.54% |
+
+**BOUGHT — software and IT services:**
+APPN **+10.72%**, QNT +10.14%, ERIC **+9.20%**, KD +7.76%, TTD +6.61%, INTU +6.25%, GLOB +6.05%, INFY +5.57%, EPAM +5.30%, ADSK +5.40%, HUBS +5.38%, NCNO +5.36%, PRGS +5.26%, FDS +5.00%, CTSH +4.88%, AGYS +5.10%.
+
+**That is a rotation *within* tech — out of capex-heavy semis and hardware, into asset-light software and services.** It is the same hot-CPI / AI-capex-unwind frame, one level down.
+
+### Affordability screen kills most of it immediately
+Of the names being bought, only **ERIC $10.46** and **INFY $12.12** are cheap enough for a near-ATM option to fit under the **$189.72** cap. APPN $42.57, EPAM $120.71, INTU $329.85, ADSK $243.63, HUBS $238.40, FDS $304.22 — all out on premium. Same bind, every day.
+
+### INFY — my 10/13 read is now CONFIRMED, not inferred. PASS.
+On 10/13 I passed on the IT-services cluster as **sympathy tagalongs to an overseas earnings cycle** (HCL Tech / TCS Q2 lifting Nifty IT), not leaders. Checked it properly today:
+- **Infosys has NOT reported. Q2 FY27 is October 23** — board meets Oct 22-23, results and a possible interim dividend after. So today's +5.57% is **not its own catalyst**; it is the third session of sympathy to the Indian IT tape. The leadership test was right.
+- **The overhang got worse, not better:** the **US Department of Labor has HALTED new and pending PERM filings for Infosys amid federal probes**, with zero certified PERM filings Oct 2025 - Jun 2026.
+- **Ruling #7:** earnings **Oct 23 is inside a Nov 20 expiry**, 6 sessions out, with a guidance revision as the central question.
+Three independent reasons to pass. **PASS.**
+
+### ERIC — a real Episodic Pivot, the cleanest ruling #7 outcome possible, and it still fails the book
+
+**Catalyst (verified, and it is genuinely significant):** Q3 reported **today** — adjusted EBITA **SEK 10.1B vs SEK 7.93B expected (+27% beat)**, net sales **SEK 59.5B vs SEK 55.4B expected**, **organic growth +7%**, Networks (the largest segment) **+9% to SEK 38.7B**, plus an announced simplification of the operating structure.
+
+**Ruling #7 — the best possible answer:** the print is **BEHIND** the position, not inside it. Next report is Q4 in late January, well outside a Nov 20 expiry. This is the first candidate all week where the earnings check comes back clean rather than as an accepted risk.
+
+**Corporate-action check complete:** `adjusted_previous_close` **$9.58** = `previous_close` **$9.58**. No adjustment. The +9.20% is real.
+
+**Chart (90 days):** $11.72 on July 13 → gapped down July 14 → ground down to **$9.035 (Oct 1)** → based **$9.035-9.62 for two weeks** → Oct 13 pushed to $9.71 on 18.1M (2.5x) → **today $10.4615**. That is a genuine base breakout on an earnings catalyst, and at $10.4615 it has **cleared the August-September congestion highs ($10.39 Aug 25, $10.44 Sept 17)**. Volume relvol 1.358 → **2.3x scaled**, inside PERSONA's 2-5x band. IV **29.4%** — not inflated, which is rare on an earnings day.
+
+**Then the book:**
+
+| K | mark | bid × size | ask × size | width | spread % | OI | vol | delta | IV | 1× cost |
+|---|---|---|---|---|---|---|---|---|---|---|
+| $9 | $1.500 | 1.40 ×**1065** | 1.60 ×194 | $0.20 | 13.3% ✓ | **120** ✗ | **31** ✗ | null | null | $150.00 |
+| **$10** | **$0.675** | **0.60 ×1409** | **0.75 ×135** | **$0.15** | **22.2%** ✗ | **624** ✓ | **116** ✓ | **0.718** ✗ | **29.4%** ✓ | **$67.50** |
+| $11 | $0.200 | 0.15 ×1239 | 0.25 ×81 | $0.10 | **50.0%** ✗ | **158** ✗ | 334 ✓ | 0.328 ✗ | 29.7% | $20.00 |
+| $12 | — | **0.00** | 0.10 | — | no bid ✗ | 22 ✗ | 505 | 0.035 ✗ | 22.8% | — |
+
+**The $10 strike is the trade and it fails by one gate.** Spread **22.2%** against a 15% requirement. The exception rubric permits up to 25% — but **only if OI > 1,000, and OI is 624.** So the flex is not available and this is a hard pass, not a judgment call. Delta 0.718 is also outside the band (that one *would* be permissible, since every OTM strike fails the OI test, which the rubric explicitly allows).
+
+### THIS IS OUTSTANDING RULING #6, AND IT IS NO LONGER THEORETICAL
+
+I flagged on 10/9 that **percentage spread scales inversely with premium**: "a $0.16 bid/ask is ordinary market-making width, but on a $0.41 premium it is 39%." ERIC is the cleanest possible demonstration:
+
+- The width is **$0.15** — one normal increment on a $10 underlying.
+- The depth is **1,409 contracts bid against 135 offered.** This is not an illiquid contract. It is a *cheap* contract with an ordinary absolute spread.
+- A 15% gate on a $0.675 premium means a **maximum $0.10 width** — tighter than the market makes on most sub-$1 contracts at any liquidity level.
+- With 1,409 on the bid, the realistic round-trip friction is nearer **$0.05-0.07**, not the $0.15 the quoted percentage implies. **Percentage spread off the quoted bid/ask overstates friction when the book is deep, because you fill near the mid.**
+- Size would have been trivial: **2 contracts at $0.675 = $135.00, or 14.2% of the account** — comfortably inside the 20% cap, which is the other condition the exception wants.
+
+**I am passing because the rule says pass and I do not override PERSONA unilaterally.** But this is the strongest single piece of evidence yet that the 15%/25%-of-mark spread gate is mis-specified for low-premium contracts, and the owner now has a concrete case with real numbers rather than an abstraction. **A possible fix, for the owner to rule on: measure the spread gate in absolute ticks or against book depth, not purely as a percentage of mark — e.g. allow a spread up to the greater of 15% of mark or $0.10, provided the bid depth exceeds 10x the intended position size.** On ERIC that would have been 1,409 against 2 contracts.
+
+### Bearish tech — nothing entered, one name to the watchlist
+**SMTC -14.19% at $137.52** on **2.5x scaled relvol** is the heaviest tech breakdown on the board. It fails on both counts: it is a **day-1 flush**, which my own 10/6 table says to skip in favour of the failed bounce into the declining EMA, and at $137.52 a put is far past the cap. The whole semicap complex has the same problem — **AMAT $428, LRCX $271.85, TER $335.70, KEYS $334.82, ONTO $224.34, ANET $183.21** are all unaffordable. Adding SMTC to the EP-Down watch with the standard bounce-entry condition.
+
+### NO TRADE
+The best tech setup of the week — real catalyst, cleared base, 2.3x volume, 29.4% IV, affordable underlying, earnings already behind it — **passes every gate except one, and the one it fails is the rule the owner already has an open ruling on.** That is the honest answer. Agentic account stays flat at **$948.56**.
