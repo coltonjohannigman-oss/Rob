@@ -84,3 +84,22 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   115/110 bull put ($1.50, $350 = 8%, 30% of width) | pass
 - 2026-10-08 | RULE CHANGE (owner): max loss per idea raised from 2% to 6% (~$264 on $4,395). The total cap across
   open advisory positions stays at 6%, so one full-size idea uses the whole risk budget.
+- 2026-10-26 | OUTCOMES (from ••••1866 order history, not advisory ideas unless noted): T Nov 20 $22P x4 bought 10/9 @
+  $0.79 ($316), sold 10/13 (1 @ $0.54, 3 @ $0.43 = $183) = -$133. SOFI Nov 20 $18C sold 10/9 @ $0.41, bought back 10/15
+  @ $0.18 = +$23 (the logged covered-call idea, struck $1 lower). SOFI position is now 200 sh @ $16.16. MU 905/895 bull
+  put attempts all cancelled. NVDA Nov 13 215/205 bull put spreads: 1 opened 10/15 @ $3.40 credit, 1 added 10/23 @
+  $4.30 credit.
+- 2026-10-26 | SNAPSHOT (10:00 CT): account $3,903, cash $1,622, BP $2,786. SOFI 200 sh = ~$2,920, 75% of the account,
+  -$312 unrealized; SOFI earnings are Tue 10/27 AM.
+- 2026-10-26 | NVDA management: 2x Nov 13 215/205 bull put spread (credit $7.70 total). Spread mark is $3.08 (215P 5.80/5.90,
+  205P 2.74/2.80), so $616 to close = +$154 (20% of max profit). Max loss $1,230 = 31.5% of the account, 5x the 6% cap;
+  18 DTE (past the 21-DTE review). Short strike is $2 under spot (delta -0.43). NVDA is in a downtrend from the $243 10/6 high,
+  with the regime RISK-OFF and support at $210.18 (10/23 low). Earnings 11/17 pm, after expiry | CLOSE BOTH as one 2-lot
+  spread order at ~$3.05 net debit (work $3.00 to $3.10) on today's +3% bounce. Minimum: close 1 (max loss -> $615). Hard
+  exit if NVDA trades < $210 | management: CLOSE | pending owner
+- 2026-10-26 | SOFI management: 2x Oct 30 $17C short (covered by 200 sh), sold @ $0.20 ($40). Mark $0.075 (bid .07/ask .08,
+  OI 18,558), so 62% of max profit is captured; earnings tomorrow AM | buy back at ~$0.07-0.08 ($14-16) per the 50% rule,
+  which frees the shares to sell a fresh Nov call after earnings when the level is known. Holding is also low-risk: an
+  assignment at $17 is above the $16.16 cost | management: CLOSE (mild) | pending owner
+- 2026-10-26 | No new ideas: the NVDA spread's $1,230 max loss already uses ~5x the 6% total advisory cap ($234). Nothing new
+  fits until it is closed. Brazil EP-down puts (NU/PBR) are on Robbin's pipeline; spreads don't fix their extension gate | pass
