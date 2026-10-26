@@ -30,6 +30,32 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-10-26 (Mon, 9:53 AM CT) — regime RISK-OFF (bouncing), DRAWDOWN BRAKE ON (A+ only, 15% size)
+
+- **GMAB (day 2): the gap held, but the pullback never came, so it is not triggered.** Opened $44.79,
+  above Friday's $44.34 high, and printed a new 52-week high at $45.45. Volume is running well above
+  pace (2.84M in 23 min vs. a 4.6M daily average). The GAP-DAY trigger needs a pullback that holds
+  $39.6–42 or the 10-EMA, so today's gap-and-go is not the entry. It also can't trade while the regime
+  is RISK-OFF and the brake is on. Keep it. The next valid trigger is a 3–10 day flag, then a break of
+  its high. Day 2 of 10.
+- **CCI (day 2): not yet.** At $88.70, holding above the $85 flag floor but below the $91.45 day-1 high,
+  on light volume (1.9M by 9:53 CT). Day 2 of 10.
+- **NU | PUT | EP-down (Brazil runoff result, 10/25) | V2/S1/C2/RS1/R2 = 8 (A on score, but GATES
+  FAIL) | ADR ~3% | the 10/5 gap-up base ($15.2–16.2) failed in one session: opened $11.65 (−23%)
+  on 166M shares in 23 min (2.5x the daily average) and is bouncing to $12.03 | GATES: a −20%+ flush
+  (put rules ban buying it), ~7 ADR under the 10-EMA (~$15.1, EXTENSION LIMIT), put IV is surely
+  >70% (GAP-DAY rule) | TRIGGER: first weak bounce on fading volume toward $12.8–13.4 (the 9/28–10/2
+  base, now resistance), which stalls and then breaks the bounce's low on ≥1.5x volume, with put IV
+  cooled under ~70% | INVALIDATION: close above $13.50 | CONTRACT: ~0.40-delta put, 3–4 weeks out
+  (≈ Nov 20 $12P), with OI >500 and spread <15% checked at trigger. Note the $11.20 52-week low
+  just below. | added 2026-10-26**
+- **PBR | PUT | EP-down (same catalyst) | V2/S1/C2/RS1/R2 = 8 (A on score, GATES FAIL) | ADR ~2%
+  (under the 4% bar) | opened $21.50 (−18%) from a fresh 52-week high ($26.39 on 10/23); 43M shares
+  in 23 min (2.4x the average); range $21.38–22.41 | GATES: ~8+ ADR under the 10-EMA, IV spiked,
+  low ADR | TRIGGER: same bounce-fail pattern toward $23–23.8 (the 10/5 gap open area), then a break
+  of the bounce low on volume | INVALIDATION: close above $24 | watch name, trades only at A+ |
+  added 2026-10-26**
+
 ### Session 2026-10-23 (Fri, 1:48 PM CT) — regime RISK-OFF, DRAWDOWN BRAKE ON (A+ only, 15% size)
 
 - **GMAB | call (counter-regime) | EP day-1 gap to new 90-day highs | V2/S1/C1/RS2/R0 = 6 (B) |
@@ -52,6 +78,13 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   SNOW ($321.8, below $328), CRWD (aged out; +6.7% today at $253.9 but never cleared $276.90),
   DOCU ($84.8, broke out through $74 with no entry while unmonitored. Its options chain was too
   thin to trade anyway).
+- **Passed 10/26:** XP −51% / STNE −30% / PAGS −27% / AFYA −27% / ITUB −24% (Brazil runoff flush,
+  all past −20%, so the put rules ban them; ITUB/STNE/PAGS chains are thin anyway), MELI −10.8% ($1,615,
+  unaffordable), FICO −7.8% ($752, unaffordable), RDDT −5.3% / CRCL −6.7% (0.5–0.7x relvol, so volume
+  fails). Gainers: SGRY +46% (12x relvol, fresh gap: day-1 watch only, 74% IV, small cap), XNCR +24%, RRC
+  +15% (nat-gas gap). All are day-1 gaps (GAP-DAY RULE), and calls are counter-regime under the
+  brake. Leaders Pullback (17 names: MSFT, PLTR, CRM, TEAM, SHOP, ZETA…): calls, so counter-regime
+  and capped at A.
 - **Passed 10/23 (losers scan, RISK-OFF puts):** LKQ -21.5% / CORT -19.7% (−20% flushes: the put
   rules ban these), BE -11% (IV 93% > 70% gap-day gate; ~2.9 ADR under its 10-EMA), CRDO -8.7%
   (new lows, but ~2.7 ADR under the 10-EMA: EXTENSION LIMIT), T -7.1% / TMUS -6.6% (ADR 2.1–2.4%,
