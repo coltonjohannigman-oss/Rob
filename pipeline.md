@@ -30,6 +30,27 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-10-27 (Tue, 9:20 AM CT) — regime RISK-OFF, DRAWDOWN BRAKE ON (A+ only, 15% size)
+
+- **NU (day 2 of the bounce): not yet triggered.** Today's range is $12.50–13.00, and the price is $12.68.
+  The bounce tagged the bottom of the $12.8–13.4 resistance zone (the $12.80 alert fired). Put IV has
+  cooled to **54%** (Nov 20 $12P: mark $0.375, OI 19,623, spread 8%, Δ −0.31), so the IV gate now passes.
+  It is still blocked by the EXTENSION LIMIT: ~5 ADR under the 10-EMA (~$14.6). The trigger is
+  unchanged: the bounce stalls, then today's or the next bounce low breaks on ≥1.5x volume. The
+  extension must also be under ~2 ADR, so it needs a higher bounce or a few sessions for the EMA to
+  come down. Use the Nov 20 $12.5P (closer to Δ0.40) at the trigger. Day 2 of 10.
+- **PBR: not yet.** Range $22.46–22.97, so it hasn't reached the $23–23.8 bounce zone. Day 2 of 10.
+- **GMAB (day 3): flag forming.** Range $43.99–44.53, an inside day under Monday's $45.45 high, on
+  light volume (0.96M by 9:20 CT). The trigger is a break of $45.45 on ≥2x volume, but the calls are
+  counter-regime, so it can't trade while the brake is on. Day 3 of 10.
+- **CCI: not yet.** Range $85.71–87.27, holding the $85 flag floor, on light volume. Day 3 of 10.
+- **XYL | PUT | EP-down (Q3 EPS $1.44 vs $1.45 est, 10/27 am) | V2/S1/C2/RS1/R2 = 8 (A on score, GATES
+  FAIL) | ADR 2.2% (under the 4% bar) | gapped −9% to a new 52-week low of $97.38 (it fell from a $127
+  90-day high, bounced to $108, and is now breaking down). 1.4M shares in 50 min vs. a 2.07M daily
+  average | GATES: ~3.4 ADR under the 10-EMA ($106.1), low ADR | TRIGGER: a weak bounce toward
+  $102–104 that fails, then a break of the bounce low on ≥1.5x volume | INVALIDATION: close above
+  $106 (the 10-EMA) | watch name, trades only at A+ | added 2026-10-27**
+
 ### Session 2026-10-26 (Mon, 9:53 AM CT) — regime RISK-OFF (bouncing), DRAWDOWN BRAKE ON (A+ only, 15% size)
 
 - **GMAB (day 2): the gap held, but the pullback never came, so it is not triggered.** Opened $44.79,
@@ -71,6 +92,15 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   $83.26 | added 2026-10-23. Low ADR, so it's a watch name; it trades only if it gets to A+.**
 
 ## Recently removed
+
+- **Passed 10/27:** INOD −23.6% (a −20%+ flush, which the put rules ban), CTAS −6.7% (an earnings
+  reversal off a fresh 52-week high: no puts against a stock making new highs; ADR 1.7%), UNF −14% ($240,
+  thin chain, ADR 2.7%), HSBC −6.1% / WELL −5.5% (ADR 1.2–2.0%), MRNA −5.4% (a pullback inside
+  a +230% 3-month uptrend, above the rising 50-EMA, with earnings 11/5), refiners VLO/MPC/PSX −4–6% (low
+  relvol; MPC/PSX are leaders pulling back, not breakdowns). Gainers: SOFI +11% (1.4x relvol at 50
+  min, a day-1 gap), CLS +10%, NBIS +8%, BE +8%: all day-1 gaps or counter-regime calls. Leaders
+  Pullback Watch (19: MSFT, PLTR, CRM, TEAM, SHOP, GTLB, ZETA, IOVA…): calls are counter-regime and
+  capped at A, so none can trade under the brake. Smart Money Flow (AURA, INSM, DBD, FFIN, THG): nothing actionable.
 
 - **Aged out / invalidated 2026-10-23 (stale since 10/8, 11+ sessions):** SMCI ($32.87, far below
   the $41.74 invalidation), NKE ($37.40, back above the 10-EMA, so the put thesis is dead), XP and
