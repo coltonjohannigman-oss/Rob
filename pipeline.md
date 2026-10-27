@@ -50,6 +50,15 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   average | GATES: ~3.4 ADR under the 10-EMA ($106.1), low ADR | TRIGGER: a weak bounce toward
   $102–104 that fails, then a break of the bounce low on ≥1.5x volume | INVALIDATION: close above
   $106 (the 10-EMA) | watch name, trades only at A+ | added 2026-10-27**
+- **BA | PUT | EP-down / breakdown (Q3 EPS −$0.34 vs −$0.20 est, 10/27 am) | V2/S1/C2/RS2/R2 = 9 (A+ on
+  score, GATES FAIL) | ADR ~1.9% (under the 4% bar) | Prior decline from $240 (8/5) to $184. Then a
+  4-week $182.4–193 base, which broke today on the gap to a new 52-week low of $176.67, on 7.2M shares
+  by 9:37 CT (already above the 6.3M daily average) | GATES: ~3 ADR under the 10-EMA (~$188.6), and
+  ~1.4 ADR past the $182.4 breakdown level (DON'T CHASE) | TRIGGER: a weak bounce back toward
+  $182–184 (the old base low, now resistance) that fails, then a break of the bounce low on ≥1.5x
+  volume, with the 10-EMA within ~2 ADR | INVALIDATION: close back above $184 | CONTRACT: ~0.40Δ
+  put 3–4 weeks out (Nov 20). Check the cost: a ~$180 strike may be $5+ (>$500), which is over the
+  15% brake cap, so it may be unaffordable | added 2026-10-27 (autopilot cycle 1)**
 
 ### Session 2026-10-26 (Mon, 9:53 AM CT) — regime RISK-OFF (bouncing), DRAWDOWN BRAKE ON (A+ only, 15% size)
 
