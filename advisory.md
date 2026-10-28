@@ -103,3 +103,15 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   assignment at $17 is above the $16.16 cost | management: CLOSE (mild) | pending owner
 - 2026-10-26 | No new ideas: the NVDA spread's $1,230 max loss already uses ~5x the 6% total advisory cap ($234). Nothing new
   fits until it is closed. Brazil EP-down puts (NU/PBR) are on Robbin's pipeline; spreads don't fix their extension gate | pass
+- 2026-10-28 | OUTCOMES (from ••••1866 order history): SOFI Oct 30 $17C x2 BOUGHT BACK 10/26 @ $0.07 + $0.08 ($15) vs
+  $40 sold = +$25 (the logged idea, followed). After earnings, sold 2x Nov 20 $17C 10/27 @ $0.62 ($124 credit).
+- 2026-10-28 | SNAPSHOT (8:39 CT): account $4,521 (+$618 since 10/26), cash $1,794, BP $3,130. SOFI 200 sh @ $16.16, now
+  $17.07 = $3,413 (+$181). Short 2x Nov 20 $17C: mark $0.875 ($175 to close), -$51 vs the $124 credit; delta 0.54, now ITM.
+  If called at $17: +$168 on shares + $124 = +$292 max. NVDA 2x Nov 13 215/205 bull put (credit $770): 215P 4.25/4.40,
+  205P 1.80/1.84, so the spread mark is ~$2.50 ($501 to close) = +$269 (35% of max). NVDA $219.51, $4.51 above the short
+  strike; 16 DTE; max loss is still $1,230 = 27% of the account (4.5x the 6% cap).
+- 2026-10-28 | NVDA management: CLOSE both as one 2-lot spread at ~$2.50 net debit (work $2.45 to $2.60) = about +$270 locked.
+  That's a better exit than the 10/26 rec ($616 to close) after NVDA's bounce to $219.5. Minimum: close 1. Hard exit stays at
+  NVDA < $210 | management: CLOSE | pending owner
+- 2026-10-28 | SOFI covered call: HOLD. It's a covered short, and assignment at $17 is a +$292 outcome. Only act if the owner
+  wants to keep the shares above $17 (roll up/out) | management: HOLD | pending owner
