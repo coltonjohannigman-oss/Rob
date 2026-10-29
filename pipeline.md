@@ -30,6 +30,24 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-10-29 (Thu, 9:10 AM CT) — regime CHOP (QQQ under both EMAs, SPY on them), DRAWDOWN BRAKE ON (A+ only, 15% = $142)
+
+- **NU (day 4): not yet.** Yesterday it broke the bounce low to $11.96 on 1.1x volume. It is now $12.10, ~3.4 ADR
+  under the 10-EMA ($13.74), so the EXTENSION LIMIT still blocks it. Same trigger. Day 4 of 10.
+- **PBR (day 4): not yet.** $22.27, ~2.6 ADR under the 10-EMA ($23.98). It hasn't reached the $23–23.8 bounce zone. Day 4 of 10.
+- **CCI (day 5): flag intact, not triggered.** $88.26. Yesterday's low of $83.72 held above the $83.26 invalidation.
+  Trigger unchanged: a break of $91.45 on ≥2x volume (alert set). It is a call in CHOP (R1), so it can reach A at most and
+  can't trade under the brake. Day 5 of 10.
+- **XYL (day 3): not yet.** $89.0, ~4.4 ADR under the 10-EMA ($100.9). It kept falling (yesterday's close was $88.23). A new
+  alert at $96 marks a bounce toward the declining EMA. Day 3 of 10.
+- **BA (day 3): not yet.** $170.1, bouncing +1.8% from yesterday's $165.01 low and ~2.5 ADR under the 10-EMA ($182.1).
+  A new alert at $176 marks the bounce zone. A ~0.40Δ Nov put is still likely over the $142 brake cap. Day 3 of 10.
+- **TENB | call | EP (earnings reaction, verify catalyst) | V?/S1/C2/RS2/R1 = 7–8 (A at best, GATES FAIL) | ADR 5.6% |
+  +39% in 1 month, +50% in 3 months | +5% gap to $51.14, a new high over $50.21 | GATES: a day-1 gap (GAP-DAY RULE), and
+  ~2.4 ADR over the 10-EMA ($44.18; EXTENSION LIMIT) | TRIGGER: a day-2+ pullback that holds today's low or the 10-EMA,
+  then a reclaim of the prior day's high on ≥2x volume, or a 3–10 day flag break | INVALIDATION: close below $48.7
+  (yesterday's close) | CONTRACT: Nov 20/Nov 28, ~0.45Δ, check OI/spread at the trigger | added 2026-10-29**
+
 ### Session 2026-10-27 (Tue, 9:20 AM CT) — regime RISK-OFF, DRAWDOWN BRAKE ON (A+ only, 15% size)
 
 - **NU (day 2 of the bounce): not yet triggered.** Today's range is $12.50–13.00, and the price is $12.68.
@@ -101,6 +119,16 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   $83.26 | added 2026-10-23. Low ADR, so it's a watch name; it trades only if it gets to A+.**
 
 ## Recently removed
+
+- **Removed 10/29:** GMAB gapped another +28% on 10/28 to $57.29 (8x volume). It is ~4 ADR over the 10-EMA, and earnings on
+  11/5 fall inside any hold. The old flag thesis is gone, so it needs a fresh base after earnings.
+- **Passed 10/29 (losers scan):** NOW −24%, FTNT −21%, IOVA −32% are −20%+ flushes, which the put rules ban. GOOGL −12% is
+  ~7 ADR under its 10-EMA (EXTENSION LIMIT). SFM −19% is ~7 ADR under. MRVL −12.7% ($219) is within ~1.8 ADR of its 10-EMA,
+  but it is a leader in a +37% 3-month uptrend (RS 0 for puts) and its puts are ~$1,500, far over the cap. ALNY −15%
+  ($198) is ~4 ADR under and too expensive. Gainers (ADT +34%, GKOS +26%, CROX +23%, CVNA +17%…) are all day-1 gaps,
+  so they're watch-only. Leaders Pullback Watch (PTC, ANF, ELF, DOCU, WIX, GTLB, RBLX, BOX, ZETA): these are calls in
+  CHOP with no fresh catalyst, so they max out at A (8) and can't trade under the brake. RBLX reports tonight, and ELF/PTC
+  report 11/4. Smart Money Flow (AURA, FTNT, NOW, SFM, GOOGL, SRCE): nothing actionable.
 
 - **Passed 10/27:** INOD −23.6% (a −20%+ flush, which the put rules ban), CTAS −6.7% (an earnings
   reversal off a fresh 52-week high: no puts against a stock making new highs; ADR 1.7%), UNF −14% ($240,
