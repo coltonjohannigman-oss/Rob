@@ -30,6 +30,20 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
+
+- **NU (day 6): not yet, but it is the closest affordable put.** $11.90 (+2.5%, bouncing off the $11.48 low). It is ~2.6 ADR under
+  the 10-EMA (~$13.0), so the EXTENSION LIMIT still blocks it. Nov 20 $12P: mark $0.59, Δ −0.50, IV 52%, OI 23k, spread 7%, so
+  2 contracts = $118, which fits the cap. Nov 20 $11.5P: $0.35, Δ −0.35, OI 5.6k. TRIGGER: the bounce runs toward $12.5–13
+  (which brings the extension under 2 ADR), stalls on fading volume, then the bounce low breaks on ≥1.5x volume. Earnings
+  are 11/12 pm, so any hold must exit before then. Day 6 of 10.
+- **PBR (day 6): not yet.** $21.36 (−3.1%), a new low with no bounce, ~3 ADR under the 10-EMA ($23.3). Earnings are 11/10. Day 6 of 10.
+- **BA (day 4): it reached the bounce zone (the $176 alert fired), but there's no rejection yet.** $177.2 at the high of day, right at the declining
+  10-EMA (~$178.5), on light volume (~2.3M in 80 min). Robbin can't afford a single put (~$4+), so it moved to advisory.md
+  as a put debit spread candidate. Keep it here as a watch only. Day 4 of 10.
+- **CCI (day 7) / TENB (day 3): calls are now counter-regime (R0), so A+ is impossible.** CCI $87.1, flag intact
+  (invalidation $83.26). TENB $49.4, holding the $48.7 invalidation.
+
 ### Session 2026-10-29 (Thu, 9:10 AM CT) — regime CHOP (QQQ under both EMAs, SPY on them), DRAWDOWN BRAKE ON (A+ only, 15% = $142)
 
 - **NU (day 4): not yet.** Yesterday it broke the bounce low to $11.96 on 1.1x volume. It is now $12.10, ~3.4 ADR
@@ -119,6 +133,12 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   $83.26 | added 2026-10-23. Low ADR, so it's a watch name; it trades only if it gets to A+.**
 
 ## Recently removed
+
+- **Removed 11/2:** XYL's chain fails liquidity: the Nov 20 $95P has a $1.30/$2.95 spread (78% of mark), and the $92.5P has OI of 12.
+  A spread doesn't fix that, so it's dropped (it bounced to $96.8 and the alert fired). **Passed 11/2 (losers scan):** DRUG −61%,
+  OFRM −38%, PGEN −25% (flushes, small caps), MRVL −7.8% ($181, a second leg down after 10/29, but the puts are unaffordable),
+  LITE −13% ($730), KRYS −14% ($285), and the rest are small, illiquid caps. Leaders Pullback (PTC, ANF, COP, ELF, KOD,
+  DOCU, FRO, APA, BOX…): calls are counter-regime in RISK-OFF.
 
 - **Removed 10/29:** GMAB gapped another +28% on 10/28 to $57.29 (8x volume). It is ~4 ADR over the 10-EMA, and earnings on
   11/5 fall inside any hold. The old flag thesis is gone, so it needs a fresh base after earnings.

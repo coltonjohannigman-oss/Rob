@@ -14,6 +14,8 @@ Setups Robbin's own sessions scored well but could not trade for a spread-fixabl
 
 Format: **date | ticker | direction | score (V/S/C/RS/R = total) | why Robbin couldn't trade it | suggested structure**
 
+- 2026-11-02 | BA | put | V1/S1/C2/RS2/R2 = 8 (not yet triggered) | bounced to $177 (10/29 low $165) into its declining 10-EMA (~$178.5), just under the $182.4 old-base resistance, on light volume. A ~0.40Δ Nov 20 put costs ~$4+ (>$400), well over Robbin's $142 brake cap | Nov 20 put debit spread (e.g. $175/$165) on a rejection at $178–182, then a 5-min ORL break on ≥1.5x volume. Invalidation: close above $184. Election 11/3 is a binary event.
+
 All from the 2026-09-27 prep. Scores assume the trigger fires with ≥2x volume; none is live yet.
 Robbin can't trade any of them because a single 2–4 week call costs more than 30% of his account.
 
