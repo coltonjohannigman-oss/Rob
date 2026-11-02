@@ -117,3 +117,20 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   NVDA < $210 | management: CLOSE | pending owner
 - 2026-10-28 | SOFI covered call: HOLD. It's a covered short, and assignment at $17 is a +$292 outcome. Only act if the owner
   wants to keep the shares above $17 (roll up/out) | management: HOLD | pending owner
+- 2026-11-02 | OUTCOMES (from ••••1866 order history): the 10/28 NVDA close order (2-lot 215/205 at $2.40 debit) was placed but
+  went UNFILLED and was cancelled at the 10/28 close. The spread is still open. SOFI 2x Nov 20 $17C are still short (sold 10/27 @ $0.62).
+- 2026-11-02 | SNAPSHOT (11:00 CT): account $3,984, cash $1,799, BP $3,140. SOFI 200 sh @ $16.16, now $17.37 = $3,474 (+$242),
+  87% of the account. Regime RISK-OFF (QQQ $694 / SPY $760 under declining 10/20-EMAs). Election 11/3 is a binary event.
+- 2026-11-02 | NVDA management: the HARD EXIT has TRIGGERED. NVDA closed $204.64 on 10/30 (low $200.92), below the $210 line, and is $207.04 now.
+  2x Nov 13 215/205 bull put: 215P 10.30/10.45 (mark 10.375), 205P 4.85/5.00 (mark 4.925), so the spread mark is $5.45 = $1,090 to
+  close vs the $770 credit = -$320 (-8% of the account). Holding risks another ~$910 (max loss $1,230). 11 DTE, short leg $8 ITM
+  (early-assignment risk is low while it carries ~$2.40 of extrinsic, but it rises into expiry). The election is tomorrow | CLOSE both now as one
+  2-lot spread order at ~$5.45 net debit (work $5.40 to $5.55); never leg out | management: CLOSE | pending owner
+- 2026-11-02 | SOFI covered call: HOLD. The short 2x Nov 20 $17C has a mark of $0.99 ($198 to close, -$74 vs the $124 credit), delta 0.60, ITM,
+  18 DTE. It's a covered short with no dividend, and assignment at $17 = +$168 on shares + $124 = +$292. Act only to keep the shares (a roll up/out
+  for a credit) | management: HOLD | pending owner
+- 2026-11-02 | BA Nov 20 175/165 put debit spread (from Robbin's candidates), CONDITIONAL: only on a rejection at $178–182, then a 5-min
+  ORL break on ≥1.5x volume. Quoted 11:00 CT with BA at $177.2: 175P 3.75/4.00 (OI 7,401), 165P 1.11/1.23 (OI 5,114), so $2.70 net
+  = $270 max loss, $730 max gain, BE $172.30, debit 27% of width. Invalidation: close above $184 | B (V1/S1/C2/RS2/R2 = 8 on the
+  trigger; IV 32% does not meet the "IV > 80%" debit-spread A+ bar; $270 > the $239 6% cap, and the NVDA spread already uses the whole
+  advisory risk budget) | watch only
