@@ -30,6 +30,21 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-11-06 (Fri, 8:57 AM CT) — regime RISK-OFF (SPY $740.9 < 10-EMA $757.5 < 20-EMA $762.2; QQQ $662.4 < $691.9 < $705.9, all declining; today is a +1–2% bounce led by semis), DRAWDOWN BRAKE ON (A+ only, 15% of broker BP $904.56 = $135). Ledger shows $948.56 against $904.56 at the broker, a $44 gap with no orders since 10/8. Not reconciled yet; owner asked.
+
+- **NU (day 10, FINAL): not triggered.** $12.21 (+4%), a steady 5-min climb from the $11.84 open low to $12.28, right
+  into the declining 10-EMA ($12.36). The extension is now fine (−0.3 ADR, ADR 4.0%), so the setup is finally in the bounce zone.
+  There's no rejection yet, though, and volume is ~4M per 5 min against an 84M daily average. Nov 20 $12P: $0.42/0.46, Δ −0.42, IV 56%,
+  OI 24k (2 contracts = $88, fits the cap). Nov 20 $12.5P: $0.69/0.75, Δ −0.56. TRIGGER (today only): a stall at $12.3–12.6
+  on fading volume, then a break of the bounce low on ≥1.5x pace. Earnings 11/12 pm, so the hold has to be ≤4 sessions. If it
+  doesn't trigger today, it drops at today's close (10 sessions).
+- **BA (day 9): watch / advisory only.** $172.6. It got rejected at the 10-EMA area ($176–179 highs 11/3–11/5) and is sliding. The
+  puts are unaffordable for Robbin, so it stays a spread candidate in advisory.md.
+- **MCHP | PUT | EP-down (−8% day-1 gap to a new 90-day low, $59.6, against a +10% semis tape: relative weakness; catalyst to verify)
+  | V?/S1/C2?/RS2/R2 | ADR 5.0% | GATES FAIL: ~4 ADR under the 10-EMA ($74.8, EXTENSION LIMIT), day-1 gap (GAP-DAY RULE),
+  and a ~0.40Δ put probably costs over the $135 cap | TRIGGER: a weak bounce toward $66–70 that fails, then a break of the bounce low on ≥1.5x
+  volume | INVALIDATION: close above $70 | added 2026-11-06**
+
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
 
 - **NU (day 6): not yet, but it is the closest affordable put.** $11.90 (+2.5%, bouncing off the $11.48 low). It is ~2.6 ADR under
@@ -133,6 +148,13 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
   $83.26 | added 2026-10-23. Low ADR, so it's a watch name; it trades only if it gets to A+.**
 
 ## Recently removed
+
+- **Removed 11/6:** PBR (10 sessions, aged out; $18.92, never bounced, still ~3.6 ADR under the 10-EMA), CCI (11 sessions, aged
+  out; calls counter-regime), TENB (INVALIDATED: $44.16, under the $48.7 close invalidation). **Passed 11/6:** losers DKNG −27%,
+  IRTC −28%, PRAA −31%, FIVN −21% (−20%+ flushes, which the put rules ban), AXON −17% ($318, unaffordable), TEAM −12% ($161, ~4 ADR under
+  the 10-EMA, unaffordable), NTRA −11% ($325). Gainers: a semis/AI rip (AMD +12%, COHR +12%, LRCX +10%, MU +8%, NET +11%, FROG
+  +30%, IREN +18%). These are all day-1 gaps and counter-regime calls. Leaders Pullback (PTC (merger-arb pin), ANF, HAS, KOD, KSS):
+  calls in RISK-OFF, capped at A, so none can trade under the brake. Smart Money Flow (TPC, FBP, HDB): nothing actionable.
 
 - **Removed 11/2:** XYL's chain fails liquidity: the Nov 20 $95P has a $1.30/$2.95 spread (78% of mark), and the $92.5P has OI of 12.
   A spread doesn't fix that, so it's dropped (it bounced to $96.8 and the alert fired). **Passed 11/2 (losers scan):** DRUG −61%,
