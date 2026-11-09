@@ -134,3 +134,12 @@ Format: **date | structure (strikes / expiries / qty) | debit or credit | max lo
   = $270 max loss, $730 max gain, BE $172.30, debit 27% of width. Invalidation: close above $184 | B (V1/S1/C2/RS2/R2 = 8 on the
   trigger; IV 32% does not meet the "IV > 80%" debit-spread A+ bar; $270 > the $239 6% cap, and the NVDA spread already uses the whole
   advisory risk budget) | watch only
+- 2026-11-09 | OUTCOMES (from ••••1866 order history, owner's own trades): 11/5 bought 3x NVDA Nov 13 $205C @ $1.65 and sold @ $0.94 = −$213. 11/5 ADDED a 3rd NVDA
+  Nov 13 215/205 bull put @ $9.45 credit (total credit $1,715). 11/6 closed all 3 @ $9.13 debit ($2,739) = −$1,024. That's ~$700 worse than the 11/2 rec
+  (close 2 @ $5.45 = −$320), though the 11/6 close did avoid max loss: NVDA is $177 today. 11/5 bought NVDA $2,000 @ $182.01 and sold 11/6 @ ~$190.95 = +$97.
+  11/6 bought a GDX Nov 9 $83P @ $1.00, sold @ $0.40 = −$60. Net about −$1,200 over 11/5–11/6. Also, on 11/6 the owner placed and cancelled a BA Nov 20 $175C ($3.60) in the agentic account.
+- 2026-11-09 | SNAPSHOT (10:07 CST): account $3,630 (−$354 vs 11/2), cash $369, BP $4,185. SOFI 200 sh @ $16.16, now $16.875 = $3,375 (+$143), 93% of the account.
+  Short 2x Nov 20 $17C (credit $124), mark ~$0.57 ($114 to close) = +$10, 11 DTE, near the money. No other options open. Regime RISK-OFF.
+- 2026-11-09 | SOFI covered call: HOLD. Assignment at $17 = +$168 on shares + $124 = +$292. Buy back near $0.06 (50%+ captured) only if SOFI fades. If it's still
+  near or above $17 on 11/18, decide to roll (up/out for a credit) or accept assignment | management: HOLD | pending owner
+- 2026-11-09 | No new ideas: NVDA/ARWR put spreads would fix cost, but not the EXTENSION LIMIT (both ~4 ADR under the 10-EMA). Watch for the bounce-fail trigger | pass

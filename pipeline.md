@@ -30,6 +30,19 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 
 ## Active
 
+### Session 2026-11-09 (Mon, 10:07 AM CST) — regime RISK-OFF (SPY $750.6 < 10-EMA 753.5 < 20-EMA 760.0; QQQ $676.8 < 685.5 < 702.0, all declining) on a +2–3% relief bounce after the 11/5 crash (QQQ −6.5%). DRAWDOWN BRAKE ON (A+ only, 15% = $136 of $904.56).
+
+- **Ledger gap: −$44.00.** Ledger $948.56 vs broker cash/BP $904.56, no Robbin fills since 10/7, no equity orders. The owner placed (and cancelled) a BA Nov 20 $175C limit in-app on 11/6. The $44 is likely a transfer or fee. NOT booked; needs owner confirmation. Sized from the broker figure.
+- **TENB: INVALIDATED, dropped.** $43.87, below the $48.7 invalidation.
+- **CCI: dropped.** It broke $91.45 on 11/4 (high $92.34, 7.7M ≈ 1.8x, unwatched), failed back to $88.74, and calls are counter-regime anyway.
+- **NU (day 7): not yet.** $12.29, now ABOVE its ~11.95 10-EMA on a bounce (extension gate now clear). Trigger: the bounce stalls under $12.8–13.0, then a break of the bounce low on ≥1.5x volume. Invalidation: close above $13.50.
+- **PBR (day 7): not yet.** $18.45, a new low; it never bounced, so it's ~2.5+ ADR under the 10-EMA (~$20). Same bounce-fail trigger, with the zone reset to ~$19.6–20.3.
+- **BA (day 8): not yet.** $174.9, chopping $169–179 around a flat 10-EMA (~$174). Puts are still unaffordable at the brake cap.
+- **NVDA | PUT | breakdown / relative-weakness EP-down | V1/S1/C1/RS2/R2 = 7 (A on score, GATES FAIL) | ADR 3.0% | from $243 (10/6) to a $181.46 low on 11/5 (306M shares); today it's −5% to $177.3 on a +3% QQQ day, a new 90-day low, at 1.23x RVOL | GATES: −4.0 ADR under the 10-EMA ($201; EXTENSION LIMIT); a ~0.40Δ put is $6+, far over the $136 cap | TRIGGER: a weak bounce toward $186–195 (the 11/6 high is $194.90, the 10-EMA is declining), then a break of the bounce low on ≥1.5x volume | INVALIDATION: close above the 10-EMA | ALERT: $192 | added 2026-11-09**
+- **ARWR | PUT | EP-down (day 1, catalyst unverified) | V2/S1/C?/RS2/R2 = 7–8 | ADR 4.0% | from $91 to $58 over 90 days; −15% today to $49.45 at 2.3x RVOL | GATES: GAP-DAY RULE (day 1, IV surely >70%) and −4.1 ADR under the 10-EMA ($59.2) | TRIGGER: a weak bounce toward $55–57 that fails, then a break of the bounce low on ≥1.5x volume | INVALIDATION: close above $59 | ALERT: $55 | added 2026-11-09**
+- Scanned, not pipelined: IONS −28% (a >−20% flush, so puts are banned); MNDY −6.8% (options IV 96%, puts unaffordable); gainers SGRY/VIR/TTD (calls are counter-regime, so they can't reach A+ under the brake); Leaders Pullback (ACN, BIIB, PTC, ANF) are calls, so the same counter-regime block applies.
+- **No trade. No positions, no working orders.**
+
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
 
 - **NU (day 6): not yet, but it is the closest affordable put.** $11.90 (+2.5%, bouncing off the $11.48 low). It is ~2.6 ADR under
