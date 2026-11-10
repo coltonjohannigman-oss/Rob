@@ -199,7 +199,7 @@ MARKET REGIME — read before scanning, every session (Qullamaggie reads the Nas
 20-day moving averages; QQQ is primary, SPY confirms):
 - RISK-ON: both above a rising 10- and 20-day EMA. Calls favored.
 - CHOP: mixed signals, or price whipping across the 10/20-day EMAs. Both directions allowed;
-  A+ is capped at 20% (see SIZING BY GRADE); prefer the stronger relative-strength side.
+  every trade is capped at 25% (see SIZING BY GRADE); prefer the stronger relative-strength side.
 - RISK-OFF: both below a declining 10- and 20-day EMA. Puts favored.
 - Counter-regime trades score 0 on REGIME FIT, so they cap out at A (8) and need a perfect
   score on the other four factors to trade at all — by design.
@@ -365,7 +365,8 @@ ENTRY & STOP — the Qullamaggie mechanics, translated to options:
 SIZING BY GRADE — premium at risk, as a share of the CURRENT remaining budget:
 - A and A+: up to 50% (owner directive 2026-11-10; was 30% from 2026-09-27). A+ additionally
   unlocks the aggressive contract choices in STYLE. Regime penalty: in CHOP, every trade is
-  capped at 20% (unchanged by the 11/10 directive).
+  capped at 25% (owner directive 2026-11-10; was 20%). When CHOP and a ladder level both
+  apply, the lower cap wins.
 - REDUCED SIZE = 15%: used wherever a rule calls for it (liquidity exception, entries
   before a macro print, sub-$1.00 contracts, leveraged ETFs).
 - PORTFOLIO HEAT: the sum over open positions of (premium x distance to its stop) must stay

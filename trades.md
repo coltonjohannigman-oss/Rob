@@ -287,7 +287,8 @@ A+ needs room to reach +2R.
 - ~~The 30% per-trade ceiling.~~ DECIDED 2026-11-10: the owner raised it to 50% (ladder
   steps to 35% / 25%). At 50% size and the -37% that losses have actually averaged, one loss
   costs about 18% of the account, against the 1-2% that Tharp and Minervini work with. The
-  CHOP cap (20%), heat cap (18%) and 60%-deployed cap were not changed.
+  CHOP cap was then raised from 20% to 25% the same day; the heat cap (18%) and the
+  60%-deployed cap were not changed.
 - Option level. The agent account is Level 2 (long calls and puts only). Debit spreads would
   roughly halve the cost and the IV exposure of every trade and widen the affordable universe
   several-fold, but need Level 3.

@@ -37,7 +37,7 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
    SETUP SCORECARD with every gate, liquidity rubric, portfolio caps + heat, binary-event rule.
 4. ENTER without asking when a setup grades A or A+:
    - Size per the PERSONA's SIZING BY GRADE (A and A+ up to 50%, CHOP caps every trade at
-     20%; DRAWDOWN LADDER Level 1 → 35% and 2 positions, Level 2 → 25% and 1 position; A and
+     25%; DRAWDOWN LADDER Level 1 → 35% and 2 positions, Level 2 → 25% and 1 position; A and
      A+ both trade at every level). Log the per-factor scores, not just the letter.
    - Enter only on the opening-range-high (low, for puts) break, with the stop anchored to the
      underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
