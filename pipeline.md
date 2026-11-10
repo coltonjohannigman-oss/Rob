@@ -63,6 +63,30 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 
 ## Active
 
+### Session 2026-11-10 (Tue, 8:11 AM CT, PRE-MARKET prep; grading resumes ~8:50 CT) — regime RISK-OFF by the EMAs (rally attempt day 3), ladder LEVEL 1 → cap 35% = $317, ceiling ~$63 stocks / ~$127 ETFs
+
+- October CPI came out at 7:30 CT today. Pre-market: QQQ $672 (−1.0%), SPY $749 (−0.5%), TLT −0.9%, SLV −2.9%, GDX −4.1%,
+  USO −2.9%; XLF/XLV/XLP green. VIX 21.0. Breadth: IWM and RSP are ABOVE their 10/20-EMAs — the weakness is Nasdaq/megacap.
+  PPI is Fri 11/13, so Thu 11/12 is a final-session-before-a-print day. PBR reports tonight; NU reports 11/12 pm.
+- **SLV | PUT | trend pullback (mirror) | V?/S2/C1/RS2/R2 = 7 + volume | ADR 2.0% | 3-mo −18%, ADX 31.6, below declining
+  20/50-EMA | 6-session bounce $44.11 → $48.31 into the declining 20-EMA ($49.0) on fading volume (12–14M vs 19.5M avg),
+  gapping back under the 10-EMA ($47.47) to $46.74 | TRIGGER: 5-min ORL break after ~8:45 CT with volume above yesterday's
+  pace and ≥1.2x average; DON'T CHASE below ~$46.40 (1 ADR under yesterday's $47.36 low) | STOP: high of day |
+  INVALIDATION: close above $48.31 | TARGET: $44.11 retest | CONTRACT: Dec 18 $47P (OI 5,572, IV 40%, ~$2.45) or
+  Nov 27 $48P (OI 645, ~$2.35); Dec 4 / Dec 11 strikes fail OI > 500 | added 2026-11-10**
+- **EWZ | PUT | post-gap flag (Brazil runoff 10/26) | not triggered | $32.43, 9 sessions inside the gap-day range,
+  ADX 40, 1.0 ADR under the 10-EMA | TRIGGER: break of the $31.40 flag low on ≥1.5x volume | INVALIDATION: close above
+  $33.60 | PBR earnings tonight | added 2026-11-10**
+- **XLE | PUT | breakdown | not legal yet | $61.19; broke $66–70 on 2x volume 11/4–11/5, only 2 flag sessions since,
+  ~2.5 ADR under the 10-EMA (EXTENSION LIMIT) | TRIGGER: a 3rd+ flag session, then a break of $60.85 | added 2026-11-10**
+- **ONON | PUT | EP-down day 1 (Q3 beat, stock −8% to $34.4) | watch | was at highs 11/5, no prior decline (S1, RS0–1) |
+  check IV and the reason at the open | added 2026-11-10**
+- **KSS | call | trend pullback | B | $24.60, ADX 47, +29% in 3 mo; 2-session pullback to the 20-EMA already bounced
+  11/9 | counter-regime, earnings likely within 2–3 weeks (verify) | TRIGGER: > $25.60 on volume, regime ≥ CHOP**
+- Over the ceiling → advisory: RKLB ($53.8, −8.6% on a Q3 miss, failing at the declining 50-EMA), ASTS ($34.7), IONQ ($33.7).
+- NU (day 10 of 10, earnings 11/12): flag broke 10/30 and went nowhere; $12.23, sitting on its 10-EMA. Aging out today.
+  PBR: reports tonight → no entry; re-read after the print. CCI / TENB: dropped (see Pass audit).
+
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
 
 - **NU (day 6): not yet, but it is the closest affordable put.** $11.90 (+2.5%, bouncing off the $11.48 low). It is ~2.6 ADR under
