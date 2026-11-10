@@ -74,6 +74,14 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
   pace and ≥1.2x average; DON'T CHASE below ~$46.40 (1 ADR under yesterday's $47.36 low) | STOP: high of day |
   INVALIDATION: close above $48.31 | TARGET: $44.11 retest | CONTRACT: Dec 18 $47P (OI 5,572, IV 40%, ~$2.45) or
   Nov 27 $48P (OI 645, ~$2.35); Dec 4 / Dec 11 strikes fail OI > 500 | added 2026-11-10**
+- **NFLX | PUT | EP-down, failed bounce (owner asked 8:20 CT) | V?/S1/C1/RS2/R2 = 6 + volume (A needs V≥1) | ADR ~2.7% |
+  $83.60 (9/3) → $61.39 (10/29), −27%; gapped down on Q3 10/21 (101M sh), based $61.4–63.9, bounced to $67.49 on 11/4–11/5
+  — the gap-day high / declining 20-EMA — and was rejected. $63.95 pre-market, flat while QQQ is −1%; under the 10-EMA
+  $64.33, 20-EMA $65.64, 50-EMA $69.25 | TRIGGER: break of $62.95 (11/9 low) on ≥1.5x volume; the real level is the
+  $61.39 base low | INVALIDATION: close above $65.64 | CONTRACT: Dec 18 $64P (OI 5,338, IV 34%, Δ−0.47, $2.68 at the
+  11/9 close); Dec 4 / Dec 11 weeklies fail OI. Next earnings mid-January | added 2026-11-10**
+- NVDA (owner asked): $174.87 pre-market, −28% from the 10/6 high, 3+ ADR under the 10-EMA ($197), earnings 11/17 pm,
+  and far over the price ceiling. No trade either way before the report.
 - **EWZ | PUT | post-gap flag (Brazil runoff 10/26) | not triggered | $32.43, 9 sessions inside the gap-day range,
   ADX 40, 1.0 ADR under the 10-EMA | TRIGGER: break of the $31.40 flag low on ≥1.5x volume | INVALIDATION: close above
   $33.60 | PBR earnings tonight | added 2026-11-10**
