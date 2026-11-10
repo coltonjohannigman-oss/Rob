@@ -28,6 +28,38 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 - **Budget constraint:** only SMCI (and GME) among the leaders has options Robbin can afford
   under the 30% cap; everything else is a personal-account spread candidate (advisory.md).
 
+## Persona review — 2026-11-10 (no market session run; nothing below was re-scored live)
+
+- The drawdown brake that every entry below cites ("A+ only, 15% = $142") was switched on by a
+  stats bug and no longer exists. `python cli.py stats` now prints **DRAWDOWN LADDER: level 1**
+  (2 straight losses: XPEV, PENG) → every trade capped at 20%, at most 2 open positions, **A and
+  A+ both trade**. On the $904.56 broker cash that is ~$180 per trade → price ceiling roughly
+  $36 for stocks, $72 for ETFs.
+- Regime at the 11/9 close: still RISK-OFF by the EMAs (QQQ $679.35 under a declining 10-EMA
+  $684.3 and 20-EMA $699.1; SPY $752.69 under $753.3 / $759.0). Rally attempt: low $647.05 on
+  11/5, so 11/6 = day 1, 11/9 = day 2 (+3.5%, but on lower volume than 11/6). A follow-through
+  day is possible from day 4 (11/11) — see PERSONA: MARKET REGIME → TURNS.
+- Next session: re-score NU and PBR under the post-gap-flag amendment (PBR's flag already broke
+  on 11/2 and the move is 5 sessions old, so check DON'T CHASE and the PBR/NU earnings dates
+  before anything), rebuild the focus list under the price ceiling with the ETF sleeve, and
+  drop CCI / TENB unless they re-base.
+
+## Pass audit
+
+One line per candidate that scored 7+ but was blocked by a gate, and per pipeline entry that aged
+out. Outcome is filled in 10 sessions later. Tally by gate every 20 lines (PERSONA: PASS AUDIT).
+
+Format: **date | ticker | dir | score | blocking gate | price that day | outcome (date, price, verdict)**
+
+- 10/26 | PBR | put | 8 | extension limit; low ADR read as "A+ only"; brake | $22.50 | 11/9 $18.35 (-18%), never bounced to the EMA — MISSED
+- 10/26 | NU | put | 8 | -20% flush / IV day 1, then extension limit; brake | $12.59 | 11/9 $12.36, low $11.21 on 11/5 — NEUTRAL
+- 10/27 | XYL | put | 8 | extension limit; low ADR; chain liquidity | $92.86 | 11/9 $99.26 (+7%; +13% from the 10/28 close) — GATE RIGHT
+- 10/27 | BA | put | 9 | extension limit; DON'T CHASE; price | $168.18 | 11/9 $172.38, range $165-179 — GATE RIGHT
+- 10/23 | CCI | call | 5-6 | counter-regime; brake | $85.97 | broke the $91.45 trigger 11/4, 11/9 $87.83 — GATE RIGHT
+- 10/29 | TENB | call | 7-8 | gap-day rule; extension limit; regime | $51.78 | 11/9 $43.67 (-16%) — GATE RIGHT
+- 10/23 | GMAB | call | 6 | counter-regime; brake; gap-day rule | $43.79 | 10/28 $57.29 (+31%), 11/9 $55.80 — MISSED (B grade; a 2-session flag in RISK-OFF)
+- Tally so far (7): extension limit blocked 5 → 1 missed, 1 neutral, 3 right. Counter-regime blocked 3 → 1 missed, 2 right.
+
 ## Active
 
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.

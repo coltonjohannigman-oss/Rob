@@ -11,6 +11,7 @@ from agent import (
     get_transactions,
     list_agents,
     record_buy,
+    drawdown_level,
     record_sell,
     trade_stats,
 )
@@ -112,9 +113,17 @@ def cmd_stats(args):
         return
     print(f"Closed trades ({scope}): {s['trades']}  |  {s['wins']}W / {s['losses']}L  |  win rate {s['win_rate']:.0%}")
     print(f"  Avg win: {s['avg_win_pct']:+.1%}  |  Avg loss: {s['avg_loss_pct']:+.1%}  |  Expectancy: {s['expectancy_pct']:+.1%} per trade")
+    pf = f"{s['profit_factor']:.2f}" if s["profit_factor"] is not None else "n/a"
+    print(f"  Avg win: ${s['avg_win_usd']:+.2f}  |  Avg loss: ${s['avg_loss_usd']:+.2f}  |  Profit factor: {pf}")
     print(f"  Total realized: ${s['total_pnl']:+.2f}  |  Current losing streak: {s['losing_streak']}")
+    if s["top_win_share"] is not None and s["top_win_share"] > 0.5:
+        print(f"  WARNING: the best single trade is {s['top_win_share']:.0%} of the net result — outlier-dependent")
     for grade, g in s["by_grade"].items():
         print(f"  Grade {grade:<9} {g['trades']} trades, expectancy {g['expectancy_pct']:+.1%}")
+    if not args.last:
+        d = drawdown_level(args.id)
+        why = f" ({'; '.join(d['reasons'])})" if d["reasons"] else ""
+        print(f"  DRAWDOWN LADDER: level {d['level']}{why}")
 
 
 def cmd_trade(args):

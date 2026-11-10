@@ -171,3 +171,75 @@ def test_trade_stats_last_n():
     assert s["trades"] == 2
     assert s["win_rate"] == 1.0
     assert s["losing_streak"] == 0
+
+
+def _close(agent_id, proceeds, basis=100.0):
+    ag.record_buy(agent_id, basis)
+    ag.record_sell(agent_id, proceeds, basis)
+
+
+def test_trade_stats_dollar_metrics_and_outlier_share():
+    a = ag.create_agent("Quinn")
+    ag.add_funds(a["id"], 1000.0)
+    for proceeds in (400.0, 110.0, 60.0):
+        _close(a["id"], proceeds)
+    s = ag.trade_stats(a["id"])
+    assert s["avg_win_usd"] == pytest.approx(155.0)
+    assert s["avg_loss_usd"] == pytest.approx(-40.0)
+    assert s["profit_factor"] == pytest.approx(310.0 / 40.0)
+    assert s["top_win_share"] == pytest.approx(300.0 / 270.0)
+
+
+def test_trade_stats_profit_factor_undefined_without_losses():
+    a = ag.create_agent("Rita")
+    ag.add_funds(a["id"], 1000.0)
+    _close(a["id"], 150.0)
+    assert ag.trade_stats(a["id"])["profit_factor"] is None
+
+
+def test_drawdown_level_one_loss_in_a_thin_record_is_not_a_brake():
+    # The 2026-10 lockout: a single graded loss read as "negative expectancy".
+    a = ag.create_agent("Sam")
+    ag.add_funds(a["id"], 1000.0)
+    _close(a["id"], 65.0)
+    assert ag.drawdown_level(a["id"])["level"] == 0
+
+
+def test_drawdown_level_two_then_three_losses():
+    a = ag.create_agent("Tess")
+    ag.add_funds(a["id"], 1000.0)
+    _close(a["id"], 150.0)
+    _close(a["id"], 70.0)
+    _close(a["id"], 70.0)
+    assert ag.drawdown_level(a["id"])["level"] == 1
+    _close(a["id"], 70.0)
+    assert ag.drawdown_level(a["id"])["level"] == 2
+
+
+def test_drawdown_level_two_cools_off_without_a_trade():
+    from datetime import datetime, timedelta, timezone
+
+    a = ag.create_agent("Uma")
+    ag.add_funds(a["id"], 1000.0)
+    for _ in range(3):
+        _close(a["id"], 70.0)
+    later = datetime.now(timezone.utc) + timedelta(days=ag.LEVEL_2_COOL_OFF_DAYS + 1)
+    assert ag.drawdown_level(a["id"], now=later)["level"] == 1
+
+
+def test_drawdown_level_negative_expectancy_needs_a_sample():
+    a = ag.create_agent("Vic")
+    ag.add_funds(a["id"], 2000.0)
+    for proceeds in (60.0, 105.0, 60.0, 105.0, 60.0, 105.0):
+        _close(a["id"], proceeds)
+    d = ag.drawdown_level(a["id"])
+    assert d["level"] == 1 and d["losing_streak"] == 0
+
+
+def test_drawdown_level_winner_resets():
+    a = ag.create_agent("Wes")
+    ag.add_funds(a["id"], 1000.0)
+    _close(a["id"], 70.0)
+    _close(a["id"], 70.0)
+    _close(a["id"], 180.0)
+    assert ag.drawdown_level(a["id"])["level"] == 0

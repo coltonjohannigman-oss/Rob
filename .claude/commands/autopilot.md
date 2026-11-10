@@ -12,8 +12,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 
 **Session start:**
 1. Fresh quote for wall-clock time (report Central Time). Compute the window end time.
-2. Ledger + broker reconcile, quality stats + drawdown brake, market regime, position and
-   stop audit — same as /trade steps 1-3.
+2. Ledger + broker reconcile, quality stats + drawdown ladder level, market regime, today's
+   per-trade cap and price ceiling, position and stop audit — same as /trade steps 1-3.
 3. Send a push notification: autopilot engaged, window end time, current positions.
 
 **The cycle — repeat every ~10 minutes (ScheduleWakeup, ~600s), until the window ends:**
@@ -37,7 +37,8 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
    SETUP SCORECARD with every gate, liquidity rubric, portfolio caps + heat, binary-event rule.
 4. ENTER without asking when a setup grades A or A+:
    - Size per the PERSONA's SIZING BY GRADE (A and A+ up to 30%, CHOP caps every trade at
-     20%; drawdown brake → A+ only at 15%). Log the per-factor scores, not just the letter.
+     20%; DRAWDOWN LADDER Level 1 → 20% and 2 positions, Level 2 → 15% and 1 position; A and
+     A+ both trade at every level). Log the per-factor scores, not just the letter.
    - Enter only on the opening-range-high (low, for puts) break, with the stop anchored to the
      underlying's low (high) of day; skip it if price is already >1 ADR past the trigger.
    - Prefer 2+ contracts when the cap allows, and execute the scale-out plan at first target.
@@ -54,7 +55,7 @@ liquidity rubric, portfolio caps, binary-event restrictions, and bookkeeping.
 
 **Hard limits (cannot be overridden inside a window):**
 - All PERSONA risk caps: max 4 concurrent positions, 60% deployed, 18% portfolio heat,
-  never average down, and the drawdown brake.
+  never average down, and the drawdown ladder.
 - No new entries within the binary-event restriction (final session before a macro print,
   or 30 min before any scheduled market-moving release).
 - Never spend beyond the ledger's remaining balance.

@@ -155,6 +155,10 @@ def trade_stats(agent_id: str, last: int = 0) -> dict:
     for t, r in zip(trades, returns):
         by_grade.setdefault(t.get("grade", "ungraded"), []).append(r)
     n = len(trades)
+    win_usd = [t["pnl"] for t in trades if t["pnl"] > 0]
+    loss_usd = [t["pnl"] for t in trades if t["pnl"] <= 0]
+    total_pnl = sum(t["pnl"] for t in trades)
+    gross_loss = -sum(loss_usd)
     return {
         "trades": n,
         "wins": len(wins),
@@ -163,13 +167,61 @@ def trade_stats(agent_id: str, last: int = 0) -> dict:
         "avg_win_pct": sum(wins) / len(wins) if wins else 0.0,
         "avg_loss_pct": sum(losses) / len(losses) if losses else 0.0,
         "expectancy_pct": sum(returns) / n if n else 0.0,
-        "total_pnl": sum(t["pnl"] for t in trades),
+        "avg_win_usd": sum(win_usd) / len(win_usd) if win_usd else 0.0,
+        "avg_loss_usd": sum(loss_usd) / len(loss_usd) if loss_usd else 0.0,
+        # Gross wins / gross losses; None when there are no losses to divide by.
+        "profit_factor": sum(win_usd) / gross_loss if gross_loss > 0 else None,
+        # Share of the net result owed to the single best trade. Above ~0.5 the
+        # record is one outlier plus noise, not a repeatable edge.
+        "top_win_share": max(win_usd) / total_pnl if win_usd and total_pnl > 0 else None,
+        "total_pnl": total_pnl,
         "losing_streak": streak,
         "by_grade": {
             g: {"trades": len(rs), "expectancy_pct": sum(rs) / len(rs)}
             for g, rs in sorted(by_grade.items())
         },
     }
+
+
+# Drawdown ladder (PERSONA: QUALITY FEEDBACK LOOP). Size steps down after losses;
+# it never blocks trading outright, and every level has an exit that does not
+# depend on a trade being placed first.
+MIN_TRADES_FOR_EXPECTANCY = 5
+LEVEL_2_COOL_OFF_DAYS = 7
+
+
+def drawdown_level(agent_id: str, now: datetime | None = None) -> dict:
+    """Current step on the drawdown ladder: 0 (normal), 1 or 2.
+
+    Level 2: 3+ straight losses. Steps down to 1 after LEVEL_2_COOL_OFF_DAYS
+    with no new closed loss, so it cannot become a permanent lockout.
+    Level 1: 2 straight losses, or negative expectancy over the last 10 closed
+    trades once at least MIN_TRADES_FOR_EXPECTANCY of them exist.
+    """
+    trades = closed_trades(agent_id)
+    streak = trade_stats(agent_id)["losing_streak"]
+    last10 = trade_stats(agent_id, last=10)
+    reasons = []
+    level = 0
+    if streak >= 3:
+        level = 2
+        reasons.append(f"{streak} straight losses")
+        last_close = datetime.fromisoformat(trades[-1]["timestamp"].replace("Z", "+00:00"))
+        idle_days = ((now or datetime.now(timezone.utc)) - last_close).days
+        if idle_days >= LEVEL_2_COOL_OFF_DAYS:
+            level = 1
+            reasons.append(f"cooled off {idle_days} days with no new loss")
+    elif streak == 2:
+        level = 1
+        reasons.append("2 straight losses")
+    if (
+        level == 0
+        and last10["trades"] >= MIN_TRADES_FOR_EXPECTANCY
+        and last10["expectancy_pct"] < 0
+    ):
+        level = 1
+        reasons.append(f"last-{last10['trades']} expectancy {last10['expectancy_pct']:+.1%}")
+    return {"level": level, "reasons": reasons, "losing_streak": streak}
 
 
 def get_agent(agent_id: str) -> dict:
