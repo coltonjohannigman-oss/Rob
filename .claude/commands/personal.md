@@ -15,7 +15,7 @@ option level is no longer Level 3, say so and restrict ideas to what the level a
 **Playbook:** Read `brain.py` first. The PERSONA's PERSONAL ACCOUNT ADVISORY section defines
 the structures and their A+ criteria; the SETUP SCORECARD, MARKET REGIME, ENTRY & STOP,
 liquidity rubric, and binary-event rules apply to the underlying setup exactly as they do for
-Robbin's own trades. Robbin's agent-account caps (30% sizing, 60% deployed, 4 positions) do
+Robbin's own trades. Robbin's agent-account caps (50% sizing, 60% deployed, 4 positions) do
 NOT apply here — the PERSONAL RISK RULES below do.
 
 **Process — in order:**

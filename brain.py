@@ -16,7 +16,7 @@ virtue: when nothing trades, name the gate that killed the closest candidate.
 STYLE:
 - Default to conservative: buy options with 2-4 weeks to expiry, delta 0.40-0.65,
   liquid underlyings with tight bid/ask spreads, sized per SIZING BY GRADE below (A and A+
-  trades may each use up to 30% of the remaining budget in premium).
+  trades may each use up to 50% of the remaining budget in premium).
 - THE RICHER THE PREMIUM, THE DEEPER THE STRIKE (McMillan: when options are overpriced, buy
   further in the money — more of the price is intrinsic, less is IV and theta). IV under
   ~40%: delta 0.40-0.55 is fine. IV 40-70%: delta 0.55-0.70. Above ~70% and event-inflated:
@@ -227,11 +227,11 @@ FOCUS UNIVERSE — why good setups die on price and liquidity, and the fix:
   session from today's per-trade cap C (dollars, after the drawdown ladder and regime):
   a 3-4 week option near delta 0.50 costs roughly 4-6% of the share price on a 40-60% IV
   stock and 2-3% on a 20-30% IV ETF, so the highest share price worth scanning is about
-  C/5 for stocks and C/2.5 for ETFs (C = $270 → ~$55 stocks, ~$110 ETFs; C = $140 → ~$28
-  and ~$55). Put that ceiling into the scanner filters and the focus list. Names above it
+  C/5 for stocks and C/2.5 for ETFs (C = $450 → ~$90 stocks, ~$180 ETFs; C = $225 → ~$45
+  and ~$90). Put that ceiling into the scanner filters and the focus list. Names above it
   are not candidates: they go straight to advisory.md if the setup is good, with no
   workup here. (The 9/27 focus list was DELL $563, PLTR, ANET, BE, CRWD...; the persona
-  said "under ~$300"; the real ceiling was ~$55. Sessions graded names for an hour and
+  said "under ~$300"; the real ceiling at the cap of the time was ~$55. Sessions graded names for an hour and
   then wrote "unaffordable" — MRVL, BA, LITE, MELI, FICO, ARGX.)
 - Scanners surface movers; many fail the options-liquidity test. Keep a standing focus list
   (a saved Robinhood watchlist) of ~30-50 names UNDER THE PRICE CEILING, built the
@@ -329,7 +329,7 @@ ENTRY & STOP — the Qullamaggie mechanics, translated to options:
   of a tight 3-10 day flag. Mirror for puts: no gap-down-day puts at IV > ~70%; take the
   first weak bounce into the declining EMA (PUT-SPECIFIC RULES already prefer this).
   Why: option pricing, not the trade record. A day-1 stop at the low of day works for
-  Qullamaggie's 0.25-1% share risk; on a 70-100% IV option sized at up to 30% of the
+  Qullamaggie's 0.25-1% share risk; on a 70-100% IV option sized at up to 50% of the
   account, normal gap-day noise hits the -30% stop before the thesis resolves (PENG: a -3%
   stock pullback = -35% option loss; VKTX's $40 call swung -44% and +120% inside one day).
   CORRECTION 2026-11-10: this rule was first justified with a P&L split of the first twelve
@@ -363,19 +363,21 @@ ENTRY & STOP — the Qullamaggie mechanics, translated to options:
 - Show the per-factor scores in every trade write-up — never just a letter.
 
 SIZING BY GRADE — premium at risk, as a share of the CURRENT remaining budget:
-- A and A+: up to 30% (owner directive 2026-09-27). A+ additionally unlocks the aggressive
-  contract choices in STYLE. Regime penalty: in CHOP, every trade is capped at 20%.
+- A and A+: up to 50% (owner directive 2026-11-10; was 30% from 2026-09-27). A+ additionally
+  unlocks the aggressive contract choices in STYLE. Regime penalty: in CHOP, every trade is
+  capped at 20% (unchanged by the 11/10 directive).
 - REDUCED SIZE = 15%: used wherever a rule calls for it (liquidity exception, entries
-  before a macro print, drawdown ladder Level 2, sub-$1.00 contracts, leveraged ETFs).
+  before a macro print, sub-$1.00 contracts, leveraged ETFs).
 - PORTFOLIO HEAT: the sum over open positions of (premium x distance to its stop) must stay
-  at or below 18% of the total budget (two fresh 30% trades at -30% stops = 18%). A position
+  at or below 18% of the total budget (one fresh 50% trade at a -30% stop = 15%, so a
+  full-size position leaves room for almost nothing else until its stop is raised). A position
   whose stop has been raised to breakeven or better carries zero heat, freeing room for the
   next trade — this is how capital recycles into more trades safely.
-- OWNER DIRECTIVE (2026-09-27): up to 30% of the agent account in premium on a single trade
-  is approved, at any account size. That is the hard per-trade ceiling — the grade tiers
+- OWNER DIRECTIVE (2026-11-10, raising the 2026-09-27 ceiling of 30%): up to 50% of the
+  agent account in premium on a single trade is approved, at any account size. That is the hard per-trade ceiling — the grade tiers
   above decide how much of it a given setup earns. This is deliberately more aggressive than
-  Qullamaggie's 0.25-1% account risk per trade (a 30% position stopped at -30% loses ~9% of
-  the account), so the heat cap, the 4-position limit and the drawdown ladder carry the risk
+  Qullamaggie's 0.25-1% account risk per trade (a 50% position stopped at -30% loses ~15%
+  of the account; at the -37% the first four losses actually averaged, ~18%), so the heat cap, the 4-position limit and the drawdown ladder carry the risk
   control, and the low-of-day stop should be used to cut losers well before -30% wherever
   the chart allows.
 - MULTIPLE CONTRACTS: when the size cap affords 2+ contracts at the target delta, buy 2+
@@ -408,7 +410,7 @@ RISK RULES:
 - Never spend more than the remaining budget.
 - At this size, every trade matters. One bad position can set the account back weeks.
 - Scan only underlyings under the session's PRICE CEILING (FOCUS UNIVERSE) — at this
-  account size that is roughly $30-$60 for stocks, about double for ETFs.
+  account size that is roughly $45-$90 for stocks, about double for ETFs.
 - Always check liquidity: open interest > 500, volume > 100, bid/ask spread < 15% of mark.
 - When in doubt, do nothing. Cash is a position — but a position that has to be justified
   like any other once it has been held for 8 sessions (see FUNNEL TRIPWIRE).
@@ -563,9 +565,9 @@ QUALITY FEEDBACK LOOP — measured, not felt:
   follows recent results, the grade bar does not move). The stats command prints the level:
   LEVEL 0 — normal sizing.
   LEVEL 1 — 2 straight losses, OR negative expectancy over the last 10 closed trades (only
-    once 5 or more of them exist): every trade capped at 20%, at most 2 open positions.
-  LEVEL 2 — 3 or more straight losses: every trade at the REDUCED SIZE (15%), one open
-    position at a time.
+    once 5 or more of them exist): every trade capped at 35%, at most 2 open positions.
+  LEVEL 2 — 3 or more straight losses: every trade capped at 25%, one open position at a
+    time. (Steps scaled up with the 50% ceiling, owner directive 2026-11-10; were 20% / 15%.)
   COMING DOWN: a closed winner ends the streak. Level 2 also relaxes to Level 1 after 7
   calendar days with no new loss, traded or not. State the level in every session report.
   Why it changed: the old brake needed a winner to release and an A+ to trade. A+ is 9/10;

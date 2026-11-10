@@ -33,8 +33,9 @@ Format: **Ticker | direction | setup | score (V/S/C/RS/R = total) | ADR | prior 
 - The drawdown brake that every entry below cites ("A+ only, 15% = $142") was switched on by a
   stats bug and no longer exists. `python cli.py stats` now prints **DRAWDOWN LADDER: level 1**
   (2 straight losses: XPEV, PENG) → every trade capped at 20%, at most 2 open positions, **A and
-  A+ both trade**. On the $904.56 broker cash that is ~$180 per trade → price ceiling roughly
-  $36 for stocks, $72 for ETFs.
+  A+ both trade**. Level 1 is 35% after the owner's 11/10 raise of the ceiling to 50%, so on
+  the $904.56 broker cash that is ~$317 per trade → price ceiling roughly $63 for stocks,
+  $127 for ETFs.
 - Regime at the 11/9 close: still RISK-OFF by the EMAs (QQQ $679.35 under a declining 10-EMA
   $684.3 and 20-EMA $699.1; SPY $752.69 under $753.3 / $759.0). Rally attempt: low $647.05 on
   11/5, so 11/6 = day 1, 11/9 = day 2 (+3.5%, but on lower volume than 11/6). A follow-through
