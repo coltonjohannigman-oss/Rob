@@ -126,10 +126,12 @@ missing from the stats entirely — see the process note of that date.)
 
 ## Open positions
 
-(none — 100% cash. Ledger $948.56; broker cash $904.56 on 2026-11-10. The $44.00 gap is not
-trading: no option or equity fills since PENG on 10/7. It looks like a transfer out and
-NEEDS OWNER CONFIRMATION before the ledger is adjusted.)
+- **SLV $47P Dec 18 x1 — trend pullback (put) — OPENED 2026-11-10, 8:44 AM CT @ $2.45** (order 6af32d65; $245.04 with
+  fees). Scorecard V1–2/S2/C1/RS2/R1 = 7–8 (A). 1R ≈ $20–35 (stop-limit $2.25 / $2.10, order 6af32dfb, GTC). Entry:
+  5-min ORL $46.70 broke at 8:36; filled on the retest at ~$46.62 after one owner-approved re-price ($2.40 → $2.45).
 
+(Ledger $948.56 allocated; broker cash was $904.56 before this trade. The $44.00 gap is not trading — no fills between
+PENG on 10/7 and this — and still NEEDS OWNER CONFIRMATION before the ledger is adjusted.)
 
 ---
 

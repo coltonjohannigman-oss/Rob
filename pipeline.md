@@ -68,12 +68,12 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 - October CPI came out at 7:30 CT today. Pre-market: QQQ $672 (−1.0%), SPY $749 (−0.5%), TLT −0.9%, SLV −2.9%, GDX −4.1%,
   USO −2.9%; XLF/XLV/XLP green. VIX 21.0. Breadth: IWM and RSP are ABOVE their 10/20-EMAs — the weakness is Nasdaq/megacap.
   PPI is Fri 11/13, so Thu 11/12 is a final-session-before-a-print day. PBR reports tonight; NU reports 11/12 pm.
-- **SLV ORDER WORKING (re-priced once, 8:42 AM CT): buy 1 Dec 18 $47P @ $2.45 limit, GFD, order
-  6af32d65-42bc-4b7f-9476-25edefa2d93c, owner-confirmed (the $2.40 order 6af32cf2 was cancelled unfilled). Graded A:
-  V1–2/S2/C1/RS2/R1 = 7–8. 5-min ORL $46.70 broke at 8:36; HOD $46.90 is the stop anchor (planned stop-limit $2.25 /
-  $2.10). Not filled: SLV ran to $46.48 and the put is $2.52 / $2.59. This was the one allowed re-price — no further
-  chase. If it fills: record the buy, place the stop the same cycle, push state. If still unfilled at the 8:49 check,
-  cancel it rather than leave an entry that could fill unwatched with no stop.**
+- **SLV POSITION OPEN: long 1 Dec 18 $47P, filled $2.45 at 8:44 AM CT (order 6af32d65; $245.04 with fees = 27% of
+  $904.56). Stop-limit working GTC: trigger $2.25 / limit $2.10 (order 6af32dfb-95dd-46a0-a3d1-7ca8c54d94df) ≈ SLV back
+  above the $46.90 high of day. 1R ≈ $20–35. Grade A, V1–2/S2/C1/RS2/R1 = 7–8. Target: $44.11 retest ≈ put $3.25–3.60
+  (+33% to +47%), one exit. Thesis stop: close above $48.31. Time stop: tighten after 3 sessions, out after 5 (by 11/17).
+  PPI Fri 11/13: if up 30%+ by Thursday's close, take it or lock half. One order per contract: the stop is what is
+  holding the contract.**
 - **SLV | PUT | trend pullback (mirror) | V?/S2/C1/RS2/R2 = 7 + volume | ADR 2.0% | 3-mo −18%, ADX 31.6, below declining
   20/50-EMA | 6-session bounce $44.11 → $48.31 into the declining 20-EMA ($49.0) on fading volume (12–14M vs 19.5M avg),
   gapping back under the 10-EMA ($47.47) to $46.74 | TRIGGER: 5-min ORL break after ~8:45 CT with volume above yesterday's

@@ -5,7 +5,7 @@
       "name": "Robbin",
       "balance": 948.56,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 0.0,
+      "spent": 245.04,
       "realized_pnl": 349.90999999999997
     }
   },
@@ -298,6 +298,14 @@
       "pnl": -75.09,
       "setup": "EP",
       "grade": "B"
+    },
+    {
+      "id": "a8c827a4",
+      "agent_id": "b7763d77",
+      "amount": -245.04,
+      "type": "debit",
+      "note": "SLV $47P Dec18 x1 @ $2.45 + $0.04 fees (order 6af32d65, filled 8:44 AM CT 2026-11-10; trend-pullback put, grade A 7-8: V1-2/S2/C1/RS2/R1; 1R = ~$25 at the HOD stop)",
+      "timestamp": "2026-11-10T14:45:07.714970+00:00"
     }
   ]
 }
