@@ -90,6 +90,9 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 - Semis off the lows today (SMCI +11%, AMKR +12%, ASX +7.5%, GFS +6%, VIAV +9%, IREN +9%): all still under declining
   20/50-EMAs with no base — a thrust, not a setup. If the follow-through confirms, their first tight pullbacks are the
   next call funnel. SLV: back to $47.0, under its 10-EMA $47.29; no setup.
+- **Re-check 11:39 AM CT (same day): nothing triggered.** ZETA $38.05 (alert < $36.00 set), NFLX $64.04 (alert < $62.90
+  set), XLE $62.94 (alert > $64.20 set), EWZ $32.42, ONON $34.29. QQQ $694.5 (+2.9%), SPY $761.2; QQQ volume still
+  ~0.9x yesterday's pace on patchy intraday data — follow-through unconfirmed until the close. No-trade sessions: 2.
 - Dropped: KSS (earnings 11/24 inside any hold), NU (aged out day 10; earnings 11/12), PBR (post-earnings, $18.07, nothing).
 
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
