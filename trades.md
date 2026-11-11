@@ -124,14 +124,28 @@ missing from the stats entirely — see the process note of that date.)
   and backfilled into this ledger on 2026-10-08 (buy $215.04 / sell $139.95, `--setup EP --grade B`).
 - **Post-mortem grade:** C (execution). Owner-override trades get logged at the session's grade.
 
+### 13. SLV $47P Dec 18 — Trend pullback (put) — CLOSED 2026-11-10 ❌ -$20.09 (-8.2%, about -0.8R)
+- **Scorecard at entry:** V1–2/S2/C1/RS2/R1 = 7–8 (A). x1 contract, $245.04 = 27% of $904.56. 1R planned ≈ $25.
+- **Entry:** $2.45, 8:44 AM CT (order 6af32d65), on the retest after the 5-min ORL ($46.70) broke; one owner-approved
+  re-price from $2.40. **Exit:** stop-limit $2.25 / $2.10 filled at $2.25, 9:04 AM CT (order 6af32dfb). Net proceeds
+  $224.95. Hold time 20 minutes.
+- **What happened:** SLV poked to $46.995 — nine cents over the $46.90 morning high the stop was anchored to — then fell
+  to $46.15 by midday and closed $46.48. The put closed the day at $2.61 (+6.5% from entry). On 11/11 SLV gapped up to
+  $47.41 and the put was $2.22 at 10:43 AM CT, under the exit price. The stop cost a small gain on day one and saved a
+  slightly larger loss on day two.
+- **Right:** the loss was the planned size and the stop filled at its trigger (liquid contract, OI 5,572). Bookkeeping,
+  stop and push all happened in the same cycle as the fill.
+- **Wrong:** the volume read was thin when the order went in — 1.20x the same-window average after ten minutes, down from
+  1.56x after five, and the rule wants about fifteen minutes. The entry filled on a bounce, not on the break. And a
+  high-of-day stop 20 cents away on a $47 ETF is 0.2 of a daily range: inside the noise.
+- **Not a new rule** (RULE-CHANGE PROTOCOL: one loss is a journal entry). Worth counting if it repeats: stop-outs within
+  the first 30 minutes on entries taken before 8:45 CT.
+- **Post-mortem grade:** B (execution). The setup read was fine; the entry was early.
+
 ## Open positions
 
-- **SLV $47P Dec 18 x1 — trend pullback (put) — OPENED 2026-11-10, 8:44 AM CT @ $2.45** (order 6af32d65; $245.04 with
-  fees). Scorecard V1–2/S2/C1/RS2/R1 = 7–8 (A). 1R ≈ $20–35 (stop-limit $2.25 / $2.10, order 6af32dfb, GTC). Entry:
-  5-min ORL $46.70 broke at 8:36; filled on the retest at ~$46.62 after one owner-approved re-price ($2.40 → $2.45).
-
-(Ledger $948.56 allocated; broker cash was $904.56 before this trade. The $44.00 gap is not trading — no fills between
-PENG on 10/7 and this — and still NEEDS OWNER CONFIRMATION before the ledger is adjusted.)
+(none — 100% cash. Ledger $928.47; broker cash $884.47 on 2026-11-11, of which $224.95 settles 11/12. The $44.00 gap
+is unchanged and is not trading; it still NEEDS OWNER CONFIRMATION before the ledger is adjusted.)
 
 ---
 

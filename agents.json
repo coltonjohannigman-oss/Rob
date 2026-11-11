@@ -3,10 +3,10 @@
     "b7763d77": {
       "id": "b7763d77",
       "name": "Robbin",
-      "balance": 948.56,
+      "balance": 928.4699999999999,
       "created_at": "2026-06-29T13:45:01.387963+00:00",
-      "spent": 245.04,
-      "realized_pnl": 349.90999999999997
+      "spent": 0.0,
+      "realized_pnl": 329.81999999999994
     }
   },
   "transactions": [
@@ -306,6 +306,18 @@
       "type": "debit",
       "note": "SLV $47P Dec18 x1 @ $2.45 + $0.04 fees (order 6af32d65, filled 8:44 AM CT 2026-11-10; trend-pullback put, grade A 7-8: V1-2/S2/C1/RS2/R1; 1R = ~$25 at the HOD stop)",
       "timestamp": "2026-11-10T14:45:07.714970+00:00"
+    },
+    {
+      "id": "4f7ecaa1",
+      "agent_id": "b7763d77",
+      "amount": 224.95,
+      "type": "credit",
+      "note": "SLV $47P Dec18 x1 stop-limit $2.25/$2.10 fired @ $2.25 (order 6af32dfb, 9:04 AM CT 2026-11-10), net of $0.05 fees; -8.2%, about -1R",
+      "timestamp": "2026-11-11T16:43:52.181989+00:00",
+      "cost_basis": 245.04,
+      "pnl": -20.090000000000003,
+      "setup": "trend-pullback",
+      "grade": "A"
     }
   ]
 }

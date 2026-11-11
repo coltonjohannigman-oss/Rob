@@ -59,47 +59,38 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 - 10/23 | CCI | call | 5-6 | counter-regime; brake | $85.97 | broke the $91.45 trigger 11/4, 11/9 $87.83 — GATE RIGHT
 - 10/29 | TENB | call | 7-8 | gap-day rule; extension limit; regime | $51.78 | 11/9 $43.67 (-16%) — GATE RIGHT
 - 10/23 | GMAB | call | 6 | counter-regime; brake; gap-day rule | $43.79 | 10/28 $57.29 (+31%), 11/9 $55.80 — MISSED (B grade; a 2-session flag in RISK-OFF)
+- 11/11 | ZETA | call | 9 | DON'T CHASE (>1 ADR past $35.35); extension ~2 ADR over the 10-EMA; price over the level-2 cap | $37.90 | (fill in by 11/25)
+- 11/11 | REZI | call | 7 | options liquidity: Dec 18 $22.5C OI 2, $20C OI 22; also 3 ADR above its low of day | $22.16 | (fill in by 11/25)
 - Tally so far (7): extension limit blocked 5 → 1 missed, 1 neutral, 3 right. Counter-regime blocked 3 → 1 missed, 2 right.
 
 ## Active
 
-### Session 2026-11-10 (Tue, 8:11 AM CT, PRE-MARKET prep; grading resumes ~8:50 CT) — regime RISK-OFF by the EMAs (rally attempt day 3), ladder LEVEL 1 → cap 35% = $317, ceiling ~$63 stocks / ~$127 ETFs
+### Session 2026-11-11 (Wed, 10:43 AM CT) — regime CHOP (QQQ $692 above its 10-EMA $682.6, under the 20-EMA $696.8; SPY $759 above both), rally attempt DAY 4, ladder LEVEL 2 → cap 25% = $221, ONE position, ceiling ~$44 stocks / ~$88 ETFs
 
-- October CPI came out at 7:30 CT today. Pre-market: QQQ $672 (−1.0%), SPY $749 (−0.5%), TLT −0.9%, SLV −2.9%, GDX −4.1%,
-  USO −2.9%; XLF/XLV/XLP green. VIX 21.0. Breadth: IWM and RSP are ABOVE their 10/20-EMAs — the weakness is Nasdaq/megacap.
-  PPI is Fri 11/13, so Thu 11/12 is a final-session-before-a-print day. PBR reports tonight; NU reports 11/12 pm.
-- **SLV POSITION OPEN: long 1 Dec 18 $47P, filled $2.45 at 8:44 AM CT (order 6af32d65; $245.04 with fees = 27% of
-  $904.56). Stop-limit working GTC: trigger $2.25 / limit $2.10 (order 6af32dfb-95dd-46a0-a3d1-7ca8c54d94df) ≈ SLV back
-  above the $46.90 high of day. 1R ≈ $20–35. Grade A, V1–2/S2/C1/RS2/R1 = 7–8. Target: $44.11 retest ≈ put $3.25–3.60
-  (+33% to +47%), one exit. Thesis stop: close above $48.31. Time stop: tighten after 3 sessions, out after 5 (by 11/17).
-  PPI Fri 11/13: if up 30%+ by Thursday's close, take it or lock half. One order per contract: the stop is what is
-  holding the contract.**
-- **SLV | PUT | trend pullback (mirror) | V?/S2/C1/RS2/R2 = 7 + volume | ADR 2.0% | 3-mo −18%, ADX 31.6, below declining
-  20/50-EMA | 6-session bounce $44.11 → $48.31 into the declining 20-EMA ($49.0) on fading volume (12–14M vs 19.5M avg),
-  gapping back under the 10-EMA ($47.47) to $46.74 | TRIGGER: 5-min ORL break after ~8:45 CT with volume above yesterday's
-  pace and ≥1.2x average; DON'T CHASE below ~$46.40 (1 ADR under yesterday's $47.36 low) | STOP: high of day |
-  INVALIDATION: close above $48.31 | TARGET: $44.11 retest | CONTRACT: Dec 18 $47P (OI 5,572, IV 40%, ~$2.45) or
-  Nov 27 $48P (OI 645, ~$2.35); Dec 4 / Dec 11 strikes fail OI > 500 | added 2026-11-10**
-- **NFLX | PUT | EP-down, failed bounce (owner asked 8:20 CT) | V?/S1/C1/RS2/R2 = 6 + volume (A needs V≥1) | ADR ~2.7% |
-  $83.60 (9/3) → $61.39 (10/29), −27%; gapped down on Q3 10/21 (101M sh), based $61.4–63.9, bounced to $67.49 on 11/4–11/5
-  — the gap-day high / declining 20-EMA — and was rejected. $63.95 pre-market, flat while QQQ is −1%; under the 10-EMA
-  $64.33, 20-EMA $65.64, 50-EMA $69.25 | TRIGGER: break of $62.95 (11/9 low) on ≥1.5x volume; the real level is the
-  $61.39 base low | INVALIDATION: close above $65.64 | CONTRACT: Dec 18 $64P (OI 5,338, IV 34%, Δ−0.47, $2.68 at the
-  11/9 close); Dec 4 / Dec 11 weeklies fail OI. Next earnings mid-January | added 2026-11-10**
-- NVDA (owner asked): $174.87 pre-market, −28% from the 10/6 high, 3+ ADR under the 10-EMA ($197), earnings 11/17 pm,
-  and far over the price ceiling. No trade either way before the report.
-- **EWZ | PUT | post-gap flag (Brazil runoff 10/26) | not triggered | $32.43, 9 sessions inside the gap-day range,
-  ADX 40, 1.0 ADR under the 10-EMA | TRIGGER: break of the $31.40 flag low on ≥1.5x volume | INVALIDATION: close above
-  $33.60 | PBR earnings tonight | added 2026-11-10**
-- **XLE | PUT | breakdown | not legal yet | $61.19; broke $66–70 on 2x volume 11/4–11/5, only 2 flag sessions since,
-  ~2.5 ADR under the 10-EMA (EXTENSION LIMIT) | TRIGGER: a 3rd+ flag session, then a break of $60.85 | added 2026-11-10**
-- **ONON | PUT | EP-down day 1 (Q3 beat, stock −8% to $34.4) | watch | was at highs 11/5, no prior decline (S1, RS0–1) |
-  check IV and the reason at the open | added 2026-11-10**
-- **KSS | call | trend pullback | B | $24.60, ADX 47, +29% in 3 mo; 2-session pullback to the 20-EMA already bounced
-  11/9 | counter-regime, earnings likely within 2–3 weeks (verify) | TRIGGER: > $25.60 on volume, regime ≥ CHOP**
-- Over the ceiling → advisory: RKLB ($53.8, −8.6% on a Q3 miss, failing at the declining 50-EMA), ASTS ($34.7), IONQ ($33.7).
-- NU (day 10 of 10, earnings 11/12): flag broke 10/30 and went nowhere; $12.23, sitting on its 10-EMA. Aging out today.
-  PBR: reports tonight → no entry; re-read after the print. CCI / TENB: dropped (see Pass audit).
+- **SLV closed 11/10: stop filled $2.25 at 9:04 AM CT, -$20.09 (-8.2%). Ledger booked, journal #13.** Losing streak 3 →
+  ladder level 2 (relaxes to level 1 on 11/17 with no new loss, or on the next winner).
+- **Possible follow-through day today:** QQQ +2.6%, SMH +6%, on day 4 of the attempt off the 11/5 low ($647.05). Volume
+  through the first 90 minutes ran ~0.9x yesterday's pace, so it is NOT confirmed — judge at the close (needs volume above
+  11/10). Either way calls score R1. VIX 17.7. PPI Fri 11/13 → Thursday entries at reduced size only.
+- **ZETA | call | EP day 2 (Q3 EPS $0.38 vs $0.23, 11/9 pm) | V2/S2/C2/RS2/R1 = 9 (A+ on score, GATES FAIL) | ADR 5.8% |
+  6-week base $29.4–35.75; gap day 11/10 $31.34–35.35 on 2x volume; today $37.9, new 90-day high | GATES: more than 1 ADR
+  through the $35.35 trigger (DON'T CHASE), ~2 ADR over the 10-EMA (~$33.3), and a ~0.50Δ 5-week call is over the $221
+  cap | TRIGGER: a 3–10 day flag above $35.35–35.75 that breaks out, or a pullback to the rising 10-EMA that reclaims the
+  prior day's high | INVALIDATION: close below $35.35 | added 2026-11-11**
+- **NFLX | PUT | failed bounce | V?/S1/C1/RS2/R1 = 5 + volume (B) | $63.63; poked $62.92 on 11/10 on light volume and
+  closed $63.26; under the 10-EMA $64.14 | TRIGGER: break of $62.90 on ≥1.5x volume; real level $61.39 | INVALIDATION:
+  close above $65.41 (20-EMA) | CONTRACT: Dec 18 $64P (OI 5,323, $2.70) — over the level-2 cap by $49 | day 2 of 10**
+- **XLE | PUT | breakdown, bounce in progress | $63.12 (+1.5%); 11/10 low $60.43; declining 10-EMA $64.26, 20-EMA $65.24 |
+  TRIGGER: a weak bounce into $64.2–65.2 that fails, then a break of the bounce low on ≥1.5x volume | INVALIDATION: close
+  above $65.3 | day 2 of 10**
+- **EWZ | PUT | post-gap flag | not triggered | $32.41 | TRIGGER: break of $31.40 on ≥1.5x volume | INVALIDATION: close
+  above $33.60 | day 2 of 10**
+- **ONON | PUT | EP-down day 2 | watch | $34.20; gap day 11/10 $33.86–35.58 on 25M shares | TRIGGER: 3+ sessions inside the
+  gap-day range, then a break of $33.86 | INVALIDATION: close above $35.58 | day 2 of 10**
+- Semis off the lows today (SMCI +11%, AMKR +12%, ASX +7.5%, GFS +6%, VIAV +9%, IREN +9%): all still under declining
+  20/50-EMAs with no base — a thrust, not a setup. If the follow-through confirms, their first tight pullbacks are the
+  next call funnel. SLV: back to $47.0, under its 10-EMA $47.29; no setup.
+- Dropped: KSS (earnings 11/24 inside any hold), NU (aged out day 10; earnings 11/12), PBR (post-earnings, $18.07, nothing).
 
 ### Session 2026-11-02 (Mon, 10:51 AM CST) — regime RISK-OFF (SPY $760 / QQQ $694 both under declining 10/20-EMAs), DRAWDOWN BRAKE ON (A+ only, 15% = $142). Midterm election 11/3 is a binary event, so today counts as the final session before it.
 
