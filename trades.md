@@ -144,7 +144,7 @@ missing from the stats entirely — see the process note of that date.)
 
 ## Open positions
 
-(none — 100% cash. Ledger $928.47; broker cash $884.47 on 2026-11-11, of which $224.95 settles 11/12. The $44.00 gap
+(none — 100% cash. Ledger $928.47; broker cash $884.47 on 2026-11-13, all settled. The $44.00 gap
 is unchanged and is not trading; it still NEEDS OWNER CONFIRMATION before the ledger is adjusted.)
 
 ---

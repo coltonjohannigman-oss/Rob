@@ -61,9 +61,52 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 - 10/23 | GMAB | call | 6 | counter-regime; brake; gap-day rule | $43.79 | 10/28 $57.29 (+31%), 11/9 $55.80 — MISSED (B grade; a 2-session flag in RISK-OFF)
 - 11/11 | ZETA | call | 9 | DON'T CHASE (>1 ADR past $35.35); extension ~2 ADR over the 10-EMA; price over the level-2 cap | $37.90 | (fill in by 11/25)
 - 11/11 | REZI | call | 7 | options liquidity: Dec 18 $22.5C OI 2, $20C OI 22; also 3 ADR above its low of day | $22.16 | (fill in by 11/25)
+- 11/13 | EEM | put | 7 | DON'T CHASE (1.5 ADR through $61.67); Dec 18 $60P spread 28% | $60.38 | (fill in by 11/30)
+- 11/13 | SLV | put | 7 | extension limit (2.7 ADR under the 10-EMA) after the 11/10 stop-out | $44.41 | (fill in by 11/30)
 - Tally so far (7): extension limit blocked 5 → 1 missed, 1 neutral, 3 right. Counter-regime blocked 3 → 1 missed, 2 right.
 
 ## Active
+
+### Session 2026-11-13 (Fri, 9:27 AM CT) — regime CHOP under test (the 11/11 follow-through confirmed at the close: QQQ +2.3% on 44.9M vs 38.8M; today QQQ $675 (-1.9%) is back under its 10-EMA $684.8 and 20-EMA $695.4, SPY $750 under $754.6 / $758.2; rally low $647.05 intact), ladder LEVEL 2 → cap 25% = $221, ONE position, ceiling ~$44 stocks / ~$88 ETFs
+
+- Breadth: IWM $275.1 under its 10/20-EMAs ($279.4 / $279.1); RSP $219.7 on its 10-EMA, above its 20-EMA ($218.4), so the selling is
+  concentrated in semis/AI (SMH -4.7%, AMD -9.5%, NVDA -3.9%). VIX 20.7 (17.7 on 11/11). **NVDA reports Tue 11/17 after the
+  close**: Tuesday is the final session before a binary event for the whole tape (reduced size only).
+- **No trade. Closest: EWZ put (A+ on score once it triggers; $32.13 is 2.3% above the $31.40 trigger).** No-trade sessions: 3.
+- **EWZ | PUT | post-gap flag (Brazil runoff 10/25) | V?/S2/C2/RS2/R1 = 7 + volume (A+ at V2) | ADR 2.4%, ADX 41 | 1 month -25%;
+  12-session flag $31.50–32.92 since 10/30 on fading volume (27–29M vs a 63M 20-day average) | TRIGGER: break of $31.40 (the
+  90-day low) by the ORL rules with volume above the prior day's pace and ≥1.2x average | INVALIDATION: close above $32.92 (flag
+  high) | CONTRACT: Dec 18 $33P $1.93/2.04, Δ -0.55, IV 39%, OI 24,993 (1 = ~$199) or $32P $1.32/1.36, Δ -0.45, OI 48,185 |
+  alert < $31.40 set | day 4 of 10**
+- **XLE | PUT | breakdown, failed-bounce watch | V?/S1/C1/RS1/R1 = 4 + volume (B) | ADR 2.4%, ADX 26 | fell $70.15 → $60.43 in 7
+  sessions (11/4 on 2x volume), then a 5-session bounce on fading volume (24–26M vs 37M) into the 20-EMA: today's high
+  $64.96 vs the 20-EMA $64.99, now $64.56 | TRIGGER: break of the prior day's low ($63.42 for today) on ≥1.5x volume |
+  INVALIDATION: close above $65.30 | CONTRACT: Dec 18 $64P $1.62/1.66, Δ -0.42, IV 25%, OI 24,477 | alert < $63.42 set | day 4 of 10**
+- **ZETA | call | post-gap flag, session 3 | V?/S2/C2/RS2/R1 = 7 + volume | $37.19 (-0.2% on a -2% tape); flag $36.00–38.80 above the
+  $35.35 gap-day high on fading volume (9.3M → 5.1M); ~1.2 ADR over the 10-EMA, so the extension gate now passes | TRIGGER:
+  break of $38.80 on above-pace volume | INVALIDATION: close below $35.35 | still over the $221 cap at Δ0.55+ (IV ~60%), so
+  it is in advisory.md as a call-spread candidate | alerts > $38.80 and < $36.00 | day 3 of 10**
+- **NFLX | PUT | B, volume fails | broke $62.90 on 11/12 (low $62.55, close $62.69) on 31.6M = 0.68x average, so no volume; today
+  $62.47–63.95, now $62.89 | same trigger with ≥1.5x volume; real level $61.39 | Dec 18 $64P still over the cap | day 4 of 10**
+- **ONON | PUT | watch | closed $33.07 on 11/12, under the $33.86 gap-day low, on day 2 (the flush, banned) and on average volume;
+  back to $33.80 today | TRIGGER: from Monday (3 post-gap sessions done), a break of $32.87 on ≥1.5x volume | INVALIDATION:
+  close above $35.58 | alert < $32.87 set | day 4 of 10**
+- **EEM | PUT | trend pullback (mirror) | V1/S2/C1/RS2/R1 = 7 (A on score, GATES FAIL) | ADR 1.5%, ADX 30 | 4-session quiet rally
+  $58.00 → $62.43 into the declining 20-EMA ($62.0); broke the prior day's low by gapping down 11/12; today $60.38 (-1.2%) |
+  GATES: 1.5 ADR through the $61.67 trigger (DON'T CHASE); Dec 18 $60P quoted $1.78/2.36, a 28% spread | TRIGGER: a 1–3
+  session bounce toward $61 (10-EMA $61.1) that fails, then a break of the prior day's low, with the spread back under 15% |
+  INVALIDATION: close above $62.45 | TSM/Samsung/Hynix weight makes NVDA 11/17 a binary event for it | alert > $61.00 set |
+  added 2026-11-13**
+- **VFC | call | post-earnings flag at the 10-EMA | V?/S2/C2/RS2/R1 = 7 + volume | ADR 3.9%, ADX 52 | +35% in 3 months; 7-session
+  flag $20.02–21.24 on fading volume; $20.13, 10-EMA $19.93 | TRIGGER: reclaim of the prior day's high ($20.87) on ≥1.2x
+  average volume, or a break of $21.24 | INVALIDATION: close below $19.60 | CONTRACT: Dec 18 $20C fails both tests today (OI
+  232, spread 19%) — check Nov 27 / Jan at the trigger; no liquid strike = pass | alert > $20.90 set | added 2026-11-13**
+- Passed 11/13: KD (post-earnings flag $16.0–17.39, a clean chart; Dec 18 $16C/$17C OI ~205 and spreads 26–34% — fails both
+  liquidity tests, which a spread does not fix), CPRI (same flag shape, thinner chain), BRZE (pinned at $46.6, ADR 1.1%: a
+  deal), SLV ($44.41, a new closing-basis low; 2.7 ADR under its 10-EMA), KWEB (2.7 ADR under), ARKK (put over the cap),
+  today's semis/AI/miner flush (IREN, APLD, IONQ, ASTS, WULF: day-1 drops inside violent 2-day bounces, 80–100% IV, stop
+  anchors wider than 1 ADR). Gainers: MOD +26%, LFTO +24%, STN +14% are day-1 gaps over the ceiling or with no chain.
+  Leaders over the ceiling (ULTA, ACN, PTC, HAS, KOD, SWKS, EXEL): no workup.
 
 ### Session 2026-11-11 (Wed, 10:43 AM CT) — regime CHOP (QQQ $692 above its 10-EMA $682.6, under the 20-EMA $696.8; SPY $759 above both), rally attempt DAY 4, ladder LEVEL 2 → cap 25% = $221, ONE position, ceiling ~$44 stocks / ~$88 ETFs
 
