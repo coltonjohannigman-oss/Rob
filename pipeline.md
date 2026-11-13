@@ -67,6 +67,27 @@ Format: **date | ticker | dir | score | blocking gate | price that day | outcome
 
 ## Active
 
+### Re-check 2026-11-13 (Fri, 2:28 PM CT) — same regime (CHOP under test; QQQ $679, -1.3%, off the $671.7 low, still under its 10-EMA; likely distribution day 1 since the 11/11 follow-through — confirm at the close), cap $221, ceiling ~$44 / ~$88
+
+- **Nothing triggered.** EWZ $32.22 (trigger < $31.40), XLE $64.75 (trigger < $63.42; invalidation $65.30 is close), ZETA $36.67
+  (low $36.36, flag intact), ONON $33.54, EEM $60.76 (bouncing toward the $61 alert), VFC $20.68 (high $20.81, under the
+  $20.87 trigger, on 0.6x volume), NFLX $62.33 (a new low for the move at $62.13, but volume is again about yesterday's
+  0.7x-of-average pace, so V0).
+- **GME | call | range breakout after a trend pullback | V2/S1/C1/RS1/R1 = 6 (B) | ADR 4.1%, ADX 23 | $18 → $28.30 (+57%) into
+  10/15, pullback to the 50-EMA ($23.07 on 10/30), then four weeks of higher lows under $26.0–26.5 with a 3-day coil
+  (11/10–11/12, 4.0–4.6M vs a 7M average); today it cleared the prior high $25.68 to $26.47 on ~1.2x volume and faded to
+  $25.89 | TRIGGER (upgrade to A): break of $26.47 on ≥2x volume (structure becomes a range breakout, S2) | INVALIDATION:
+  close below $24.85 | CONTRACT: Dec 4 $26C $1.00/1.09, Δ 0.51, IV 43%, OI 5,407 (2 = ~$210, allows a scale-out); earnings
+  12/8 pm (unverified) fall after that expiry | alert > $26.47 set | added 2026-11-13**
+- **NU | call | EP day 1 (Q3 earnings 11/12 pm; catalyst not yet verified) | V2/S1/C1/RS0/R1 = 5 (B) | ADR 4.1% | +10.8% to $13.10
+  on 2.1x volume out of a 3-week $11.2–12.4 base; still under its falling 50-EMA ($13.4); IV 42%, so the gap-day ban does
+  not apply, but the low of day ($12.10) is 1.9 ADR below — too wide a stop for today | TRIGGER: day-2+ pullback that
+  holds $12.40–12.74 and reclaims the prior day's high, or a 3–10 day flag that breaks $13.25, on volume | INVALIDATION:
+  close below $12.10 | alert > $13.25 set | added 2026-11-13. The old NU put idea is dead.**
+- Passed (afternoon scans): LFTO +31%, MOD +29%, HAWK +23%, NMAX +29%, SBC +30% (day-1 gaps, IV 71–93%), VKTX +5.6% on 3.3x
+  (IV 79%, mid-range of a downtrend), CPRI +5% on 0.7x volume (thin chain), VIR -19% / CADL -26% / ZVRA -17% (biotech
+  flushes), CVLT -8.6% ($152, over the ceiling).
+
 ### Session 2026-11-13 (Fri, 9:27 AM CT) — regime CHOP under test (the 11/11 follow-through confirmed at the close: QQQ +2.3% on 44.9M vs 38.8M; today QQQ $675 (-1.9%) is back under its 10-EMA $684.8 and 20-EMA $695.4, SPY $750 under $754.6 / $758.2; rally low $647.05 intact), ladder LEVEL 2 → cap 25% = $221, ONE position, ceiling ~$44 stocks / ~$88 ETFs
 
 - Breadth: IWM $275.1 under its 10/20-EMAs ($279.4 / $279.1); RSP $219.7 on its 10-EMA, above its 20-EMA ($218.4), so the selling is
